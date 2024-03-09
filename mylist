@@ -1,1 +1,558 @@
+instiz.net##.hot_under
+waifu2x.net##.all-page > div:nth-of-type(5)
+waifu2x.net##.dmm-games
+waifu2x.net##.all-page > div:nth-of-type(3)
+ppomppu.co.kr##.off.allCmt
 yande.re###news-ticker
+manatoki*.net###viewcomment
+m.brand.naver.com###mobile-customBannerWidget1
+m.brand.naver.com###mobile-customBannerWidget
+cafe.naver.com##.bottom.banner_add
+cafe.naver.com##.bottom.banner_add
+forum.vivaldi.net###reconnect-alert
+@@||pics.auction.co.kr/mobile/sprite/vip/sprite_vipcoupon.png$domain=script.auction.co.kr
+@@||eventnet.auction.co.kr/VipCouponEventPlatform/GetNewVipCouponEventList$domain=mitem.auction.co.kr
+@@||mitem.auction.co.kr/vip/couponGettingBannerListV2^
+@@||mitem.gmarket.co.kr/Item/CouponGettingBannerListV2^
+chat.openai.com##.text-token-text-primary.p-3.bg-blue-950.justify-between.items-center.w-full.flex.dark
+tistory.com##article > center
+tistory.com###article > center
+brunch.co.kr##.svelte-amtc18.floating_banner
+kr.dynakodes.com##.privacy-policy-moudle
+arca.live##.mt-2.recaptcha-privacy
+mfront.wd.wemakeprice.com##.type2.aiplus_wrap
+lawtalk.co.kr##mobile-bottom-tab
+lawtalk.co.kr##.premium-lawyer-section
+lawtalk.co.kr##.qna-list__ad-google-preview
+lawtalk.co.kr##qna-article-banner
+lawtalk.co.kr##.opened.bottom-sheet-wrap > .with-mobile-bottom-tab.bottom-sheet
+imweb.me##.shop-banner._shop_banner.shop_banner.text-center
+blog.naver.com##.market_carousel__pvVxd
+new-m.pay.naver.com##.Footer-module_inner__J3glp
+new-m.pay.naver.com##.ADRewardBannerImage_article__3Hh-U
+new-m.pay.naver.com##.BottomModalNoticeWrapper-module_article__pS-89
+new-m.pay.naver.com##body,html:style(overflow:auto!important)
+blog.naver.com##.moment_wrap__lLDMp
+instiz.net###dv-14
+instiz.net##div:nth-of-type(9)
+instiz.net###dv-3
+instiz.net##div.foot
+instiz.net###dv-20
+tmon.co.kr##.banner_offer
+tmon.co.kr##[src^="https://img4.tmon.kr/cdn3/"]
+mnews.sbs.co.kr##.page_promotion_banner
+brunch.co.kr##.round.svelte-ykkyeb.floatting_banner
+brunch.co.kr##[src^="https://t1.daumcdn.net/brunch/static/banner/"]
+namu.wiki###app > main > div:nth-of-type(2) > div:has-text(최근 변경)
+naver.com##.widget_wrap
+###_LEVERAGE_PROMOTION
+###MM_search_container
+newspim.com##.banbox
+newspim.com##div.w_mar15
+newspim.com##p > div
+newspim.com##.banbox_top
+suto.co.kr###mm-0 > div:nth-of-type(6)
+suto.co.kr##.share_subs
+product.29cm.co.kr##.eddhs1j0.css-b1ntip
+croket.co.kr##.detail_banner
+croket.co.kr##.popup-full
+wishbucket.io##.ComparePriceList_banner__0DL3G
+wishbucket.io##.DownloadModal_container__9c_KU
+ssfshop.com##.act-diver
+lacoste.com##div:nth-of-type(11)
+gsshop.com##.bnr-item_appdown
+kioskfo.asungcorp.com###rolling_main
+##.round.svelte-ykkyeb.floatting_banner
+kr.investing.com##.text-white.font-arial.bg-\[\#191919\].w-full.z-50.fixed.bottom-0.py-4.px-5
+yahoo.co.jp###stream > div
+dcinside.com##.reco-icon-box
+##.inven-float-alarm
+m.pay.naver.com##.commonBannerMobileArea
+shopping.naver.com##._popupBanner_is_dockbar_UNkLC._popupBanner_popup_banner_2M7Rt
+###top-banner
+luckyquiz3.blogspot.com##body,html:style(overflow:auto!important)
+luckyquiz3.blogspot.com###main_popup2
+luckyquiz3.blogspot.com###pbt
+##.col-sm-9.col-md-9.col-15
+fmkorea.com##.notice_layerM.notice_layer
+dcinside.com##.adv-inner
+dcinside.com##.detail-top-lst > li:nth-of-type(2)
+zdnet.co.kr###A1_300250
+khan.co.kr###layerB
+coolenjoy.net###bo_list > .d-sm-none.d-block
+missav.com##.mb-5.space-y-5 > .lg\:hidden
+missav.com##.px-4.lg\:pb-0.pb-4.pt-16 > .lg\:hidden
+lotteon.com###modals-container > .v--modal-overlay
+lotteon.com###modals-container > .v--modal-overlay > .v--modal-background-click
+msearch.shopping.naver.com##.recommendTrend_aitems_recommend__Id9yu
+msearch.shopping.naver.com##.shoppingLiveShortClip_shopping_live_short_clip__YBObs
+msearch.shopping.naver.com##.active.android.reactiveForyouScroll_foryou_reaction__iOC6m
+msearch.shopping.naver.com##.intentReview_intent_best_review__mAwb4
+msearch.shopping.naver.com##.list_item
+devuploads.com,djxmaza.in,miuiflash.com,thecubexguide.com$@$link[rel="manifest"]
+ppomppu.co.kr##.biz.results_board
+dcinside.com##.app-info-ban
+dcinside.com##.detail-top-lst > li:nth-of-type(1)
+apkmirror.com##.ains-apkm_outbrain_ad
+apkmirror.com###adtester-container-103
+apkmirror.com##.google-ad-square-sidebar
+fmkorea.com##.naver_ad_wrapper_list_normal.ad_wrapper
+shopping.naver.com###firstDynamicAd
+fmkorea.com##.show_folded_notice.pop0.notice
+fmkorea.com#$##bd_capture { background: none!important; }
+m.blog.naver.com##body,html:style(overflow:auto!important)
+m.blog.naver.com##.popup_da_wrap
+ruliweb.com###fixed_ad
+apkpure.net##.app-list.sa-all-div.list > .res.search-telegram
+apkpure.net##.list-margin.sa-all-div.list
+apkpure.net##.showBadge.apk-list-double-line
+apkpure.net##.mb.search-telegram
+apkpure.net##.mb.search-trending
+apkpure.net###top-slide-banner
+shopping.naver.com##.themeResponsive_theme_responsive__wPaZS
+shopping.naver.com##.fashionTownResponsive_fashion_town_responsive__vcxnM
+shopping.naver.com##.mister
+shopping.naver.com##.plusdeal
+shopping.naver.com##.trendPickResponsive_trend_pick_responsive__TBJgp
+shopping.naver.com##.forYouResponsive_for_you_responsive__eC_9L.foryou
+cafe.naver.com##.article_content_se > div:nth-of-type(3)
+gamingdeputy.com##.code-block-4.code-block
+gamingdeputy.com##.anchor-ad-d-mobile
+gamingdeputy.com##div.code-block-3.code-block
+||widgets.outbrain.com^$domain=apkmirror.com
+mobil.pcwelt.de,apkmirror.com##.OUTBRAIN
+apkmirror.com##.appRow.showOnMobileAndTablet
+apkmirror.com#$##ezmob-wrapper { display: none !important; } apkmirror.com#$#html > body { padding-top: 0 !important; }
+rooreez.com##.__active.__is-popup.__ld-ac-block
+apkmirror.com###div-gpt-ad-apkmirror_com-medrectangle-3-0
+apkmirror.com##.google-ad-leaderboard
+apkmirror.com###ai_widget-2
+@@||adplatform-cdn.baemin.com^
+@@||adcr.naver.com^
+@@||sdk.airbridge.io^
+lawandgood.com##body,html:style(overflow:auto!important)
+lawandgood.com##.css-zq0qxn
+meeco.kr#$#ins.adsbygoogle[data-ad-client]:not([data-matched-content-ui-type]) { height: 0 !important; padding: 0 !important }
+google.co.jp,google.co.kr,google.co.uk,google.com##div#bottomads
+google.co.jp,google.co.kr,google.co.uk,google.com##div#tads
+v.daum.net##ins[data-ad-unit]
+a-ha.io##.md\:tw-pr-4.md\:tw-w-3\/4 > div > div:nth-of-type(3)
+a-ha.io##[class='a-modal modalAppInstallSMS -is-mobile']
+a-ha.io##[class='channel-talk-button']
+a-ha.io##body,html:style(overflow:auto!important)
+##.g-sides-gaps.b-cookies-informer
+ddengle.com##.rd_ft
+ddengle.com##.clear.rd_ft_nav
+##.mobile_ad
+nocutnews.co.kr##.headline.inews_b
+nocutnews.co.kr##.banner.pchang_b
+nocutnews.co.kr###app
+nocutnews.co.kr##.app.con_b
+nocutnews.co.kr##.swiper-container-android.swiper-container-horizontal.ban_swiper
+nocutnews.co.kr##[src^="https://file2.nocutnews.co.kr/nocut/news/main/"]
+a-ha.io##.expert-section-wrapper
+##[class='app-install-wrapper']
+gparts.co.kr##[src^="/images/mobile/favor_nologin.png"]
+yozm.wishket.com###p5-total-sub-navigation-wrapper
+yozm.wishket.com##[src^="/media/news/banner/banner_image_banner_bottom_zJxDOzo.png"]
+##.slideInUp.normal.animated.type-popup.news-letter-guide-section
+yozm.wishket.com##.news-statistics
+yozm.wishket.com##figure.image_resized.image
+##.nplt.adpost_with_thumbnail.m.adpost_m.adpost_index.adpost
+###fmad_wrapper_0
+###af1bf77d
+favicon.ico$domain=adcr.naver.com,important
+ruliweb.com###push_bar
+##li.js_ad_sponsor.new_sk.bbs_list_thumbnail.none-border
+##[href^="https://event.dcinside.com/"]
+spls.io##.footer_banner
+kookje.co.kr###con_text > div
+newstong.co.kr##body,html:style(overflow:auto!important)
+newstong.co.kr###ContentPlaceHolder1_divTomatoAd
+newstong.co.kr###app_newstong
+yonhapnewstv.co.kr##div.sticky.section
+mediawatch.kr##hr.skin_margin
+mediawatch.kr##.con_primary > div > div:nth-of-type(6)
+mediawatch.kr##[src^="https://www.mediawatch.kr/data/banner/"]
+hani.co.kr##div.ArticleDetailContent_adWrap__0rx1e
+hani.co.kr##.ArticleBottomFixedAd_adFixed__BxOVt
+hani.co.kr##.Layout_wrapper__j95M_ > .BaseAd_showText__XI2aG.BaseAd_adWrapper__4XXD0
+brand.naver.com##.bd_3A4n8
+wemakeprice.com##article.with_prd_wrap
+coupang.com###bottom-sheet-nudge
+shopping.naver.com##.openMainButton_open_main_button__o_GNf.nv-openmain
+shopping.naver.com##.loadingBar_responsive_product_wrap___kYZY
+shopping.naver.com##.shoppingHomeResponsive_banner__Lofrg
+shopping.naver.com##.shoppingHomeResponsive_today_benefit__WTaG2.shoppingHomeResponsive_module__N_oCS
+en.seoul.co.kr##table
+###rollingAdDiv
+###appInstallPopupContainer
+s3.us-west-2.amazonaws.com^
+##.app-banner-layer
+missycoupons.com###mc_dialog_overlay
+missycoupons.com###mc_dialog
+###adtester-container-101
+apkmirror.com###ezmobfooter
+##.root--ujvuu
+m.blog.naver.com##.MobileProfile_root__6vpe9
+m.blog.naver.com##.undefined.MobileProfile_root__6vpe9
+gsshop.com##.banner-area
+dcinside.com##.nft-area
+nocutnews.co.kr###naver_banner
+nocutnews.co.kr###pnlContent > div
+##.ccm-banner-signin-container
+coupang.com##[src^="/img1a.coupangcdn.com/"]
+asmr-labo.com###content-bottom
+asmr-labo.com###content-top
+ero-anime.website###content-bottom
+ero-anime.website###content-top
+afpvuznhenuc.com^
+##iframe[style='width: 280px !important; height: 280px !important; margin: 0px auto !important; padding: 0px; border: none; outline: none; box-sizing: border-box; position: fixed; color-scheme: none; inset: auto 0px 0px !important; overflow: hidden; z-index: 2147483647; display: block;']
+biz.newdaily.co.kr##[class='notifyjs-corner']
+montmena.top^
+ads.bullionyield.com^
+###ts_ad_native_nn5fo
+##.header-ad
+tcafe2a.com##div.blank-btm15.first-widget.sction-first-widget
+suto.co.kr###wrapper > div:nth-of-type(2)
+suto.co.kr##.focus_event_title
+###adhere
+biz.chosun.com##div.box--hidden-md.box--hidden-lg.box--bg-undefined.box--pad-none.width--100.box--margin-none.\|.sm.flex-chain-wrapper
+##[src^="https://naverwebtoon-phinf.pstatic.net/"]
+###ad004
+###ad008
+###ad007
+##.subscription_fee
+pressian.com##div.banner
+polinews.co.kr##div.clearfix > div.marbtm-10.banner_box
+###ad_body
+###publish_link_widget_iframe_main
+biz.chosun.com##.box--hidden-md.box--hidden-lg.box--bg-undefined.box--pad-none.width--100.box--margin-bottom-md.\|.sm.flex-chain-wrapper
+biz.chosun.com##.grid__col--sm-12.grid__col--md-12.grid__col--lg-4.\|.layout__article-right-rail.layout__article-col > .box--hidden-md.box--hidden-lg.box--bg-grey-20.box--pad-bottom-md.box--pad-top-md.width--100.box--margin-top-md.\|.sm.flex-chain-wrapper
+biz.chosun.com##.box--hidden-md.box--hidden-lg.box--bg-grey-20.box--pad-bottom-md.box--pad-top-md.width--100.box--margin-bottom-md.\|.sm.flex-chain-wrapper
+yeongnam.com##.m-yntv-wrap
+asiatime.co.kr##.cover_story.col-lg-3
+asiatime.co.kr###swiper-wrapper-html > .swiper-slide-active.swiper-slide
+###livereAd
+lawtimes.co.kr##.e1vjatge6.css-1fs6yir
+lawtimes.co.kr##.eqcril20.css-10yb2if
+vop.co.kr###cheer
+vop.co.kr##.editor_arcad_right
+mediatoday.co.kr###SupportForm_id
+##.ad_zone01
+kwnews.co.kr##[src^="/upload/"]
+segye.com###wps_layout1_box22
+###lv-ad-54
+kmib.co.kr##.tp_cnt > div.nwbx02
+hani.co.kr##.gudokArea
+hani.co.kr##.birth_35th.support-content-2st
+hani.co.kr###news-box-ad_1120483
+joongang.co.kr###ad_art_content_btm
+seoul.co.kr###Article > div.Line_gray
+seoul.co.kr##.C_wrap > div:nth-of-type(3)
+bigkinds.or.kr##.ft-banner
+yna.co.kr##.bg11.aside-box02
+yna.co.kr##.aside-box01
+##.font-size17.view-page.article-veiw-body > div.clearfix
+##[src^="/bannerpop/"]
+###login-banner-box
+tmon.co.kr##.deallist_scroll_wrap
+tmon.co.kr##.type02.banner_area
+isnssdk.com^
+##.power_link_top_wrap
+###ZMXYz7KmW
+##[src^="https://arca.live/"]
+###newsview_promotion_banner
+###free-genre-list > li:nth-of-type(5)
+###free-genre-list > li:nth-of-type(4)
+###free-genre-list > li:nth-of-type(3)
+###free-genre-list > li:nth-of-type(2)
+###free-genre-list > li:nth-of-type(1)
+###news_content > .component_ad.component
+###ad_art_content_mid
+journalist.or.kr###container > div:nth-of-type(6)
+megalodon.jp##.col-md-6.col-sm-6.col-xs-12
+comic.naver.com##li:nth-of-type(146)
+dcinside.com###nick_tipbox_reple
+dcinside.com###img_num_tipbox
+track.lacunads.com^
+event.lemmamedia.com^
+chosun.com##.sub_ad1
+chosun.com##.edit_bottom > ul > li:nth-of-type(1)
+gmarket.co.kr##.box__banner--ad-top
+waifu2x.udp.jp##.dmm-games
+terabox.com##.ad-eggplant
+danawa.com##.box__header
+danawa.com##.box__contents
+##.footer_v3.footer_v2
+arm.c.appier.net
+##.horizonBanner
+##.cmBanner
+##.combineBanner.couponBanner
+###prd_appbanner
+###powerLink
+##.powerlinkWrapper
+##div.shopBanner
+###div_new_power_link_top
+###groobeeWrap
+buondua.com##.content.article > div:nth-of-type(6)
+buondua.com##.content.article > div:nth-of-type(5)
+buondua.com##.content.article > div:nth-of-type(7)
+buondua.com##.view-item.container.main-body > div:nth-of-type(4)
+buondua.com##.view-item.container.main-body > div:nth-of-type(3)
+buondua.com##.bottom-articles > div:nth-of-type(2)
+buondua.com##.bottom-articles > div:nth-of-type(3)
+buondua.com##.article-fulltext > div:nth-of-type(2)
+buondua.com##.article-fulltext > div:nth-of-type(1)
+#@#[class^="div-gpt-ad"]
+mt.co.kr###cont > div:nth-of-type(5)
+khan.co.kr###bnNewsletter
+khan.co.kr##.wrap_bnr_shortcut
+##.id_tour.grid_m
+##.sub_ad1
+##.box__banner--ad-top
+###bnr_float
+##.gf-slot-g2
+##div.gf-bottom-panel-left
+###wrap_banner_billboard
+###s-rank-musume
+ad-img.gmarket.com^
+fundingchoicesmessages.google.com^
+##.ty2.cmem_btn_area
+##div.hidden-xs.hidden-sm > .widget-title
+##.widget-box > div.row
+gmarket.co.kr##.box__couponswiper-wrap
+megabox.co.kr###pageBanner
+tnc3-bjlgy.zijieapi.com^
+bi-sensors.duxiaoman.com^
+sf3-fe-tos.pglstatp-toutiao.com^
+toblog.ctobsnssdk.com^
+dxmpay.com^
+paydxm.com^
+cache.z.qingting.fm^
+s.iaudienc.com^
+jprtb.c.appier.net^
+atrack.yeahdsp.com^
+api.gov-img.site^
+event.admize.io^
+prov9.studio^
+byteoversea.com^
+antennagom.com##.entry-header > .bx-adc
+||app.dcinside.com/api/_ad_search_link*.php
+||json2.dcinside.com/json0/app_ad_setting.php^
+hentaiera.com##.bblocktop
+work.go.kr##.ban-content
+www.apkmirror.com###adtester-container-120
+www.apkmirror.com###adtester-container-122
+tmon.co.kr##[src^="https://tm-ipx.qoo10cdn.com/imageproxy?src=http://img3.tmon.kr/cdn4/deals/2022/10/17/14028404306/14028404306_image_bfbb1.jpg&scw=640"]
+tmon.co.kr##[src^="https://tm-ipx.qoo10cdn.com/imageproxy?src=http://img2.tmon.kr/cdn4/deals/2022/10/17/14028404306/14028404306_image_d69b3.jpg&scw=640"]
+tmon.co.kr##[src^="https://tm-ipx.qoo10cdn.com/imageproxy?src=http://img1.tmon.kr/cdn4/deals/2022/10/18/14033850390/14033850390_image_c9ac9.jpg&scw=640"]
+hankookilbo.com##.end-top-banner
+ulogs.umengcloud.com^
+10000recipe.com###obx_foodname_goods
+10000recipe.com###obx_ingredient_goods
+10000recipe.com###obx_foodname_goods_top
+10000recipe.com###wtgSticky
+11st.co.kr##.c-banner-import
+adrta.com^
+mimint.co.kr###MiMintBottomViewLayer
+www.newstong.co.kr###ContentPlaceHolder1_divAlertADText
+news.nate.com###module_ssul
+www.lcnews.co.kr##.relation
+www.lcnews.co.kr###AD168188080534
+sedaily.com##hr.g360
+sedaily.com##.col-right > hr
+sedaily.com##.mythiell-mid-container2
+etoday.co.kr##section:nth-of-type(9)
+etoday.co.kr##section:nth-of-type(5)
+etoday.co.kr##section:nth-of-type(3)
+etoday.co.kr##.mboxcont.DetailView_Wrap > section:nth-of-type(1)
+etnews.com###dcamp_ad_2192
+etnews.com##p > .mythiell-mid
+www.asiatime.co.kr##.m_article_ad_06
+www.asiatime.co.kr##.under_ad01
+www.asiatime.co.kr##.m_article_ad_04
+www.asiatime.co.kr##div.m_article_ad_05
+www.asiatime.co.kr##.m_article_ad_02
+www.asiatime.co.kr##.m_article_ad_01
+inews24.com##main > .news-share
+inews24.com##section > .inews-view > div:nth-of-type(1)
+daedamo.com###ad_banner_bbs_view_bottom
+arca.live##.mt-4.user-activites
+www.teamblind.com##.ad-h250
+www.teamblind.com##.is_mobile.hire-banner
+www.teamblind.com##div.is_mobile.ad_banner
+www.teamblind.com##.hire-ad.topic-list
+www.teamblind.com##.hire-ad.article
+www.teamblind.com##.aside > .is_mobile.ad_banner
+www.teamblind.com##.wrapped > div.is_mobile.ad_banner
+tmon.co.kr##.space_bottom
+tmon.co.kr##div.deallist_scroll_wrap
+dcinside.com##.view-btm-con
+dcinside.com##.outside-search-box
+inven.co.kr###module_gamepc
+inven.co.kr###module_market
+inven.co.kr##.show-ads.home-header
+##div.ad-adsense.js-ad-slot
+##.ad-box-auto
+###adtester-container-145
+###adtester-container-144
+hasha.in##.bg-hasha-1-l.rounded.text.p-5 > div:nth-of-type(3)
+##.stl1.ad-banner-wrap
+###main_popup
+##.top_ad
+ruliweb.com###bbs_reading_m
+dcinside.com###nick_tipbox
+vod2.myqcloud.com
+mt.co.kr###cont > div:nth-of-type(4)
+api.ezadsystem.com^
+www.chemicalnews.co.kr##.user-aside
+www.chemicalnews.co.kr##.font-size17.view-page.article-veiw-body > div.clearfix
+cafe.daum.net###bizBoardAd
+###mdnw-appInstallPopup-container
+shopping.naver.com###secondDynamicAd
+###ads
+naver.com##.id_comp_napp_banner.grid1
+naver.com##.id_comp_shortform_new.grid1
+naver.com###MM_SEARCH_SHOP_LIVE
+msearch.shopping.naver.com##.brandAdList_brand_ad__bFKJn
+search.danawa.com###shoppingPlanArea
+search.danawa.com###adSmartArea2
+###adssmall3
+##div.ad400_100
+waifu2x.udp.jp##.all-page > div:nth-of-type(4)
+waifu2x.udp.jp##.all-page > div:nth-of-type(2)
+comic.naver.com##.type_cut.tag_area
+comic.naver.com##.desc_bottom
+comic.naver.com##.relate_item
+arca.live##body,html:style(overflow:auto!important)
+arca.live##.show.modal-backdrop
+arca.live##.show.modal
+##.tt-sns-icon-size-big.tt-sns-icon-alignment-left.tt-share-entry-with-sns.tt-plugin
+###loading
+fmkorea.com##.politics_pop_main.pop_main
+###adtester-container-114
+###adtester-container-115
+###adtester-container-116
+hasha.in##cloudflare-app
+hasha.in##div.max-w-full.flex-col.flex.mb-6.mx-auto.w-fit
+fmkorea.com##li.pop0.clear.notice
+fmkorea.com##.m_navi_maxlines.fmkorea_m_navi
+fmkorea.com##.li_best2_hotdeal1.li_best2_pop1.li
+ppss.kr##[src^="https://was.livere.me/enlipleAD"]
+shopping.naver.com##.RecommendSection_recommend_section__EkhAJ
+##.AppInstallBanner
+comic.naver.com##.ppl_story_inner
+www.resizepixel.com##.align-items-center.justify-content-end.flex-column.d-md-flex.d-none
+www.apkmirror.com###ez-content-blocker-container
+hitomi.la##.top-content
+pcc.siren24.com##.bn
+gelbooru.com##video
+www.lotteon.com##.g2zkyn2ddp4.moduleContainer.productBanner
+n.news.naver.com##._PERSIST_META._OFFICE_HEADLINE._FLICKING_WRAP.optional_hidden.as_type_border.rankingnews
+news.naver.com##.pc_hidden._MY_CHANNEL_OFFICE_WRAP
+news.naver.com###_COMMENT_NOTICE
+news.naver.com##.more_news2.box1
+news.naver.com##.media_end_linked
+news.naver.com##.copyright
+news.naver.com##.media_end_categorize
+news.naver.com###channelBanner
+news.naver.com##.promotion
+www.lotteon.com##.productTopAdvertisement
+www.lotteon.com##.module-lineType2.moduleContainer.recommendAnchor.productListInfo.advertisementProductList
+www.lotteon.com##.moduleContainer.productAdvertisementWrap.advertisementProduct
+www.yuhanshop.co.kr###dtr_bn
+hani.co.kr###news-box-ad_1099311
+www.donga.com###adbox_main02
+www.donga.com##.bann_wrap
+www.donga.com###adbox_main01
+www.joongang.co.kr##.md_hidden.lg_hidden.house_banner.aside.index_random.jaswiper_controller.jswiper
+www.joongang.co.kr##.contents > div.row > .col_lg3
+www.joongang.co.kr##.login_proposal.plotting_banner
+www.joongang.co.kr###joongang_plus_card_area
+www.joongang.co.kr##.for_login.plotting_mini.login_proposal.plotting_popup.layer_dark_popup
+www.chosun.com##.grid__col--sm-12.grid__col--md-12.grid__col--lg-4.\|.layout__article-right-rail.layout__article-col > .box--hidden-md.box--hidden-lg.box--bg-grey-20.box--pad-bottom-md.box--pad-top-md.width--100.box--margin-top-xxl-3.\|.sm.flex-chain-wrapper
+www.chosun.com##.box--hidden-md.box--hidden-lg.box--bg-grey-20.box--pad-bottom-md.box--pad-top-md.width--100.box--margin-top-md.\|.sm.flex-chain-wrapper
+www.chosun.com##.grid__col--sm-12.grid__col--md-12.grid__col--lg-8.\|.layout__article-main.layout__article-col > div.box--hidden-md.box--hidden-lg.box--bg-grey-20.box--pad-bottom-md.box--pad-top-md.width--100.\|.sm.flex-chain-wrapper
+www.chosun.com##.box--hidden-md.box--hidden-lg.box--bg-undefined.box--pad-bottom-xl.box--pad-top-xl.width--100.\|.sm.flex-chain-wrapper
+www.chosun.com###adbay_floatingid
+www.chosun.com###a2
+comic.naver.com###flex_ad_story
+health.chosun.com##.sub_article > div:nth-of-type(4)
+##div.revenue_unit_wrap
+shopping.naver.com##._3Dm1DKzZbC
+ppomppu.co.kr###wrap > .community-board
+gmarket.co.kr##.box_dot_main
+www.100ssd.co.kr##div.auto-marbtm-5.auto-martop-5.banner_box:nth-of-type(3)
+www.100ssd.co.kr##div.auto-marbtm-5.auto-martop-5.banner_box:nth-of-type(1)
+www.100ssd.co.kr##div.auto-marbtm-5.auto-martop-5.banner_box:nth-of-type(2)
+shopping.naver.com##._3pOCc5o0Qc
+comic.naver.com###ct > .item_area
+wetransfer.com##.cookie-banner--full-panel.cookie-banner
+cafe24.com##body,html:style(overflow:auto!important)
+www.apkmirror.com##div.listWidget:nth-of-type(6)
+www.apkmirror.com##.ains-apkm_apk_page_top
+www.apkmirror.com##div.listWidget:nth-of-type(8)
+www.apkmirror.com##.ains-apkm_release_page_middle
+www.apkmirror.com##.ains-apkm_release_page_below_description_above_downloads
+www.apkmirror.com##.ains-apkm_release_page_top
+www.apkmirror.com###primary > div > .ai_widget.widget
+www.apkmirror.com##div.appRow:nth-of-type(24)
+www.apkmirror.com##div.appRow:nth-of-type(16)
+www.apkmirror.com##div.appRow:nth-of-type(8)
+www.apkmirror.com##.ains-apkm_billboard_top
+www.apkmirror.com##.widget_appmanager_sppostswidget.widget
+##li.mobile.post-knojybvjr2i
+www.zpat.info##.w3-grey.w3-center.w3-container
+www.resizepixel.com##.align-items-center.justify-content-center.flex-column.d-sm-none.d-flex
+www.resizepixel.com##.my-2.mx-1.align-items-center.justify-content-end.flex-column.d-sm-none.d-flex
+pay.naver.com##.BottomAds_article__3qVXQ
+auction.co.kr##.vip_detail_wrap > .vip-togetheritems
+auction.co.kr##.plcc_banner
+auction.co.kr###cpcAdHybridTopBanner
+11st.co.kr###brandingBannerDiv
+11st.co.kr##.dtl_ad_txt
+11st.co.kr###hotclick-recm-container-top
+11st.co.kr###carrier_539
+gmarket.co.kr##.box__banner--da.box__banner--ad-top
+gmarket.co.kr##.plcc_banner
+gmarket.co.kr###vipPowerClickTopLayer
+anilife.life##.css-banner
+gall.dcinside.com##.block-disable
+gsshop.com##section.box-shade.box-wrap
+comic.naver.com##[href^="https://m.comic.naver.com/webtoon/detail"] > .loaded.lazy.fx2
+imgur.io##.Ad-adhesive--bottom.Ad-adhesive
+##.story_banner
+danawa.com##.main_banner_mysp
+danawa.com##.main_shoppingmall
+danawa.com##.main-top-banner
+danawa.com###mdnw-main-contents-container
+###hd_pop
+cafe.daum.net###mAside
+dcinside.com##.layer-bottom-popup
+www.apkmirror.com##.show.set-max-width.container-fluid
+zdnet.co.kr##div.ad_tag:nth-of-type(7)
+sbs.co.kr##.vediomug_nextmov_w
+biz.chosun.com##div.raw-html:nth-of-type(2)
+biz.chosun.com##.grid__col--sm-12.grid__col--md-12.grid__col--lg-4.\|.layout__article-right-rail.layout__article-col > .raw-html
+biz.chosun.com##div.box--hidden-md.box--hidden-lg.box--bg-grey-20.box--pad-bottom-md.box--pad-top-md.width--100.box--margin-top-md.\|.sm.flex-chain-wrapper:nth-of-type(19)
+biz.chosun.com##div.box--hidden-md.box--hidden-lg.box--bg-grey-20.box--pad-bottom-md.box--pad-top-md.width--100.box--margin-top-md.\|.sm.flex-chain-wrapper:nth-of-type(16)
+anilife.live##[class='imgwrap']
+www.arkbooks.net##.ls-fullscreen-wrapper
+hellven.net###fr
+blog.naver.com##[class='video_carousel__oxnV0']
+blog.naver.com##[class='market_carousel__KKWgx']
+cafe.naver.com##[class='home_section visit_cafe']
+cafe.naver.com##button[style='position:relative;padding:0 13px 0 53px;height:42px;background:#fff;border:1px solid #dcdcdc;white-space:nowrap;']
+cafe.naver.com##[class='home_section recommend']
+cafe.naver.com##[class='home_section_promotion']
+pay.naver.com##.BottomAds_article__3NboX
+imgur.io##div.Album-image > .Assembly.sas.Ad
+ppomppu.co.kr##[id='bbs_notice']
+ppomppu.co.kr##[id='bbs_inform']
+ppomppu.co.kr##[class='news-board']
+ppomppu.co.kr##[class='bbsList board-thumb board-sponsor']
+ppomppu.co.kr##[class='none-border bbs_list_thumbnail new_sk']
+ppomppu.co.kr##.btn-wrapper
+ppomppu.co.kr###tabs-container
+ppomppu.co.kr##.bbsList_new2
