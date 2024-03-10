@@ -1,3 +1,10 @@
+lotteon.com##div.more_middle_round_button.moduleWrap
+lotteon.com##div.banner_text_2by2.moduleWrap
+lotteon.com##[src^="https://contents.lotteon.com/display/fopopup/"]
+lotteon.com##.v--modal-overlay
+lotteon.com##.v--modal-background-click
+buy.m.11st.co.kr##.c-banner-point
+buy.m.11st.co.kr###sectionFavorAd
 11st.co.kr##.base > .l-grid
 11st.co.kr##.c-banner__img
 lotteon.com##.moduleContainer.productBanner
