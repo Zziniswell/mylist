@@ -2,6 +2,10 @@
 ! Version: 1.03
 ! Description: my adblock filter
 
+namu.wiki##aside
+namu.wiki###tach8LulB
+namu.wiki###app > main > div:nth-of-type(3) > div > div:has-text(reCAPTCHA)
+namu.wiki###app > main > div:nth-of-type(3) > div > div:has-text(namu.wiki)
 m.11st.co.kr###vueWrapper > div > div > div.l-grid
 m.11st.co.kr##.c-donation
 m.11st.co.kr##.c-floating--flexible.fadeIn.modal-center.animated.c-floating
