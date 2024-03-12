@@ -1,11 +1,17 @@
 ! Title: mylist
-! Version: 1.03
+! Version: 1.06
 ! Description: my adblock filter
 
+arca.live##.wrap
+arca.live###newsRank
+namu.wiki###app > main > div:nth-of-type(2) > div > div:has-text(최근 변경)
+arca.live##.ml-lg-0.ml-auto.navbar-nav.nav > .d-sm-block.d-none.nav-item
+board.namu.wiki###newsRank
+namu.wiki###app > main > div:nth-of-type(2) > div > div:has-text(나무뉴스)
+namu.wiki###app > main > div:nth-of-type(3)
+@@*$stealth=dpi,domain=~startpage.com/
 namu.wiki##aside
 namu.wiki###tach8LulB
-namu.wiki###app > main > div:nth-of-type(3) > div > div:has-text(reCAPTCHA)
-namu.wiki###app > main > div:nth-of-type(3) > div > div:has-text(namu.wiki)
 m.11st.co.kr###vueWrapper > div > div > div.l-grid
 m.11st.co.kr##.c-donation
 m.11st.co.kr##.c-floating--flexible.fadeIn.modal-center.animated.c-floating
@@ -72,7 +78,6 @@ tmon.co.kr##[src^="https://img4.tmon.kr/cdn3/"]
 mnews.sbs.co.kr##.page_promotion_banner
 brunch.co.kr##.round.svelte-ykkyeb.floatting_banner
 brunch.co.kr##[src^="https://t1.daumcdn.net/brunch/static/banner/"]
-namu.wiki###app > main > div:nth-of-type(2) > div:has-text(최근 변경)
 naver.com##.widget_wrap
 ###_LEVERAGE_PROMOTION
 ###MM_search_container
