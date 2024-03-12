@@ -1,3 +1,13 @@
+! Title: mylist
+! Version: 1.03
+! Description: my adblock filter
+
+m.11st.co.kr###vueWrapper > div > div > div.l-grid
+m.11st.co.kr##.c-donation
+m.11st.co.kr##.c-floating--flexible.fadeIn.modal-center.animated.c-floating
+m.11st.co.kr##[src^="http://cdn.011st.com/browsing/space/banner/2024/3/8/2403081542419701151_159.png"]
+lotteon.com##div > .flag
+lotteon.com##.banner_expandable.moduleWrap
 lotteon.com##div.more_middle_round_button.moduleWrap
 lotteon.com##div.banner_text_2by2.moduleWrap
 lotteon.com##[src^="https://contents.lotteon.com/display/fopopup/"]
