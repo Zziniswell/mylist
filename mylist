@@ -2,6 +2,9 @@
 ! Version: 1.09
 ! Description: my adblock filter
 
+m.11st.co.kr##.c-lazyload--ratio_2x1.c-lazyload
+m.11st.co.kr##[src^="https://cdn.011st.com/brand/"]
+m.11st.co.kr##.c-ad-benefit
 ###bqHHPb > div > div > div > div > div > div > div > div:has-text(쇼핑)
 ###bqHHPb > div > div > div > div > div > div > div > div:has-text(금융)
 ###bqHHPb > div > div > div > div > div > div > div > div:has-text(도서)
@@ -37,7 +40,6 @@ namu.wiki###tach8LulB
 m.11st.co.kr###vueWrapper > div > div > div.l-grid
 m.11st.co.kr##.c-donation
 m.11st.co.kr##.c-floating--flexible.fadeIn.modal-center.animated.c-floating
-m.11st.co.kr##[src^="http://cdn.011st.com/browsing/space/banner/2024/3/8/2403081542419701151_159.png"]
 lotteon.com##div > .flag
 lotteon.com##.banner_expandable.moduleWrap
 lotteon.com##div.more_middle_round_button.moduleWrap
@@ -564,7 +566,6 @@ auction.co.kr###cpcAdHybridTopBanner
 11st.co.kr###brandingBannerDiv
 11st.co.kr##.dtl_ad_txt
 11st.co.kr###hotclick-recm-container-top
-11st.co.kr###carrier_539
 gmarket.co.kr##.box__banner--da.box__banner--ad-top
 gmarket.co.kr##.plcc_banner
 gmarket.co.kr###vipPowerClickTopLayer
