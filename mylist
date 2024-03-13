@@ -1,18 +1,21 @@
 ! Title: mylist
-! Version: 1.08
+! Version: 1.09
 ! Description: my adblock filter
 
 ###bqHHPb > div > div > div > div > div > div > div > div:has-text(쇼핑)
 ###bqHHPb > div > div > div > div > div > div > div > div:has-text(금융)
 ###bqHHPb > div > div > div > div > div > div > div > div:has-text(도서)
 ###bqHHPb > div > div > div > div > div > div > div > div:has-text(지도)
-###appbar > div > div > div > div > div > div > div > div > div > div > div > div > div:has-text(쇼핑)
-###appbar > div > div > div > div > div > div > div > div > div > div > div > div > div:has-text(금융)
-###appbar > div > div > div > div > div > div > div > div > div > div > div > div > div:has-text(도서)
-###appbar > div > div > div > div > div > div > div > div > div > div > div > div > div:has-text(지도)
+google.*###appbar > div > div > div > div > div > div > div > div > div > div > div > div > div:has-text(쇼핑)
+google.*###appbar > div > div > div > div > div > div > div > div > div > div > div > div > div:has-text(금융)
+google.*###appbar > div > div > div > div > div > div > div > div > div > div > div > div > div:has-text(도서)
+google.*###appbar > div > div > div > div > div > div > div > div > div > div > div > div > div:has-text(지도)
+google.*###arc-srp_110 > div > div:has-text(books.google.co.kr)
 ###arc-srp_110 > div > div:has-text(books.google.co.kr)
+google.*###arc-srp_120 > div > div:has-text(books.google.co.kr)
 ###arc-srp_120 > div > div:has-text(books.google.co.kr)
 google.com###main > div > div:has-text(인기 급상승 검색어)
+google.*###rso > div:has-text(Shorts)
 ###rso > div:has-text(Shorts)
 google.com##li:nth-of-type(1)
 google.com##li:nth-of-type(2)
@@ -99,8 +102,8 @@ mnews.sbs.co.kr##.page_promotion_banner
 brunch.co.kr##.round.svelte-ykkyeb.floatting_banner
 brunch.co.kr##[src^="https://t1.daumcdn.net/brunch/static/banner/"]
 naver.com##.widget_wrap
-###_LEVERAGE_PROMOTION
-###MM_search_container
+naver.com###_LEVERAGE_PROMOTION
+naver.com###MM_search_container
 newspim.com##.banbox
 newspim.com##div.w_mar15
 newspim.com##p > div
@@ -120,10 +123,10 @@ kioskfo.asungcorp.com###rolling_main
 kr.investing.com##.text-white.font-arial.bg-\[\#191919\].w-full.z-50.fixed.bottom-0.py-4.px-5
 yahoo.co.jp###stream > div
 dcinside.com##.reco-icon-box
-##.inven-float-alarm
+inven.co.kr##.inven-float-alarm
 m.pay.naver.com##.commonBannerMobileArea
 shopping.naver.com##._popupBanner_is_dockbar_UNkLC._popupBanner_popup_banner_2M7Rt
-###top-banner
+luckyquiz3.blogspot.com###top-banner
 luckyquiz3.blogspot.com##body,html:style(overflow:auto!important)
 luckyquiz3.blogspot.com###main_popup2
 luckyquiz3.blogspot.com###pbt
@@ -144,6 +147,7 @@ msearch.shopping.naver.com##.active.android.reactiveForyouScroll_foryou_reaction
 msearch.shopping.naver.com##.intentReview_intent_best_review__mAwb4
 msearch.shopping.naver.com##.list_item
 devuploads.com,djxmaza.in,miuiflash.com,thecubexguide.com$@$link[rel="manifest"]
+$@$link[rel="manifest"]
 ppomppu.co.kr##.biz.results_board
 dcinside.com##.app-info-ban
 dcinside.com##.detail-top-lst > li:nth-of-type(1)
@@ -174,16 +178,13 @@ gamingdeputy.com##.code-block-4.code-block
 gamingdeputy.com##.anchor-ad-d-mobile
 gamingdeputy.com##div.code-block-3.code-block
 ||widgets.outbrain.com^$domain=apkmirror.com
-mobil.pcwelt.de,apkmirror.com##.OUTBRAIN
+apkmirror.com##.OUTBRAIN
 apkmirror.com##.appRow.showOnMobileAndTablet
 apkmirror.com#$##ezmob-wrapper { display: none !important; } apkmirror.com#$#html > body { padding-top: 0 !important; }
 rooreez.com##.__active.__is-popup.__ld-ac-block
 apkmirror.com###div-gpt-ad-apkmirror_com-medrectangle-3-0
 apkmirror.com##.google-ad-leaderboard
 apkmirror.com###ai_widget-2
-@@||adplatform-cdn.baemin.com^
-@@||adcr.naver.com^
-@@||sdk.airbridge.io^
 lawandgood.com##body,html:style(overflow:auto!important)
 lawandgood.com##.css-zq0qxn
 meeco.kr#$#ins.adsbygoogle[data-ad-client]:not([data-matched-content-ui-type]) { height: 0 !important; padding: 0 !important }
@@ -213,8 +214,6 @@ yozm.wishket.com##[src^="/media/news/banner/banner_image_banner_bottom_zJxDOzo.p
 yozm.wishket.com##.news-statistics
 yozm.wishket.com##figure.image_resized.image
 ##.nplt.adpost_with_thumbnail.m.adpost_m.adpost_index.adpost
-###fmad_wrapper_0
-###af1bf77d
 favicon.ico$domain=adcr.naver.com,important
 ruliweb.com###push_bar
 ##li.js_ad_sponsor.new_sk.bbs_list_thumbnail.none-border
@@ -314,8 +313,6 @@ tmon.co.kr##.deallist_scroll_wrap
 tmon.co.kr##.type02.banner_area
 isnssdk.com^
 ##.power_link_top_wrap
-###ZMXYz7KmW
-##[src^="https://arca.live/"]
 ###newsview_promotion_banner
 ###free-genre-list > li:nth-of-type(5)
 ###free-genre-list > li:nth-of-type(4)
@@ -338,17 +335,17 @@ waifu2x.udp.jp##.dmm-games
 terabox.com##.ad-eggplant
 danawa.com##.box__header
 danawa.com##.box__contents
-##.footer_v3.footer_v2
+danawa.com##.footer_v3.footer_v2
 arm.c.appier.net
-##.horizonBanner
-##.cmBanner
-##.combineBanner.couponBanner
-###prd_appbanner
-###powerLink
-##.powerlinkWrapper
-##div.shopBanner
-###div_new_power_link_top
-###groobeeWrap
+danawa.com##.horizonBanner
+danawa.com##.cmBanner
+danawa.com##.combineBanner.couponBanner
+danawa.com###prd_appbanner
+danawa.com###powerLink
+danawa.com##.powerlinkWrapper
+danawa.com##div.shopBanner
+danawa.com###div_new_power_link_top
+danawa.com###groobeeWrap
 buondua.com##.content.article > div:nth-of-type(6)
 buondua.com##.content.article > div:nth-of-type(5)
 buondua.com##.content.article > div:nth-of-type(7)
@@ -457,7 +454,7 @@ hasha.in##.bg-hasha-1-l.rounded.text.p-5 > div:nth-of-type(3)
 ##.top_ad
 ruliweb.com###bbs_reading_m
 dcinside.com###nick_tipbox
-vod2.myqcloud.com
+vod2.myqcloud.com^
 mt.co.kr###cont > div:nth-of-type(4)
 api.ezadsystem.com^
 www.chemicalnews.co.kr##.user-aside
@@ -483,11 +480,12 @@ arca.live##body,html:style(overflow:auto!important)
 arca.live##.show.modal-backdrop
 arca.live##.show.modal
 ##.tt-sns-icon-size-big.tt-sns-icon-alignment-left.tt-share-entry-with-sns.tt-plugin
-###loading
+tistory.com###loading
 fmkorea.com##.politics_pop_main.pop_main
 ###adtester-container-114
 ###adtester-container-115
 ###adtester-container-116
+hasha.in##.gpdcNM
 hasha.in##cloudflare-app
 hasha.in##div.max-w-full.flex-col.flex.mb-6.mx-auto.w-fit
 fmkorea.com##li.pop0.clear.notice
@@ -591,7 +589,6 @@ biz.chosun.com##div.raw-html:nth-of-type(2)
 biz.chosun.com##.grid__col--sm-12.grid__col--md-12.grid__col--lg-4.\|.layout__article-right-rail.layout__article-col > .raw-html
 biz.chosun.com##div.box--hidden-md.box--hidden-lg.box--bg-grey-20.box--pad-bottom-md.box--pad-top-md.width--100.box--margin-top-md.\|.sm.flex-chain-wrapper:nth-of-type(19)
 biz.chosun.com##div.box--hidden-md.box--hidden-lg.box--bg-grey-20.box--pad-bottom-md.box--pad-top-md.width--100.box--margin-top-md.\|.sm.flex-chain-wrapper:nth-of-type(16)
-anilife.live##[class='imgwrap']
 www.arkbooks.net##.ls-fullscreen-wrapper
 hellven.net###fr
 blog.naver.com##[class='video_carousel__oxnV0']
