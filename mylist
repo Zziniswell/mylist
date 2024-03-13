@@ -5,18 +5,12 @@
 m.11st.co.kr##.c-lazyload--ratio_2x1.c-lazyload
 m.11st.co.kr##[src^="https://cdn.011st.com/brand/"]
 m.11st.co.kr##.c-ad-benefit
-###bqHHPb > div > div > div > div > div > div > div > div:has-text(쇼핑)
-###bqHHPb > div > div > div > div > div > div > div > div:has-text(금융)
-###bqHHPb > div > div > div > div > div > div > div > div:has-text(도서)
-###bqHHPb > div > div > div > div > div > div > div > div:has-text(지도)
-google.*###appbar > div > div > div > div > div > div > div > div > div > div > div > div > div:has-text(쇼핑)
-google.*###appbar > div > div > div > div > div > div > div > div > div > div > div > div > div:has-text(금융)
-google.*###appbar > div > div > div > div > div > div > div > div > div > div > div > div > div:has-text(도서)
-google.*###appbar > div > div > div > div > div > div > div > div > div > div > div > div > div:has-text(지도)
-google.*###arc-srp_110 > div > div:has-text(books.google.co.kr)
-###arc-srp_110 > div > div:has-text(books.google.co.kr)
-google.*###arc-srp_120 > div > div:has-text(books.google.co.kr)
-###arc-srp_120 > div > div:has-text(books.google.co.kr)
+google.com###bqHHPb > div > div > div > div > div > div > div > div:has-text(쇼핑)
+google.com###bqHHPb > div > div > div > div > div > div > div > div:has-text(금융)
+google.com###bqHHPb > div > div > div > div > div > div > div > div:has-text(도서)
+google.com###bqHHPb > div > div > div > div > div > div > div > div:has-text(지도)
+google.com###arc-srp_110 > div > div:has-text(books.google.co.kr)
+google.com###arc-srp_120 > div > div:has-text(books.google.co.kr)
 google.com###main > div > div:has-text(인기 급상승 검색어)
 google.*###rso > div:has-text(Shorts)
 ###rso > div:has-text(Shorts)
@@ -336,17 +330,16 @@ waifu2x.udp.jp##.dmm-games
 terabox.com##.ad-eggplant
 danawa.com##.box__header
 danawa.com##.box__contents
-danawa.com##.footer_v3.footer_v2
 arm.c.appier.net
-danawa.com##.horizonBanner
-danawa.com##.cmBanner
-danawa.com##.combineBanner.couponBanner
-danawa.com###prd_appbanner
-danawa.com###powerLink
-danawa.com##.powerlinkWrapper
-danawa.com##div.shopBanner
-danawa.com###div_new_power_link_top
-danawa.com###groobeeWrap
+m.shop.interpark.com##.horizonBanner
+m.shop.interpark.com##.cmBanner
+m.shop.interpark.com##.combineBanner.couponBanner
+m.shop.interpark.com###prd_appbanner
+interpark.com###powerLink
+interpark.com##.powerlinkWrapper
+interpark.com##div.shopBanner
+interpark.com###div_new_power_link_top
+interpark.com###groobeeWrap
 buondua.com##.content.article > div:nth-of-type(6)
 buondua.com##.content.article > div:nth-of-type(5)
 buondua.com##.content.article > div:nth-of-type(7)
