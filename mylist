@@ -32,7 +32,6 @@ arca.live##.ml-lg-0.ml-auto.navbar-nav.nav > .d-sm-block.d-none.nav-item
 board.namu.wiki###newsRank
 namu.wiki###app > main > div:nth-of-type(2) > div > div:has-text(나무뉴스)
 namu.wiki###app > main > div:nth-of-type(3)
-@@*$stealth=dpi,domain=~startpage.com/
 namu.wiki##aside
 namu.wiki###tach8LulB
 m.11st.co.kr###vueWrapper > div > div > div.l-grid
