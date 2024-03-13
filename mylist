@@ -1,7 +1,23 @@
 ! Title: mylist
-! Version: 1.06
+! Version: 1.08
 ! Description: my adblock filter
 
+google.com###appbar > div > div > div > div > div > div > div > div > div > div > div > div > div:has-text(쇼핑)
+google.com###appbar > div > div > div > div > div > div > div > div > div > div > div > div > div:has-text(금융)
+google.com###appbar > div > div > div > div > div > div > div > div > div > div > div > div > div:has-text(도서)
+google.com###appbar > div > div > div > div > div > div > div > div > div > div > div > div > div:has-text(지도)
+google.com###arc-srp_110 > div > div:has-text(books.google.co.kr)
+google.com###arc-srp_120 > div > div:has-text(books.google.co.kr)
+google.com###main > div > div:has-text(인기 급상승 검색어)
+google.com###rso > div:has-text(Shorts)
+google.com##li:nth-of-type(1)
+google.com##li:nth-of-type(2)
+google.com##li:nth-of-type(3)
+google.com##li:nth-of-type(4)
+google.com##li:nth-of-type(5)
+google.com##li:nth-of-type(6)
+google.com##li:nth-of-type(7)
+arca.live###defaultImage
 arca.live##.wrap
 arca.live###newsRank
 namu.wiki###app > main > div:nth-of-type(2) > div > div:has-text(최근 변경)
