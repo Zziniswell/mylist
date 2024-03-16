@@ -1,8 +1,9 @@
 ! Title: mylist
-! Version: 1.101
+! Version: 1.102
 ! Description: my adblock filter
 
-
+||wcs.naver.com^
+||graph.facebook.com^
 11st.co.kr##.c-footer__app-download
 akmall.com##article.aad_group
 akmall.com##.top_fix.tab_group.week_event
@@ -41,8 +42,6 @@ google.com###bqHHPb > div > div > div > div > div > div > div > div:has-text(지
 google.com###arc-srp_110 > div > div:has-text(books.google.co.kr)
 google.com###arc-srp_120 > div > div:has-text(books.google.co.kr)
 google.com###main > div > div:has-text(인기 급상승 검색어)
-google.*###rso > div:has-text(Shorts)
-###rso > div:has-text(Shorts)
 google.com##li:nth-of-type(1)
 google.com##li:nth-of-type(2)
 google.com##li:nth-of-type(3)
