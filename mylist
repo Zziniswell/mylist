@@ -1,7 +1,22 @@
 ! Title: mylist
-! Version: 1.100
+! Version: 1.101
 ! Description: my adblock filter
 
+
+11st.co.kr##.c-footer__app-download
+akmall.com##article.aad_group
+akmall.com##.top_fix.tab_group.week_event
+akmall.com##[src^="https://photo.akmall.com/image4/banner/42/"]
+akmall.com##.toast_banner
+akmall.com###mainPopupAll
+akmall.com##[src^="https://m.akmall.com/"]
+e-himart.co.kr###goodsBanner
+mw.wemakeprice.com##.footbnr_wrap
+musinsa.com##body,html:style(overflow:auto!important)
+musinsa.com###footerCommonLayout
+29cm.co.kr##.css-b1ntip
+29cm.co.kr##[href^="https://29cm.onelink.me/1080201211"]
+29cm.co.kr##.ng-star-inserted.app-install-layer-wrapper
 apkpure.net##.share-open
 apkpure.net##.float-button-second.float-request-notification-permission-button
 apkpure.net##div.right
@@ -55,8 +70,8 @@ lotteon.com##div.banner_text_2by2.moduleWrap
 lotteon.com##[src^="https://contents.lotteon.com/display/fopopup/"]
 lotteon.com##.v--modal-overlay
 lotteon.com##.v--modal-background-click
-buy.m.11st.co.kr##.c-banner-point
-buy.m.11st.co.kr###sectionFavorAd
+11st.co.kr##.c-banner-point
+11st.co.kr###sectionFavorAd
 11st.co.kr##.base > .l-grid
 11st.co.kr##.c-banner__img
 lotteon.com##.moduleContainer.productBanner
