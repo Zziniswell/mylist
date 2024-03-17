@@ -2,6 +2,12 @@
 ! Version: 1.104
 ! Description: my adblock filter
 
+new-m.pay.naver.com##.Footer-module_inner__J3glp
+new-m.pay.naver.com##.ADRewardBannerImage_article__3Hh-U
+shopping.naver.com##.nv-openmain
+shopping.naver.com##div[class*="loadingBar_responsive_loading_bar__"]
+shopping.naver.com##.N\=a\:fot\.shortcut
+shopping.naver.com##div[class*="lookingProductResponsive_looking_product_responsive__"]
 shopping.naver.com##div[class*="shoppingHomeResponsive_banner__"]
 shopping.naver.com##div[class*="themeResponsive_theme_responsive__"]
 shopping.naver.com##div[class*="marketResponsive_market_responsive__"]
@@ -22,7 +28,6 @@ new-m.pay.naver.com##div[class*="BottomAdBanner_"]
 new-m.pay.naver.com##div[class*="BottomAds_article__"]
 shopping.naver.com##div[class*="foryouOptOutResponsive_foryou_opt_out_responsive"]
 shopping.naver.com##div[class*="forYouCurationMobile_for_you_curation_mobile__"]
-shopping.naver.com##div[class*="loadingBar_responsive_loading_bar__"]
 msearch.shopping.naver.com##div[class*="brandAdList_brand_ad__"]
 msearch.shopping.naver.com##div[class*="brandRecommend_brand_recommend__"]
 msearch.shopping.naver.com##div[class*="shoppingLiveShortClip_shopping_live_short_clip__"]
@@ -139,9 +144,6 @@ lawtalk.co.kr##.qna-list__ad-google-preview
 lawtalk.co.kr##qna-article-banner
 lawtalk.co.kr##.opened.bottom-sheet-wrap > .with-mobile-bottom-tab.bottom-sheet
 imweb.me##.shop-banner._shop_banner.shop_banner.text-center
-new-m.pay.naver.com##div[class*="Footer-module_inner__"]
-new-m.pay.naver.com##div[class*="ADRewardBannerImage_article__"]
-new-m.pay.naver.com##div[class*="BottomModalNoticeWrapper-module_article__"
 pay.naver.com##body,html:style(overflow:auto!important)
 instiz.net###dv-14
 instiz.net###dv-3
