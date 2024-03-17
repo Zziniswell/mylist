@@ -2,6 +2,12 @@
 ! Version: 1.102
 ! Description: my adblock filter
 
+||tuvfsy-launches.appsflyersdk.com^
+||tuvfsy-inapps.appsflyersdk.com^
+||v5xtqhwslrakzbcouzehmhqzlxphxixt.lockincomp.com^
+||tuvfsy-cdn-settings.appsflyersdk.com^
+||sessions.bugsnag.com^
+||location.microsoft.com^
 ||wcs.naver.com^
 ||graph.facebook.com^
 11st.co.kr##.c-footer__app-download
@@ -248,7 +254,6 @@ coupang.com###bottom-sheet-nudge
 en.seoul.co.kr##table
 ###rollingAdDiv
 ###appInstallPopupContainer
-s3.us-west-2.amazonaws.com^
 ##.app-banner-layer
 missycoupons.com###mc_dialog_overlay
 missycoupons.com###mc_dialog
@@ -267,11 +272,11 @@ asmr-labo.com###content-bottom
 asmr-labo.com###content-top
 ero-anime.website###content-bottom
 ero-anime.website###content-top
-afpvuznhenuc.com^
+||afpvuznhenuc.com^
 ##iframe[style='width: 280px !important; height: 280px !important; margin: 0px auto !important; padding: 0px; border: none; outline: none; box-sizing: border-box; position: fixed; color-scheme: none; inset: auto 0px 0px !important; overflow: hidden; z-index: 2147483647; display: block;']
 biz.newdaily.co.kr##[class='notifyjs-corner']
 montmena.top^
-ads.bullionyield.com^
+||ads.bullionyield.com^
 ###ts_ad_native_nn5fo
 ##.header-ad
 tcafe2a.com##div.blank-btm15.first-widget.sction-first-widget
@@ -318,7 +323,7 @@ yna.co.kr##.aside-box01
 ###login-banner-box
 tmon.co.kr##.deallist_scroll_wrap
 tmon.co.kr##.type02.banner_area
-isnssdk.com^
+||isnssdk.com^
 ##.power_link_top_wrap
 ###newsview_promotion_banner
 ###free-genre-list > li:nth-of-type(5)
@@ -333,8 +338,8 @@ megalodon.jp##.col-md-6.col-sm-6.col-xs-12
 comic.naver.com##li:nth-of-type(146)
 dcinside.com###nick_tipbox_reple
 dcinside.com###img_num_tipbox
-track.lacunads.com^
-event.lemmamedia.com^
+||track.lacunads.com^
+||event.lemmamedia.com^
 chosun.com##.sub_ad1
 chosun.com##.edit_bottom > ul > li:nth-of-type(1)
 gmarket.co.kr##.box__banner--ad-top
@@ -373,27 +378,27 @@ khan.co.kr##.wrap_bnr_shortcut
 ##div.gf-bottom-panel-left
 ###wrap_banner_billboard
 ###s-rank-musume
-ad-img.gmarket.com^
-fundingchoicesmessages.google.com^
+||ad-img.gmarket.com^
+||fundingchoicesmessages.google.com^
 ##.ty2.cmem_btn_area
 ##div.hidden-xs.hidden-sm > .widget-title
 ##.widget-box > div.row
 gmarket.co.kr##.box__couponswiper-wrap
 megabox.co.kr###pageBanner
-tnc3-bjlgy.zijieapi.com^
-bi-sensors.duxiaoman.com^
-sf3-fe-tos.pglstatp-toutiao.com^
-toblog.ctobsnssdk.com^
-dxmpay.com^
-paydxm.com^
+||tnc3-bjlgy.zijieapi.com^
+||bi-sensors.duxiaoman.com^
+||sf3-fe-tos.pglstatp-toutiao.com^
+||toblog.ctobsnssdk.com^
+||dxmpay.com^
+||paydxm.com^
 cache.z.qingting.fm^
-s.iaudienc.com^
+||s.iaudienc.com^
 jprtb.c.appier.net^
-atrack.yeahdsp.com^
+||atrack.yeahdsp.com^
 api.gov-img.site^
 event.admize.io^
 prov9.studio^
-byteoversea.com^
+||byteoversea.com^
 antennagom.com##.entry-header > .bx-adc
 ||app.dcinside.com/api/_ad_search_link*.php
 ||json2.dcinside.com/json0/app_ad_setting.php^
@@ -405,13 +410,13 @@ tmon.co.kr##[src^="https://tm-ipx.qoo10cdn.com/imageproxy?src=http://img3.tmon.k
 tmon.co.kr##[src^="https://tm-ipx.qoo10cdn.com/imageproxy?src=http://img2.tmon.kr/cdn4/deals/2022/10/17/14028404306/14028404306_image_d69b3.jpg&scw=640"]
 tmon.co.kr##[src^="https://tm-ipx.qoo10cdn.com/imageproxy?src=http://img1.tmon.kr/cdn4/deals/2022/10/18/14033850390/14033850390_image_c9ac9.jpg&scw=640"]
 hankookilbo.com##.end-top-banner
-ulogs.umengcloud.com^
+||ulogs.umengcloud.com^
 10000recipe.com###obx_foodname_goods
 10000recipe.com###obx_ingredient_goods
 10000recipe.com###obx_foodname_goods_top
 10000recipe.com###wtgSticky
 11st.co.kr##.c-banner-import
-adrta.com^
+||adrta.com^
 mimint.co.kr###MiMintBottomViewLayer
 www.newstong.co.kr###ContentPlaceHolder1_divAlertADText
 news.nate.com###module_ssul
@@ -460,9 +465,9 @@ hasha.in##.bg-hasha-1-l.rounded.text.p-5 > div:nth-of-type(3)
 ##.top_ad
 ruliweb.com###bbs_reading_m
 dcinside.com###nick_tipbox
-vod2.myqcloud.com^
+||vod2.myqcloud.com^
 mt.co.kr###cont > div:nth-of-type(4)
-api.ezadsystem.com^
+||api.ezadsystem.com^
 www.chemicalnews.co.kr##.user-aside
 www.chemicalnews.co.kr##.font-size17.view-page.article-veiw-body > div.clearfix
 cafe.daum.net###bizBoardAd
