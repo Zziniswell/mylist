@@ -1,9 +1,19 @@
-! Title: mylist
-! Version: 1.104
-! Description: my adblock filter
+! Title: myrule
+! Version: 1.105
+! Description: the set of adblock rules I just use
 
+11st.co.kr##.t_banner
+11st.co.kr###vueWrapper > div > div > div.l-grid
+11st.co.kr##.w-scroll-css
+11st.co.kr##div > div:nth-of-type(6)
+11st.co.kr##.c-footer__app-download
+11st.co.kr###dtl01 > div.l-grid
+11st.co.kr###brandingAdImg
+11st.co.kr##.dtl_ad_txt
+11st.co.kr###hotclick-recm-container-top
+11st.co.kr##.base > .l-grid > .l-grid__row
+11st.co.kr###banner
 new-m.pay.naver.com##.Footer-module_inner__J3glp
-new-m.pay.naver.com##.ADRewardBannerImage_article__3Hh-U
 shopping.naver.com##.nv-openmain
 shopping.naver.com##div[class*="loadingBar_responsive_loading_bar__"]
 shopping.naver.com##.N\=a\:fot\.shortcut
@@ -44,7 +54,6 @@ suto.co.kr##ul > [href^="https://www.suto.co.kr/bbs/link.php"]
 ||location.microsoft.com^
 ||wcs.naver.com^
 ||graph.facebook.com^
-11st.co.kr##.c-footer__app-download
 akmall.com##article.aad_group
 akmall.com##.top_fix.tab_group.week_event
 akmall.com##[src^="https://photo.akmall.com/image4/banner/42/"]
@@ -63,14 +72,10 @@ apkpure.net##.float-button-second.float-request-notification-permission-button
 apkpure.net##div.right
 m.youtube.com##ytm-pivot-bar-item-renderer:nth-of-type(2)
 m.youtube.com##.rich-section-content-wrapper
-11st.co.kr###banner
 www.namu.wiki##div:has(> div > div > div > a[href='#']:not([target]) > *:not(svg):only-child)
 ||dcinside.com/*/app_ad_
 ||www.facebook.com^$app=com.dcinside.app
 ||smart.mobvista.com^$app=com.dcinside.app
-m.11st.co.kr##.c-lazyload--ratio_2x1.c-lazyload
-m.11st.co.kr##[src^="https://cdn.011st.com/brand/"]
-m.11st.co.kr##.c-ad-benefit
 google.com###bqHHPb > div > div > div > div > div > div > div > div:has-text(쇼핑)
 google.com###bqHHPb > div > div > div > div > div > div > div > div:has-text(금융)
 google.com###bqHHPb > div > div > div > div > div > div > div > div:has-text(도서)
@@ -95,9 +100,6 @@ namu.wiki###app > main > div:nth-of-type(2) > div > div:has-text(나무뉴스)
 namu.wiki###app > main > div:nth-of-type(3)
 namu.wiki##aside
 namu.wiki###tach8LulB
-11st.co.kr###vueWrapper > div > div > div.l-grid
-11st.co.kr##.c-donation
-11st.co.kr##.c-floating--flexible.fadeIn.modal-center.animated.c-floating
 lotteon.com##div > .flag
 lotteon.com##.banner_expandable.moduleWrap
 lotteon.com##div.more_middle_round_button.moduleWrap
@@ -105,10 +107,6 @@ lotteon.com##div.banner_text_2by2.moduleWrap
 lotteon.com##[src^="https://contents.lotteon.com/display/fopopup/"]
 lotteon.com##.v--modal-overlay
 lotteon.com##.v--modal-background-click
-11st.co.kr##.c-banner-point
-11st.co.kr###sectionFavorAd
-11st.co.kr##.base > .l-grid
-11st.co.kr##.c-banner__img
 lotteon.com##.moduleContainer.productBanner
 lotteon.com##.moduleContainer.pd-middle-ad-product
 lotteon.com##.bannerUnit
@@ -432,7 +430,6 @@ hankookilbo.com##.end-top-banner
 10000recipe.com###obx_ingredient_goods
 10000recipe.com###obx_foodname_goods_top
 10000recipe.com###wtgSticky
-11st.co.kr##.c-banner-import
 ||adrta.com^
 mimint.co.kr###MiMintBottomViewLayer
 www.newstong.co.kr###ContentPlaceHolder1_divAlertADText
@@ -585,9 +582,6 @@ www.resizepixel.com##.my-2.mx-1.align-items-center.justify-content-end.flex-colu
 auction.co.kr##.vip_detail_wrap > .vip-togetheritems
 auction.co.kr##.plcc_banner
 auction.co.kr###cpcAdHybridTopBanner
-11st.co.kr###brandingBannerDiv
-11st.co.kr##.dtl_ad_txt
-11st.co.kr###hotclick-recm-container-top
 gmarket.co.kr##.box__banner--da.box__banner--ad-top
 gmarket.co.kr##.plcc_banner
 gmarket.co.kr###vipPowerClickTopLayer
