@@ -1,7 +1,14 @@
 ! Title: myrule
-! Version: 1.105
+! Version: 1.106
 ! Description: the set of adblock rules I just use
 
+||firebaselogging.googleapis.com^
+||firebaselogging-pa.googleapis.com^
+||ingest.sentry.io^
+||www.baidu.com^$app=com.app.aiimglarger
+google.com###lb
+||graph.facebook.com^$important
+hitomi.la##.HoFLYiCi
 11st.co.kr##.t_banner
 11st.co.kr###vueWrapper > div > div > div.l-grid
 11st.co.kr##.w-scroll-css
@@ -410,7 +417,7 @@ megabox.co.kr###pageBanner
 ||s.iaudienc.com^
 ||jprtb.c.appier.net^
 ||atrack.yeahdsp.com^
-api.gov-img.site^
+||api.gov-img.site^
 ||event.admize.io^
 ||prov9.studio^
 ||byteoversea.com^
@@ -479,7 +486,7 @@ hasha.in##.bg-hasha-1-l.rounded.text.p-5 > div:nth-of-type(3)
 ##.top_ad
 ruliweb.com###bbs_reading_m
 dcinside.com###nick_tipbox
-||vod2.myqcloud.com^
+||vod2.myqcloud.com^$app=com.coupang.mobile
 mt.co.kr###cont > div:nth-of-type(4)
 ||api.ezadsystem.com^
 www.chemicalnews.co.kr##.user-aside
