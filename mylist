@@ -1,8 +1,36 @@
 ! Title: myrule
-! Version: 1.106
+! Version: 1.108
 ! Description: the set of rules I just use
 
-##.topAD > .txc-textbox
+plus.wemakeprice.com###div_download_app_layer
+duckduckgo.com##[class*="legacyMobileHomepage_isFixed__"]
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=tistory.com
+wallpaperflare.com##.cc-color-override-2132809765.cc-bottom.cc-theme-edgeless.cc-type-info.cc-floating.cc-window
+4kwallpapers.com##.scrollToTopBtn
+##.ad_corner
+##.ad_right_top
+##.ad_top
+yande.re###div[class^="a"]
+yande.re##[src^="https://delivery.2d.net.co/"]
+@@||linkprice.com/$stealth
+@@||gmarket.*,auction.*,ssg.*,11st.*,adguard.org/$stealth=useragent
+@@||brand.naver.com/$stealth=3p-cookie|useragent
+@@||pay.naver.com/$stealth=3p-cookie|useragent
+@@||adison.co/$stealth=3p-cookie|useragent
+@@||financial.pstatic.net/$stealth=3p-cookie|useragent
+apkmirror.com###bottom-slider
+apkmirror.com###appmanager_sppostswidget-2
+apkmirror.com$$script[wildcard="*document.querySelector*.classList.add*.innerHTML*"][min-length="200"][max-length="700"]
+apkmirror.com#%#//scriptlet('remove-class', 'disabled', 'a.downloadButton.disabled')
+apkmirror.com#%#//scriptlet('abort-on-stack-trace', 'document.querySelectorAll', '/Object\.visibleEl[\s\S]*?onload|Object\.vE/')
+apkmirror.com#$#.accent_bg.downloadButton { pointer-events: auto !important; cursor: pointer !important; }
+apkmirror.com#$#body .ains { display: block !important; position: absolute !important; left: -3000px !important; }
+apkmirror.com#$#body .gooWidget { display: block !important; position: absolute !important; left: -3000px !important; height: 310px !important; }
+apkmirror.com#$#.gooWidget.google-ad-square { display: block !important; }
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=apkmirror.com
+@@||startpage.com^$stealth=dpi
+@@||onelink.me^$stealth=dpi
+startpage.com###home-top-header
 ||firebaselogging.googleapis.com^
 ||firebaselogging-pa.googleapis.com^
 ||ingest.sentry.io^
@@ -118,7 +146,6 @@ lotteon.com##.module-lineType1.moduleContainer.detailContents.insrAdvertisement
 lotteon.com##.module-lineType1.moduleContainer.recommendAnchor.productListInfo.advertisementProductList
 lotteon.com##.moveTop
 lotteon.com##.goBack
-instiz.net##.hot_under
 waifu2x.net##.all-page > div:nth-of-type(5)
 ##.dmm-games
 waifu2x.net##.all-page > div:nth-of-type(3)
@@ -127,11 +154,7 @@ manatoki*.net###viewcomment
 m.brand.naver.com###mobile-customBannerWidget1
 m.brand.naver.com###mobile-customBannerWidget
 cafe.naver.com##.bottom.banner_add
-cafe.naver.com##.bottom.banner_add
 forum.vivaldi.net###reconnect-alert
-@@||pics.auction.co.kr/mobile/sprite/vip/sprite_vipcoupon.png$domain=script.auction.co.kr
-@@||eventnet.auction.co.kr/VipCouponEventPlatform/GetNewVipCouponEventList$domain=mitem.auction.co.kr
-@@||mitem.auction.co.kr/vip/couponGettingBannerListV2^
 @@||mitem.gmarket.co.kr/Item/CouponGettingBannerListV2^
 chat.openai.com##.text-token-text-primary.p-3.bg-blue-950.justify-between.items-center.w-full.flex.dark
 tistory.com##article > center
@@ -147,10 +170,6 @@ lawtalk.co.kr##qna-article-banner
 lawtalk.co.kr##.opened.bottom-sheet-wrap > .with-mobile-bottom-tab.bottom-sheet
 imweb.me##.shop-banner._shop_banner.shop_banner.text-center
 pay.naver.com##body,html:style(overflow:auto!important)
-instiz.net###dv-14
-instiz.net###dv-3
-instiz.net##div.foot
-instiz.net###dv-20
 tmon.co.kr##.banner_offer
 tmon.co.kr##[src^="https://img4.tmon.kr/cdn3/"]
 mnews.sbs.co.kr##.page_promotion_banner
@@ -197,9 +216,6 @@ $@$link[rel="manifest"]
 ppomppu.co.kr##.biz.results_board
 dcinside.com##.app-info-ban
 dcinside.com##.detail-top-lst > li:nth-of-type(1)
-apkmirror.com##.ains-apkm_outbrain_ad
-apkmirror.com###adtester-container-103
-apkmirror.com##.google-ad-square-sidebar
 fmkorea.com##.naver_ad_wrapper_list_normal.ad_wrapper
 shopping.naver.com###firstDynamicAd
 fmkorea.com##.show_folded_notice.pop0.notice
@@ -219,14 +235,7 @@ cafe.naver.com##.article_content_se > div:nth-of-type(3)
 gamingdeputy.com##.code-block-4.code-block
 gamingdeputy.com##.anchor-ad-d-mobile
 gamingdeputy.com##div.code-block-3.code-block
-||widgets.outbrain.com^$domain=apkmirror.com
-apkmirror.com##.OUTBRAIN
-apkmirror.com##.appRow.showOnMobileAndTablet
-apkmirror.com#$##ezmob-wrapper { display: none !important; } apkmirror.com#$#html > body { padding-top: 0 !important; }
 rooreez.com##.__active.__is-popup.__ld-ac-block
-apkmirror.com###div-gpt-ad-apkmirror_com-medrectangle-3-0
-apkmirror.com##.google-ad-leaderboard
-apkmirror.com###ai_widget-2
 lawandgood.com##body,html:style(overflow:auto!important)
 lawandgood.com##.css-zq0qxn
 google.co.jp,google.co.kr,google.co.uk,google.com##div#bottomads
@@ -258,7 +267,7 @@ yozm.wishket.com##figure.image_resized.image
 favicon.ico$domain=adcr.naver.com,important
 ruliweb.com###push_bar
 ##li.js_ad_sponsor.new_sk.bbs_list_thumbnail.none-border
-dcinside.com[href^="https://event.dcinside.com/"]
+dcinside.com##[href^="https://event.dcinside.com/"]
 spls.io##.footer_banner
 kookje.co.kr###con_text > div
 newstong.co.kr##body,html:style(overflow:auto!important)
@@ -280,7 +289,6 @@ en.seoul.co.kr##table
 missycoupons.com###mc_dialog_overlay
 missycoupons.com###mc_dialog
 ###adtester-container-101
-apkmirror.com###ezmobfooter
 ##.root--ujvuu
 gsshop.com##.banner-area
 dcinside.com##.nft-area
@@ -369,7 +377,7 @@ danawa.com##.box__contents
 arm.c.appier.net
 m.shop.interpark.com##.horizonBanner
 m.shop.interpark.com##.cmBanner
-m.shop.interpark.com##.combineBanner.couponBanner
+shop.interpark.com##.combineBanner.couponBanner
 m.shop.interpark.com###prd_appbanner
 interpark.com###powerLink
 interpark.com##.powerlinkWrapper
@@ -423,8 +431,6 @@ antennagom.com##.entry-header > .bx-adc
 ||json2.dcinside.com/json0/app_ad_setting.php^
 hentaiera.com##.bblocktop
 work.go.kr##.ban-content
-www.apkmirror.com###adtester-container-120
-www.apkmirror.com###adtester-container-122
 tmon.co.kr##[src^="https://tm-ipx.qoo10cdn.com/imageproxy?src=http://img3.tmon.kr/cdn4/deals/2022/10/17/14028404306/14028404306_image_bfbb1.jpg&scw=640"]
 tmon.co.kr##[src^="https://tm-ipx.qoo10cdn.com/imageproxy?src=http://img2.tmon.kr/cdn4/deals/2022/10/17/14028404306/14028404306_image_d69b3.jpg&scw=640"]
 tmon.co.kr##[src^="https://tm-ipx.qoo10cdn.com/imageproxy?src=http://img1.tmon.kr/cdn4/deals/2022/10/18/14033850390/14033850390_image_c9ac9.jpg&scw=640"]
@@ -523,7 +529,6 @@ ppss.kr##[src^="https://was.livere.me/enlipleAD"]
 ##.AppInstallBanner
 comic.naver.com##.ppl_story_inner
 www.resizepixel.com##.align-items-center.justify-content-end.flex-column.d-md-flex.d-none
-www.apkmirror.com###ez-content-blocker-container
 hitomi.la##.top-content
 pcc.siren24.com##.bn
 gelbooru.com##video
@@ -567,18 +572,6 @@ www.100ssd.co.kr##div.auto-marbtm-5.auto-martop-5.banner_box:nth-of-type(2)
 comic.naver.com###ct > .item_area
 wetransfer.com##.cookie-banner--full-panel.cookie-banner
 cafe24.com##body,html:style(overflow:auto!important)
-www.apkmirror.com##div.listWidget:nth-of-type(6)
-www.apkmirror.com##.ains-apkm_apk_page_top
-www.apkmirror.com##div.listWidget:nth-of-type(8)
-www.apkmirror.com##.ains-apkm_release_page_middle
-www.apkmirror.com##.ains-apkm_release_page_below_description_above_downloads
-www.apkmirror.com##.ains-apkm_release_page_top
-www.apkmirror.com###primary > div > .ai_widget.widget
-www.apkmirror.com##div.appRow:nth-of-type(24)
-www.apkmirror.com##div.appRow:nth-of-type(16)
-www.apkmirror.com##div.appRow:nth-of-type(8)
-www.apkmirror.com##.ains-apkm_billboard_top
-www.apkmirror.com##.widget_appmanager_sppostswidget.widget
 ##li.mobile.post-knojybvjr2i
 www.zpat.info##.w3-grey.w3-center.w3-container
 www.resizepixel.com##.align-items-center.justify-content-center.flex-column.d-sm-none.d-flex
@@ -602,7 +595,6 @@ danawa.com###mdnw-main-contents-container
 ###hd_pop
 cafe.daum.net###mAside
 dcinside.com##.layer-bottom-popup
-www.apkmirror.com##.show.set-max-width.container-fluid
 zdnet.co.kr##div.ad_tag:nth-of-type(7)
 sbs.co.kr##.vediomug_nextmov_w
 biz.chosun.com##div.raw-html:nth-of-type(2)
