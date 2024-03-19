@@ -1,7 +1,11 @@
 ! Title: myrule
-! Version: 1.109
+! Version: 1.110
 ! Description: the set of rules I just use
 
+@@||ssg.com/$stealth=useragent
+@@||11st.co.kr/$stealth=useragent
+@@||reports.adguard.com/$stealth=useragent
+@@||gmarket.*/$stealth=useragent
 *.com,*.co.kr##.floating_banner
 lawtimes.co.kr##[src^="https://image.lawtimes.co.kr/"]
 etoday.co.kr##.ContentsWrap > section:nth-of-type(1)
@@ -18,7 +22,7 @@ wallpaperflare.com##.cc-color-override-2132809765.cc-bottom.cc-theme-edgeless.cc
 yande.re###div[class^="a"]
 yande.re##[src^="https://delivery.2d.net.co/"]
 @@||linkprice.com/$stealth
-@@||gmarket.*,auction.*,ssg.*,11st.*,adguard.org/$stealth=useragent
+@@||auction.co.kr/$stealth=useragent
 @@||brand.naver.com/$stealth=3p-cookie|useragent
 @@||pay.naver.com/$stealth=3p-cookie|useragent
 @@||adison.co/$stealth=3p-cookie|useragent
