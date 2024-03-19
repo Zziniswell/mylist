@@ -1,7 +1,8 @@
 ! Title: myrule
 ! Version: 1.106
-! Description: the set of adblock rules I just use
+! Description: the set of rules I just use
 
+##.topAD > .txc-textbox
 ||firebaselogging.googleapis.com^
 ||firebaselogging-pa.googleapis.com^
 ||ingest.sentry.io^
@@ -83,10 +84,6 @@ www.namu.wiki##div:has(> div > div > div > a[href='#']:not([target]) > *:not(svg
 ||dcinside.com/*/app_ad_
 ||www.facebook.com^$app=com.dcinside.app
 ||smart.mobvista.com^$app=com.dcinside.app
-google.com###bqHHPb > div > div > div > div > div > div > div > div:has-text(쇼핑)
-google.com###bqHHPb > div > div > div > div > div > div > div > div:has-text(금융)
-google.com###bqHHPb > div > div > div > div > div > div > div > div:has-text(도서)
-google.com###bqHHPb > div > div > div > div > div > div > div > div:has-text(지도)
 google.com###arc-srp_110 > div > div:has-text(books.google.co.kr)
 google.com###arc-srp_120 > div > div:has-text(books.google.co.kr)
 google.com###main > div > div:has-text(인기 급상승 검색어)
