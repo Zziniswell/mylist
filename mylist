@@ -1,8 +1,13 @@
 ! Title: myrule
-! Version: 1.108
+! Version: 1.109
 ! Description: the set of rules I just use
 
-plus.wemakeprice.com###div_download_app_layer
+*.com,*.co.kr##.floating_banner
+lawtimes.co.kr##[src^="https://image.lawtimes.co.kr/"]
+etoday.co.kr##.ContentsWrap > section:nth-of-type(1)
+hani.co.kr##.ArticleDetail_supportBannerWrap__uC5gF
+hani.co.kr##div[class*="Ad_"]
+wemakeprice.com###div_download_app_layer
 duckduckgo.com##[class*="legacyMobileHomepage_isFixed__"]
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=tistory.com
 wallpaperflare.com##.cc-color-override-2132809765.cc-bottom.cc-theme-edgeless.cc-type-info.cc-floating.cc-window
@@ -80,7 +85,7 @@ msearch.shopping.naver.com##div[class*="shoppingLiveShortClip_shopping_live_shor
 msearch.shopping.naver.com##div[class*="recommendTrend_aitems_recommend__"]
 msearch.shopping.naver.com##div[class*="active.android.reactiveForyouScroll_"]
 m.cafe.naver.com##.CafeAppBanner
-suto.co.kr##.prime_banner.google_ad2
+suto.co.kr##.prime_banner
 suto.co.kr##ul > [href^="https://www.suto.co.kr/bbs/link.php"]
 ||tuvfsy-launches.appsflyersdk.com^
 ||tuvfsy-inapps.appsflyersdk.com^
@@ -155,11 +160,10 @@ m.brand.naver.com###mobile-customBannerWidget1
 m.brand.naver.com###mobile-customBannerWidget
 cafe.naver.com##.bottom.banner_add
 forum.vivaldi.net###reconnect-alert
-@@||mitem.gmarket.co.kr/Item/CouponGettingBannerListV2^
 chat.openai.com##.text-token-text-primary.p-3.bg-blue-950.justify-between.items-center.w-full.flex.dark
 tistory.com##article > center
 tistory.com###article > center
-brunch.co.kr##.floating_banner
+##.floating_banner
 kr.dynakodes.com##.privacy-policy-moudle
 arca.live##.mt-2.recaptcha-privacy
 mfront.wd.wemakeprice.com##.type2.aiplus_wrap
@@ -212,7 +216,6 @@ lotteon.com###modals-container > .v--modal-overlay
 lotteon.com###modals-container > .v--modal-overlay > .v--modal-background-click
 msearch.shopping.naver.com##.list_item
 devuploads.com,djxmaza.in,miuiflash.com,thecubexguide.com$@$link[rel="manifest"]
-$@$link[rel="manifest"]
 ppomppu.co.kr##.biz.results_board
 dcinside.com##.app-info-ban
 dcinside.com##.detail-top-lst > li:nth-of-type(1)
@@ -222,7 +225,7 @@ fmkorea.com##.show_folded_notice.pop0.notice
 fmkorea.com#$##bd_capture { background: none!important; }
 blog.naver.com##body,html:style(overflow:auto!important)
 blog.naver.com##.popup_da_wrap
-ruliweb.com###fixed_ad
+###fixed_ad
 apkpure.net##.app-list.sa-all-div.list > .res.search-telegram
 apkpure.net##.list-margin.sa-all-div.list
 apkpure.net##.showBadge.apk-list-double-line
@@ -260,13 +263,10 @@ a-ha.io##.expert-section-wrapper
 gparts.co.kr##[src^="/images/mobile/favor_nologin.png"]
 yozm.wishket.com###p5-total-sub-navigation-wrapper
 yozm.wishket.com##[src^="/media/news/banner/banner_image_banner_bottom_zJxDOzo.png"]
-##.slideInUp.normal.animated.type-popup.news-letter-guide-section
 yozm.wishket.com##.news-statistics
 yozm.wishket.com##figure.image_resized.image
-##.nplt.adpost_with_thumbnail.m.adpost_m.adpost_index.adpost
 favicon.ico$domain=adcr.naver.com,important
 ruliweb.com###push_bar
-##li.js_ad_sponsor.new_sk.bbs_list_thumbnail.none-border
 dcinside.com##[href^="https://event.dcinside.com/"]
 spls.io##.footer_banner
 kookje.co.kr###con_text > div
@@ -277,9 +277,6 @@ yonhapnewstv.co.kr##div.sticky.section
 mediawatch.kr##hr.skin_margin
 mediawatch.kr##.con_primary > div > div:nth-of-type(6)
 mediawatch.kr##[src^="https://www.mediawatch.kr/data/banner/"]
-hani.co.kr##div.ArticleDetailContent_adWrap__0rx1e
-hani.co.kr##.ArticleBottomFixedAd_adFixed__BxOVt
-hani.co.kr##.Layout_wrapper__j95M_ > .BaseAd_showText__XI2aG.BaseAd_adWrapper__4XXD0
 wemakeprice.com##article.with_prd_wrap
 coupang.com###bottom-sheet-nudge
 en.seoul.co.kr##table
@@ -288,14 +285,13 @@ en.seoul.co.kr##table
 ##.app-banner-layer
 missycoupons.com###mc_dialog_overlay
 missycoupons.com###mc_dialog
-###adtester-container-101
 ##.root--ujvuu
 gsshop.com##.banner-area
 dcinside.com##.nft-area
 nocutnews.co.kr###naver_banner
 nocutnews.co.kr###pnlContent > div
 ##.ccm-banner-signin-container
-coupang.com##[src^="/img1a.coupangcdn.com/"]
+##[src^="/img1a.coupangcdn.com/"]
 asmr-labo.com###content-bottom
 asmr-labo.com###content-top
 ero-anime.website###content-bottom
@@ -305,16 +301,12 @@ ero-anime.website###content-top
 biz.newdaily.co.kr##[class='notifyjs-corner']
 ||montmena.top^
 ||ads.bullionyield.com^
-###ts_ad_native_nn5fo
 ##.header-ad
 tcafe2a.com##div.blank-btm15.first-widget.sction-first-widget
 suto.co.kr##.focus_event_title
 ###adhere
 biz.chosun.com##div.box--hidden-md.box--hidden-lg.box--bg-undefined.box--pad-none.width--100.box--margin-none.\|.sm.flex-chain-wrapper
 ##[src^="https://naverwebtoon-phinf.pstatic.net/"]
-###ad004
-###ad008
-###ad007
 ##.subscription_fee
 pressian.com##div.banner
 polinews.co.kr##div.clearfix > div.marbtm-10.banner_box
@@ -332,35 +324,22 @@ lawtimes.co.kr##.eqcril20.css-10yb2if
 vop.co.kr###cheer
 vop.co.kr##.editor_arcad_right
 mediatoday.co.kr###SupportForm_id
-##.ad_zone01
 kwnews.co.kr##[src^="/upload/"]
 segye.com###wps_layout1_box22
-###lv-ad-54
 kmib.co.kr##.tp_cnt > div.nwbx02
-hani.co.kr##.gudokArea
-hani.co.kr##.birth_35th.support-content-2st
-hani.co.kr###news-box-ad_1120483
 joongang.co.kr###ad_art_content_btm
 seoul.co.kr###Article > div.Line_gray
 seoul.co.kr##.C_wrap > div:nth-of-type(3)
 bigkinds.or.kr##.ft-banner
 yna.co.kr##.bg11.aside-box02
 yna.co.kr##.aside-box01
-##.font-size17.view-page.article-veiw-body > div.clearfix
 ##[src^="/bannerpop/"]
 ###login-banner-box
 tmon.co.kr##.deallist_scroll_wrap
 tmon.co.kr##.type02.banner_area
 ||isnssdk.com^
-##.power_link_top_wrap
+##[class^="power_link"]
 ###newsview_promotion_banner
-###free-genre-list > li:nth-of-type(5)
-###free-genre-list > li:nth-of-type(4)
-###free-genre-list > li:nth-of-type(3)
-###free-genre-list > li:nth-of-type(2)
-###free-genre-list > li:nth-of-type(1)
-###news_content > .component_ad.component
-###ad_art_content_mid
 journalist.or.kr###container > div:nth-of-type(6)
 megalodon.jp##.col-md-6.col-sm-6.col-xs-12
 comic.naver.com##li:nth-of-type(146)
@@ -375,7 +354,7 @@ terabox.com##.ad-eggplant
 danawa.com##.box__header
 danawa.com##.box__contents
 arm.c.appier.net
-m.shop.interpark.com##.horizonBanner
+shop.interpark.com##.horizonBanner
 m.shop.interpark.com##.cmBanner
 shop.interpark.com##.combineBanner.couponBanner
 m.shop.interpark.com###prd_appbanner
@@ -393,7 +372,6 @@ buondua.com##.bottom-articles > div:nth-of-type(2)
 buondua.com##.bottom-articles > div:nth-of-type(3)
 buondua.com##.article-fulltext > div:nth-of-type(2)
 buondua.com##.article-fulltext > div:nth-of-type(1)
-#@#[class^="div-gpt-ad"]
 mt.co.kr###cont > div:nth-of-type(5)
 khan.co.kr###bnNewsletter
 khan.co.kr##.wrap_bnr_shortcut
@@ -431,9 +409,6 @@ antennagom.com##.entry-header > .bx-adc
 ||json2.dcinside.com/json0/app_ad_setting.php^
 hentaiera.com##.bblocktop
 work.go.kr##.ban-content
-tmon.co.kr##[src^="https://tm-ipx.qoo10cdn.com/imageproxy?src=http://img3.tmon.kr/cdn4/deals/2022/10/17/14028404306/14028404306_image_bfbb1.jpg&scw=640"]
-tmon.co.kr##[src^="https://tm-ipx.qoo10cdn.com/imageproxy?src=http://img2.tmon.kr/cdn4/deals/2022/10/17/14028404306/14028404306_image_d69b3.jpg&scw=640"]
-tmon.co.kr##[src^="https://tm-ipx.qoo10cdn.com/imageproxy?src=http://img1.tmon.kr/cdn4/deals/2022/10/18/14033850390/14033850390_image_c9ac9.jpg&scw=640"]
 hankookilbo.com##.end-top-banner
 ||ulogs.umengcloud.com^
 10000recipe.com###obx_foodname_goods
@@ -445,22 +420,16 @@ mimint.co.kr###MiMintBottomViewLayer
 www.newstong.co.kr###ContentPlaceHolder1_divAlertADText
 news.nate.com###module_ssul
 www.lcnews.co.kr##.relation
-www.lcnews.co.kr###AD168188080534
+www.lcnews.co.kr###[class^="AD168188080534"]
 sedaily.com##hr.g360
 sedaily.com##.col-right > hr
 sedaily.com##.mythiell-mid-container2
 etoday.co.kr##section:nth-of-type(9)
 etoday.co.kr##section:nth-of-type(5)
 etoday.co.kr##section:nth-of-type(3)
-etoday.co.kr##.mboxcont.DetailView_Wrap > section:nth-of-type(1)
 etnews.com###dcamp_ad_2192
 etnews.com##p > .mythiell-mid
-www.asiatime.co.kr##.m_article_ad_06
-www.asiatime.co.kr##.under_ad01
-www.asiatime.co.kr##.m_article_ad_04
-www.asiatime.co.kr##div.m_article_ad_05
-www.asiatime.co.kr##.m_article_ad_02
-www.asiatime.co.kr##.m_article_ad_01
+www.asiatime.co.kr##[class*="_ad"]
 inews24.com##main > .news-share
 inews24.com##section > .inews-view > div:nth-of-type(1)
 daedamo.com###ad_banner_bbs_view_bottom
@@ -481,8 +450,6 @@ inven.co.kr###module_market
 inven.co.kr##.show-ads.home-header
 ##div.ad-adsense.js-ad-slot
 ##.ad-box-auto
-###adtester-container-145
-###adtester-container-144
 hasha.in##.bg-hasha-1-l.rounded.text.p-5 > div:nth-of-type(3)
 ##.stl1.ad-banner-wrap
 ###main_popup
@@ -503,8 +470,6 @@ naver.com##.id_comp_shortform_new.grid1
 naver.com###MM_SEARCH_SHOP_LIVE
 search.danawa.com###shoppingPlanArea
 search.danawa.com###adSmartArea2
-###adssmall3
-##div.ad400_100
 waifu2x.udp.jp##.all-page > div:nth-of-type(4)
 waifu2x.udp.jp##.all-page > div:nth-of-type(2)
 comic.naver.com##.type_cut.tag_area
@@ -516,9 +481,6 @@ arca.live##.show.modal
 ##.tt-sns-icon-size-big.tt-sns-icon-alignment-left.tt-share-entry-with-sns.tt-plugin
 tistory.com###loading
 fmkorea.com##.politics_pop_main.pop_main
-###adtester-container-114
-###adtester-container-115
-###adtester-container-116
 hasha.in##.gpdcNM
 hasha.in##cloudflare-app
 hasha.in##div.max-w-full.flex-col.flex.mb-6.mx-auto.w-fit
@@ -532,7 +494,7 @@ www.resizepixel.com##.align-items-center.justify-content-end.flex-column.d-md-fl
 hitomi.la##.top-content
 pcc.siren24.com##.bn
 gelbooru.com##video
-www.lotteon.com##.g2zkyn2ddp4.moduleContainer.productBanner
+www.lotteon.com##.moduleContainer.productBanner
 news.naver.com##._PERSIST_META._OFFICE_HEADLINE._FLICKING_WRAP.optional_hidden.as_type_border.rankingnews
 news.naver.com##.pc_hidden._MY_CHANNEL_OFFICE_WRAP
 news.naver.com###_COMMENT_NOTICE
@@ -546,7 +508,6 @@ www.lotteon.com##.productTopAdvertisement
 www.lotteon.com##.module-lineType2.moduleContainer.recommendAnchor.productListInfo.advertisementProductList
 www.lotteon.com##.moduleContainer.productAdvertisementWrap.advertisementProduct
 www.yuhanshop.co.kr###dtr_bn
-hani.co.kr###news-box-ad_1099311
 www.donga.com###adbox_main02
 www.donga.com##.bann_wrap
 www.donga.com###adbox_main01
@@ -566,9 +527,7 @@ health.chosun.com##.sub_article > div:nth-of-type(4)
 ##div.revenue_unit_wrap
 ppomppu.co.kr###wrap > .community-board
 gmarket.co.kr##.box_dot_main
-www.100ssd.co.kr##div.auto-marbtm-5.auto-martop-5.banner_box:nth-of-type(3)
-www.100ssd.co.kr##div.auto-marbtm-5.auto-martop-5.banner_box:nth-of-type(1)
-www.100ssd.co.kr##div.auto-marbtm-5.auto-martop-5.banner_box:nth-of-type(2)
+www.100ssd.co.kr##div.auto-marbtm-5.auto-martop-5
 comic.naver.com###ct > .item_area
 wetransfer.com##.cookie-banner--full-panel.cookie-banner
 cafe24.com##body,html:style(overflow:auto!important)
