@@ -1,10 +1,19 @@
 ! Title: myrule
-! Version: 1.110
+! Version: 1.111
 ! Description: the set of rules I just use
 
+||mobile-ota.lenovo.com^
+||lenovomm.com^
+*.com##.sns-share
+||gmarket.co.kr^$app=com.towneers.www
+@@||coupang.com/$stealth=useragent
+@@||wemakeprice.com/$stealth=useragent
+@@||airbridge.io/$stealth=useragent
+@@||lotteon.com/$stealth=useragent
+##.ad-entry
 @@||ssg.com/$stealth=useragent
 @@||11st.co.kr/$stealth=useragent
-@@||reports.adguard.com/$stealth=useragent
+@@||reports.adguard.com/$stealth
 @@||gmarket.*/$stealth=useragent
 *.com,*.co.kr##.floating_banner
 lawtimes.co.kr##[src^="https://image.lawtimes.co.kr/"]
