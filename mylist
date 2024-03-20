@@ -1,12 +1,11 @@
 ! Title: myrule
-! Version: 1.111
+! Version: 1.112
 ! Description: the set of rules I just use
 
 ||mobile-ota.lenovo.com^
 ||lenovomm.com^
 *.com##.sns-share
 ||gmarket.co.kr^$app=com.towneers.www
-@@||coupang.com/$stealth=useragent
 @@||wemakeprice.com/$stealth=useragent
 @@||airbridge.io/$stealth=useragent
 @@||lotteon.com/$stealth=useragent
@@ -15,7 +14,6 @@
 @@||11st.co.kr/$stealth=useragent
 @@||reports.adguard.com/$stealth
 @@||gmarket.*/$stealth=useragent
-*.com,*.co.kr##.floating_banner
 lawtimes.co.kr##[src^="https://image.lawtimes.co.kr/"]
 etoday.co.kr##.ContentsWrap > section:nth-of-type(1)
 hani.co.kr##.ArticleDetail_supportBannerWrap__uC5gF
@@ -32,9 +30,9 @@ yande.re###div[class^="a"]
 yande.re##[src^="https://delivery.2d.net.co/"]
 @@||linkprice.com/$stealth
 @@||auction.co.kr/$stealth=useragent
-@@||brand.naver.com/$stealth=3p-cookie|useragent
-@@||pay.naver.com/$stealth=3p-cookie|useragent
-@@||adison.co/$stealth=3p-cookie|useragent
+@@||brand.naver.com/$stealth=3p-cookie
+@@||pay.naver.com/$stealth=useragent
+@@||adison.co/$stealth=useragent
 @@||financial.pstatic.net/$stealth=3p-cookie|useragent
 apkmirror.com###bottom-slider
 apkmirror.com###appmanager_sppostswidget-2
@@ -351,7 +349,7 @@ yna.co.kr##.aside-box01
 tmon.co.kr##.deallist_scroll_wrap
 tmon.co.kr##.type02.banner_area
 ||isnssdk.com^
-##[class^="power_link"]
+##[class*="power_link"]
 ###newsview_promotion_banner
 journalist.or.kr###container > div:nth-of-type(6)
 megalodon.jp##.col-md-6.col-sm-6.col-xs-12
@@ -368,10 +366,10 @@ danawa.com##.box__header
 danawa.com##.box__contents
 arm.c.appier.net
 shop.interpark.com##.horizonBanner
-m.shop.interpark.com##.cmBanner
+shop.interpark.com##.cmBanner
 shop.interpark.com##.combineBanner.couponBanner
 m.shop.interpark.com###prd_appbanner
-interpark.com###powerLink
+###powerLink
 interpark.com##.powerlinkWrapper
 interpark.com##div.shopBanner
 interpark.com###div_new_power_link_top
