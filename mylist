@@ -1,11 +1,16 @@
 ! Title: myrule
-! Version: 1.113
+! Version: 1.114
 ! Description: the set of rules I just use
 
+||m.qq.com^
+||zui.com^
+zdnet.co.kr##[class^="A1_"]
+zdnet.co.kr###__a1FloatCon
+zdnet.co.kr##.top_line
 pay.naver.com##[class*="ADRewardGladBanner_article__"]
 blog.naver.com##div[class*="clip_wrap__"]
 wemakeprice.com##.promo_swipe > .swiper-wrapper.swipe_img > .swiper-slide.img
-wemakeprice.com##.type1.aiplus_wrap
+wemakeprice.com##.aiplus_wrap
 brunch.co.kr##.floating_banner
 ||mobile-ota.lenovo.com^
 ||lenovomm.com^
@@ -20,7 +25,7 @@ brunch.co.kr##.floating_banner
 @@||gmarket.*/$stealth=useragent
 lawtimes.co.kr##[src^="https://image.lawtimes.co.kr/"]
 etoday.co.kr##.ContentsWrap > section:nth-of-type(1)
-hani.co.kr##.ArticleDetail_supportBannerWrap__uC5gF
+hani.co.kr##[class*="ArticleDetail_supportBannerWrap__"]
 hani.co.kr##div[class*="Ad_"]
 wemakeprice.com###div_download_app_layer
 duckduckgo.com##[class*="legacyMobileHomepage_isFixed__"]
@@ -69,7 +74,7 @@ hitomi.la##.HoFLYiCi
 11st.co.kr###hotclick-recm-container-top
 11st.co.kr##.base > .l-grid > .l-grid__row
 11st.co.kr###banner
-pay.naver.com##.Footer-module_inner__J3glp
+pay.naver.com##[class*="Footer-module_inner__"]
 shopping.naver.com##.nv-openmain
 shopping.naver.com##div[class*="loadingBar_responsive_loading_bar__"]
 shopping.naver.com##.N\=a\:fot\.shortcut
@@ -104,7 +109,7 @@ suto.co.kr##.prime_banner
 suto.co.kr##ul > [href^="https://www.suto.co.kr/bbs/link.php"]
 ||tuvfsy-launches.appsflyersdk.com^
 ||tuvfsy-inapps.appsflyersdk.com^
-||v5xtqhwslrakzbcouzehmhqzlxphxixt.lockincomp.com^
+||lockincomp.com^
 ||tuvfsy-cdn-settings.appsflyersdk.com^
 ||sessions.bugsnag.com^
 ||location.microsoft.com^
@@ -130,18 +135,9 @@ m.youtube.com##ytm-pivot-bar-item-renderer:nth-of-type(2)
 m.youtube.com##.rich-section-content-wrapper
 www.namu.wiki##div:has(> div > div > div > a[href='#']:not([target]) > *:not(svg):only-child)
 ||dcinside.com/*/app_ad_
-||www.facebook.com^$app=com.dcinside.app
 ||smart.mobvista.com^$app=com.dcinside.app
 google.com###arc-srp_110 > div > div:has-text(books.google.co.kr)
 google.com###arc-srp_120 > div > div:has-text(books.google.co.kr)
-google.com###main > div > div:has-text(인기 급상승 검색어)
-google.com##li:nth-of-type(1)
-google.com##li:nth-of-type(2)
-google.com##li:nth-of-type(3)
-google.com##li:nth-of-type(4)
-google.com##li:nth-of-type(5)
-google.com##li:nth-of-type(6)
-google.com##li:nth-of-type(7)
 arca.live###defaultImage
 arca.live##.wrap
 arca.live###newsRank
@@ -181,7 +177,6 @@ tistory.com###article > center
 tistory.com##.floating_banner
 kr.dynakodes.com##.privacy-policy-moudle
 arca.live##.mt-2.recaptcha-privacy
-wemakeprice.com##.type2.aiplus_wrap
 lawtalk.co.kr##mobile-bottom-tab
 lawtalk.co.kr##.premium-lawyer-section
 lawtalk.co.kr##.qna-list__ad-google-preview
@@ -204,8 +199,8 @@ suto.co.kr##.share_subs
 product.29cm.co.kr##.eddhs1j0.css-b1ntip
 croket.co.kr##.detail_banner
 croket.co.kr##.popup-full
-wishbucket.io##.ComparePriceList_banner__0DL3G
-wishbucket.io##.DownloadModal_container__9c_KU
+wishbucket.io##[class*="ComparePriceList_banner__"]
+wishbucket.io##[class*="DownloadModal_container__"]
 ssfshop.com##.act-diver
 lacoste.com##div:nth-of-type(11)
 gsshop.com##.bnr-item_appdown
@@ -222,7 +217,6 @@ luckyquiz3.blogspot.com###pbt
 fmkorea.com##.notice_layerM.notice_layer
 dcinside.com##.adv-inner
 dcinside.com##.detail-top-lst > li:nth-of-type(2)
-zdnet.co.kr###A1_300250
 khan.co.kr###layerB
 coolenjoy.net###bo_list > .d-sm-none.d-block
 missav.com##.mb-5.space-y-5 > .lg\:hidden
@@ -435,7 +429,6 @@ mimint.co.kr###MiMintBottomViewLayer
 www.newstong.co.kr###ContentPlaceHolder1_divAlertADText
 news.nate.com###module_ssul
 www.lcnews.co.kr##.relation
-www.lcnews.co.kr###[class^="AD168188080534"]
 sedaily.com##hr.g360
 sedaily.com##.col-right > hr
 sedaily.com##.mythiell-mid-container2
@@ -569,7 +562,6 @@ danawa.com###mdnw-main-contents-container
 ###hd_pop
 cafe.daum.net###mAside
 dcinside.com##.layer-bottom-popup
-zdnet.co.kr##div.ad_tag:nth-of-type(7)
 sbs.co.kr##.vediomug_nextmov_w
 biz.chosun.com##div.raw-html:nth-of-type(2)
 biz.chosun.com##.grid__col--sm-12.grid__col--md-12.grid__col--lg-4.\|.layout__article-right-rail.layout__article-col > .raw-html
