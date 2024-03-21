@@ -1,7 +1,18 @@
 ! Title: myrule
-! Version: 1.114
+! Version: 1.115
 ! Description: the set of rules I just use
 
+tistory.com###recommended-content-container
+###adssmall3
+###top-banner
+##div.ad400_100
+###free-genre-list > li:nth-of-type(5)
+###free-genre-list > li:nth-of-type(3)
+###free-genre-list > li:nth-of-type(2)
+###free-genre-list > li:nth-of-type(1)
+###free-genre-list > li:nth-of-type(4)
+anilife.live##.FlexFSCW.MainBnnWrap
+###topad_1
 ||m.qq.com^
 ||zui.com^
 zdnet.co.kr##[class^="A1_"]
@@ -29,7 +40,6 @@ hani.co.kr##[class*="ArticleDetail_supportBannerWrap__"]
 hani.co.kr##div[class*="Ad_"]
 wemakeprice.com###div_download_app_layer
 duckduckgo.com##[class*="legacyMobileHomepage_isFixed__"]
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=tistory.com
 wallpaperflare.com##.cc-color-override-2132809765.cc-bottom.cc-theme-edgeless.cc-type-info.cc-floating.cc-window
 4kwallpapers.com##.scrollToTopBtn
 ##.ad_corner
@@ -62,7 +72,6 @@ startpage.com###home-top-header
 ||www.baidu.com^$app=com.app.aiimglarger
 google.com###lb
 ||graph.facebook.com^$important
-hitomi.la##.HoFLYiCi
 11st.co.kr##.t_banner
 11st.co.kr###vueWrapper > div > div > div.l-grid
 11st.co.kr##.w-scroll-css
@@ -146,8 +155,6 @@ arca.live##.ml-lg-0.ml-auto.navbar-nav.nav > .d-sm-block.d-none.nav-item
 board.namu.wiki###newsRank
 namu.wiki###app > main > div:nth-of-type(2) > div > div:has-text(나무뉴스)
 namu.wiki###app > main > div:nth-of-type(3)
-namu.wiki##aside
-namu.wiki###tach8LulB
 lotteon.com##div > .flag
 lotteon.com##.banner_expandable.moduleWrap
 lotteon.com##div.more_middle_round_button.moduleWrap
@@ -224,7 +231,6 @@ missav.com##.px-4.lg\:pb-0.pb-4.pt-16 > .lg\:hidden
 lotteon.com###modals-container > .v--modal-overlay
 lotteon.com###modals-container > .v--modal-overlay > .v--modal-background-click
 msearch.shopping.naver.com##.list_item
-devuploads.com,djxmaza.in,miuiflash.com,thecubexguide.com$@$link[rel="manifest"]
 ppomppu.co.kr##.biz.results_board
 dcinside.com##.app-info-ban
 dcinside.com##.detail-top-lst > li:nth-of-type(1)
@@ -499,7 +505,6 @@ ppss.kr##[src^="https://was.livere.me/enlipleAD"]
 ##.AppInstallBanner
 comic.naver.com##.ppl_story_inner
 www.resizepixel.com##.align-items-center.justify-content-end.flex-column.d-md-flex.d-none
-hitomi.la##.top-content
 pcc.siren24.com##.bn
 gelbooru.com##video
 www.lotteon.com##.moduleContainer.productBanner
@@ -549,7 +554,6 @@ auction.co.kr###cpcAdHybridTopBanner
 gmarket.co.kr##.box__banner--da.box__banner--ad-top
 gmarket.co.kr##.plcc_banner
 gmarket.co.kr###vipPowerClickTopLayer
-anilife.life##.css-banner
 gall.dcinside.com##.block-disable
 gsshop.com##section.box-shade.box-wrap
 comic.naver.com##[href^="https://m.comic.naver.com/webtoon/detail"] > .loaded.lazy.fx2
