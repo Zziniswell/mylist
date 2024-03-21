@@ -1,7 +1,12 @@
 ! Title: myrule
-! Version: 1.112
+! Version: 1.113
 ! Description: the set of rules I just use
 
+pay.naver.com##[class*="ADRewardGladBanner_article__"]
+blog.naver.com##div[class*="clip_wrap__"]
+wemakeprice.com##.promo_swipe > .swiper-wrapper.swipe_img > .swiper-slide.img
+wemakeprice.com##.type1.aiplus_wrap
+brunch.co.kr##.floating_banner
 ||mobile-ota.lenovo.com^
 ||lenovomm.com^
 *.com##.sns-share
@@ -12,7 +17,6 @@
 ##.ad-entry
 @@||ssg.com/$stealth=useragent
 @@||11st.co.kr/$stealth=useragent
-@@||reports.adguard.com/$stealth
 @@||gmarket.*/$stealth=useragent
 lawtimes.co.kr##[src^="https://image.lawtimes.co.kr/"]
 etoday.co.kr##.ContentsWrap > section:nth-of-type(1)
@@ -65,7 +69,7 @@ hitomi.la##.HoFLYiCi
 11st.co.kr###hotclick-recm-container-top
 11st.co.kr##.base > .l-grid > .l-grid__row
 11st.co.kr###banner
-new-m.pay.naver.com##.Footer-module_inner__J3glp
+pay.naver.com##.Footer-module_inner__J3glp
 shopping.naver.com##.nv-openmain
 shopping.naver.com##div[class*="loadingBar_responsive_loading_bar__"]
 shopping.naver.com##.N\=a\:fot\.shortcut
@@ -81,13 +85,13 @@ shopping.naver.com##div[class*="shoppingHomeResponsive_today_benefit__"]
 shopping.naver.com##div[class*="shoppingHomeResponsive_logistics__"]
 shopping.naver.com##div[class*="shortcut_responsive_shortcut__"]
 shopping.naver.com##div[class*="openMainButton_open_main_button__"]
-m.blog.naver.com##div[class*="today_video__"]
-m.blog.naver.com##div[class*="market_carousel__"]
-m.blog.naver.com##div[class*="moment_wrap__"]
-new-m.pay.naver.com##div[class*="PayLifeAdBanner_article__"]
-new-m.pay.naver.com##div[class*="AdBanner_common-box__"]
-new-m.pay.naver.com##div[class*="BottomAdBanner_"]
-new-m.pay.naver.com##div[class*="BottomAds_article__"]
+blog.naver.com##div[class*="today_video__"]
+blog.naver.com##div[class*="market_carousel__"]
+blog.naver.com##div[class*="moment_wrap__"]
+pay.naver.com##div[class*="PayLifeAdBanner_article__"]
+pay.naver.com##div[class*="AdBanner_common-box__"]
+pay.naver.com##div[class*="BottomAdBanner_"]
+pay.naver.com##div[class*="BottomAds_article__"]
 shopping.naver.com##div[class*="foryouOptOutResponsive_foryou_opt_out_responsive"]
 shopping.naver.com##div[class*="forYouCurationMobile_for_you_curation_mobile__"]
 msearch.shopping.naver.com##div[class*="brandAdList_brand_ad__"]
@@ -95,7 +99,7 @@ msearch.shopping.naver.com##div[class*="brandRecommend_brand_recommend__"]
 msearch.shopping.naver.com##div[class*="shoppingLiveShortClip_shopping_live_short_clip__"]
 msearch.shopping.naver.com##div[class*="recommendTrend_aitems_recommend__"]
 msearch.shopping.naver.com##div[class*="active.android.reactiveForyouScroll_"]
-m.cafe.naver.com##.CafeAppBanner
+cafe.naver.com##.CafeAppBanner
 suto.co.kr##.prime_banner
 suto.co.kr##ul > [href^="https://www.suto.co.kr/bbs/link.php"]
 ||tuvfsy-launches.appsflyersdk.com^
@@ -113,7 +117,7 @@ akmall.com##.toast_banner
 akmall.com###mainPopupAll
 akmall.com##[src^="https://m.akmall.com/"]
 e-himart.co.kr###goodsBanner
-mw.wemakeprice.com##.footbnr_wrap
+wemakeprice.com##.footbnr_wrap
 musinsa.com##body,html:style(overflow:auto!important)
 musinsa.com###footerCommonLayout
 29cm.co.kr##.css-b1ntip
@@ -174,10 +178,10 @@ forum.vivaldi.net###reconnect-alert
 chat.openai.com##.text-token-text-primary.p-3.bg-blue-950.justify-between.items-center.w-full.flex.dark
 tistory.com##article > center
 tistory.com###article > center
-##.floating_banner
+tistory.com##.floating_banner
 kr.dynakodes.com##.privacy-policy-moudle
 arca.live##.mt-2.recaptcha-privacy
-mfront.wd.wemakeprice.com##.type2.aiplus_wrap
+wemakeprice.com##.type2.aiplus_wrap
 lawtalk.co.kr##mobile-bottom-tab
 lawtalk.co.kr##.premium-lawyer-section
 lawtalk.co.kr##.qna-list__ad-google-preview
@@ -368,7 +372,7 @@ arm.c.appier.net
 shop.interpark.com##.horizonBanner
 shop.interpark.com##.cmBanner
 shop.interpark.com##.combineBanner.couponBanner
-m.shop.interpark.com###prd_appbanner
+shop.interpark.com###prd_appbanner
 ###powerLink
 interpark.com##.powerlinkWrapper
 interpark.com##div.shopBanner
