@@ -1,7 +1,11 @@
 ! Title: myrule
-! Version: 1.115
+! Version: 1.116
 ! Description: the set of rules I just use
 
+@@||securepubads.g.doubleclick.net^$domain=namu.wiki,devuploads.com,djxmaza.in,miuiflash.com,thecubexguide.com
+goobne.co.kr##.pc_login_btn.red_back_btn.l-btn
+||securepubads.g.doubleclick.net^
+pay.naver.com##[class*="ADRewardBannerImage_article__"]
 tistory.com###recommended-content-container
 ###adssmall3
 ###top-banner
@@ -573,7 +577,7 @@ biz.chosun.com##div.box--hidden-md.box--hidden-lg.box--bg-grey-20.box--pad-botto
 biz.chosun.com##div.box--hidden-md.box--hidden-lg.box--bg-grey-20.box--pad-bottom-md.box--pad-top-md.width--100.box--margin-top-md.\|.sm.flex-chain-wrapper:nth-of-type(16)
 www.arkbooks.net##.ls-fullscreen-wrapper
 hellven.net###fr
-blog.naver.com##[class='video_carousel__oxnV0']
+blog.naver.com##div[class*="video_carousel__"]
 blog.naver.com##[class='market_carousel__KKWgx']
 cafe.naver.com##[class='home_section visit_cafe']
 cafe.naver.com##button[style='position:relative;padding:0 13px 0 53px;height:42px;background:#fff;border:1px solid #dcdcdc;white-space:nowrap;']
