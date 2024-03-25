@@ -1,8 +1,21 @@
 ! Title: myrule
-! Version: 1.116
+! Version: 1.117
 ! Description: the set of rules I just use
 
-@@||securepubads.g.doubleclick.net^$domain=namu.wiki,devuploads.com,djxmaza.in,miuiflash.com,thecubexguide.com
+@@||firebaselogging-pa.googleapis.com^$app=com.wooribank.smart.npib
+@@||firebaselogging.googleapis.com^$app=com.wooribank.smart.npib
+||firebaselogging.googleapis.com^
+||firebaselogging-pa.googleapis.com^
+mitem.gmarket.co.kr###vipPowerClickLayer
+||syndication.twitter.com^
+new-m.pay.naver.com##[class*="SmartChannel_article__"]
+shooshtime.com##.sponsor
+m.bunjang.co.kr##[class*="LoginModal__AppDownload-"]
+bunjang.co.kr##body,html:style(overflow:auto!important)
+naver.com##div.info_relative
+danawa.com###mdnw-main-bottomSheet-container
+danawa.com###mdnw-main-dimm
+@@||oauth.telegram.org^
 goobne.co.kr##.pc_login_btn.red_back_btn.l-btn
 ||securepubads.g.doubleclick.net^
 pay.naver.com##[class*="ADRewardBannerImage_article__"]
@@ -70,8 +83,6 @@ apkmirror.com#$#.gooWidget.google-ad-square { display: block !important; }
 @@||startpage.com^$stealth=dpi
 @@||onelink.me^$stealth=dpi
 startpage.com###home-top-header
-||firebaselogging.googleapis.com^
-||firebaselogging-pa.googleapis.com^
 ||ingest.sentry.io^
 ||www.baidu.com^$app=com.app.aiimglarger
 google.com###lb
@@ -331,6 +342,7 @@ pressian.com##div.banner
 polinews.co.kr##div.clearfix > div.marbtm-10.banner_box
 ###ad_body
 ###publish_link_widget_iframe_main
+www.arkbooks.net##.ls-fullscreen-wrapper
 biz.chosun.com##.box--hidden-md.box--hidden-lg.box--bg-undefined.box--pad-none.width--100.box--margin-bottom-md.\|.sm.flex-chain-wrapper
 biz.chosun.com##.grid__col--sm-12.grid__col--md-12.grid__col--lg-4.\|.layout__article-right-rail.layout__article-col > .box--hidden-md.box--hidden-lg.box--bg-grey-20.box--pad-bottom-md.box--pad-top-md.width--100.box--margin-top-md.\|.sm.flex-chain-wrapper
 biz.chosun.com##.box--hidden-md.box--hidden-lg.box--bg-grey-20.box--pad-bottom-md.box--pad-top-md.width--100.box--margin-bottom-md.\|.sm.flex-chain-wrapper
@@ -575,7 +587,6 @@ biz.chosun.com##div.raw-html:nth-of-type(2)
 biz.chosun.com##.grid__col--sm-12.grid__col--md-12.grid__col--lg-4.\|.layout__article-right-rail.layout__article-col > .raw-html
 biz.chosun.com##div.box--hidden-md.box--hidden-lg.box--bg-grey-20.box--pad-bottom-md.box--pad-top-md.width--100.box--margin-top-md.\|.sm.flex-chain-wrapper:nth-of-type(19)
 biz.chosun.com##div.box--hidden-md.box--hidden-lg.box--bg-grey-20.box--pad-bottom-md.box--pad-top-md.width--100.box--margin-top-md.\|.sm.flex-chain-wrapper:nth-of-type(16)
-www.arkbooks.net##.ls-fullscreen-wrapper
 hellven.net###fr
 blog.naver.com##div[class*="video_carousel__"]
 blog.naver.com##[class='market_carousel__KKWgx']
