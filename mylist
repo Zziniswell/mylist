@@ -1,11 +1,9 @@
-! Title: myrule
-! Version: 1.117
+: myrule
+! Version: 1.118
 ! Description: the set of rules I just use
 
-@@||firebaselogging-pa.googleapis.com^$app=com.wooribank.smart.npib
-@@||firebaselogging.googleapis.com^$app=com.wooribank.smart.npib
-||firebaselogging.googleapis.com^
-||firebaselogging-pa.googleapis.com^
+@@||kurly.com^$stealth=dpi
+dcnewsj.joins.com###bottom_ad_fix
 mitem.gmarket.co.kr###vipPowerClickLayer
 ||syndication.twitter.com^
 new-m.pay.naver.com##[class*="SmartChannel_article__"]
@@ -18,7 +16,6 @@ danawa.com###mdnw-main-dimm
 @@||oauth.telegram.org^
 goobne.co.kr##.pc_login_btn.red_back_btn.l-btn
 ||securepubads.g.doubleclick.net^
-pay.naver.com##[class*="ADRewardBannerImage_article__"]
 tistory.com###recommended-content-container
 ###adssmall3
 ###top-banner
@@ -67,8 +64,8 @@ yande.re##[src^="https://delivery.2d.net.co/"]
 @@||linkprice.com/$stealth
 @@||auction.co.kr/$stealth=useragent
 @@||brand.naver.com/$stealth=3p-cookie
-@@||pay.naver.com/$stealth=useragent
-@@||adison.co/$stealth=useragent
+@@||pay.naver.com/$stealth=useragent|3p-cookie
+@@||adison.co/$stealth=useragent|3p-cookie
 @@||financial.pstatic.net/$stealth=3p-cookie|useragent
 apkmirror.com###bottom-slider
 apkmirror.com###appmanager_sppostswidget-2
