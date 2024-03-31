@@ -1,5 +1,5 @@
 ! Title: myrule
-! Version: 1.120
+! Version: 1.121
 ! Description: the set of rules I just use
 
 m.naver.com##a[href*="/fxclick?"]
@@ -145,12 +145,11 @@ $removeparam=NaPm,domain=msearch.shopping.naver.com|search.shopping.naver.com
 ||plus.yandex.*^$removeparam=state
 ||plus.yandex.*^$removeparam=origin
 ||youtube.com^$removeparam=si
-||hao.lenovo.com.cn^
+||lenovo.com.cn^
 shopping.naver.com##[class*="_targetBanner_target_banner_"]
 dcinside.com##section.clkhigh.grid
 new-m.pay.naver.com##.ADRewardBannerImage_article__3Hh-U
 @@||kurly.com^$stealth=dpi
-dcnewsj.joins.com###bottom_ad_fix
 mitem.gmarket.co.kr###vipPowerClickLayer
 ||syndication.twitter.com^
 new-m.pay.naver.com##[class*="SmartChannel_article__"]
@@ -511,7 +510,6 @@ yna.co.kr##.aside-box01
 ###login-banner-box
 tmon.co.kr##.deallist_scroll_wrap
 tmon.co.kr##.type02.banner_area
-||isnssdk.com^
 ##[class*="power_link"]
 ###newsview_promotion_banner
 journalist.or.kr###container > div:nth-of-type(6)
@@ -564,10 +562,9 @@ khan.co.kr##.wrap_bnr_shortcut
 ##.widget-box > div.row
 gmarket.co.kr##.box__couponswiper-wrap
 megabox.co.kr###pageBanner
-||tnc3-bjlgy.zijieapi.com^
+||zijieapi.com^
 ||bi-sensors.duxiaoman.com^
 ||sf3-fe-tos.pglstatp-toutiao.com^
-||toblog.ctobsnssdk.com^
 ||dxmpay.com^
 ||paydxm.com^
 ||cache.z.qingting.fm^
@@ -584,12 +581,10 @@ antennagom.com##.entry-header > .bx-adc
 hentaiera.com##.bblocktop
 work.go.kr##.ban-content
 hankookilbo.com##.end-top-banner
-||ulogs.umengcloud.com^
 10000recipe.com###obx_foodname_goods
 10000recipe.com###obx_ingredient_goods
 10000recipe.com###obx_foodname_goods_top
 10000recipe.com###wtgSticky
-||adrta.com^
 mimint.co.kr###MiMintBottomViewLayer
 www.newstong.co.kr###ContentPlaceHolder1_divAlertADText
 news.nate.com###module_ssul
