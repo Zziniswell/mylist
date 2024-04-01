@@ -1,7 +1,14 @@
 ! Title: myrule
-! Version: 1.121
+! Version: 1.122
 ! Description: the set of rules I just use
 
+chan.sankakucomplex.com###news-ticker
+car.encar.com##div[class*="DaBanner_wrap__"]
+ssg.com##.css-1wpiy4d.chakra-link
+ssg.com##.css-1fjna6l
+ssg.com###_endlessgoods
+ssg.com###_detailgoods
+ssg.com##div.mndtl_sec_cont > div.mndtl_sec_bx > div.mndtl_bn
 m.naver.com##a[href*="/fxclick?"]
 m.search.naver.com##li[data-pwr-ad-url]
 m.youtube.com#@#a[onclick*="\"ping_url\":\"http://www.google.com/aclk?"]
@@ -147,7 +154,6 @@ $removeparam=NaPm,domain=msearch.shopping.naver.com|search.shopping.naver.com
 ||youtube.com^$removeparam=si
 ||lenovo.com.cn^
 shopping.naver.com##[class*="_targetBanner_target_banner_"]
-dcinside.com##section.clkhigh.grid
 new-m.pay.naver.com##.ADRewardBannerImage_article__3Hh-U
 @@||kurly.com^$stealth=dpi
 mitem.gmarket.co.kr###vipPowerClickLayer
