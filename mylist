@@ -1,8 +1,8 @@
 ! Title: myrule
-! Version: 1.127
+! Version: 1.128
 ! Description: the set of rules I just use
 
-
+@@||hankyung.com^$stealth=dpi
 ###[class*="-consent"]
 ###[class*="_consent"]
 ###[class*="app-banner"]
@@ -344,12 +344,8 @@ google.*##+js(aeld, DOMContentLoaded, CONSENT)
 google.*##^script:has-text(consentCookiePayload)
 google.co.jp,google.co.kr,google.co.uk,google.com##div#bottomads
 google.co.jp,google.co.kr,google.co.uk,google.com##div#tads
-google.com###arc-srp_110 > div > div:has-text(books.google.co.kr)
-google.com###arc-srp_120 > div > div:has-text(books.google.co.kr)
 google.com###lb
-google.com##.g:has(a[href*="books.google."]) 
 google.com##[id^="eob_"]
-google.com##a[href*="books.google."]:upward(1)
 google.com##div[data-ow]:has(a[href*="cleanpng.com"])
 google.com##div[data-ow]:has(a[href*="clipartmax.com"])
 google.com##div[data-ow]:has(a[href*="dlf.pt"])
