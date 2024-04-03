@@ -1,7 +1,9 @@
 ! Title: myrule
-! Version: 1.125
+! Version: 1.126
 ! Description: the set of rules I just use
 
+search.naver.com##[class*="trend_keyword"]
+search.naver.com##._channel_root._project_site_channel_root.api_channel_wrap
 google.com##.g:has(a[href*="books.google."]) 
 google.com##a[href*="books.google."]:upward(1)
 reddit.com##body:style(pointer-events:auto!important;)
@@ -47,7 +49,6 @@ donga.com##div[class*="view_m_ad"]
 lottehotel.com##body,html:style(overflow:auto!important)
 lottehotel.com##.is-active.o-dimed--transition.o-dimed
 lottehotel.com##.landing-tab
-comic.naver.com##[src^="https://image-comic.pstatic.net/webtoon/"]
 samsung.com##.cod05-app-banner
 chan.sankakucomplex.com###news-ticker
 car.encar.com##div[class*="DaBanner_wrap__"]
