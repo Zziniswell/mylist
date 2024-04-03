@@ -1,7 +1,35 @@
 ! Title: myrule
-! Version: 1.122
+! Version: 1.124
 ! Description: the set of rules I just use
 
+google.*##[id^="eob_"]
+www.google.*##^script:has-text(consentCookiePayload)
+www.google.*##+js(acis, document.cookie, YES+)
+google.*##+js(aeld, DOMContentLoaded, CONSENT)
+||consent.google.com^
+||accounts.google.com/GSI/$3p
+tiermaker.com###ta-logos-div
+gamingdeputy.com##div[class*="code-block-"]
+##.clear.sns_wrap
+torrentsome*.com##.px-2.gap-2.md\:grid-cols-2.grid-cols-1.grid
+biz.chosun.com##.grid__col--sm-12.grid__col--md-12.grid__col--lg-4.\|.layout__article-right-rail.layout__article-col > .box--hidden-md.box--hidden-lg.box--bg-grey-10.box--pad-bottom-md.box--pad-top-md.width--100.box--margin-top-md.\|.sm.flex-chain-wrapper
+biz.chosun.com##.box--hidden-md.box--hidden-lg.box--border-horizontal-top.box--border-horizontal.box--border-xs.box--border-black.box--border.box--bg-grey-10.box--pad-top-md.width--100.box--margin-top-md.\|.sm.flex-chain-wrapper
+biz.chosun.com##.grid__col--sm-12.grid__col--md-12.grid__col--lg-8.\|.layout__article-main.layout__article-col > div.box--hidden-md.box--hidden-lg.box--bg-grey-10.box--pad-bottom-md.box--pad-top-md.width--100.box--margin-top-md.\|.sm.flex-chain-wrapper
+biz.chosun.com##.grid__col--sm-12.grid__col--md-12.grid__col--lg-8.\|.layout__article-main.layout__article-col > div.box--hidden-md.box--hidden-lg.box--bg-grey-10.box--pad-bottom-md.box--pad-top-md.width--100.box--margin-top-md.\|.sm.flex-chain-wrapper > .flex.\|.flex-chain
+biz.chosun.com##.box--hidden-md.box--hidden-lg.box--bg-grey-10.box--pad-bottom-md.box--pad-top-md.width--100.box--margin-bottom-md.\|.sm.flex-chain-wrapper
+chosun.com##.layout--footer.layout--container.box--margin-top-xxl-4.grid__container
+chosun.com##.box--hidden-md.box--hidden-lg.box--bg-grey-20.box--pad-bottom-md.box--pad-top-md.width--100.box--margin-top-md.\|.sm.flex-chain-wrapper
+chosun.com##.grid__col--sm-12.grid__col--md-12.grid__col--lg-4.\|.layout__article-right-rail.layout__article-col > .box--hidden-md.box--hidden-lg.box--bg-grey-20.box--pad-bottom-md.box--pad-top-md.width--100.box--margin-top-xxl-3.\|.sm.flex-chain-wrapper
+chosun.com##.grid__col--sm-12.grid__col--md-12.grid__col--lg-4.\|.layout__article-right-rail.layout__article-col > div.raw-html
+chosun.com##.grid__col--sm-12.grid__col--md-12.grid__col--lg-8.\|.layout__article-main.layout__article-col > div.box--hidden-md.box--hidden-lg.box--bg-grey-20.box--pad-bottom-md.box--pad-top-md.width--100.\|.sm.flex-chain-wrapper
+chosun.com##.box--hidden-md.box--hidden-lg.box--bg-undefined.box--pad-bottom-xl.box--pad-top-xl.width--100.\|.sm.flex-chain-wrapper
+chosun.com##.box--hidden-md.box--hidden-lg.box--bg-grey-10.box--pad-bottom-sm.box--pad-top-sm.width--100.box--margin-none.\|.sm.flex-chain-wrapper
+donga.com##div[class*="view_m_ad"]
+lottehotel.com##body,html:style(overflow:auto!important)
+lottehotel.com##.is-active.o-dimed--transition.o-dimed
+lottehotel.com##.landing-tab
+comic.naver.com##[src^="https://image-comic.pstatic.net/webtoon/"]
+samsung.com##.cod05-app-banner
 chan.sankakucomplex.com###news-ticker
 car.encar.com##div[class*="DaBanner_wrap__"]
 ssg.com##.css-1wpiy4d.chakra-link
@@ -413,9 +441,6 @@ apkpure.net###top-slide-banner
 shopping.naver.com##.mister
 shopping.naver.com##.plusdeal
 cafe.naver.com##.article_content_se > div:nth-of-type(3)
-gamingdeputy.com##.code-block-4.code-block
-gamingdeputy.com##.anchor-ad-d-mobile
-gamingdeputy.com##div.code-block-3.code-block
 rooreez.com##.__active.__is-popup.__ld-ac-block
 lawandgood.com##body,html:style(overflow:auto!important)
 lawandgood.com##.css-zq0qxn
@@ -483,7 +508,6 @@ biz.newdaily.co.kr##[class='notifyjs-corner']
 tcafe2a.com##div.blank-btm15.first-widget.sction-first-widget
 suto.co.kr##.focus_event_title
 ###adhere
-biz.chosun.com##div.box--hidden-md.box--hidden-lg.box--bg-undefined.box--pad-none.width--100.box--margin-none.\|.sm.flex-chain-wrapper
 ##[src^="https://naverwebtoon-phinf.pstatic.net/"]
 ##.subscription_fee
 pressian.com##div.banner
@@ -491,9 +515,6 @@ polinews.co.kr##div.clearfix > div.marbtm-10.banner_box
 ###ad_body
 ###publish_link_widget_iframe_main
 www.arkbooks.net##.ls-fullscreen-wrapper
-biz.chosun.com##.box--hidden-md.box--hidden-lg.box--bg-undefined.box--pad-none.width--100.box--margin-bottom-md.\|.sm.flex-chain-wrapper
-biz.chosun.com##.grid__col--sm-12.grid__col--md-12.grid__col--lg-4.\|.layout__article-right-rail.layout__article-col > .box--hidden-md.box--hidden-lg.box--bg-grey-20.box--pad-bottom-md.box--pad-top-md.width--100.box--margin-top-md.\|.sm.flex-chain-wrapper
-biz.chosun.com##.box--hidden-md.box--hidden-lg.box--bg-grey-20.box--pad-bottom-md.box--pad-top-md.width--100.box--margin-bottom-md.\|.sm.flex-chain-wrapper
 yeongnam.com##.m-yntv-wrap
 asiatime.co.kr##.cover_story.col-lg-3
 asiatime.co.kr###swiper-wrapper-html > .swiper-slide-active.swiper-slide
@@ -525,8 +546,6 @@ dcinside.com###nick_tipbox_reple
 dcinside.com###img_num_tipbox
 ||track.lacunads.com^
 ||event.lemmamedia.com^
-chosun.com##.sub_ad1
-chosun.com##.edit_bottom > ul > li:nth-of-type(1)
 gmarket.co.kr##.box__banner--ad-top
 terabox.com##.ad-eggplant
 danawa.com##.box__header
@@ -689,14 +708,8 @@ www.joongang.co.kr##.contents > div.row > .col_lg3
 www.joongang.co.kr##.login_proposal.plotting_banner
 www.joongang.co.kr###joongang_plus_card_area
 www.joongang.co.kr##.for_login.plotting_mini.login_proposal.plotting_popup.layer_dark_popup
-www.chosun.com##.grid__col--sm-12.grid__col--md-12.grid__col--lg-4.\|.layout__article-right-rail.layout__article-col > .box--hidden-md.box--hidden-lg.box--bg-grey-20.box--pad-bottom-md.box--pad-top-md.width--100.box--margin-top-xxl-3.\|.sm.flex-chain-wrapper
-www.chosun.com##.box--hidden-md.box--hidden-lg.box--bg-grey-20.box--pad-bottom-md.box--pad-top-md.width--100.box--margin-top-md.\|.sm.flex-chain-wrapper
-www.chosun.com##.grid__col--sm-12.grid__col--md-12.grid__col--lg-8.\|.layout__article-main.layout__article-col > div.box--hidden-md.box--hidden-lg.box--bg-grey-20.box--pad-bottom-md.box--pad-top-md.width--100.\|.sm.flex-chain-wrapper
-www.chosun.com##.box--hidden-md.box--hidden-lg.box--bg-undefined.box--pad-bottom-xl.box--pad-top-xl.width--100.\|.sm.flex-chain-wrapper
-www.chosun.com###adbay_floatingid
-www.chosun.com###a2
+chosun.com###adbay_floatingid
 comic.naver.com###flex_ad_story
-health.chosun.com##.sub_article > div:nth-of-type(4)
 ##div.revenue_unit_wrap
 ppomppu.co.kr###wrap > .community-board
 gmarket.co.kr##.box_dot_main
@@ -727,10 +740,6 @@ danawa.com###mdnw-main-contents-container
 cafe.daum.net###mAside
 dcinside.com##.layer-bottom-popup
 sbs.co.kr##.vediomug_nextmov_w
-biz.chosun.com##div.raw-html:nth-of-type(2)
-biz.chosun.com##.grid__col--sm-12.grid__col--md-12.grid__col--lg-4.\|.layout__article-right-rail.layout__article-col > .raw-html
-biz.chosun.com##div.box--hidden-md.box--hidden-lg.box--bg-grey-20.box--pad-bottom-md.box--pad-top-md.width--100.box--margin-top-md.\|.sm.flex-chain-wrapper:nth-of-type(19)
-biz.chosun.com##div.box--hidden-md.box--hidden-lg.box--bg-grey-20.box--pad-bottom-md.box--pad-top-md.width--100.box--margin-top-md.\|.sm.flex-chain-wrapper:nth-of-type(16)
 hellven.net###fr
 blog.naver.com##div[class*="video_carousel__"]
 blog.naver.com##[class='market_carousel__KKWgx']
