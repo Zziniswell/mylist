@@ -2,8 +2,7 @@
 ! Version: 1.127
 ! Description: the set of rules I just use
 
-luckyquiz3.blogspot.com###sidebar
-luckyquiz3.blogspot.com##.ad13.adsbygoogle
+
 ###[class*="-consent"]
 ###[class*="_consent"]
 ###[class*="app-banner"]
@@ -35,6 +34,7 @@ luckyquiz3.blogspot.com##.ad13.adsbygoogle
 ###appInstallPopupContainer
 ###bnr_float
 ###cloudflare-app[app="cookiless"]
+###div[class*="topad_"]
 ###div[data-cy="cookie-banner"]
 ###div[data-testid="cookiePopup"]
 ###fixed_ad
@@ -54,9 +54,7 @@ luckyquiz3.blogspot.com##.ad13.adsbygoogle
 ###rollingAdDiv
 ###s-rank-musume
 ###top-banner
-###div[class*="topad_"]
 ###wrap_banner_billboard
-##[class*="AppInstall"]
 ##.ad-box-auto
 ##.ad-entry
 ##.ad_corner
@@ -81,6 +79,7 @@ luckyquiz3.blogspot.com##.ad13.adsbygoogle
 ##.tt-sns-icon-size-big.tt-sns-icon-alignment-left.tt-share-entry-with-sns.tt-plugin
 ##.widget-box > div.row
 ##[class*="-consent"]
+##[class*="AppInstall"]
 ##[class*="PrivacyPolicy"]
 ##[class*="_consent"]
 ##[class*="app-banner"]
@@ -135,6 +134,7 @@ $removeparam=sc,domain=dailian.co.kr
 10000recipe.com###obx_foodname_goods_top
 10000recipe.com###obx_ingredient_goods
 10000recipe.com###wtgSticky
+100ssd.co.kr##div.auto-marbtm-5.auto-martop-5
 11st.co.kr###banner
 11st.co.kr###brandingAdImg
 11st.co.kr###dtl01 > div.l-grid
@@ -208,9 +208,11 @@ arca.live##.show.modal
 arca.live##.show.modal-backdrop
 arca.live##.wrap
 arca.live##body,html:style(overflow:auto!important)
+arkbooks.net##.ls-fullscreen-wrapper
 arm.c.appier.net
 asiatime.co.kr###swiper-wrapper-html > .swiper-slide-active.swiper-slide
 asiatime.co.kr##.cover_story.col-lg-3
+asiatime.co.kr##[class*="_ad"]
 asmr-labo.com###content-bottom
 asmr-labo.com###content-top
 auction.co.kr###cpcAdHybridTopBanner
@@ -257,6 +259,8 @@ cafe24.com##body,html:style(overflow:auto!important)
 car.encar.com##div[class*="DaBanner_wrap__"]
 chan.sankakucomplex.com###news-ticker
 chat.openai.com##.text-token-text-primary.p-3.bg-blue-950.justify-between.items-center.w-full.flex.dark
+chemicalnews.co.kr##.font-size17.view-page.article-veiw-body > div.clearfix
+chemicalnews.co.kr##.user-aside
 chosun.com###adbay_floatingid
 chosun.com##.box--hidden-md.box--hidden-lg.box--bg-grey-10.box--pad-bottom-sm.box--pad-top-sm.width--100.box--margin-none.\|.sm.flex-chain-wrapper
 chosun.com##.box--hidden-md.box--hidden-lg.box--bg-grey-20.box--pad-bottom-md.box--pad-top-md.width--100.box--margin-top-md.\|.sm.flex-chain-wrapper
@@ -301,6 +305,9 @@ dcinside.com##.view-btm-con
 dcinside.com##[href^="https://event.dcinside.com/"]
 ddengle.com##.clear.rd_ft_nav
 ddengle.com##.rd_ft
+donga.com###adbox_main01
+donga.com###adbox_main02
+donga.com##.bann_wrap
 donga.com##div[class*="view_m_ad"]
 duckduckgo.com##[class*="legacyMobileHomepage_isFixed__"]
 e-himart.co.kr###goodsBanner
@@ -396,7 +403,13 @@ inven.co.kr###module_gamepc
 inven.co.kr###module_market
 inven.co.kr##.inven-float-alarm
 inven.co.kr##.show-ads.home-header
+investing.com##.text-white.font-arial.bg-\[\#191919\].w-full.z-50.fixed.bottom-0.py-4.px-5
 joongang.co.kr###ad_art_content_btm
+joongang.co.kr###joongang_plus_card_area
+joongang.co.kr##.contents > div.row > .col_lg3
+joongang.co.kr##.for_login.plotting_mini.login_proposal.plotting_popup.layer_dark_popup
+joongang.co.kr##.login_proposal.plotting_banner
+joongang.co.kr##.md_hidden.lg_hidden.house_banner.aside.index_random.jaswiper_controller.jswiper
 journalist.or.kr###container > div:nth-of-type(6)
 khan.co.kr###bnNewsletter
 khan.co.kr###layerB
@@ -404,7 +417,6 @@ khan.co.kr##.wrap_bnr_shortcut
 kioskfo.asungcorp.com###rolling_main
 kmib.co.kr##.tp_cnt > div.nwbx02
 kookje.co.kr###con_text > div
-investing.com##.text-white.font-arial.bg-\[\#191919\].w-full.z-50.fixed.bottom-0.py-4.px-5
 kwnews.co.kr##[src^="/upload/"]
 lacoste.com##div:nth-of-type(11)
 lawandgood.com##.css-zq0qxn
@@ -417,6 +429,7 @@ lawtalk.co.kr##qna-article-banner
 lawtimes.co.kr##.e1vjatge6.css-1fs6yir
 lawtimes.co.kr##.eqcril20.css-10yb2if
 lawtimes.co.kr##[src^="https://image.lawtimes.co.kr/"]
+lcnews.co.kr##.relation
 lottehotel.com##.is-active.o-dimed--transition.o-dimed
 lottehotel.com##.landing-tab
 lottehotel.com##body,html:style(overflow:auto!important)
@@ -427,9 +440,13 @@ lotteon.com##.banner_expandable.moduleWrap
 lotteon.com##.goBack
 lotteon.com##.module-lineType1.moduleContainer.detailContents.insrAdvertisement
 lotteon.com##.module-lineType1.moduleContainer.recommendAnchor.productListInfo.advertisementProductList
+lotteon.com##.module-lineType2.moduleContainer.recommendAnchor.productListInfo.advertisementProductList
 lotteon.com##.moduleContainer.pd-middle-ad-product
+lotteon.com##.moduleContainer.productAdvertisementWrap.advertisementProduct
+lotteon.com##.moduleContainer.productBanner
 lotteon.com##.moduleContainer.productBanner
 lotteon.com##.moveTop
+lotteon.com##.productTopAdvertisement
 lotteon.com##.v--modal-background-click
 lotteon.com##.v--modal-overlay
 lotteon.com##[src^="https://contents.lotteon.com/display/fopopup/"]
@@ -438,7 +455,9 @@ lotteon.com##div.banner_text_2by2.moduleWrap
 lotteon.com##div.more_middle_round_button.moduleWrap
 luckyquiz3.blogspot.com###main_popup2
 luckyquiz3.blogspot.com###pbt
+luckyquiz3.blogspot.com###sidebar
 luckyquiz3.blogspot.com###top-banner
+luckyquiz3.blogspot.com##.ad13.adsbygoogle
 luckyquiz3.blogspot.com##body,html:style(overflow:auto!important)
 m.brand.naver.com###mobile-customBannerWidget
 m.brand.naver.com###mobile-customBannerWidget1
@@ -506,6 +525,7 @@ newspim.com##.banbox
 newspim.com##.banbox_top
 newspim.com##div.w_mar15
 newspim.com##p > div
+newstong.co.kr###ContentPlaceHolder1_divAlertADText
 newstong.co.kr###ContentPlaceHolder1_divTomatoAd
 newstong.co.kr###app_newstong
 newstong.co.kr##body,html:style(overflow:auto!important)
@@ -542,6 +562,9 @@ pressian.com##div.banner
 product.29cm.co.kr##.eddhs1j0.css-b1ntip
 reddit.com##body:style(overflow: auto !important; position: static !important;)
 reddit.com##body:style(pointer-events:auto!important;)
+resizepixel.com##.align-items-center.justify-content-center.flex-column.d-sm-none.d-flex
+resizepixel.com##.align-items-center.justify-content-end.flex-column.d-md-flex.d-none
+resizepixel.com##.my-2.mx-1.align-items-center.justify-content-end.flex-column.d-sm-none.d-flex
 rooreez.com##.__active.__is-popup.__ld-ac-block
 ruliweb.com###bbs_reading_m
 ruliweb.com###push_bar
@@ -622,42 +645,10 @@ wemakeprice.com##.aiplus_wrap
 wemakeprice.com##.footbnr_wrap
 wemakeprice.com##.promo_swipe > .swiper-wrapper.swipe_img > .swiper-slide.img
 wemakeprice.com##article.with_prd_wrap
-wetransfer.com##.cookie-banner--full-panel.cookie-banner
 wishbucket.io##[class*="ComparePriceList_banner__"]
 wishbucket.io##[class*="DownloadModal_container__"]
 work.go.kr##.ban-content
-www.100ssd.co.kr##div.auto-marbtm-5.auto-martop-5
-www.arkbooks.net##.ls-fullscreen-wrapper
-www.asiatime.co.kr##[class*="_ad"]
-www.chemicalnews.co.kr##.font-size17.view-page.article-veiw-body > div.clearfix
-www.chemicalnews.co.kr##.user-aside
-www.donga.com###adbox_main01
-www.donga.com###adbox_main02
-www.donga.com##.bann_wrap
-www.joongang.co.kr###joongang_plus_card_area
-www.joongang.co.kr##.contents > div.row > .col_lg3
-www.joongang.co.kr##.for_login.plotting_mini.login_proposal.plotting_popup.layer_dark_popup
-www.joongang.co.kr##.login_proposal.plotting_banner
-www.joongang.co.kr##.md_hidden.lg_hidden.house_banner.aside.index_random.jaswiper_controller.jswiper
-www.lcnews.co.kr##.relation
-www.lotteon.com##.module-lineType2.moduleContainer.recommendAnchor.productListInfo.advertisementProductList
-www.lotteon.com##.moduleContainer.productAdvertisementWrap.advertisementProduct
-www.lotteon.com##.moduleContainer.productBanner
-www.lotteon.com##.productTopAdvertisement
 www.namu.wiki##div:has(> div > div > div > a[href='#']:not([target]) > *:not(svg):only-child)
-www.newstong.co.kr###ContentPlaceHolder1_divAlertADText
-www.resizepixel.com##.align-items-center.justify-content-center.flex-column.d-sm-none.d-flex
-www.resizepixel.com##.align-items-center.justify-content-end.flex-column.d-md-flex.d-none
-www.resizepixel.com##.my-2.mx-1.align-items-center.justify-content-end.flex-column.d-sm-none.d-flex
-www.teamblind.com##.ad-h250
-www.teamblind.com##.aside > .is_mobile.ad_banner
-www.teamblind.com##.hire-ad.article
-www.teamblind.com##.hire-ad.topic-list
-www.teamblind.com##.is_mobile.hire-banner
-www.teamblind.com##.wrapped > div.is_mobile.ad_banner
-www.teamblind.com##div.is_mobile.ad_banner
-www.yuhanshop.co.kr###dtr_bn
-www.zpat.info##.w3-grey.w3-center.w3-container
 yahoo.co.jp###stream > div
 yande.re###div[class^="a"]
 yande.re###news-ticker
@@ -670,9 +661,11 @@ yozm.wishket.com###p5-total-sub-navigation-wrapper
 yozm.wishket.com##.news-statistics
 yozm.wishket.com##[src^="/media/news/banner/banner_image_banner_bottom_zJxDOzo.png"]
 yozm.wishket.com##figure.image_resized.image
+yuhanshop.co.kr###dtr_bn
 zdnet.co.kr###__a1FloatCon
 zdnet.co.kr##.top_line
 zdnet.co.kr##[class^="A1_"]
+zpat.info##.w3-grey.w3-center.w3-container
 ||accounts.google.com/GSI/$3p
 ||ad-img.gmarket.com^
 ||adguard.$removeparam=clid
