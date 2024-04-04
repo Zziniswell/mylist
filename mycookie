@@ -2,6 +2,7 @@
 ! Version: 1.0
 ! Description: the set of rules I just use(by Adguard filter)
 
+###cb-gdpr
 ###cmp-app-container
 ##.privacy-warning
 ###footer-cookie-banner
