@@ -2,7 +2,7 @@
 ! Version: 1.129
 ! Description: the set of rules I just use
 
-!#include mycookie.txt
+!#include mylist/mycookie.txt
 
 ! perforation line_2
 
