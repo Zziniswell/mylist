@@ -1,7 +1,12 @@
-! Title: myrule
-! Version: 1.128
+! Title: mylist
+! Version: 1.129
 ! Description: the set of rules I just use
 
+!#include mycookie.txt
+
+! perforation line_2
+
+! perforation line_1
 ###ad_body
 ###adhere
 ###ads
@@ -36,6 +41,7 @@
 ##.ad_right_top
 ##.ad_top
 ##.app-banner-layer
+##.app-install-wrapper
 ##.box__banner--ad-top
 ##.ccm-banner-signin-container
 ##.clear.sns_wrap
@@ -53,7 +59,7 @@
 ##.story_banner
 ##.sub_ad1
 ##.subscription_fee
-##.top_ad
+##.top-ads
 ##.tt-sns-icon-size-big.tt-sns-icon-alignment-left.tt-share-entry-with-sns.tt-plugin
 ##.widget-box > div.row
 ##[src^="/bannerpop/"]
@@ -466,8 +472,6 @@ naver.com##.id_comp_napp_banner.grid1
 naver.com##.id_comp_shortform_new.grid1
 naver.com##.widget_wrap
 naver.com##div.info_relative
-naver.com#@#[class*="cookie"]
-naver.com#@#[class*="cookies"]
 new-m.pay.naver.com##.ADRewardBannerImage_article__3Hh-U
 new-m.pay.naver.com##[class*="SmartChannel_article__"]
 news.nate.com###module_ssul
