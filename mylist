@@ -2,31 +2,6 @@
 ! Version: 1.128
 ! Description: the set of rules I just use
 
-@@||hankyung.com^$stealth=dpi
-###[class*="-consent"]
-###[class*="_consent"]
-###[class*="app-banner"]
-###[class*="app-container"]
-###[class*="app-downlaod"]
-###[class*="appContainer"]
-###[class*="app_banner"]
-###[class*="app_container"]
-###[class*="app_download"]
-###[class*="app_install"]
-###[class*="appbanner"]
-###[class*="appinstall"]
-###[class*="consent-"]
-###[class*="consent_"]
-###[class*="cookie"]
-###[class*="cookieConsent"]
-###[class*="cookies"]
-###[class*="gdrp-"]
-###[class*="gdrp_"]
-###[class*="get-app"]
-###[class*="privacy-policy"]
-###[class*="privacy_policy"]
-###[class^="-gdpr"]
-###[class^="_gdpr"]
 ###ad_body
 ###adhere
 ###ads
@@ -34,7 +9,6 @@
 ###appInstallPopupContainer
 ###bnr_float
 ###cloudflare-app[app="cookiless"]
-###div[class*="topad_"]
 ###div[data-cy="cookie-banner"]
 ###div[data-testid="cookiePopup"]
 ###fixed_ad
@@ -55,20 +29,24 @@
 ###s-rank-musume
 ###top-banner
 ###wrap_banner_billboard
+##.AppInstallBanner
 ##.ad-box-auto
 ##.ad-entry
 ##.ad_corner
 ##.ad_right_top
 ##.ad_top
+##.app-banner-layer
 ##.box__banner--ad-top
 ##.ccm-banner-signin-container
 ##.clear.sns_wrap
 ##.col-sm-9.col-md-9.col-15
 ##.dmm-games
+##.g-sides-gaps.b-cookies-informer
 ##.gf-slot-g2
 ##.header-ad
 ##.id_tour.grid_m
 ##.mobile_ad
+##.power_link
 ##.root--ujvuu
 ##.sns-share
 ##.stl1.ad-banner-wrap
@@ -78,34 +56,6 @@
 ##.top_ad
 ##.tt-sns-icon-size-big.tt-sns-icon-alignment-left.tt-share-entry-with-sns.tt-plugin
 ##.widget-box > div.row
-##[class*="-consent"]
-##[class*="AppInstall"]
-##[class*="PrivacyPolicy"]
-##[class*="_consent"]
-##[class*="app-banner"]
-##[class*="app-container"]
-##[class*="app-downlaod"]
-##[class*="app-install"]
-##[class*="appContainer"]
-##[class*="app_banner"]
-##[class*="app_container"]
-##[class*="app_download"]
-##[class*="app_install"]
-##[class*="appbanner"]
-##[class*="appinstall"]
-##[class*="consent-"]
-##[class*="consent_"]
-##[class*="cookie"]
-##[class*="cookieConsent"]
-##[class*="cookies"]
-##[class*="gdrp-"]
-##[class*="gdrp_"]
-##[class*="get-app"]
-##[class*="power_link"]
-##[class*="privacy-policy"]
-##[class*="privacy_policy"]
-##[class^="-gdpr"]
-##[class^="_gdpr"]
 ##[src^="/bannerpop/"]
 ##[src^="/img1a.coupangcdn.com/"]
 ##[src^="https://naverwebtoon-phinf.pstatic.net/"]
@@ -159,6 +109,7 @@ $removeparam=sc,domain=dailian.co.kr
 @@||auction.co.kr/$stealth=useragent
 @@||brand.naver.com/$stealth=3p-cookie
 @@||gmarket.*/$stealth=useragent
+@@||hankyung.com^$stealth=dpi
 @@||kurly.com^$stealth=dpi
 @@||linkprice.com/$stealth
 @@||lotteon.com/$stealth=useragent
@@ -171,6 +122,7 @@ $removeparam=sc,domain=dailian.co.kr
 @@||wemakeprice.com/$stealth=useragent
 a-ha.io##.expert-section-wrapper
 a-ha.io##.md\:tw-pr-4.md\:tw-w-3\/4 > div > div:nth-of-type(3)
+a-ha.io##[class='a-modal modalAppInstallSMS -is-mobile']
 a-ha.io##[class='channel-talk-button']
 a-ha.io##body,html:style(overflow:auto!important)
 akmall.com###mainPopupAll
@@ -373,6 +325,13 @@ gsshop.com##section.box-shade.box-wrap
 hani.co.kr##[class*="ArticleDetail_supportBannerWrap__"]
 hani.co.kr##div[class*="Ad_"]
 hankookilbo.com##.end-top-banner
+hankyung.com###ad001
+hankyung.com###ad004
+hankyung.com###ad007
+hankyung.com###ad008
+hankyung.com###ad012
+hankyung.com##.show.promotion-floating2
+hankyung.com##.view_bnr
 hasha.in##.bg-hasha-1-l.rounded.text.p-5 > div:nth-of-type(3)
 hasha.in##.gpdcNM
 hasha.in##cloudflare-app
@@ -461,15 +420,19 @@ m.bunjang.co.kr##[class*="LoginModal__AppDownload-"]
 m.imgur.com##.CommentWrapper
 m.imgur.com##.Gallery-moreOnImgur
 m.imgur.com##.GalleryHandler-postContainer:not(:nth-of-type(2))
+m.imgur.com##.get-app-block
 m.imgur.com##.popOverAvatar:has(.getTheApp)
 m.imgur.com##.share
 m.imgur.com##.showComments
 m.naver.com##a[href*="/fxclick?"]
 m.search.naver.com##li[data-pwr-ad-url]
+m.shop.interpark.com##.on.bottom.popupWrap
 m.youtube.com##.rich-section-content-wrapper
 m.youtube.com##a[onclick*='"ping_url":"http://www.google.com/aclk?']
 m.youtube.com##ytm-pivot-bar-item-renderer:nth-of-type(2)
 m.youtube.com#@#a[onclick*="\"ping_url\":\"http://www.google.com/aclk?"]
+mbook.interpark.com###intro_popup
+mbook.interpark.com##.bannerSliderWrap
 mediatoday.co.kr###SupportForm_id
 mediawatch.kr##.con_primary > div > div:nth-of-type(6)
 mediawatch.kr##[src^="https://www.mediawatch.kr/data/banner/"]
@@ -641,6 +604,7 @@ wemakeprice.com##.aiplus_wrap
 wemakeprice.com##.footbnr_wrap
 wemakeprice.com##.promo_swipe > .swiper-wrapper.swipe_img > .swiper-slide.img
 wemakeprice.com##article.with_prd_wrap
+wetransfer.com##.cookie-banner--full-panel.cookie-banner
 wishbucket.io##[class*="ComparePriceList_banner__"]
 wishbucket.io##[class*="DownloadModal_container__"]
 work.go.kr##.ban-content
