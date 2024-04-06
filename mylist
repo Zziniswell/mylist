@@ -1,8 +1,31 @@
 ! Title: mylist
-! Version: 1.130
+! Version: 1.131
 ! Description: the set of rules I just use
 
-! perforation line_2
+
+||adconsent.samsungrs.com^
+||aem-finance-collector.onkakao.net^
+||datadog.pool.ntp.org^
+deepl.com##.forced-colors-mode-border.AppBanner-module--banner--2Ezkw
+deepl.com##.dark\:bg-dark.dark\:ring-light\/2.sm\:left-auto.text-balance.max-w-md.left-16.right-4.bottom-4.pr-8.p-4.shadow-1xs.ring-dark\/2.ring-1.straight-corners\:rounded-none.rounded.bg-white.z-10.fixed
+###cookieBanner
+###loading
+##.floating_banner
+||api.samsungcloud.com^$stealth=dpi
+tiermaker.com##div:has-text(blocker)
+||ljc.coupang.com^
+lotteimall.com##.lclub_order.order_complete_wrap.order_wrap > .banner_swiper
+lotteimall.com##.pay_banner
+##.login_banner
+m.e-himart.co.kr##body,html:style(overflow:auto!important)
+m.e-himart.co.kr##.hm-app__dimm--show.hm-app__dimm
+m.e-himart.co.kr###appDownPopup
+allthat.aws.shinhancard.com##.grbLayer.grbDim
+allthat.aws.shinhancard.com###groobeeWrap
+pay.naver.com##._aitems_container._aitemsInfos_index_0._shopping_aitems.shopping_section
+samsung.com##.cod05-app-banner
+###cb-gdpr
+
 
 ! perforation line_1
 ###ad_body
@@ -120,7 +143,7 @@ $removeparam=sc,domain=dailian.co.kr
 @@||oauth.telegram.org^
 @@||onelink.me^$stealth=dpi
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=apkmirror.com
-@@||pay.naver.com/$stealth=useragent|3p-cookie
+@@||pay.naver.com/$stealth=useragent
 @@||ssg.com/$stealth=useragent
 @@||startpage.com^$stealth=dpi
 @@||wemakeprice.com/$stealth=useragent
@@ -190,7 +213,6 @@ blog.naver.com##div[class*="moment_wrap__"]
 blog.naver.com##div[class*="today_video__"]
 blog.naver.com##div[class*="video_carousel__"]
 board.namu.wiki###newsRank
-brunch.co.kr##.floating_banner
 brunch.co.kr##[src^="https://t1.daumcdn.net/brunch/static/banner/"]
 bunjang.co.kr##body,html:style(overflow:auto!important)
 buondua.com##.article-fulltext > div:nth-of-type(1)
@@ -295,9 +317,9 @@ gmarket.co.kr##.box__couponswiper-wrap
 gmarket.co.kr##.box_dot_main
 gmarket.co.kr##.plcc_banner
 goobne.co.kr##.pc_login_btn.red_back_btn.l-btn
-google.*##+js(acis, document.cookie, YES+)
-google.*##+js(aeld, DOMContentLoaded, CONSENT)
-google.*##^script:has-text(consentCookiePayload)
+google.com##+js(acis, document.cookie, YES+)
+google.com##+js(aeld, DOMContentLoaded, CONSENT)
+google.com##^script:has-text(consentCookiePayload)
 google.co.jp,google.co.kr,google.co.uk,google.com##div#bottomads
 google.co.jp,google.co.kr,google.co.uk,google.com##div#tads
 google.com###lb
@@ -470,8 +492,7 @@ naver.com##.id_comp_napp_banner.grid1
 naver.com##.id_comp_shortform_new.grid1
 naver.com##.widget_wrap
 naver.com##div.info_relative
-new-m.pay.naver.com##.ADRewardBannerImage_article__3Hh-U
-new-m.pay.naver.com##[class*="SmartChannel_article__"]
+pay.naver.com##[class*="SmartChannel_article__"]
 news.nate.com###module_ssul
 news.naver.com###_COMMENT_NOTICE
 news.naver.com###channelBanner
@@ -582,15 +603,12 @@ tcafe2a.com##div.blank-btm15.first-widget.sction-first-widget
 terabox.com##.ad-eggplant
 tiermaker.com###ta-logos-div
 tistory.com###article > center
-tistory.com###loading
 tistory.com###recommended-content-container
-tistory.com##.floating_banner
 tistory.com##article > center
 tmon.co.kr##.banner_offer
 tmon.co.kr##.deallist_scroll_wrap
 tmon.co.kr##.space_bottom
 tmon.co.kr##.type02.banner_area
-tmon.co.kr##[src^="https://img4.tmon.kr/cdn3/"]
 tmon.co.kr##div.deallist_scroll_wrap
 torrentsome*.com##.px-2.gap-2.md\:grid-cols-2.grid-cols-1.grid
 v.daum.net##ins[data-ad-unit]
