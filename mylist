@@ -1,8 +1,45 @@
 ! Title: mylist
-! Version: 1.131
+! Version: 1.132
 ! Description: the set of rules I just use
 
-
+blog.fc2.com#@#.ad_footer
+##cloudflare-app
+###adTop
+video.fc2.com##.MemberPush_freeArea
+car.encar.com##[class*="FirstBanner_dimmed_layer__"]
+apkmirror.com###appmanager_recentpostswidget-2 > .listWidget > div.appRow
+video.fc2.com##.c-app-sp2
+video.fc2.com##.ad_area_top
+video.fc2.com##.login-footer
+video.fc2.com##div:has-text(speed)
+@@||video.fc2.com^$stealth=useragent
+video.fc2.com##div.container-sp > div:nth-of-type(5)
+investing.com##.desktop\:max-w-\[1360px\].tablet\:bg-inherit.bg-primary-light.w-full.mt-8
+investing.com##div[class*="promo-strip_proPromo-stripe___"]
+apkmirror.com###ezmobfooter
+@@||tpc.googlesyndication.com^$script,~third-party
+apkmirror.com##.OUTBRAIN
+||widgets.outbrain.com^$domain=apkmirror.com
+apkmirror.com##.appRow.showOnMobileAndTablet
+apkmirror.com#$##ezmob-wrapper { display: none !important; }
+apkmirror.com#$#html > body { padding-top: 0 !important; }
+lego.com##[class*="AgeGatestyles__Wrapper"]
+||top.selulesan.co.ua^
+fanbox.cc##[class*="PrivacyPolicyAgreementIsRequiredAlert__Wrapper-"]
+$removeparam=proxyReferer,domain=naver.com
+lotteimall.com###cardPopup
+@@||lotteimall.com/$stealth=useragent
+kyobobook.co.kr###customPopAdv
+kyobobook.co.kr##.burst_banner_wrap
+@@||kyobobook.co.kr/$stealth=useragent
+@@||homeplus.co.kr/$stealth=useragent
+homeplus.co.kr##div[class*="layerDim"]
+homeplus.co.kr##div[class*="marketingLayerWrap"]
+###app-down-link
+homeplus.co.kr##body,html:style(overflow:auto!important)
+@@||ourhome.co.kr^$stealth=dpi
+11st.co.kr##.fadeIn.animated.dim
+11st.co.kr###mwPortal
 ||adconsent.samsungrs.com^
 ||aem-finance-collector.onkakao.net^
 ||datadog.pool.ntp.org^
@@ -19,12 +56,11 @@ lotteimall.com##.pay_banner
 ##.login_banner
 m.e-himart.co.kr##body,html:style(overflow:auto!important)
 m.e-himart.co.kr##.hm-app__dimm--show.hm-app__dimm
-m.e-himart.co.kr###appDownPopup
+###appDownPopup
 allthat.aws.shinhancard.com##.grbLayer.grbDim
 allthat.aws.shinhancard.com###groobeeWrap
 pay.naver.com##._aitems_container._aitemsInfos_index_0._shopping_aitems.shopping_section
 samsung.com##.cod05-app-banner
-###cb-gdpr
 
 
 ! perforation line_1
@@ -34,7 +70,6 @@ samsung.com##.cod05-app-banner
 ###adssmall3
 ###appInstallPopupContainer
 ###bnr_float
-###cloudflare-app[app="cookiless"]
 ###div[data-cy="cookie-banner"]
 ###div[data-testid="cookiePopup"]
 ###fixed_ad
@@ -112,7 +147,6 @@ $removeparam=sc,domain=dailian.co.kr
 10000recipe.com###obx_ingredient_goods
 10000recipe.com###wtgSticky
 100ssd.co.kr##div.auto-marbtm-5.auto-martop-5
-11st.co.kr###banner
 11st.co.kr###brandingAdImg
 11st.co.kr###dtl01 > div.l-grid
 11st.co.kr###hotclick-recm-container-top
@@ -121,8 +155,6 @@ $removeparam=sc,domain=dailian.co.kr
 11st.co.kr##.c-footer__app-download
 11st.co.kr##.dtl_ad_txt
 11st.co.kr##.t_banner
-11st.co.kr##.w-scroll-css
-11st.co.kr##div > div:nth-of-type(6)
 29cm.co.kr##.css-b1ntip
 29cm.co.kr##.ng-star-inserted.app-install-layer-wrapper
 29cm.co.kr##[href^="https://29cm.onelink.me/1080201211"]
@@ -130,9 +162,9 @@ $removeparam=sc,domain=dailian.co.kr
 ://yandex.$removeparam=clid
 ://yandex.$removeparam=source
 @@||11st.co.kr/$stealth=useragent
-@@||abr.ge/$stealth=useragent
-@@||adison.co/$stealth=useragent|3p-cookie
-@@||airbridge.io/$stealth=useragent
+@@||abr.ge/$stealth
+@@||adison.co/$stealth
+@@||airbridge.io/$stealth
 @@||auction.co.kr/$stealth=useragent
 @@||brand.naver.com/$stealth=3p-cookie
 @@||gmarket.*/$stealth=useragent
@@ -141,7 +173,7 @@ $removeparam=sc,domain=dailian.co.kr
 @@||linkprice.com/$stealth
 @@||lotteon.com/$stealth=useragent
 @@||oauth.telegram.org^
-@@||onelink.me^$stealth=dpi
+@@||onelink.me^$stealth
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=apkmirror.com
 @@||pay.naver.com/$stealth=useragent
 @@||ssg.com/$stealth=useragent
@@ -187,7 +219,6 @@ arca.live##.show.modal
 arca.live##.show.modal-backdrop
 arca.live##.wrap
 arca.live##body,html:style(overflow:auto!important)
-arkbooks.net##.ls-fullscreen-wrapper
 arm.c.appier.net
 asiatime.co.kr###swiper-wrapper-html > .swiper-slide-active.swiper-slide
 asiatime.co.kr##.cover_story.col-lg-3
@@ -360,7 +391,6 @@ hankyung.com##.show.promotion-floating2
 hankyung.com##.view_bnr
 hasha.in##.bg-hasha-1-l.rounded.text.p-5 > div:nth-of-type(3)
 hasha.in##.gpdcNM
-hasha.in##cloudflare-app
 hasha.in##div.max-w-full.flex-col.flex.mb-6.mx-auto.w-fit
 hellven.net###fr
 hentaiera.com##.bblocktop
@@ -541,7 +571,7 @@ ppomppu.co.kr##[id='bbs_inform']
 ppomppu.co.kr##[id='bbs_notice']
 ppss.kr##[src^="https://was.livere.me/enlipleAD"]
 pressian.com##div.banner
-product.29cm.co.kr##.eddhs1j0.css-b1ntip
+29cm.co.kr##.eddhs1j0.css-b1ntip
 reddit.com##body:style(overflow: auto !important; position: static !important;)
 reddit.com##body:style(pointer-events:auto!important;)
 resizepixel.com##.align-items-center.justify-content-center.flex-column.d-sm-none.d-flex
@@ -591,8 +621,6 @@ spls.io##.footer_banner
 ssfshop.com##.act-diver
 ssg.com###_detailgoods
 ssg.com###_endlessgoods
-ssg.com##.css-1fjna6l
-ssg.com##.css-1wpiy4d.chakra-link
 ssg.com##div.mndtl_sec_cont > div.mndtl_sec_bx > div.mndtl_bn
 startpage.com###home-top-header
 suto.co.kr##.focus_event_title
