@@ -1,7 +1,19 @@
 ! Title: mylist
-! Version: 1.132
+! Version: 1.133
 ! Description: the set of rules I just use
 
+||api2.branch.io^
+@@||mkt.wemakeprice.link^$stealth=dpi
+@@||wemakeprice.app.link^$stealth=useragent
+||veoh.com^
+video.fc2.com##.banner
+video.fc2.com###body_contents > div.container-sp
+video.fc2.com##body,html:style(overflow:auto!important)
+video.fc2.com##.c-modal-age-verification
+@@||car.encar.com^$stealth=dpi
+11st.co.kr##.c-floating--flexible.fadeIn.modal-center.animated.c-floating
+blog.fc2.com###wrapper > div:nth-of-type(4)
+||naverportal.com^
 blog.fc2.com#@#.ad_footer
 ##cloudflare-app
 ###adTop
@@ -61,8 +73,6 @@ allthat.aws.shinhancard.com##.grbLayer.grbDim
 allthat.aws.shinhancard.com###groobeeWrap
 pay.naver.com##._aitems_container._aitemsInfos_index_0._shopping_aitems.shopping_section
 samsung.com##.cod05-app-banner
-
-
 ! perforation line_1
 ###ad_body
 ###adhere
