@@ -1,10 +1,11 @@
 ! Title: mylist
-! Version: 1.134
+! Version: 1.135
 ! Description: the set of rules I just use
 
+allaboutpc.co.kr##.wrap_top_bn
+||securepubads.g.doubleclick.net^
 aliexpress.com###header-float-banner
 reddit.com##.\@container
-namu.wiki##aside
 reddit.com##xpromo-nsfw-blocking-modal,slot+.prompt 
 reddit.com##[style*="blur"]:style(filter:none!important;) 
 shopping.naver.com##[class*="popupBanner"]
