@@ -1,7 +1,21 @@
 ! Title: mylist
-! Version: 1.135
+! Version: 1.136
 ! Description: the set of rules I just use
 
+namu.wiki##aside
+m.youtube.com##.rich-section-single-column
+11st.co.kr##.c-donation
+11st.co.kr##body,html:style(overflow:auto!important)
+m.11st.co.kr###vueDimmed > .animated.dim
+m.11st.co.kr###lbSktpassSlim
+11st.co.kr##.c-banner-point
+11st.co.kr###sectionFavorAd
+reddit.com##shreddit-experience-tree.theme-beta
+chan.sankakucomplex.com###header > .carousel
+chan.sankakucomplex.com##.content > div > .carousel
+chan.sankakucomplex.com##.bottom-popup
+chan.sankakucomplex.com##body,html:style(overflow:auto!important)
+###topad_1
 allaboutpc.co.kr##.wrap_top_bn
 ||securepubads.g.doubleclick.net^
 aliexpress.com###header-float-banner
@@ -171,14 +185,12 @@ $removeparam=sc,domain=dailian.co.kr
 11st.co.kr###brandingAdImg
 11st.co.kr###dtl01 > div.l-grid
 11st.co.kr###hotclick-recm-container-top
-11st.co.kr###vueWrapper > div > div > div.l-grid
 11st.co.kr##.base > .l-grid > .l-grid__row
 11st.co.kr##.c-footer__app-download
 11st.co.kr##.dtl_ad_txt
 11st.co.kr##.t_banner
 29cm.co.kr##.css-b1ntip
 29cm.co.kr##.ng-star-inserted.app-install-layer-wrapper
-29cm.co.kr##[href^="https://29cm.onelink.me/1080201211"]
 4kwallpapers.com##.scrollToTopBtn
 ://yandex.$removeparam=clid
 ://yandex.$removeparam=source
@@ -257,7 +269,6 @@ biz.chosun.com##.grid__col--sm-12.grid__col--md-12.grid__col--lg-8.\|.layout__ar
 biz.chosun.com##.grid__col--sm-12.grid__col--md-12.grid__col--lg-8.\|.layout__article-main.layout__article-col > div.box--hidden-md.box--hidden-lg.box--bg-grey-10.box--pad-bottom-md.box--pad-top-md.width--100.box--margin-top-md.\|.sm.flex-chain-wrapper > .flex.\|.flex-chain
 biz.newdaily.co.kr##[class='notifyjs-corner']
 blog.naver.com##.popup_da_wrap
-blog.naver.com##[class='market_carousel__KKWgx']
 blog.naver.com##body,html:style(overflow:auto!important)
 blog.naver.com##div[class*="clip_wrap__"]
 blog.naver.com##div[class*="market_carousel__"]
