@@ -1,13 +1,29 @@
 ! Title: mylist
-! Version: 1.136
+! Version: 1.137
 ! Description: the set of rules I just use
 
+dmitory.com##.google_m_read_ad
+##.top_ad
+fnnews.com###mlist_add
+fnnews.com##.view > div:nth-of-type(4)
+instiz.net###out_enter
+lawtalk.co.kr##.normal-answer-preview__preview-body
+etoland.co.kr##.power_link7-power_link_top_wrap
+@@||ofw.adison.co^$stealth=3p-cookie|useragent
+@@||galaxystore.samsung.com^$stealth=useragent
+medium.com##.qt.qs.qr.m
+*.wiki##div.video-long-banner
+megabox.co.kr###banner_layer
+megabox.co.kr###banner_content
+megabox.co.kr##body,html:style(overflow:auto!important)
+@@||11st.co.kr^$extension
+||facebook.com^$domain=11st.co.kr
 namu.wiki##aside
-m.youtube.com##.rich-section-single-column
+youtube.com##.rich-section-single-column
 11st.co.kr##.c-donation
 11st.co.kr##body,html:style(overflow:auto!important)
-m.11st.co.kr###vueDimmed > .animated.dim
-m.11st.co.kr###lbSktpassSlim
+11st.co.kr###vueDimmed > .animated.dim
+11st.co.kr###lbSktpassSlim
 11st.co.kr##.c-banner-point
 11st.co.kr###sectionFavorAd
 reddit.com##shreddit-experience-tree.theme-beta
@@ -466,7 +482,6 @@ lawandgood.com##.css-zq0qxn
 lawandgood.com##body,html:style(overflow:auto!important)
 lawtalk.co.kr##.opened.bottom-sheet-wrap > .with-mobile-bottom-tab.bottom-sheet
 lawtalk.co.kr##.premium-lawyer-section
-lawtalk.co.kr##.qna-list__ad-google-preview
 lawtalk.co.kr##mobile-bottom-tab
 lawtalk.co.kr##qna-article-banner
 lawtimes.co.kr##.e1vjatge6.css-1fs6yir
