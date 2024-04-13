@@ -1,7 +1,11 @@
 ! Title: mylist
-! Version: 1.137
+! Version: 1.138
 ! Description: the set of rules I just use
 
+etoland.co.kr###store_all
+etoland.co.kr###mw_mobile > [href^="../../plugin/mobile/board.php"]
+etoland.co.kr###mw_mobile > section:nth-of-type(1)
+stackoverflow.com###onetrust-banner-sdk
 dmitory.com##.google_m_read_ad
 ##.top_ad
 fnnews.com###mlist_add
@@ -9,7 +13,6 @@ fnnews.com##.view > div:nth-of-type(4)
 instiz.net###out_enter
 lawtalk.co.kr##.normal-answer-preview__preview-body
 etoland.co.kr##.power_link7-power_link_top_wrap
-@@||ofw.adison.co^$stealth=3p-cookie|useragent
 @@||galaxystore.samsung.com^$stealth=useragent
 medium.com##.qt.qs.qr.m
 *.wiki##div.video-long-banner
@@ -121,8 +124,6 @@ samsung.com##.cod05-app-banner
 ###adssmall3
 ###appInstallPopupContainer
 ###bnr_float
-###div[data-cy="cookie-banner"]
-###div[data-testid="cookiePopup"]
 ###fixed_ad
 ###free-genre-list > li:nth-of-type(1)
 ###free-genre-list > li:nth-of-type(2)
@@ -167,21 +168,15 @@ samsung.com##.cod05-app-banner
 ##.sub_ad1
 ##.subscription_fee
 ##.top-ads
-##.tt-sns-icon-size-big.tt-sns-icon-alignment-left.tt-share-entry-with-sns.tt-plugin
 ##.widget-box > div.row
 ##[src^="/bannerpop/"]
 ##[src^="/img1a.coupangcdn.com/"]
 ##[src^="https://naverwebtoon-phinf.pstatic.net/"]
-##cloudflare-app[app="cookiless"]
 ##div.ad-adsense.js-ad-slot
 ##div.ad400_100
 ##div.gf-bottom-panel-left
 ##div.hidden-xs.hidden-sm > .widget-title
 ##div.revenue_unit_wrap
-##div[data-cy="cookie-banner"]
-##div[data-testid="cookiePopup"]
-##iframe[style='width: 280px !important; height: 280px !important; margin: 0px auto !important; padding: 0px; border: none; outline: none; box-sizing: border-box; position: fixed; color-scheme: none; inset: auto 0px 0px !important; overflow: hidden; z-index: 2147483647; display: block;']
-##li.mobile.post-knojybvjr2i
 $removeparam=NaPm,domain=msearch.shopping.naver.com|search.shopping.naver.com
 $removeparam=OutLink,domain=sedaily.com
 $removeparam=cooper,domain=sbs.co.kr
@@ -212,7 +207,7 @@ $removeparam=sc,domain=dailian.co.kr
 ://yandex.$removeparam=source
 @@||11st.co.kr/$stealth=useragent
 @@||abr.ge/$stealth
-@@||adison.co/$stealth
+@@||adison.co^$stealth
 @@||airbridge.io/$stealth
 @@||auction.co.kr/$stealth=useragent
 @@||brand.naver.com/$stealth=3p-cookie
