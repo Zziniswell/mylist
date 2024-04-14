@@ -1,7 +1,17 @@
 ! Title: mylist
-! Version: 1.138
+! Version: 1.139
 ! Description: the set of rules I just use
 
+asmhentai.com##.atop
+asmhentai.com##.wrap > .atop
+myanimelist.net##.modal-content-overlay
+myanimelist.net###gdpr-modal-bottom
+allporncomic.com##.body-top-ads.custom-code.c-ads.ad
+allporncomic.com##.na
+hentaienvy.com##.footer_bar
+##.bblocktop
+||pratama.store^
+||jaqgkyfupna.com^
 etoland.co.kr###store_all
 etoland.co.kr###mw_mobile > [href^="../../plugin/mobile/board.php"]
 etoland.co.kr###mw_mobile > section:nth-of-type(1)
@@ -217,7 +227,7 @@ $removeparam=sc,domain=dailian.co.kr
 @@||linkprice.com/$stealth
 @@||lotteon.com/$stealth=useragent
 @@||oauth.telegram.org^
-@@||onelink.me^$stealth
+@@||onelink.me^$stealth=dpi|useragent
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=apkmirror.com
 @@||pay.naver.com/$stealth=useragent
 @@||ssg.com/$stealth=useragent
@@ -738,8 +748,6 @@ zpat.info##.w3-grey.w3-center.w3-container
 ||consent.google.com^
 ||dcinside.com/*/app_ad_
 ||deepl.com^$removeparam=cta
-||disk.yandex.$removeparam=sk
-||docs.yandex.$removeparam=uid
 ||donga.com^$removeparam=ref
 ||douban.com^$removeparam=_i
 ||duckduckgo.com/y.js$removeparam=ad_domain
@@ -776,7 +784,6 @@ zpat.info##.w3-grey.w3-center.w3-container
 ||google.*/search$removeparam=sourceid
 ||google.*/search$removeparam=ved
 ||google.*/websearch$removeparam=visit_id
-||graph.facebook.com^
 ||graph.facebook.com^$important
 ||ingest.sentry.io^
 ||jprtb.c.appier.net^
@@ -788,11 +795,6 @@ zpat.info##.w3-grey.w3-center.w3-container
 ||linkedin.com/feed/update$removeparam=origin
 ||location.microsoft.com^
 ||lockincomp.com^
-||login.afreecatv.com^$removeparam=szFrom
-||market.yandex.$removeparam=clid
-||market.yandex.$removeparam=do-waremd5
-||market.yandex.$removeparam=mclid
-||market.yandex.$removeparam=vid
 ||microsoft.com^$removeparam=ocid
 ||microsoft.com^$removeparam=ranEAID
 ||microsoft.com^$removeparam=ranSiteID
@@ -871,19 +873,6 @@ zpat.info##.w3-grey.w3-center.w3-container
 ||www.yandex.$removeparam=clid
 ||yahoo.co.jp^$removeparam=ikCo
 ||yahoo.co.jp^$removeparam=sc_e
-||yandex.*/images/$removeparam=source-serpid
-||yandex.*/news/$removeparam=from
-||yandex.*/news/$removeparam=mlid
-||yandex.*/news/$removeparam=msid
-||yandex.*/news/$removeparam=persistent_id
-||yandex.*/news/$removeparam=stid
-||yandex.*/promo/$removeparam=utm-term
-||yandex.*/search/$removeparam=did
-||yandex.*/search/$removeparam=suggest_reqid
-||yandex.*/sport/$removeparam=mlid
-||yandex.*/sport/$removeparam=msid
-||yandex.*/sport/$removeparam=persistent_id
-||yandex.*/sport/$removeparam=stid
 ||yna.co.kr^$removeparam=site
 ||youtube.com^$removeparam=si
 ||zijieapi.com^
