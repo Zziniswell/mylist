@@ -1,7 +1,17 @@
 ! Title: mylist
-! Version: 1.141
+! Version: 1.142
 ! Description: the set of rules I just use
 
+@@||kyobobook.co.kr^$removeparam
+@@||app.link^$removeparam
+yes24.com###yesAppPopMask
+yes24.com###yesAppPop
+@@||buzzvil^$removeparam
+@@||brand.naver.com^$removeparam
+@@||onelink.me^$removeparam
+@@||abr.ge^$removeparam
+@@||adpopcorn.com^$removeparam
+@@||qoo10.com^$removeparam
 @@||ssg.com^$removeparam
 @@||akmall.com^$removeparam
 @@||aladin.co.kr^$removeparam
