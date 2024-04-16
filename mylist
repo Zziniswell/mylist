@@ -1,7 +1,19 @@
 ! Title: mylist
-! Version: 1.143
+! Version: 1.144
 ! Description: the set of rules I just use
 
+lador.co.kr##.main_pop
+a-bly.com##.navigation-bar__banner.navigation-bar__row
+a-bly.com##body,html:style(overflow:auto!important)
+a-bly.com##.app-persuade-drawer.drawer
+dcinside.com##section.clkhigh.grid
+||cleanhaircut.com^
+talk.op.gg##.Beacon
+op.gg###sash-banner-ad
+op.gg##a[href^="https://play.google.com/store/apps/details"]
+op.gg##div[class*="premium-banner"]
+||id.google.com^
+||accounts.google.com/gsi^,important
 ygosu.com##.row-offcanvas-right.row-offcanvas.row > div:nth-of-type(2)
 dtnews24.com##.ad-view
 dtnews24.com##table
@@ -83,7 +95,6 @@ picrew.me##.is_open.st-Terms_Wrapper
 ||wcs.naver.net^
 ||firebase-settings.crashlytics.com^
 member.ssg.com##.notranslate.cmem_nomemarea
-||accounts.google.com/gsi/*
 blog.wishket.com##[href^="https://wishket.com/"]
 yozm.wishket.com###p5-total-sub-navigation-wrapper
 yozm.wishket.com##[href^="https://www.wishket.com/project/"]
@@ -137,7 +148,7 @@ allaboutpc.co.kr##.wrap_top_bn
 ||securepubads.g.doubleclick.net^
 aliexpress.com###header-float-banner
 reddit.com##.\@container
-reddit.com##xpromo-nsfw-blocking-modal,slot+.prompt 
+reddit.*##xpromo-nsfw-blocking-modal,slot+.prompt 
 reddit.com##[style*="blur"]:style(filter:none!important;)
 shopping.naver.com##[class*="popupBanner"]
 section.blog.naver.com##.wrap_my_information > div:nth-of-type(5)
@@ -1729,7 +1740,6 @@ shop.interpark.com##.combineBanner.couponBanner
 shop.interpark.com##.horizonBanner
 shopping.naver.com###firstDynamicAd
 shopping.naver.com###secondDynamicAd
-shopping.naver.com##.N\=a\:fot\.shortcut
 shopping.naver.com##.mister
 shopping.naver.com##.nv-openmain
 shopping.naver.com##.plusdeal
