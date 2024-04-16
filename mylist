@@ -1,16 +1,57 @@
 ! Title: mylist
-! Version: 1.142
+! Version: 1.143
 ! Description: the set of rules I just use
 
+ygosu.com##.row-offcanvas-right.row-offcanvas.row > div:nth-of-type(2)
+dtnews24.com##.ad-view
+dtnews24.com##table
+@@||appsflyer.com^$removeparam
+@@||play.google.com^$removeparam
+dogdrip.net##.margin-top-small.flex-middle.flex-left.flex.ed
+smartstore.naver.com###MODAL_ROOT_ID
+smartstore.naver.com##body,html:style(overflow:auto!important)
+@@||smartstore.naver.com/$stealth
+brand.naver.com##body,html:style(overflow:auto!important)
+brand.naver.com###MODAL_ROOT_ID > div
+@@||lcs.naver.com/m?u=$domain=smartstore.naver.com
+@@||play.google.com/log?$domain=meet.google.com
+@@||calendar.naver.com/js/dist/lib/clickcr.js$domain=calendar.naver.com
+@@||lcs.naver.com/*?u=*service_id$image,domain=smartstore.naver.com
+@@||s1.daumcdn.net/svc/original/U03/cssjs/userAgent$domain=tistory.com
+||google-analytics.com/analytics.js$script,redirect=google-analytics,important,domain=m.investing.com
+@@||cloudflare.com/analytics?$domain=cloudflare.com
+@@||images.apple.com/metrics/scripts/s_code_h.js$domain=apple.com
+@@||google-analytics.com/analytics.js$domain=amd.com
+@@||google-analytics.com/plugins/$domain=amd.com
+@@||googletagmanager.com/gtm.js$domain=amd.com
+@@||googletagmanager.com^$domain=addons.opera.com
+@@||apple.com/metrics/ac-analytics/*/scripts/$domain=apple.com
+@@||apple.com/metrics/scripts/$domain=locate.apple.com
+@@||google.com/usability/$domain=google.com,document
+@@||googletagmanager.com/gtm.js$domain=unity3d.com
+@@||play.google.com/log?format=json$domain=news.google.com
+@@||inpref.s3.amazonaws.com/frosmo.easy.js$third-party
+@@||inpref.s3.amazonaws.com/sites/eventim_$script,third-party
+@@||googletagmanager.com/gtm.js$domain=imgur.com
+@@||stat.tiara.kakao.com/track?d=*%22%3A%22go_*%22%$domain=map.kakao.com
+||arca.live/cdn-cgi/rum?
+||r.yna.co.kr/global/lib/*/js/nlogger.js
+||dtory.ebs.co.kr/wlo^
+||analytics.google.com/g/collect?
+||google.*/ads/ga-audiences?v=
+||dubox.com/statistics^
+||video.google.com/api/stats/
+||cdn.jsdelivr.net/npm/@adshield/
+||image.ruliweb.com/view/log
+@@||coupang.com^$removeparam
+||connect.facebook.net^$domain=~facebook.com,~instagram.com
+$removeparam=jaehuid
 @@||kyobobook.co.kr^$removeparam
 @@||app.link^$removeparam
 yes24.com###yesAppPopMask
 yes24.com###yesAppPop
-@@||buzzvil^$removeparam
-@@||brand.naver.com^$removeparam
 @@||onelink.me^$removeparam
 @@||abr.ge^$removeparam
-@@||adpopcorn.com^$removeparam
 @@||qoo10.com^$removeparam
 @@||ssg.com^$removeparam
 @@||akmall.com^$removeparam
@@ -26,11 +67,6 @@ yes24.com###yesAppPop
 @@||airbridge.io^$removeparam
 @@||click.linkprice.com^$removeparam
 @@||aliexpress.com^$removeparam
-@@$removeparam=utm_campaign
-@@$removeparam=utm_medium
-@@$removeparam=utm_source
-@@$removeparam=subparam
-@@$removeparam=lptag
 metabattle.com###inca2
 metabattle.com###inca1
 etoday.co.kr##.mboxcont.DetailView_Wrap > section:nth-of-type(1)
@@ -47,7 +83,7 @@ picrew.me##.is_open.st-Terms_Wrapper
 ||wcs.naver.net^
 ||firebase-settings.crashlytics.com^
 member.ssg.com##.notranslate.cmem_nomemarea
-||accounts.google.com/gsi/client$script,third-party
+||accounts.google.com/gsi/*
 blog.wishket.com##[href^="https://wishket.com/"]
 yozm.wishket.com###p5-total-sub-navigation-wrapper
 yozm.wishket.com##[href^="https://www.wishket.com/project/"]
@@ -110,7 +146,7 @@ section.blog.naver.com##.hot_topic
 ###cb-gdpr
 ||api2.branch.io^
 @@||mkt.wemakeprice.link^$stealth=dpi
-@@||wemakeprice.app.link^$stealth=useragent
+@@||app.link/$stealth=useragent
 video.fc2.com##.banner
 video.fc2.com##body,html:style(overflow:auto!important)
 video.fc2.com##.c-modal-age-verification
@@ -1058,15 +1094,6 @@ www.google.*#%#//scriptlet('remove-attr', 'onmousedown|data-mousedown|ping|data-
 www.google.*#%#//scriptlet('remove-attr', 'ping', 'div[id="search"] a[data-ved][ping]')
 ||adsystem.dailyissue.co.kr/show/logs.php
 ||ahnlab.tagtree.co.kr/track.imp
-||aliexpress.$removeparam=algo_pvid
-||aliexpress.$removeparam=curPageLogUid
-||aliexpress.$removeparam=pdp_npi
-||aliexpress.$removeparam=pvid
-||aliexpress.$removeparam=scm
-||aliexpress.$removeparam=scm-url
-||aliexpress.$removeparam=scm_id
-||aliexpress.$removeparam=spm
-||aliexpress.$removeparam=utparam
 ||amazonaws.com/?wsid=
 ||amazonaws.com/beacon^
 ||analytics.*.*/*.php
@@ -1151,7 +1178,6 @@ www.google.*#%#//scriptlet('remove-attr', 'ping', 'div[id="search"] a[data-ved][
 ||pornhub.com/video/category_tracker?e=
 ||redditmedia.com/gtm/
 ||redditmedia.com/gtm?id=
-||redtube.com^$removeparam=from
 ||s.click.aliexpress.com/af_pixel.htm
 ||s1.daumcdn.net/svc/original/U03/cssjs/userAgent
 ||science.ytn.co.kr/_comm/clog.php
@@ -1192,7 +1218,6 @@ www.google.*#%#//scriptlet('remove-attr', 'ping', 'div[id="search"] a[data-ved][
 ||youtube-nocookie.com/api/stats/atr?
 ||youtube-nocookie.com/api/stats/qoe?
 ||youtube-nocookie.com/youtubei/v1/log_event?
-||youtube.com^$removeparam=pp
 ||ytn.co.kr/_comm/ylog.php?
 ~ads.google.com#%#navigator.getBattery = undefined;
 ~yandex.by,~yandex.com,~yandex.kz,~yandex.ru##a[href^="http://metrika.yandex.ru/stat/"]
@@ -1272,24 +1297,23 @@ www.google.*#%#//scriptlet('remove-attr', 'ping', 'div[id="search"] a[data-ved][
 29cm.co.kr##.css-b1ntip
 29cm.co.kr##.ng-star-inserted.app-install-layer-wrapper
 4kwallpapers.com##.scrollToTopBtn
-@@||11st.co.kr/$stealth=useragent
+@@||11st.co.kr^$stealth=useragent
 @@||abr.ge/$stealth
-@@||adison.co^$stealth
+@@||ofw.adison.co/$stealth
 @@||airbridge.io/$stealth
-@@||auction.co.kr/$stealth=useragent
-@@||brand.naver.com/$stealth=3p-cookie
+@@||auction.co.kr^$stealth=useragent
+@@||brand.naver.com/$stealth
 @@||gmarket.*/$stealth=useragent
 @@||hankyung.com^$stealth=dpi
 @@||kurly.com^$stealth=dpi
 @@||linkprice.com/$stealth
-@@||lotteon.com/$stealth=useragent
+@@||lotteon.com^$stealth=useragent
 @@||oauth.telegram.org^
-@@||onelink.me^$stealth=dpi|useragent
+@@||onelink.me/$stealth=dpi|useragent
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=apkmirror.com
-@@||pay.naver.com/$stealth=useragent
 @@||ssg.com/$stealth=useragent
 @@||startpage.com^$stealth=dpi
-@@||wemakeprice.com/$stealth=useragent
+@@||wemakeprice.com^$stealth=useragent
 a-ha.io##.expert-section-wrapper
 a-ha.io##.md\:tw-pr-4.md\:tw-w-3\/4 > div > div:nth-of-type(3)
 a-ha.io##[class='a-modal modalAppInstallSMS -is-mobile']
