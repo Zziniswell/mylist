@@ -1,8 +1,14 @@
 ! Title: mylist
-! Version: 1.147
+! Version: 1.148
 ! Description: the set of rules I just use
 
-
+||jsdelivr.net/npm/disable-devtool$script
+$removeparam=source_ve_path,domain=youtube.com
+$removeparam=embeds_referring_origin,domain=youtube.com
+###news-ticker
+etoday.co.kr###swipe-btn-right
+etoday.co.kr###swipe-btn-left
+###Share
 gigafile.nu###upload_panel > div:nth-of-type(4)
 gigafile.nu##.pr_area_sp
 ||opencollective.com^
@@ -77,7 +83,6 @@ kagit.kr##div.mb-12.w-full
 lamire.jp##.padding.xz-section
 lamire.jp##.ad-rect.content-bottom.ad-unit
 picrew.me##.is_open.st-Terms_Wrapper
-||wcs.naver.net^
 ||firebase-settings.crashlytics.com^
 member.ssg.com##.notranslate.cmem_nomemarea
 blog.wishket.com##[href^="https://wishket.com/"]
@@ -87,7 +92,7 @@ yozm.wishket.com##.slideInUp.normal.animated.type-popup.news-letter-guide-sectio
 suto.co.kr##.app-bottom
 @@||pagead2.googlesyndication.com/$domain=ted.com
 asmhentai.com##.atop
-asmhentai.com##.wrap > .atop
+##.wrap
 myanimelist.net##.modal-content-overlay
 myanimelist.net###gdpr-modal-bottom
 allporncomic.com##.body-top-ads.custom-code.c-ads.ad
@@ -100,7 +105,7 @@ etoland.co.kr###store_all
 etoland.co.kr###mw_mobile > [href^="../../plugin/mobile/board.php"]
 etoland.co.kr###mw_mobile > section:nth-of-type(1)
 stackoverflow.com###onetrust-banner-sdk
-dmitory.com##.google_m_read_ad
+##.google_m_read_ad
 ##.top_ad
 fnnews.com###mlist_add
 fnnews.com##.view > div:nth-of-type(4)
@@ -113,7 +118,6 @@ medium.com##.qt.qs.qr.m
 megabox.co.kr###banner_layer
 megabox.co.kr###banner_content
 @@||11st.co.kr^$extension
-||facebook.com^$domain=11st.co.kr
 namu.wiki##aside
 youtube.com##.rich-section-single-column
 11st.co.kr##.c-donation
@@ -164,7 +168,6 @@ apkmirror.com###ezmobfooter
 apkmirror.com##.OUTBRAIN
 ||widgets.outbrain.com^$domain=apkmirror.com
 apkmirror.com##.appRow.showOnMobileAndTablet
-apkmirror.com#$##ezmob-wrapper { display: none !important; }
 apkmirror.com#$#html > body { padding-top: 0 !important; }
 lego.com##[class*="AgeGatestyles__Wrapper"]
 ||top.selulesan.co.ua^
@@ -199,10 +202,9 @@ lotteimall.com##.pay_banner
 e-himart.co.kr##.hm-app__dimm--show.hm-app__dimm
 ###appDownPopup
 allthat.aws.shinhancard.com##.grbLayer.grbDim
-allthat.aws.shinhancard.com###groobeeWrap
+###groobeeWrap
 pay.naver.com##._aitems_container._aitemsInfos_index_0._shopping_aitems.shopping_section
 samsung.com##.cod05-app-banner 
-
 ! perforation line_2
 ###ad_body
 ###adhere
@@ -314,7 +316,6 @@ apkmirror.com#$#.gooWidget.google-ad-square { display: block !important; }
 apkmirror.com#$#body .ains { display: block !important; position: absolute !important; left: -3000px !important; }
 apkmirror.com#$#body .gooWidget { display: block !important; position: absolute !important; left: -3000px !important; height: 310px !important; }
 apkmirror.com#%#//scriptlet('abort-on-stack-trace', 'document.querySelectorAll', '/Object\.visibleEl[\s\S]*?onload|Object\.vE/')
-apkmirror.com$$script[wildcard="*document.querySelector*.classList.add*.innerHTML*"][min-length="200"][max-length="700"]
 apkpure.net###top-slide-banner
 apkpure.net##.app-list.sa-all-div.list > .res.search-telegram
 apkpure.net##.float-button-second.float-request-notification-permission-button
@@ -325,13 +326,11 @@ apkpure.net##.share-open
 apkpure.net##.showBadge.apk-list-double-line
 apkpure.net##div.right
 arca.live###defaultImage
-arca.live###newsRank
 arca.live##.ml-lg-0.ml-auto.navbar-nav.nav > .d-sm-block.d-none.nav-item
 arca.live##.mt-2.recaptcha-privacy
 arca.live##.mt-4.user-activites
 arca.live##.show.modal
 arca.live##.show.modal-backdrop
-arca.live##.wrap
 arm.c.appier.net
 asiatime.co.kr###swiper-wrapper-html > .swiper-slide-active.swiper-slide
 asiatime.co.kr##.cover_story.col-lg-3
@@ -457,9 +456,6 @@ gmarket.co.kr##.box__couponswiper-wrap
 gmarket.co.kr##.box_dot_main
 gmarket.co.kr##.plcc_banner
 goobne.co.kr##.pc_login_btn.red_back_btn.l-btn
-google.com##+js(acis, document.cookie, YES+)
-google.com##+js(aeld, DOMContentLoaded, CONSENT)
-google.com##^script:has-text(consentCookiePayload)
 google.co.jp,google.co.kr,google.co.uk,google.com##div#bottomads
 google.co.jp,google.co.kr,google.co.uk,google.com##div#tads
 google.com###lb
@@ -506,7 +502,6 @@ hentaiera.com##.bblocktop
 imweb.me##.shop-banner._shop_banner.shop_banner.text-center
 inews24.com##main > .news-share
 inews24.com##section > .inews-view > div:nth-of-type(1)
-interpark.com###groobeeWrap
 interpark.com##div.shopBanner
 inven.co.kr###module_gamepc
 inven.co.kr###module_market
@@ -567,13 +562,9 @@ luckyquiz3.blogspot.com##.ad13.adsbygoogle
 m.brand.naver.com###mobile-customBannerWidget
 m.brand.naver.com###mobile-customBannerWidget1
 m.bunjang.co.kr##[class*="LoginModal__AppDownload-"]
-m.naver.com##a[href*="/fxclick?"]
-m.search.naver.com##li[data-pwr-ad-url]
 m.shop.interpark.com##.on.bottom.popupWrap
 m.youtube.com##.rich-section-content-wrapper
-m.youtube.com##a[onclick*='"ping_url":"http://www.google.com/aclk?']
 m.youtube.com##ytm-pivot-bar-item-renderer:nth-of-type(2)
-m.youtube.com#@#a[onclick*="\"ping_url\":\"http://www.google.com/aclk?"]
 mbook.interpark.com###intro_popup
 mbook.interpark.com##.bannerSliderWrap
 mediatoday.co.kr###SupportForm_id
@@ -742,7 +733,6 @@ work.go.kr##.ban-content
 www.namu.wiki##div:has(> div > div > div > a[href='#']:not([target]) > *:not(svg):only-child)
 yahoo.co.jp###stream > div
 yande.re###div[class^="a"]
-yande.re###news-ticker
 yande.re##[src^="https://delivery.2d.net.co/"]
 yeongnam.com##.m-yntv-wrap
 yna.co.kr##.aside-box01
@@ -774,7 +764,6 @@ zpat.info##.w3-grey.w3-center.w3-container
 ||graph.facebook.com^$important
 ||ingest.sentry.io^
 ||jprtb.c.appier.net^
-||jsdelivr.net/npm/disable-devtool$script
 ||json2.dcinside.com/json0/app_ad_setting.php^
 ||lenovo.com.cn^
 ||lenovomm.com^
@@ -800,8 +789,6 @@ zpat.info##.w3-grey.w3-center.w3-container
 ||www.baidu.com^$app=com.app.aiimglarger
 ||zijieapi.com^
 ||zui.com^
-
-
 ! perforation line_1
 ###BorlabsCookieBox
 ###COOKIE_BANNER
@@ -939,7 +926,6 @@ zpat.info##.w3-grey.w3-center.w3-container
 ###cookie-lightbox
 ###cookie-message
 ###cookie-message-container
-###cookie-modal
 ###cookie-msg
 ###cookie-note
 ###cookie-notice
@@ -1565,8 +1551,6 @@ zpat.info##.w3-grey.w3-center.w3-container
 ##.gpm-cookie-accepted
 ##.grt-cookie-active
 ##.happy-footer-mobile
-##.happy-header-mobile
-##.happy-under-player-mobile
 ##.header-ad-mobile
 ##.header-cookies
 ##.headerCookies
@@ -1621,7 +1605,6 @@ zpat.info##.w3-grey.w3-center.w3-container
 ##.pop-cookie
 ##.popup-alert-notice
 ##.popup-choose-cookies
-##.popup-cookie
 ##.popup_cookie
 ##.privacy-alert
 ##.privacy-warning
