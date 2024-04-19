@@ -1,11 +1,15 @@
 ! Title: mylist
-! Version: 1.150
+! Version: 1.151
 ! Description: the set of rules I just use
 
 
+livesport.com##.otPlaceholder
+||collect.kr.karrotmarket.com^
+||wcs.naver.net^
+||app-tracking-gfa-collector.naver.com^
+||connect.facebook.net^$important,app=com.tmon
+||google-analytics.com^$important,app=com.tmon
 ||action.adoffice.11st.co.kr^
-||bc.ad.daum.net^
-||aem-kakao-collector.onkakao.net^
 ||criteo.net^$app=com.tmon,important
 ||criteo.com^$app=com.tmon,important
 ||doubleclick.net^$app=com.tmon,important
@@ -600,9 +604,6 @@ msearch.shopping.naver.com##div[class*="shoppingLiveShortClip_shopping_live_shor
 mt.co.kr###cont > div:nth-of-type(4)
 mt.co.kr###cont > div:nth-of-type(5)
 musinsa.com###footerCommonLayout
-namu.wiki###app > main > div:nth-of-type(2) > div > div:has-text(나무뉴스)
-namu.wiki###app > main > div:nth-of-type(2) > div > div:has-text(최근 변경)
-namu.wiki###app > main > div:nth-of-type(3)
 naver.com###MM_SEARCH_SHOP_LIVE
 naver.com###MM_search_container
 naver.com###_LEVERAGE_PROMOTION
@@ -741,7 +742,6 @@ wetransfer.com##.cookie-banner--full-panel.cookie-banner
 wishbucket.io##[class*="ComparePriceList_banner__"]
 wishbucket.io##[class*="DownloadModal_container__"]
 work.go.kr##.ban-content
-www.namu.wiki##div:has(> div > div > div > a[href='#']:not([target]) > *:not(svg):only-child)
 yahoo.co.jp###stream > div
 yande.re###div[class^="a"]
 yande.re##[src^="https://delivery.2d.net.co/"]
