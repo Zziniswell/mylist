@@ -1,7 +1,20 @@
 ! Title: mylist
-! Version: 1.149
+! Version: 1.150
 ! Description: the set of rules I just use
 
+
+||action.adoffice.11st.co.kr^
+||bc.ad.daum.net^
+||aem-kakao-collector.onkakao.net^
+||criteo.net^$app=com.tmon,important
+||criteo.com^$app=com.tmon,important
+||doubleclick.net^$app=com.tmon,important
+||facebook.com^$app=com.tmon,important
+@@||graph.facebook.com^$domain=fmkorea.com
+@@||connect.facebook.net^$domain=facebook.com,instagram.com
+||connect.facebook.net^
+||graph.facebook.com^
+||adsensecustomsearchads.com^
 @@||onelink.me/$stealth=dpi|useragent
 @@||kurly.com^$stealth=dpi
 @@||mkt.wemakeprice.link^$stealth=dpi
@@ -53,7 +66,6 @@ smartstore.naver.com###MODAL_ROOT_ID
 @@||smartstore.naver.com/$stealth
 brand.naver.com###MODAL_ROOT_ID > div
 @@||coupang.com^$removeparam
-||connect.facebook.net^$domain=~facebook.com,~instagram.com
 @@||kyobobook.co.kr^$removeparam
 @@||app.link^$removeparam
 yes24.com###yesAppPopMask
@@ -760,7 +772,6 @@ zpat.info##.w3-grey.w3-center.w3-container
 ||event.lemmamedia.com^
 ||fundingchoicesmessages.google.com^
 ||gmarket.co.kr^$app=com.towneers.www
-||graph.facebook.com^$important
 ||ingest.sentry.io^
 ||jprtb.c.appier.net^
 ||json2.dcinside.com/json0/app_ad_setting.php^
@@ -2567,7 +2578,7 @@ thesaurus.net,topstarnews.net,interfootball.heraldcorp.com,alle-tests.nl,issuya.
 thesaurus.net,topstarnews.net,interfootball.heraldcorp.com,alle-tests.nl,issuya.com,maketecheasier.com,gamingdeputy.com,thesaurus.net,motorgraph.com,thestockmarketwatch.com,mlbpark.donga.com,honkailab.com,warcraftrumbledeck.com,dogdrip.net,thephoblographer.com,brandbrief.co.kr,meconomynews.com,loawa.com,ygosu.com,sportalkorea.com,enetnews.co.kr,edaily.co.kr,economist.co.kr,etoday.co.kr,hankyung.com,isplus.com,hometownstation.com,inven.co.kr,viva100.com,joongdo.co.kr,jjang0u.com,cboard.net,a-ha.io,interfootball.co.kr,fourfourtwo.co.kr,apkmirror.com#%#//scriptlet('set-local-storage-item', 'adshield-analytics-uuid', '$remove$')
 www.google.*#%#//scriptlet('remove-attr', 'onmousedown|data-mousedown|ping|data-click', 'a[href][onmousedown], a[href][ping]')
 www.google.*#%#//scriptlet('remove-attr', 'ping', 'div[id="search"] a[data-ved][ping]')
-||accounts.google.com/gsi^,important
+||accounts.google.com/gsi^
 ||adsystem.dailyissue.co.kr/show/logs.php
 ||ahnlab.tagtree.co.kr/track.imp
 ||amazonaws.com/?wsid=
