@@ -3,6 +3,19 @@
 ! Description: the set of rules I just use
 
 
+@@||arca.live^$extension="이미지 검색"
+@@||dcinside.com^$extension="이미지 검색"
+@@||namu.wiki^$extension="自动识别填充网页验证码"
+@@||*.co.kr^$extension="Immersive Translate - Translate Website & PDF"
+fmkorea.com##li:has-text(LoL)
+namu.wiki##.qfd0\+S
+novelpia.com###sub_sale_modal_v2
+||delivery.2d.net.co^
+||track.ssg.com^
+###bottom_ad_box
+||app.adjust.com^$important,app=com.microsoft.copilot
+###cookie-exitlag
+||self.events.data.microsoft.com^
 livesport.com##.otPlaceholder
 ||collect.kr.karrotmarket.com^
 ||wcs.naver.net^
@@ -136,7 +149,6 @@ medium.com##.qt.qs.qr.m
 *.wiki##div.video-long-banner
 megabox.co.kr###banner_layer
 megabox.co.kr###banner_content
-@@||11st.co.kr^$extension
 namu.wiki##aside
 youtube.com##.rich-section-single-column
 11st.co.kr##.c-donation
