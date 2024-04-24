@@ -1,15 +1,24 @@
 ! Title: mylist
-! Version: 1.154
+! Version: 1.155
 ! Description: the set of rules I just use
 
 
+11st.co.kr###web2appPopup
+op.gg##.header
+op.gg##[href*="op.gg/"]
+tvzone.sbs##[src*="/banner/"]
+namu.wiki##footer
+medium.com##.su.st.ss.m
+m.youtube.com##button-view-model.yt-spec-button-view-model.slim_video_action_bar_renderer_button
+namu.wiki###app > div > div:nth-of-type(2) > div > div:has-text(최근 변경)
+namu.wiki###app > div > div:nth-of-type(2) > div > div:has-text(나무뉴스)
+@@||namu.wiki^$extension="Selection and Copying Restorer (Universal)"
+www2.hm.com###onetrust-consent-sdk
 pixwox.com##.ah-box
 catchsecu.com###wpfront-notification-bar-spacer
 catchsecu.com##.pos_bottom.l-cookie
 okky.kr##.opacity-100.dark\:bg-opacity-25.dark\:bg-white.bg-opacity-25.bg-black.z-30.inset-0.fixed
 ||braze-images.com^
-||centaurs-rest.coupang.com^
-||ad-display.s.zigzag.kr^
 ||d35kivqzqn1ftb.cloudfront.net^
 ||d131nj8pwjizfu.cloudfront.net^
 websiteplanet.com##.wix-popup-container
