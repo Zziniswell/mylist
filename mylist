@@ -1,9 +1,13 @@
 ! Title: mylist
-! Version: 1.157
+! Version: 1.158
 ! Description: the set of rules I just use
 
-
-@@||namu.wiki^$extension="상단/하단으로 스크롤"
+doctornow.*##body,html:style(overflow:auto!important)
+doctornow.*###modal
+shopping.naver.com##.mister
+shopping.naver.com##[class*="_todayBenefit_today_benefit_"]
+cafe.daum.net##.today_bubble
+@@||namu.wiki^$extension=~"NamuLink"|~"Namu Hot Now"|~"F11 for FullScreen"|~"Toggle Fullscreen Button For Mobile Browsers"|~"Fullscreen Button"|~"Drag Link to Copy Text"|~"Disable WebGL API"|~"QuickSearch"|~"auto updating eruda toolkit (kiwibrowser & adguard Mobile Devtools ) "|~"Copy & Ignore textTransform property"
 @@||yande.re^$extension="Embed Me!"
 skstoa.com##.on.tooltip_area
 kokstock.com###kokstock-news-box
@@ -32,7 +36,6 @@ medium.com##.su.st.ss.m
 m.youtube.com##button-view-model.yt-spec-button-view-model.slim_video_action_bar_renderer_button
 namu.wiki###app > div > div:nth-of-type(2) > div > div:has-text(최근 변경)
 namu.wiki###app > div > div:nth-of-type(2) > div > div:has-text(나무뉴스)
-@@||namu.wiki^$extension="Selection and Copying Restorer (Universal)"
 www2.hm.com###onetrust-consent-sdk
 pixwox.com##.ah-box
 catchsecu.com###wpfront-notification-bar-spacer
@@ -114,14 +117,13 @@ $removeparam=source_ve_path,domain=youtube.com
 @@||kyobobook.co.kr^$removeparam
 @@||lotteimall.com/$stealth=useragent
 @@||mkt.wemakeprice.link^$stealth=dpi
-@@||namu.wiki^$extension="自动识别填充网页验证码"
 @@||onelink.me/$stealth=dpi|useragent
 @@||onelink.me^$removeparam
 @@||ourhome.co.kr^$stealth=dpi
 @@||pagead2.googlesyndication.com/$domain=ted.com
 @@||play.google.com^$removeparam
 @@||qoo10.com^$removeparam
-@@||smartstore.naver.com/$stealth
+@@||smartstore.naver.com^$stealth
 @@||smartstore.naver.com^$removeparam
 @@||ssg.com^$removeparam
 @@||tpc.googlesyndication.com^$script,~third-party
@@ -285,7 +287,6 @@ yozm.wishket.com##[href^="https://www.wishket.com/project/"]
 ||okky.kr/api/okky-web/banners
 ||opencollective.com^
 ||pratama.store^
-||securepubads.g.doubleclick.net^
 ||self.events.data.microsoft.com^
 ||top.selulesan.co.ua^
 ||track.ssg.com^
@@ -343,7 +344,6 @@ yozm.wishket.com##[href^="https://www.wishket.com/project/"]
 ##.widget-box > div.row
 ##[src^="/bannerpop/"]
 ##[src^="/img1a.coupangcdn.com/"]
-##[src^="https://naverwebtoon-phinf.pstatic.net/"]
 ##div.ad-adsense.js-ad-slot
 ##div.gf-bottom-panel-left
 100ssd.co.kr##div.auto-marbtm-5.auto-martop-5
@@ -362,7 +362,7 @@ yozm.wishket.com##[href^="https://www.wishket.com/project/"]
 @@||airbridge.io/$stealth
 @@||auction.co.kr^$stealth=useragent
 @@||brand.naver.com/$stealth
-@@||gmarket.*/$stealth=useragent
+@@||gmarket.co.kr/$stealth=useragent
 @@||hankyung.com^$stealth=dpi
 @@||linkprice.com/$stealth
 @@||lotteon.com^$stealth=useragent
@@ -715,10 +715,8 @@ shooshtime.com##.sponsor
 shop.interpark.com##.cmBanner
 shop.interpark.com##.combineBanner.couponBanner
 shop.interpark.com##.horizonBanner
-shopping.naver.com##.mister
-shopping.naver.com##.nv-openmain
 shopping.naver.com##.plusdeal
-shopping.naver.com##[class*="_targetBanner_target_banner_"]
+shopping.naver.*##div[class*="_targetBanner_target_banner_"]
 shopping.naver.com##div[class*="fashionTownResponsive_fashion_town_responsive__"]
 shopping.naver.com##div[class*="forYouCurationMobile_for_you_curation_mobile__"]
 shopping.naver.com##div[class*="forYouResponsive_for_you_responsive__"]
@@ -1175,8 +1173,8 @@ $removeparam=embeds_referring_euri,domain=youtubekids.com|youtube-nocookie.com|y
 /duracelltomi-google-tag-manager/*$script
 apkpure.*#%#//scriptlet('set-constant', '$$.analytics', 'emptyObj')
 apkpure.*#%#//scriptlet('set-constant', '$$.analytics.send', 'noopFunc')
-facebook.com#%#new MutationObserver(function(){var t=["?fbclid","%3Ffbclid","&fbclid","%26fbclid","&__tn__","%__26tn__","%3Futm","?utm","&fbc=","%26fbc%3D","?share=","%3Fshare%3D","%3F__twitter_impression%3D","?__twitter_impression=","?wtmc=","%3Fwtmc%3D","?originalReferrer=","%3ForiginalReferrer%3D","?wtrid=","%3Fwtrid%3D","?trbo=","%3Ftrbo%3D","?GEPC=","%3FGEPC%3D","?whatsapp=","%3Fwhatsapp%3D","?fbc=","%3Ffbc%3D","?dmcid=","%3Fdmcid%3D"];document.querySelectorAll('a[target="_blank"]').forEach(function(e){for(i=0;i
-facebook.com,facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion#%#new MutationObserver(function(){var t=["&eid=","%26eid%3D","?eid=","%3Feid%3D","?__tn__=","%3F%5F%5Ftn%5F%5F%3D","&__tn__=","%26%5F%5Ftn%5F%5F%3D","?source=","%3Fsource%3D","?__xts__","%3F%5F%5Fxts%5F%5F","&__xts__","%26%5F%5Fxts%5F%5F","&__xts__%5B","?ref=","%3Fref%3D","?fref=","%3Ffref%3D","?epa=","%3Fepa%3D","&ifg=","%26ifg%3D","?comment_tracking=","%3Fcomment_tracking%3D","?av=","%3Fav%3D","&av=","%26av%3D","?acontext=","%3Facontext%3D","&session_id=","%26session_id%3D","&session_id=","?hc_location=","%3Fhc_location%3D","&fref=","%26fref%3D","?__cft","%3f__cft"];document.querySelectorAll('a:not([target="_blank"]):not([href*="2fac/"])').forEach(function(e){for(i=0;i
+facebook.com#%#new MutationObserver(function(){var t=["?fbclid","%3Ffbclid","&fbclid","%26fbclid","&__tn__","%__26tn__","%3Futm","?utm","&fbc=","%26fbc%3D","?share=","%3Fshare%3D","%3F__twitter_impression%3D","?__twitter_impression=","?wtmc=","%3Fwtmc%3D","?originalReferrer=","%3ForiginalReferrer%3D","?wtrid=","%3Fwtrid%3D","?trbo=","%3Ftrbo%3D","?GEPC=","%3FGEPC%3D","?whatsapp=","%3Fwhatsapp%3D","?fbc=","%3Ffbc%3D","?dmcid=","%3Fdmcid%3D"];document.querySelectorAll('a[target="_blank"]').forEach(function(e){for(i=0;i<t.length;i++){var r;e.href.includes(t[i])&&(r=(r=(r=e.href.split("#!")[1])||e.href.split("%23%21")[1])||"",e.href.includes("#!")&&(r="#!"+r),e.href.includes("%23%21")&&(r="%23%21"+r),r=(r=(r=e.href.split("&feature=share&")[1])||e.href.split("%26feature%3Dshare%26")[1])||"",e.href.includes("&feature=share&")&&(r="?"+r),e.href.includes("%26feature%3Dshare%26")&&(r="%3F"+r),r=(r=(r=e.href.split("&h=")[1])||e.href.split("%26h%3D")[1])||"",e.href.includes("&h=")&&(r="&h="+r),e.href.includes("%26h%3D")&&(r="%26h%3D"+r),e.setAttribute("href",e.href.split(t[i])[0]+r))}})}).observe(document,{childList:!0,subtree:!0});
+facebook.com,facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion#%#new MutationObserver(function(){var t=["&eid=","%26eid%3D","?eid=","%3Feid%3D","?__tn__=","%3F%5F%5Ftn%5F%5F%3D","&__tn__=","%26%5F%5Ftn%5F%5F%3D","?source=","%3Fsource%3D","?__xts__","%3F%5F%5Fxts%5F%5F","&__xts__","%26%5F%5Fxts%5F%5F","&amp;__xts__%5B","?ref=","%3Fref%3D","?fref=","%3Ffref%3D","?epa=","%3Fepa%3D","&ifg=","%26ifg%3D","?comment_tracking=","%3Fcomment_tracking%3D","?av=","%3Fav%3D","&av=","%26av%3D","?acontext=","%3Facontext%3D","&session_id=","%26session_id%3D","&amp;session_id=","?hc_location=","%3Fhc_location%3D","&fref=","%26fref%3D","?__cft","%3f__cft"];document.querySelectorAll('a:not([target="_blank"]):not([href*="2fac/"])').forEach(function(e){for(i=0;i<t.length;i++)e.href.includes(t[i])&&e.setAttribute("href",e.href.split(t[i])[0])})}).observe(document,{childList:!0,subtree:!0});
 facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion#%#new MutationObserver(function(){var t=["?fbclid","%3Ffbclid","&fbclid","%26fbclid","&__tn__","%__26tn__","%3Futm","?utm","&fbc=","%26fbc%3D","?share=","%3Fshare%3D","%3F__twitter_impression%3D","?__twitter_impression=","?wtmc=","%3Fwtmc%3D","?originalReferrer=","%3ForiginalReferrer%3D","?wtrid=","%3Fwtrid%3D","?trbo=","%3Ftrbo%3D","?GEPC=","%3FGEPC%3D","?whatsapp=","%3Fwhatsapp%3D","?fbc=","%3Ffbc%3D","?dmcid=","%3Fdmcid%3D"];document.querySelectorAll('a[target="_blank"]').forEach(function(e){for(i=0;i<t.length;i++){var r;e.href.includes(t[i])&&(r=(r=(r=e.href.split("#!")[1])||e.href.split("%23%21")[1])||"",e.href.includes("#!")&&(r="#!"+r),e.href.includes("%23%21")&&(r="%23%21"+r),r=(r=(r=e.href.split("&feature=share&")[1])||e.href.split("%26feature%3Dshare%26")[1])||"",e.href.includes("&feature=share&")&&(r="?"+r),e.href.includes("%26feature%3Dshare%26")&&(r="%3F"+r),r=(r=(r=e.href.split("&h=")[1])||e.href.split("%26h%3D")[1])||"",e.href.includes("&h=")&&(r="&h="+r),e.href.includes("%26h%3D")&&(r="%26h%3D"+r),e.setAttribute("href",e.href.split(t[i])[0]+r))}})}).observe(document,{childList:!0,subtree:!0});
 fmkorea.com#%#//scriptlet("set-constant", "link_url", "")
 mlbpark.donga.com,thephoblographer.com,brandbrief.co.kr,meconomynews.com#%#//scriptlet('prevent-eval-if', 'content-loader.com')
