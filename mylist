@@ -1,7 +1,15 @@
 ! Title: mylist
-! Version: 1.156
+! Version: 1.157
 ! Description: the set of rules I just use
 
+
+@@||namu.wiki^$extension="상단/하단으로 스크롤"
+@@||yande.re^$extension="Embed Me!"
+skstoa.com##.on.tooltip_area
+kokstock.com###kokstock-news-box
+naver.com##.additional_area
+naver.com##button:has-text(바로가기 추가)
+bunjang.co.kr##div > div:has-text(타이밍!)
 ssg.com###m_header_appdown
 op.gg##[href^="https://talk.op.gg/app-download?utm_source=talk&utm_medium=banner&utm_campaign=app_download&utm_id=app_download"]
 musinsa.com##div > div > div:has-text(앱 열기)
@@ -37,7 +45,7 @@ websiteplanet.com##.wix-popup-container
 deokhu.com##div:has-text(detected)
 aclsports.com##.mfp-content
 aclsports.com##.mfp-ready.site-access-popup.popup-animation.mfp-bg
-namu.wiki##.qfd0\+S
+namu.wiki###F9fWiA9KC
 namu.wiki##aside
 ###Share
 ###adTop
