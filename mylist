@@ -1,8 +1,27 @@
 ! Title: mylist
-! Version: 1.158
+! Version: 1.160
 ! Description: the set of rules I just use
 
-doctornow.*##body,html:style(overflow:auto!important)
+
+@@||gsshop.com^$removeparam
+lotteon.com##.dimBanner
+@@||e.kbcard.com^$stealth=useragent
+@@||e-himart.co.kr^$stealth=useragent
+@@||e-himart.co.kr^$removeparam
+@@||agoda.com^$removeparam
+@@||cjthemarket.com^$removeparam
+@@||apple.com^$removeparam
+@@||amoremall.com^$stealth=ip
+amoremall.com##.open.modalPopupWrap
+puma.com##.video_wrap
+@@||googleoptimize.com^$script,domain=puma.com
+puma.com##puma-cookie-banner
+lawandgood.com###modal > div
+adidas.co.*###gl-modal__root
+abcmart.a-rt.com###dialogContainer13
+abcmart.a-rt.com##.ui-front.ui-widget-overlay
+abcmart.a-rt.*##.bottomLayerPopup.docker-layer-banner-box
+||securepubads.g.doubleclick.net^
 doctornow.*###modal
 shopping.naver.com##.mister
 shopping.naver.com##[class*="_todayBenefit_today_benefit_"]
@@ -91,19 +110,19 @@ $removeparam=source_ve_path,domain=youtube.com
 11st.co.kr##.c-floating--flexible.fadeIn.modal-center.animated.c-floating
 11st.co.kr##.fadeIn.animated.dim
 @@||*.co.kr^$extension="Immersive Translate - Translate Website & PDF"
-@@||11st.co kr^$removeparam
-@@||abr.ge^$removeparam
-@@||airbridge.io^$removeparam
+@@||11st.co.kr^$removeparam
+@@||abr.ge^
+@@||airbridge.io^
 @@||akmall.com^$removeparam
 @@||aladin.co.kr^$removeparam
-@@||aliexpress.com^$removeparam
-@@||app.link/$stealth=useragent
+@@||aliexpress.com^$removeparam,important
+@@||app.link/$stealth
 @@||app.link^$removeparam
 @@||appsflyer.com^$removeparam
 @@||arca.live^$extension="이미지 검색"
 @@||auction.co.kr^$removeparam
 @@||brand.naver.com^$removeparam
-@@||click.linkprice.com^$removeparam
+@@||click.linkprice.com^
 @@||coupang.com^$removeparam
 @@||dcinside.com^$extension="이미지 검색"
 @@||galaxystore.samsung.com^$stealth=useragent
@@ -117,7 +136,7 @@ $removeparam=source_ve_path,domain=youtube.com
 @@||kyobobook.co.kr^$removeparam
 @@||lotteimall.com/$stealth=useragent
 @@||mkt.wemakeprice.link^$stealth=dpi
-@@||onelink.me/$stealth=dpi|useragent
+@@||onelink.me/$stealth
 @@||onelink.me^$removeparam
 @@||ourhome.co.kr^$stealth=dpi
 @@||pagead2.googlesyndication.com/$domain=ted.com
@@ -132,7 +151,7 @@ $removeparam=source_ve_path,domain=youtube.com
 @@||yes24.co.kr^$removeparam
 a-bly.com##.app-persuade-drawer.drawer
 a-bly.com##.navigation-bar__banner.navigation-bar__row
-a-bly.com,imgur.com,naver.com,newstong.co.kr,musinsa.com,megabox.co.kr,video.fc2.com,homeplus.co.kr,cafe24.com,bunjang.co.kr,arca.live,e-himart.co.kr,11st.co.kr,luckyquiz3.blogspot.com,lottehotel.com,a-ha.io,chan.sankakucomplex.com,lawandgood.com,tokenpost.kr,ssodam.com,aclsports.com##body,html:style(overflow:auto!important)
+a-bly.com,imgur.com,naver.com,newstong.co.kr,musinsa.com,megabox.co.kr,video.fc2.com,homeplus.co.kr,cafe24.com,bunjang.co.kr,arca.live,e-himart.co.kr,11st.co.kr,blogspot.com,lottehotel.com,a-ha.io,chan.sankakucomplex.com,lawandgood.com,tokenpost.kr,ssodam.com,aclsports.com,abcmart.a-rt.com,doctornow.co.kr,adidas.co.kr,amoremall.com##body,html:style(overflow:auto!important)
 aliexpress.com###header-float-banner
 allaboutpc.co.kr##.wrap_top_bn
 allporncomic.com##.body-top-ads.custom-code.c-ads.ad
@@ -359,7 +378,6 @@ yozm.wishket.com##[href^="https://www.wishket.com/project/"]
 @@||11st.co.kr^$stealth=useragent
 @@||abr.ge/$stealth
 @@||ofw.adison.co/$stealth
-@@||airbridge.io/$stealth
 @@||auction.co.kr^$stealth=useragent
 @@||brand.naver.com/$stealth
 @@||gmarket.co.kr/$stealth=useragent
@@ -381,7 +399,7 @@ akmall.com##.top_fix.tab_group.week_event
 akmall.com##[src^="https://m.akmall.com/"]
 akmall.com##[src^="https://photo.akmall.com/image4/banner/42/"]
 akmall.com##article.aad_group
-anilife.live##.FlexFSCW.MainBnnWrap
+anilife.*##.FlexFSCW.MainBnnWrap
 antennagom.com##.entry-header > .bx-adc
 apkmirror.com###appmanager_sppostswidget-2
 apkmirror.com###bottom-slider
@@ -1173,8 +1191,8 @@ $removeparam=embeds_referring_euri,domain=youtubekids.com|youtube-nocookie.com|y
 /duracelltomi-google-tag-manager/*$script
 apkpure.*#%#//scriptlet('set-constant', '$$.analytics', 'emptyObj')
 apkpure.*#%#//scriptlet('set-constant', '$$.analytics.send', 'noopFunc')
-facebook.com#%#new MutationObserver(function(){var t=["?fbclid","%3Ffbclid","&fbclid","%26fbclid","&__tn__","%__26tn__","%3Futm","?utm","&fbc=","%26fbc%3D","?share=","%3Fshare%3D","%3F__twitter_impression%3D","?__twitter_impression=","?wtmc=","%3Fwtmc%3D","?originalReferrer=","%3ForiginalReferrer%3D","?wtrid=","%3Fwtrid%3D","?trbo=","%3Ftrbo%3D","?GEPC=","%3FGEPC%3D","?whatsapp=","%3Fwhatsapp%3D","?fbc=","%3Ffbc%3D","?dmcid=","%3Fdmcid%3D"];document.querySelectorAll('a[target="_blank"]').forEach(function(e){for(i=0;i<t.length;i++){var r;e.href.includes(t[i])&&(r=(r=(r=e.href.split("#!")[1])||e.href.split("%23%21")[1])||"",e.href.includes("#!")&&(r="#!"+r),e.href.includes("%23%21")&&(r="%23%21"+r),r=(r=(r=e.href.split("&feature=share&")[1])||e.href.split("%26feature%3Dshare%26")[1])||"",e.href.includes("&feature=share&")&&(r="?"+r),e.href.includes("%26feature%3Dshare%26")&&(r="%3F"+r),r=(r=(r=e.href.split("&h=")[1])||e.href.split("%26h%3D")[1])||"",e.href.includes("&h=")&&(r="&h="+r),e.href.includes("%26h%3D")&&(r="%26h%3D"+r),e.setAttribute("href",e.href.split(t[i])[0]+r))}})}).observe(document,{childList:!0,subtree:!0});
-facebook.com,facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion#%#new MutationObserver(function(){var t=["&eid=","%26eid%3D","?eid=","%3Feid%3D","?__tn__=","%3F%5F%5Ftn%5F%5F%3D","&__tn__=","%26%5F%5Ftn%5F%5F%3D","?source=","%3Fsource%3D","?__xts__","%3F%5F%5Fxts%5F%5F","&__xts__","%26%5F%5Fxts%5F%5F","&amp;__xts__%5B","?ref=","%3Fref%3D","?fref=","%3Ffref%3D","?epa=","%3Fepa%3D","&ifg=","%26ifg%3D","?comment_tracking=","%3Fcomment_tracking%3D","?av=","%3Fav%3D","&av=","%26av%3D","?acontext=","%3Facontext%3D","&session_id=","%26session_id%3D","&amp;session_id=","?hc_location=","%3Fhc_location%3D","&fref=","%26fref%3D","?__cft","%3f__cft"];document.querySelectorAll('a:not([target="_blank"]):not([href*="2fac/"])').forEach(function(e){for(i=0;i<t.length;i++)e.href.includes(t[i])&&e.setAttribute("href",e.href.split(t[i])[0])})}).observe(document,{childList:!0,subtree:!0});
+facebook.com#%#new MutationObserver(function(){var t=["?fbclid","%3Ffbclid","&fbclid","%26fbclid","&__tn__","%__26tn__","%3Futm","?utm","&fbc=","%26fbc%3D","?share=","%3Fshare%3D","%3F__twitter_impression%3D","?__twitter_impression=","?wtmc=","%3Fwtmc%3D","?originalReferrer=","%3ForiginalReferrer%3D","?wtrid=","%3Fwtrid%3D","?trbo=","%3Ftrbo%3D","?GEPC=","%3FGEPC%3D","?whatsapp=","%3Fwhatsapp%3D","?fbc=","%3Ffbc%3D","?dmcid=","%3Fdmcid%3D"];document.querySelectorAll('a[target="_blank"]').forEach(function(e){for(i=0;i
+facebook.com,facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion#%#new MutationObserver(function(){var t=["&eid=","%26eid%3D","?eid=","%3Feid%3D","?__tn__=","%3F%5F%5Ftn%5F%5F%3D","&__tn__=","%26%5F%5Ftn%5F%5F%3D","?source=","%3Fsource%3D","?__xts__","%3F%5F%5Fxts%5F%5F","&__xts__","%26%5F%5Fxts%5F%5F","&__xts__%5B","?ref=","%3Fref%3D","?fref=","%3Ffref%3D","?epa=","%3Fepa%3D","&ifg=","%26ifg%3D","?comment_tracking=","%3Fcomment_tracking%3D","?av=","%3Fav%3D","&av=","%26av%3D","?acontext=","%3Facontext%3D","&session_id=","%26session_id%3D","&session_id=","?hc_location=","%3Fhc_location%3D","&fref=","%26fref%3D","?__cft","%3f__cft"];document.querySelectorAll('a:not([target="_blank"]):not([href*="2fac/"])').forEach(function(e){for(i=0;i
 facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion#%#new MutationObserver(function(){var t=["?fbclid","%3Ffbclid","&fbclid","%26fbclid","&__tn__","%__26tn__","%3Futm","?utm","&fbc=","%26fbc%3D","?share=","%3Fshare%3D","%3F__twitter_impression%3D","?__twitter_impression=","?wtmc=","%3Fwtmc%3D","?originalReferrer=","%3ForiginalReferrer%3D","?wtrid=","%3Fwtrid%3D","?trbo=","%3Ftrbo%3D","?GEPC=","%3FGEPC%3D","?whatsapp=","%3Fwhatsapp%3D","?fbc=","%3Ffbc%3D","?dmcid=","%3Fdmcid%3D"];document.querySelectorAll('a[target="_blank"]').forEach(function(e){for(i=0;i<t.length;i++){var r;e.href.includes(t[i])&&(r=(r=(r=e.href.split("#!")[1])||e.href.split("%23%21")[1])||"",e.href.includes("#!")&&(r="#!"+r),e.href.includes("%23%21")&&(r="%23%21"+r),r=(r=(r=e.href.split("&feature=share&")[1])||e.href.split("%26feature%3Dshare%26")[1])||"",e.href.includes("&feature=share&")&&(r="?"+r),e.href.includes("%26feature%3Dshare%26")&&(r="%3F"+r),r=(r=(r=e.href.split("&h=")[1])||e.href.split("%26h%3D")[1])||"",e.href.includes("&h=")&&(r="&h="+r),e.href.includes("%26h%3D")&&(r="%26h%3D"+r),e.setAttribute("href",e.href.split(t[i])[0]+r))}})}).observe(document,{childList:!0,subtree:!0});
 fmkorea.com#%#//scriptlet("set-constant", "link_url", "")
 mlbpark.donga.com,thephoblographer.com,brandbrief.co.kr,meconomynews.com#%#//scriptlet('prevent-eval-if', 'content-loader.com')
