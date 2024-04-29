@@ -1,8 +1,12 @@
 ! Title: mylist
-! Version: 1.162
+! Version: 1.163
 ! Description: the set of rules I just use
 
 
+hankyung.com##.show.promotion-floating2
+@@||getunicorn.app^$stealth=ip
+@@||bitwarden.com^$stealth=ip
+@@||play.samsungcloud.com^$stealth=dpi
 @@||translate.google.com/translate_a/element.js^
 @@||translate-pa.googleapis.com^
 tinyurl.com##.bg-green-30.text-sm.text-center.p-4.position-relative.flex-center-center.font-weight-bold
@@ -11,7 +15,7 @@ tinyurl.com##.scrollable.vm--container
 pornhub.com###ageDisclaimerOverlay
 pornhub.com###modalWrapMTubes
 namu.wiki##footer
-@@$extension="상단/하단으로 스크롤"|"Fullscreen Button",domain=comic.naver.com,lezhin.com,toomics.com,toptoon.com,webtoon.kakao.com,page.kakao.com
+@@$extension="상단/하단으로 스크롤"|"Fullscreen Button",domain=comic.naver.com|lezhin.com|toomics.com|toptoon.com|webtoon.kakao.com|page.kakao.com
 naver.com##button:has-text(앱 다운로드)
 @@||gsshop.com^$removeparam
 lotteon.com##.dimBanner
