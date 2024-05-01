@@ -1,11 +1,11 @@
 ! Title: mylist
-! Version: 1.166
+! Version: 1.167
 ! Description: the set of rules I just use
 
 
-@@||dcinside.com^$cookie
-@@||google-analytics.com^$domain=dcinside.com
-||google-analytics.com^
+@@||app.dcinside.com^$stealth=ip
+@@||com.tmon^$stealth=ip
+@@||suto.co.kr^$stealth=ip
 doctornow.co.kr##div > div:has-text(AD)
 page.kakao.com##div.flex-col.mb-4pxr > div > .px-11pxr
 series.naver.com##.lego_banner_main
