@@ -1,8 +1,30 @@
 ! Title: mylist
-! Version: 1.164
+! Version: 1.165
 ! Description: the set of rules I just use
 
 
+@@||dcinside.com^$cookie
+doctornow.co.kr##div > div:has-text(AD)
+page.kakao.com##div.flex-col.mb-4pxr > div > .px-11pxr
+series.naver.com##.lego_banner_main
+naver.com##.footer_banner
+series.naver.com###cookiePriceGuidePopup
+mm.munpia.com###lightbox
+mm.munpia.com###front-pop
+@@||novelpia.com^$stealth=ip
+novelpia.com###modal
+a-bly.com,imgur.com,naver.com,newstong.co.kr,musinsa.com,megabox.co.kr,video.fc2.com,homeplus.co.kr,cafe24.com,bunjang.co.kr##body,html:style(overflow:auto!important)
+arca.live,e-himart.co.kr,11st.co.kr,blogspot.com,lottehotel.com,a-ha.io,chan.sankakucomplex.com,lawandgood.com,tokenpost.kr,ssodam.com##body,html:style(overflow:auto!important)
+aclsports.com,abcmart.a-rt.com,doctornow.co.kr,adidas.co.kr,amoremall.com,pornhub.com,moeni.net,soldout.co.kr,munpia.com##body,html:style(overflow:auto!important)
+@@$extension="스크롤바"|"Scroll to top",app=com.sec.android.app.sbrowser|com.naver.whale
+webtoon.kakao.com##.translate-y-0.translate-y-full.bg-white.fixed.z-3.inset-x-0.h-68.bottom-0.duration-200.transition-transform
+||aem-kakao-collector.onkakao.net^
+||bc.ad.daum.net^
+webtoon.kakao.com##[src^="https://contents.kr.kakaowebtoon.com/"]
+soldout.co.kr##div > div:has-text(오늘 하루 보지 않기)
+kream.co.kr##.vue-portal-target.portal_target
+doctornow.co.kr##div > div:has-text(앱 다운로드)
+###omptlivqdrkjefghnsuxw
 bosstv.org##[src^="https://bosstv.org/data/banner/"]
 duckduckgo.com##[class^='mobile-homepage_footer__']
 @@||missav.com^$stealth=ip
@@ -113,7 +135,6 @@ $removeparam=source_ve_path,domain=youtube.com
 @@||yes24.co.kr^$removeparam
 a-bly.com##.app-persuade-drawer.drawer
 a-bly.com##.navigation-bar__banner.navigation-bar__row
-a-bly.com,imgur.com,naver.com,newstong.co.kr,musinsa.com,megabox.co.kr,video.fc2.com,homeplus.co.kr,cafe24.com,bunjang.co.kr,arca.live,e-himart.co.kr,11st.co.kr,blogspot.com,lottehotel.com,a-ha.io,chan.sankakucomplex.com,lawandgood.com,tokenpost.kr,ssodam.com,aclsports.com,abcmart.a-rt.com,doctornow.co.kr,adidas.co.kr,amoremall.com,pornhub.com,moeni.net##body,html:style(overflow:auto!important)
 abcmart.a-rt.*##.bottomLayerPopup.docker-layer-banner-box
 abcmart.a-rt.com###dialogContainer13
 abcmart.a-rt.com##.ui-front.ui-widget-overlay
@@ -231,7 +252,6 @@ newsmin.co.kr##.td-main-sidebar.td-pb-span4
 newsmin.co.kr##a[href^="https://simte.xyz/"]
 newsmin.co.kr##div.korea-sns
 nordvpn.com##.ConsentWidget__container
-novelpia.com###sub_sale_modal_v2
 ohli365.vip###dkcpavnglqthjfoburseim
 okky.kr##.opacity-100.dark\:bg-opacity-25.dark\:bg-white.bg-opacity-25.bg-black.z-30.inset-0.fixed
 okky.kr##.opacity-100.dark\:bg-opacity-25.dark\:bg-white.bg-opacity-25.bg-black.z-30.inset-0.fixed
