@@ -1,9 +1,9 @@
 ! Title: mylist
-! Version: 1.167R
+! Version: 1.167s
 ! Description: the set of rules I just use
 
 
-@@||dcinside.com^$cookie
+dcinside.com#%#//let('set-cookie', '_ga', '1')
 @@||dcinside.com^$stealth=ip
 @@||com.tmon^$stealth=ip
 @@||suto.co.kr^$stealth=ip
