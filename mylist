@@ -1,9 +1,11 @@
 ! Title: mylist
-! Version: 1.167s
+! Version: 1.168
 ! Description: the set of rules I just use
 
 
 dcinside.com#%#//let('set-cookie', '_ga', '1')
+m.dcinside.com,upload.dcinside.com#%#//scriptlet('set-cookie-reload', '_ga', 'OK')
+@@||dcinside.com^$cookie=_ga
 @@||dcinside.com^$stealth=ip
 @@||com.tmon^$stealth=ip
 @@||suto.co.kr^$stealth=ip
