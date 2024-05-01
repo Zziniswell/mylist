@@ -1,9 +1,10 @@
 ! Title: mylist
-! Version: 1.165
+! Version: 1.166
 ! Description: the set of rules I just use
 
 
-@@||dcinside.com^$cookie
+@@||www.google-analytics.com^$domain=dcinside.com
+||www.google-analytics.com^
 doctornow.co.kr##div > div:has-text(AD)
 page.kakao.com##div.flex-col.mb-4pxr > div > .px-11pxr
 series.naver.com##.lego_banner_main
