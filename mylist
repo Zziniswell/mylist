@@ -1,8 +1,11 @@
 ! Title: mylist
-! Version: 1.170
+! Version: 1.171
 ! Description: the set of rules I just use
 
 
+@@||innisfree.com^$stealth=ip
+innisfree.com##.txtBanner.docTopBanner
+dcinside.com##.block-disable
 ! perforation line_3
 ###Share
 ###adTop
@@ -351,7 +354,6 @@ yozm.wishket.com##[href^="https://www.wishket.com/project/"]
 ||api2.branch.io^
 ||app-tracking-gfa-collector.naver.com^
 ||app.adjust.com^$important,app=com.microsoft.copilot
-||app.link^$cookie=_s
 ||bc.ad.daum.net^
 ||branch.io^$cookie=bnc_returning_visitor
 ||braze-images.com^
@@ -464,7 +466,7 @@ yozm.wishket.com##[href^="https://www.wishket.com/project/"]
 @@||lotteon.com^$stealth=useragent
 @@||oauth.telegram.org^
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=apkmirror.com
-@@||ssg.com/$stealth=useragent
+@@||ssg.com/$stealth=useragent|ip
 @@||startpage.com^$stealth=dpi
 @@||wemakeprice.com^$stealth=useragent
 a-ha.io##.expert-section-wrapper
@@ -609,7 +611,6 @@ fmkorea.com##.show_folded_notice.pop0.notice
 fmkorea.com##li.pop0.clear.notice
 fmkorea.com#$##bd_capture { background: none!important; }
 forum.vivaldi.net###reconnect-alert
-gall.dcinside.com##.block-disable
 gamingdeputy.com##div[class*="code-block-"]
 gelbooru.com##video
 gmarket.co.kr###vipPowerClickTopLayer
@@ -1258,8 +1259,6 @@ $cookie=xtvrn
 $cookie=yTrackUser
 $cookie=yTrackVisit
 $cookie=yotpo_pixel
-$removeparam=aid,domain=adguard-vpn.com|adguard-dns.com|adguard.com
-$removeparam=embeds_referring_euri,domain=youtubekids.com|youtube-nocookie.com|youtube.com
 /?p=%2F*&h=https%3A%2F%2F*&r=&sid=*&qs=*&cid=$image,~third-party
 /\/(public|resources|static|assets)\/([a-f0-9]){28,31}$/$script,xmlhttprequest,~third-party
 /\/[a-z0-9]{12}\/[a-zA-Z0-9\/\+\-]{97,106}$/$match-case,script,~third-party
@@ -1287,25 +1286,12 @@ www.google.*#%#//scriptlet('remove-attr', 'onmousedown|data-mousedown|ping|data-
 www.google.*#%#//scriptlet('remove-attr', 'ping', 'div[id="search"] a[data-ved][ping]')
 ||accounts.google.com/gsi^
 ||cc.naver.com/cc$other,ping
-||download.mozilla.org^$removeparam=attribution_code
-||download.mozilla.org^$removeparam=attribution_sig
-||epicgames.com^$removeparam=epic_affiliate
-||github.com/signup$removeparam=source
 ||investing.com^$cookie=smd
 ||investing.com^$cookie=udid
-||microsoft.msafflnk.net^$removeparam=/^subid/
-||microsoft.msafflnk.net^$removeparam=sharedid
 ||pixiv.net^$cookie=first_visit_datetime
 ||pixiv.net^$cookie=first_visit_datetime_pc
-||playstation.com$removeparam=emcid
-||services.addons.mozilla.org^$removeparam=telemetry-client-id
 ||similarweb.com^$cookie=.DEVICETOKEN.SIMILARWEB.COM
 ||similarweb.com^$cookie=cb_anonymous_id
 ||similarweb.com^$cookie=sgID
-||similarweb.com^$removeparam=from_ext
 ||t.co^$cookie=muc_ads
-||toomics.com^$removeparam=channel
-||toomics.com^$removeparam=gen
-||toomics.com^$removeparam=pid
-||toomics.com^$removeparam=subpid
 ~ads.google.com#%#navigator.getBattery = undefined;
