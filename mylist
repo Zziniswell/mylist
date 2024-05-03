@@ -1,8 +1,9 @@
 ! Title: mylist
-! Version: 1.171
+! Version: 1.172
 ! Description: the set of rules I just use
 
 
+@@$extension="Immersive Translate - Translate Website & PDF",app=com.kiwibrowser.browser|org.mozilla.firefox
 @@||innisfree.com^$stealth=ip
 innisfree.com##.txtBanner.docTopBanner
 dcinside.com##.block-disable
@@ -58,7 +59,7 @@ $removeparam=source_ve_path,domain=youtube.com
 29cm.co.kr##[href^="https://29cm.onelink.me/"]
 ://*.*$document,permissions=join-ad-interest-group=()\,run-ad-auction=()\,browsing-topics=()
 @@$extension="상단/하단으로 스크롤"|"Fullscreen Button",domain=comic.naver.com|lezhin.com|toomics.com|toptoon.com|webtoon.kakao.com|page.kakao.com
-@@$extension="스크롤바"|"Scroll to top",app=com.sec.android.app.sbrowser|com.naver.whale
+@@$extension="스크롤바"|"Scroll to top"|"Savetube",app=com.sec.android.app.sbrowser|com.naver.whale
 @@||*.co.kr^$extension="Immersive Translate - Translate Website & PDF"
 @@||11st.co.kr^$removeparam
 @@||abr.ge^
