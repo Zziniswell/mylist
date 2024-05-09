@@ -1,8 +1,15 @@
 ! Title: mylist
-! Version: 1.173
+! Version: 1.174
 ! Description: the set of rules I just use
 
 
+||blog.naver.com/$removeparam=notrackingCode
+||blog.naver.com/$removeparam=trackingCode
+||search.naver.com/$removeparam=sm
+||search.naver.com/$removeparam=ie
+||search.daum.net/$removeparam=DA
+||search.daum.net/$removeparam=nil_profile
+||search.naver.com/$removeparam=oquery
 ! perforation line_4
 /webpack/sp-analytics
 /webpack/tracking.
@@ -20,7 +27,7 @@ etoland.co.kr###mw_mobile > [href^="../../plugin/mobile/board.php"]
 etoland.co.kr###mw_mobile > [href^="/plugin/ext_link/ext_only_extension.php"]
 etoland.co.kr###mw_mobile > section:nth-of-type(1)
 innisfree.com##.txtBanner.docTopBanner
-instagram.com$removeparam=x-user-agent
+||instagram.com/$removeparam=x-user-agent
 lee-master.tistory.com##blockquote
 lge.co.kr##.btn-chatbot-wrap
 lge.co.kr##.hello-app.hello-bar-wrap
@@ -28,36 +35,8 @@ newtoki.help##.ba_test
 ||360.tbcconnect.ge/collector.js
 ||360yield.com^
 ||3lift.com^
-||a-ads.com^
 ||a-mo.net^
 ||a.quora.com^
-||aaxads.com^
-||ad.initl.xiaomi.com^
-||adbrix.io^
-||adentifi.com^
-||adform.net^
-||adhigh.net^
-||adincube.com^
-||admanmedia.com^
-||admixer.net^
-||adnxs.com^
-||adocean.pl^
-||adotmob.com^
-||ads.avct.cloud^
-||ads.cc^
-||ads.clip.ge^
-||ads.clp.ge^
-||ads.linkedin.com^
-||ads.metronome.ge^
-||ads.programattik.com^
-||ads.sportads.ge^
-||ads.stickyadstv.com^
-||ads1-adnow.com^
-||adsafeprotected.com^
-||adserver-us.adtech.advertising.com^
-||adsrvr.org^
-||advertising.com^
-||adword.ge^
 ||alb.reddit.com^
 ||alexametrics.com^
 ||amung.us^
@@ -330,7 +309,6 @@ $removeparam=source_ve_path,domain=youtube.com
 @@||akmall.com^$removeparam
 @@||aladin.co.kr^$removeparam
 @@||aliexpress.*^$cookie=/^_ga_/
-@@||aliexpress.com^$removeparam,important
 @@||amoremall.com^$stealth=ip
 @@||api.samsungcloud.com^$stealth=dpi
 @@||app.link^$removeparam
@@ -373,7 +351,6 @@ $removeparam=source_ve_path,domain=youtube.com
 @@||ourhome.co.kr^$stealth=dpi
 @@||play.google.com^$removeparam
 @@||play.samsungcloud.com^$stealth=dpi
-@@||qoo10.com^$removeparam
 @@||smartstore.naver.com^$removeparam
 @@||smartstore.naver.com^$stealth
 @@||ssg.com^$removeparam
@@ -654,7 +631,6 @@ yozm.wishket.com##[href^="https://www.wishket.com/project/"]
 ||pixiv.net^$cookie=first_visit_datetime_pc
 ||pratama.store^
 ||securepubads.g.doubleclick.net^
-||self.events.data.microsoft.com^
 ||top.selulesan.co.ua^
 ||track.ssg.com^
 ||wcs.naver.net^
