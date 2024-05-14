@@ -3,19 +3,39 @@
 ! Description: the set of rules I just use
 
 
-@@||interpark.com^$removeparam
-||duckduckgo.com/$removeparam=t
-blog.naver.com##.layer_app
-kktv*.com##.main_bannerbox
-kktv*.com##div.modal_wrap
-||settings.kiwibrowser.com^
+naver.com##button:has-text(앱 설치)
+m.cafe.naver.com##.BasicLayer
+m.cafe.naver.com##.inner_wrap
+bobaedream.co.kr##.id-service.main-article
+bobaedream.co.kr##.id-log.main-article
+bobaedream.co.kr##.id-rank.main-article
+bobaedream.co.kr##.id-major.main-article
+mjoin.bobaedream.co.kr##.wrap > div:nth-of-type(1)
+hangyo.com##[id^='banCon']
+orders.pay.naver.com##[class^='SkeletonBannerWrapper_']
+$removeparam=ei
+$removeparam=ie
 $removeparam=notrackingCode
 $removeparam=trackingCode
-||search.naver.com/$removeparam=sm
-$removeparam=ie
-||search.daum.net/$removeparam=DA
-||search.daum.net/$removeparam=nil_profile
-||search.naver.com/$removeparam=oquery
+$removeparam=t,domain=duckduckgo.com
+$removeparam=DA,domain=search.daum.net
+$removeparam=nil_profile,domain=search.daum.net
+$removeparam=oquery,domain=search.naver.com
+$removeparam=sm,domain=search.naver.com
+@@||damoang.net^$stealth=ip
+@@||interpark.com^$removeparam
+arca.live##.footer
+arca.live##.spoiler-alert-content
+blog.naver.com##.layer_app
+duckduckgo.com###features
+kktv*.com##.main_bannerbox
+kktv*.com##div.modal_wrap
+pann.nate.com##.eventBnBox
+startpage.com###home-below-the-fold-container
+||core.airbridge.io^$important
+||settings.kiwibrowser.com^
+||wlog.tmon.co.kr^$important
+||youtube.com^$app=com.wemakeprice
 ! perforation line_4
 /webpack/sp-analytics
 /webpack/tracking.
@@ -315,7 +335,7 @@ $removeparam=source_ve_path,domain=youtube.com
 @@||app.link^$stealth
 @@||apple.com^$removeparam
 @@||appsflyer.com^$removeparam
-@@||arca.live^$stealth=ip
+@@||arca.live^$stealth=ip|useragent
 @@||auction.co.kr^$removeparam
 @@||bitwarden.com^$stealth=ip
 @@||brand.naver.com^$removeparam
@@ -329,7 +349,7 @@ $removeparam=source_ve_path,domain=youtube.com
 @@||e-himart.co.kr^$removeparam
 @@||e-himart.co.kr^$stealth=useragent
 @@||epicgames.com^$stealth=ip
-@@||galaxystore.samsung.com^$stealth=useragent
+@@||galaxystore.samsung.com^$stealth=useragent|ip
 @@||getunicorn.app^$stealth=ip
 @@||gmarket.co.kr^$removeparam
 @@||googleoptimize.com^$script,domain=puma.com
@@ -394,9 +414,9 @@ archive.org#%#//scriptlet('set-constant', 'archive_analytics.send_ping', 'noopFu
 archive.org#%#//scriptlet('set-constant', 'archive_analytics.set_up_event_tracking', 'noopFunc')
 asmhentai.com##.atop
 av19.gg##center
-avguri.com###gm
-avguri.com###left_bn
-avguri.com###right_bn
+avguri*.com###gm
+avguri*.com###left_bn
+avguri*.com###right_bn
 bbongtv.com##img[src^="/img/"][src*=".gif"]
 blog.fc2.com###wrapper > div:nth-of-type(4)
 blog.fc2.com#@#.ad_footer
@@ -606,7 +626,7 @@ yozm.wishket.com##[href^="https://www.wishket.com/project/"]
 ||doubleclick.net^$app=com.tmon,important
 ||facebook.com^$app=com.tmon,important
 ||file.okky.kr/banner/
-||firebase-settings.crashlytics.com^
+||firebase-settings.crashlytics.com^,$important
 ||foxnews.com^$cookie=xid
 ||google-analytics.com^$important,app=com.tmon
 ||graph.facebook.com^
@@ -617,7 +637,6 @@ yozm.wishket.com##[href^="https://www.wishket.com/project/"]
 ||jaqgkyfupna.com^
 ||jsdelivr.net/npm/disable-devtool$script
 ||ljc.coupang.com^
-||naverportal.com^
 ||newspic.kr^$removeparam=cp
 ||nordvpn.com^$cookie=CurrentSession
 ||nordvpn.com^$cookie=FirstSession
