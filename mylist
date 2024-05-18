@@ -1,38 +1,50 @@
 ! Title: mylist
-! Version: 1.177
-! Description: the set of rules I just use
+! Version: 1.178
+! Description: my adblock rules
 
 
-naver.com##button:has-text(앱 설치)
-m.cafe.naver.com##.BasicLayer
-m.cafe.naver.com##.inner_wrap
-bobaedream.co.kr##.id-service.main-article
-bobaedream.co.kr##.id-log.main-article
-bobaedream.co.kr##.id-rank.main-article
-bobaedream.co.kr##.id-major.main-article
-mjoin.bobaedream.co.kr##.wrap > div:nth-of-type(1)
-hangyo.com##[id^='banCon']
-orders.pay.naver.com##[class^='SkeletonBannerWrapper_']
+tinyurl.com##.view-mobile
+webtool.cusis.net###sidebar-right
+$removeparam=DA,domain=search.daum.net
 $removeparam=ei
 $removeparam=ie
-$removeparam=notrackingCode
-$removeparam=trackingCode
-$removeparam=t,domain=duckduckgo.com
-$removeparam=DA,domain=search.daum.net
 $removeparam=nil_profile,domain=search.daum.net
+$removeparam=notrackingCode
 $removeparam=oquery,domain=search.naver.com
 $removeparam=sm,domain=search.naver.com
+$removeparam=t,domain=duckduckgo.com
+$removeparam=trackingCode
+@@$extension="Embed Me!",domain=yande.re
+@@||challenges.cloudflare.com^$extension=~"Autopass Cloudflare CAPTCHA"
 @@||damoang.net^$stealth=ip
+@@||dasibogo.*^$stealth=ip
 @@||interpark.com^$removeparam
+ai.google.dev###glue-cookie-notification-bar-1
 arca.live##.footer
 arca.live##.spoiler-alert-content
 blog.naver.com##.layer_app
+bobaedream.co.kr##.id-log.main-article
+bobaedream.co.kr##.id-major.main-article
+bobaedream.co.kr##.id-rank.main-article
+bobaedream.co.kr##.id-service.main-article
+dasibogo.net##[id^='movie-']
 duckduckgo.com###features
+hangyo.com##[id^='banCon']
+indeed.com###passport-frontendclient-overlay
 kktv*.com##.main_bannerbox
 kktv*.com##div.modal_wrap
+lawtalk.co.kr##.directive.plus-ad-mobile
+lawtalk.co.kr##.normal-answer-preview__preview-body
+lawtalk.co.kr##.top-margin.qna-article-answers__naver-cpc-ad-wrap
+m.cafe.naver.com##.BasicLayer
+m.cafe.naver.com##.inner_wrap
+mjoin.bobaedream.co.kr##.wrap > div:nth-of-type(1)
+naver.com##button:has-text(앱 설치)
+orders.pay.naver.com##[class^='SkeletonBannerWrapper_']
 pann.nate.com##.eventBnBox
 startpage.com###home-below-the-fold-container
 ||core.airbridge.io^$important
+||monitoring.hackle.io^
 ||settings.kiwibrowser.com^
 ||wlog.tmon.co.kr^$important
 ||youtube.com^$app=com.wemakeprice
@@ -335,7 +347,7 @@ $removeparam=source_ve_path,domain=youtube.com
 @@||app.link^$stealth
 @@||apple.com^$removeparam
 @@||appsflyer.com^$removeparam
-@@||arca.live^$stealth=ip|useragent
+@@||arca.live^$stealth=ip
 @@||auction.co.kr^$removeparam
 @@||bitwarden.com^$stealth=ip
 @@||brand.naver.com^$removeparam
@@ -365,7 +377,7 @@ $removeparam=source_ve_path,domain=youtube.com
 @@||lotteimall.com/$stealth=useragent
 @@||missav.com^$stealth=ip
 @@||mkt.wemakeprice.link^$stealth=dpi
-@@||namu.wiki^$extension=~"NamuLink"|~"Namu Hot Now"|~"F11 for FullScreen"|~"Toggle Fullscreen Button For Mobile Browsers"|~"Fullscreen Button"|~"Drag Link to Copy Text"|~"Disable WebGL API"|~"QuickSearch"|~"Copy & Ignore textTransform property"
+@@||namu.wiki^$extension=~"NamuLink"|~"Namu Hot Now"|~"F11 for FullScreen"|~"Toggle Fullscreen Button For Mobile Browsers"|~"Fullscreen Button"|~"Drag Link to Copy Text"|~"Disable WebGL API"|~"QuickSearch"
 @@||novelpia.com^$stealth=ip
 @@||onelink.me^
 @@||ourhome.co.kr^$stealth=dpi
@@ -378,7 +390,6 @@ $removeparam=source_ve_path,domain=youtube.com
 @@||tpc.googlesyndication.com^$script,~third-party
 @@||video.fc2.com^$stealth=useragent
 @@||wemakeprice.com^$removeparam
-@@||yande.re^$extension="Embed Me!"
 @@||yes24.co.kr^$removeparam
 a-bly.com##.app-persuade-drawer.drawer
 a-bly.com##.navigation-bar__banner.navigation-bar__row
@@ -478,7 +489,6 @@ kyobobook.co.kr###customPopAdv
 lamire.jp##.ad-rect.content-bottom.ad-unit
 lamire.jp##.padding.xz-section
 lawandgood.com###modal > div
-lawtalk.co.kr##.normal-answer-preview__preview-body
 lawtimes.co.kr##.eqcril20.css-10yb2if
 lego.com##[class*="AgeGatestyles__Wrapper"]
 livesport.com##.otPlaceholder
@@ -607,7 +617,6 @@ yozm.wishket.com##[href^="https://www.wishket.com/project/"]
 ||adconsent.samsungrs.com^
 ||adsensecustomsearchads.com^
 ||aem-finance-collector.onkakao.net^
-||aem-kakao-collector.onkakao.net^
 ||api2.branch.io^
 ||app-tracking-gfa-collector.naver.com^
 ||app.adjust.com^$important,app=com.microsoft.copilot
@@ -933,7 +942,6 @@ kmib.co.kr##.tp_cnt > div.nwbx02
 kookje.co.kr###con_text > div
 kwnews.co.kr##[src^="/upload/"]
 lawtalk.co.kr##.opened.bottom-sheet-wrap > .with-mobile-bottom-tab.bottom-sheet
-lawtalk.co.kr##.premium-lawyer-section
 lawtalk.co.kr##mobile-bottom-tab
 lawtalk.co.kr##qna-article-banner
 lawtimes.co.kr##[src^="https://image.lawtimes.co.kr/"]
@@ -959,10 +967,7 @@ lotteon.com##div > .flag
 lotteon.com##div.banner_text_2by2.moduleWrap
 lotteon.com##div.more_middle_round_button.moduleWrap
 luckyquiz3.blogspot.com###main_popup2
-luckyquiz3.blogspot.com###pbt
 luckyquiz3.blogspot.com###sidebar
-luckyquiz3.blogspot.com###top-banner
-luckyquiz3.blogspot.com##.adsbygoogle
 m.brand.naver.com##[id^="mobile-customBannerWidget"]
 m.bunjang.co.kr##[class*="LoginModal__AppDownload-"]
 m.shop.interpark.com##.on.bottom.popupWrap
@@ -1520,8 +1525,8 @@ $cookie=yotpo_pixel
 /duracelltomi-google-tag-manager/*$script
 apkpure.*#%#//scriptlet('set-constant', '$$.analytics', 'emptyObj')
 apkpure.*#%#//scriptlet('set-constant', '$$.analytics.send', 'noopFunc')
-facebook.com#%#new MutationObserver(function(){var t=["?fbclid","%3Ffbclid","&fbclid","%26fbclid","&__tn__","%__26tn__","%3Futm","?utm","&fbc=","%26fbc%3D","?share=","%3Fshare%3D","%3F__twitter_impression%3D","?__twitter_impression=","?wtmc=","%3Fwtmc%3D","?originalReferrer=","%3ForiginalReferrer%3D","?wtrid=","%3Fwtrid%3D","?trbo=","%3Ftrbo%3D","?GEPC=","%3FGEPC%3D","?whatsapp=","%3Fwhatsapp%3D","?fbc=","%3Ffbc%3D","?dmcid=","%3Fdmcid%3D"];document.querySelectorAll('a[target="_blank"]').forEach(function(e){for(i=0;i<t.length;i++){var r;e.href.includes(t[i])&&(r=(r=(r=e.href.split("#!")[1])||e.href.split("%23%21")[1])||"",e.href.includes("#!")&&(r="#!"+r),e.href.includes("%23%21")&&(r="%23%21"+r),r=(r=(r=e.href.split("&feature=share&")[1])||e.href.split("%26feature%3Dshare%26")[1])||"",e.href.includes("&feature=share&")&&(r="?"+r),e.href.includes("%26feature%3Dshare%26")&&(r="%3F"+r),r=(r=(r=e.href.split("&h=")[1])||e.href.split("%26h%3D")[1])||"",e.href.includes("&h=")&&(r="&h="+r),e.href.includes("%26h%3D")&&(r="%26h%3D"+r),e.setAttribute("href",e.href.split(t[i])[0]+r))}})}).observe(document,{childList:!0,subtree:!0});
-facebook.com,facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion#%#new MutationObserver(function(){var t=["&eid=","%26eid%3D","?eid=","%3Feid%3D","?__tn__=","%3F%5F%5Ftn%5F%5F%3D","&__tn__=","%26%5F%5Ftn%5F%5F%3D","?source=","%3Fsource%3D","?__xts__","%3F%5F%5Fxts%5F%5F","&__xts__","%26%5F%5Fxts%5F%5F","&amp;__xts__%5B","?ref=","%3Fref%3D","?fref=","%3Ffref%3D","?epa=","%3Fepa%3D","&ifg=","%26ifg%3D","?comment_tracking=","%3Fcomment_tracking%3D","?av=","%3Fav%3D","&av=","%26av%3D","?acontext=","%3Facontext%3D","&session_id=","%26session_id%3D","&amp;session_id=","?hc_location=","%3Fhc_location%3D","&fref=","%26fref%3D","?__cft","%3f__cft"];document.querySelectorAll('a:not([target="_blank"]):not([href*="2fac/"])').forEach(function(e){for(i=0;i<t.length;i++)e.href.includes(t[i])&&e.setAttribute("href",e.href.split(t[i])[0])})}).observe(document,{childList:!0,subtree:!0});
+facebook.com#%#new MutationObserver(function(){var t=["?fbclid","%3Ffbclid","&fbclid","%26fbclid","&__tn__","%__26tn__","%3Futm","?utm","&fbc=","%26fbc%3D","?share=","%3Fshare%3D","%3F__twitter_impression%3D","?__twitter_impression=","?wtmc=","%3Fwtmc%3D","?originalReferrer=","%3ForiginalReferrer%3D","?wtrid=","%3Fwtrid%3D","?trbo=","%3Ftrbo%3D","?GEPC=","%3FGEPC%3D","?whatsapp=","%3Fwhatsapp%3D","?fbc=","%3Ffbc%3D","?dmcid=","%3Fdmcid%3D"];document.querySelectorAll('a[target="_blank"]').forEach(function(e){for(i=0;i
+facebook.com,facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion#%#new MutationObserver(function(){var t=["&eid=","%26eid%3D","?eid=","%3Feid%3D","?__tn__=","%3F%5F%5Ftn%5F%5F%3D","&__tn__=","%26%5F%5Ftn%5F%5F%3D","?source=","%3Fsource%3D","?__xts__","%3F%5F%5Fxts%5F%5F","&__xts__","%26%5F%5Fxts%5F%5F","&__xts__%5B","?ref=","%3Fref%3D","?fref=","%3Ffref%3D","?epa=","%3Fepa%3D","&ifg=","%26ifg%3D","?comment_tracking=","%3Fcomment_tracking%3D","?av=","%3Fav%3D","&av=","%26av%3D","?acontext=","%3Facontext%3D","&session_id=","%26session_id%3D","&session_id=","?hc_location=","%3Fhc_location%3D","&fref=","%26fref%3D","?__cft","%3f__cft"];document.querySelectorAll('a:not([target="_blank"]):not([href*="2fac/"])').forEach(function(e){for(i=0;i
 facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion#%#new MutationObserver(function(){var t=["?fbclid","%3Ffbclid","&fbclid","%26fbclid","&__tn__","%__26tn__","%3Futm","?utm","&fbc=","%26fbc%3D","?share=","%3Fshare%3D","%3F__twitter_impression%3D","?__twitter_impression=","?wtmc=","%3Fwtmc%3D","?originalReferrer=","%3ForiginalReferrer%3D","?wtrid=","%3Fwtrid%3D","?trbo=","%3Ftrbo%3D","?GEPC=","%3FGEPC%3D","?whatsapp=","%3Fwhatsapp%3D","?fbc=","%3Ffbc%3D","?dmcid=","%3Fdmcid%3D"];document.querySelectorAll('a[target="_blank"]').forEach(function(e){for(i=0;i<t.length;i++){var r;e.href.includes(t[i])&&(r=(r=(r=e.href.split("#!")[1])||e.href.split("%23%21")[1])||"",e.href.includes("#!")&&(r="#!"+r),e.href.includes("%23%21")&&(r="%23%21"+r),r=(r=(r=e.href.split("&feature=share&")[1])||e.href.split("%26feature%3Dshare%26")[1])||"",e.href.includes("&feature=share&")&&(r="?"+r),e.href.includes("%26feature%3Dshare%26")&&(r="%3F"+r),r=(r=(r=e.href.split("&h=")[1])||e.href.split("%26h%3D")[1])||"",e.href.includes("&h=")&&(r="&h="+r),e.href.includes("%26h%3D")&&(r="%26h%3D"+r),e.setAttribute("href",e.href.split(t[i])[0]+r))}})}).observe(document,{childList:!0,subtree:!0});
 fmkorea.com#%#//scriptlet("set-constant", "link_url", "")
 mlbpark.donga.com,thephoblographer.com,brandbrief.co.kr,meconomynews.com#%#//scriptlet('prevent-eval-if', 'content-loader.com')
