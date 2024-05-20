@@ -1,10 +1,8 @@
 ! Title: mylist
-! Version: 1.178
+! Version: 1.179
 ! Description: my adblock rules
 
-
-tinyurl.com##.view-mobile
-webtool.cusis.net###sidebar-right
+###advertiseInPlayer
 $removeparam=DA,domain=search.daum.net
 $removeparam=ei
 $removeparam=ie
@@ -14,12 +12,24 @@ $removeparam=oquery,domain=search.naver.com
 $removeparam=sm,domain=search.naver.com
 $removeparam=t,domain=duckduckgo.com
 $removeparam=trackingCode
+/webpack/sp-analytics
+/webpack/tracking.
+@@$extension="Autopass Cloudflare CAPTCHA",domain=viva100.com
 @@$extension="Embed Me!",domain=yande.re
+@@$extension="Immersive Translate - Translate Website & PDF",app=com.kiwibrowser.browser|org.mozilla.firefox
+@@||123123play.com^$stealth=ip
 @@||challenges.cloudflare.com^$extension=~"Autopass Cloudflare CAPTCHA"
 @@||damoang.net^$stealth=ip
 @@||dasibogo.*^$stealth=ip
+@@||fortnite.com^$stealth=ip
+@@||innisfree.com^$stealth=ip
 @@||interpark.com^$removeparam
+@@||open.scdn.co/*/tracklist-placeholder.
+@@||spotify.com/track-playback/*
+@@||unrealengine.com^$stealth=ip
+@@||vivaldi.net^$stealth=ip
 ai.google.dev###glue-cookie-notification-bar-1
+anilife.app###disqus_thread
 arca.live##.footer
 arca.live##.spoiler-alert-content
 blog.naver.com##.layer_app
@@ -27,49 +37,40 @@ bobaedream.co.kr##.id-log.main-article
 bobaedream.co.kr##.id-major.main-article
 bobaedream.co.kr##.id-rank.main-article
 bobaedream.co.kr##.id-service.main-article
+browserleaks.com###efvi_img
+browserleaks.com###efvi_text
 dasibogo.net##[id^='movie-']
+dcinside.com##.block-disable
 duckduckgo.com###features
+etoland.co.kr###mw_mobile > [href^="../../plugin/mobile/board.php"]
+etoland.co.kr###mw_mobile > [href^="/plugin/ext_link/ext_only_extension.php"]
+etoland.co.kr###mw_mobile > section:nth-of-type(1)
 hangyo.com##[id^='banCon']
 indeed.com###passport-frontendclient-overlay
+innisfree.com##.txtBanner.docTopBanner
 kktv*.com##.main_bannerbox
 kktv*.com##div.modal_wrap
 lawtalk.co.kr##.directive.plus-ad-mobile
 lawtalk.co.kr##.normal-answer-preview__preview-body
 lawtalk.co.kr##.top-margin.qna-article-answers__naver-cpc-ad-wrap
-m.cafe.naver.com##.BasicLayer
-m.cafe.naver.com##.inner_wrap
-mjoin.bobaedream.co.kr##.wrap > div:nth-of-type(1)
-naver.com##button:has-text(앱 설치)
-orders.pay.naver.com##[class^='SkeletonBannerWrapper_']
-pann.nate.com##.eventBnBox
-startpage.com###home-below-the-fold-container
-||core.airbridge.io^$important
-||monitoring.hackle.io^
-||settings.kiwibrowser.com^
-||wlog.tmon.co.kr^$important
-||youtube.com^$app=com.wemakeprice
-! perforation line_4
-/webpack/sp-analytics
-/webpack/tracking.
-@@$extension="Immersive Translate - Translate Website & PDF",app=com.kiwibrowser.browser|org.mozilla.firefox
-@@||fortnite.com^$stealth=ip
-@@||innisfree.com^$stealth=ip
-@@||open.scdn.co/*/tracklist-placeholder.
-@@||spotify.com/track-playback/*
-@@||unrealengine.com^$stealth=ip
-@@||vivaldi.net^$stealth=ip
-browserleaks.com###efvi_img
-browserleaks.com###efvi_text
-dcinside.com##.block-disable
-etoland.co.kr###mw_mobile > [href^="../../plugin/mobile/board.php"]
-etoland.co.kr###mw_mobile > [href^="/plugin/ext_link/ext_only_extension.php"]
-etoland.co.kr###mw_mobile > section:nth-of-type(1)
-innisfree.com##.txtBanner.docTopBanner
-||instagram.com/$removeparam=x-user-agent
 lee-master.tistory.com##blockquote
 lge.co.kr##.btn-chatbot-wrap
 lge.co.kr##.hello-app.hello-bar-wrap
+m.cafe.naver.com##.BasicLayer
+m.cafe.naver.com##.inner_wrap
+medium.com##div > div > div > div > div:has-text(Sign up to discover human stories that deepen your understanding of the world.)
+mjoin.bobaedream.co.kr##.wrap > div:nth-of-type(1)
+naver.com##button:has-text(앱 설치)
 newtoki.help##.ba_test
+orders.pay.naver.com##[class^='SkeletonBannerWrapper_']
+pann.nate.com##.eventBnBox
+snbforums.com##.js-notices.notices--floating.notices
+startpage.com###home-below-the-fold-container
+tinyurl.com##.view-mobile
+topstarnews.net##.pay-box
+topstarnews.net##.show-prompt.sp-pos-left.sp-native-popover.sp-prompt
+vietnamguide.co.kr##.ai-viewport-3.ai-viewport-2
+webtool.cusis.net###sidebar-right
 ||360.tbcconnect.ge/collector.js
 ||360yield.com^
 ||3lift.com^
@@ -126,6 +127,7 @@ newtoki.help##.ba_test
 ||consensu.org^$3p
 ||contextweb.com^
 ||cookielaw.org^
+||core.airbridge.io^$important
 ||counter.yadro.ru^
 ||crash.discord.com^
 ||crash.discordapp.com^
@@ -136,7 +138,6 @@ newtoki.help##.ba_test
 ||crwdcntrl.net^
 ||cxcs.microsoft.net/api/teamsgrowth/en-us/json/whatsnew/edu/student/whats-new
 ||demandbase.com^
-||demdex.net^
 ||demdex.net^
 ||discord.com/api/*/applications/detectable
 ||discord.com/api/*/experiments
@@ -150,6 +151,7 @@ newtoki.help##.ba_test
 ||discord.com/api/science
 ||discord.com/api/track
 ||do-not-tracker.org^
+||dove.bet^
 ||ds88pc0kw6cvc.cloudfront.net^
 ||duckduckgo.com/t/
 ||eqads.com^
@@ -189,6 +191,7 @@ newtoki.help##.ba_test
 ||hs-analytics.net^
 ||ic3.events.data.microsoft.com^
 ||improving.duckduckgo.com^
+||instagram.com/$removeparam=x-user-agent
 ||instagram.com/ajax/bz
 ||instagram.com/api/*/stories/reel/seen
 ||instagram.com/security/csp_report
@@ -213,9 +216,9 @@ newtoki.help##.ba_test
 ||mfadsrvr.com^
 ||moatads.com^
 ||monetate.net^
+||monitoring.hackle.io^
 ||munchkin.marketo.net^
 ||news.2xclick.ru^
-||nextdns.com^
 ||ngfsciiu.com^
 ||notsy.io^$3p
 ||nr-data.net^
@@ -249,6 +252,7 @@ newtoki.help##.ba_test
 ||sentry.io^
 ||servedby-buysellads.com^
 ||servedbyadbutler.com^
+||settings.kiwibrowser.com^
 ||sharethrough.com^
 ||smartadserver.com^
 ||speedcurve.com^$3p
@@ -277,8 +281,10 @@ newtoki.help##.ba_test
 ||webpushr.com^$3p
 ||whoisvisiting.com^$3p
 ||wisepops.com^
+||wlog.tmon.co.kr^$important
 ||wordpress.com/geo/
 ||www39.zippyshare.com/sw.js
+||youtube.com^$app=com.wemakeprice
 ||zemanta.com^
 ! perforation line_3
 ###Share
@@ -379,7 +385,7 @@ $removeparam=source_ve_path,domain=youtube.com
 @@||mkt.wemakeprice.link^$stealth=dpi
 @@||namu.wiki^$extension=~"NamuLink"|~"Namu Hot Now"|~"F11 for FullScreen"|~"Toggle Fullscreen Button For Mobile Browsers"|~"Fullscreen Button"|~"Drag Link to Copy Text"|~"Disable WebGL API"|~"QuickSearch"
 @@||novelpia.com^$stealth=ip
-@@||onelink.me^
+@@||onelink.me^$stealth
 @@||ourhome.co.kr^$stealth=dpi
 @@||play.google.com^$removeparam
 @@||smartstore.naver.com^$removeparam
@@ -407,7 +413,7 @@ allporncomic.com##.body-top-ads.custom-code.c-ads.ad
 allporncomic.com##.na
 allthat.aws.shinhancard.com##.grbLayer.grbDim
 amoremall.com##.open.modalPopupWrap
-anilife.app##.HkbznHK
+anilife.*##.HkbznHK
 apkmirror.com###appmanager_recentpostswidget-2 > .listWidget > div.appRow
 apkmirror.com###ezmobfooter
 apkmirror.com##.OUTBRAIN
@@ -502,8 +508,6 @@ m-sooriya.tistory.com##div#scrollDiv_m2
 m.card-gorilla.com,pindirectshop.com,dongbanmall.com#%#//scriptlet("set-constant", "kakaoPixel", "
 m.dcinside.com,upload.dcinside.com#%#//scriptlet('set-cookie-reload', '_ga', 'OK')
 m.youtube.com##button-view-model.yt-spec-button-view-model.slim_video_action_bar_renderer_button
-medium.com##.qt.qs.qr.m
-medium.com##.su.st.ss.m
 megabox.co.kr###banner_content
 megabox.co.kr###banner_layer
 member.ssg.com##.notranslate.cmem_nomemarea
@@ -1154,7 +1158,6 @@ zpat.info##.w3-grey.w3-center.w3-container
 ||event.lemmamedia.com^
 ||fundingchoicesmessages.google.com^
 ||gmarket.co.kr^$app=com.towneers.www
-||ingest.sentry.io^
 ||jprtb.c.appier.net^
 ||json2.dcinside.com/json0/app_ad_setting.php^
 ||lenovo.com.cn^
@@ -1542,7 +1545,7 @@ thesaurus.net,topstarnews.net,interfootball.heraldcorp.com,alle-tests.nl,issuya.
 thesaurus.net,topstarnews.net,interfootball.heraldcorp.com,alle-tests.nl,issuya.com,maketecheasier.com,gamingdeputy.com,thesaurus.net,motorgraph.com,thestockmarketwatch.com,mlbpark.donga.com,honkailab.com,warcraftrumbledeck.com,dogdrip.net,thephoblographer.com,brandbrief.co.kr,meconomynews.com,loawa.com,ygosu.com,sportalkorea.com,enetnews.co.kr,edaily.co.kr,economist.co.kr,etoday.co.kr,hankyung.com,isplus.com,hometownstation.com,inven.co.kr,viva100.com,joongdo.co.kr,jjang0u.com,cboard.net,a-ha.io,interfootball.co.kr,fourfourtwo.co.kr,apkmirror.com#%#//scriptlet('set-local-storage-item', 'adshield-analytics-uuid', '$remove$')
 www.google.*#%#//scriptlet('remove-attr', 'onmousedown|data-mousedown|ping|data-click', 'a[href][onmousedown], a[href][ping]')
 www.google.*#%#//scriptlet('remove-attr', 'ping', 'div[id="search"] a[data-ved][ping]')
-||accounts.google.com/gsi^
+||accounts.google.com/gsi/client^$third-party,script
 ||cc.naver.com/cc$other,ping
 ||investing.com^$cookie=smd
 ||investing.com^$cookie=udid
