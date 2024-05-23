@@ -1,11 +1,10 @@
 ! Title: mylist
-! Version: 1.180
+! Version: 1.181
 ! Description: my adblock rules
 
 
-@@||com.alibaba.aliexpresshd^$stealth=dpi
-##.grbLayer.grbDim
 ###advertiseInPlayer
+##.grbLayer.grbDim
 $removeparam=DA,domain=search.daum.net
 $removeparam=ei
 $removeparam=ie
@@ -19,14 +18,21 @@ $removeparam=trackingCode
 @@$extension="Embed Me!",domain=yande.re
 @@$extension="Immersive Translate - Translate Website & PDF",app=com.kiwibrowser.browser|org.mozilla.firefox
 @@||123123play.com^$stealth=ip
+@@||api-ao-list.adison.co^
+@@||api-ao-list.adison.co^$app=com.nhn.android.nbooks,important
+@@||api-ao-list.adison.co^$app=com.nhn.android.webtoon,important
+@@||api-ao-list.adison.co^$app=kvp.jjy.MispAndroid320,important
 @@||challenges.cloudflare.com^$extension=~"Autopass Cloudflare CAPTCHA"
+@@||com.alibaba.aliexpresshd^$stealth=dpi
 @@||damoang.net^$stealth=ip
 @@||dasibogo.*^$stealth=ip
 @@||fortnite.com^$stealth=ip
+@@||imasdk.googleapis.com/js/sdkloader/*.js$script,domain=www.ted.com
 @@||innisfree.com^$stealth=ip
 @@||interpark.com^$removeparam
 @@||open.scdn.co/*/tracklist-placeholder.
 @@||spotify.com/track-playback/*
+@@||ssl.pstatic.net/tveta/libs/$script,domain=nid.naver.com
 @@||unrealengine.com^$stealth=ip
 @@||vivaldi.net^$stealth=ip
 ai.google.dev###glue-cookie-notification-bar-1
@@ -46,7 +52,12 @@ duckduckgo.com###features
 etoland.co.kr###mw_mobile > [href^="../../plugin/mobile/board.php"]
 etoland.co.kr###mw_mobile > [href^="/plugin/ext_link/ext_only_extension.php"]
 etoland.co.kr###mw_mobile > section:nth-of-type(1)
+frtoon*.com##div.container.mt-1.show.fade.alert-dismissible.alert-danger.alert
 hangyo.com##[id^='banCon']
+hdhd*.net##.alert_windows
+hmall.com###mainBannerPopup
+hmall.com##.appDownload-banner
+hmall.com##body,html:style(overflow:auto!important)
 indeed.com###passport-frontendclient-overlay
 innisfree.com##.txtBanner.docTopBanner
 kktv*.com##.main_bannerbox
@@ -57,12 +68,17 @@ lawtalk.co.kr##.top-margin.qna-article-answers__naver-cpc-ad-wrap
 lee-master.tistory.com##blockquote
 lge.co.kr##.btn-chatbot-wrap
 lge.co.kr##.hello-app.hello-bar-wrap
+lover*.net###a45998g
+lover*.net##.div-over
+lover*.net##[class^='juicyads']
+lover*.net##[src$=".gif"]
 m.cafe.naver.com##.BasicLayer
 m.cafe.naver.com##.inner_wrap
 medium.com##div > div > div > div > div:has-text(Sign up to discover human stories that deepen your understanding of the world.)
 mjoin.bobaedream.co.kr##.wrap > div:nth-of-type(1)
 naver.com##button:has-text(앱 설치)
 newtoki.help##.ba_test
+onlineconvertfree.com##.banner
 orders.pay.naver.com##[class^='SkeletonBannerWrapper_']
 pann.nate.com##.eventBnBox
 snbforums.com##.js-notices.notices--floating.notices
@@ -71,6 +87,7 @@ tinyurl.com##.view-mobile
 topstarnews.net##.pay-box
 topstarnews.net##.show-prompt.sp-pos-left.sp-native-popover.sp-prompt
 webtool.cusis.net###sidebar-right
+yagong*.com##.px-2.justify-start.items-center.flex-wrap.flex.ml-0.my-3
 ||apac.presence.teams.microsoft.com/*/reportmyactivity/
 ||api-js.mixpanel.com/engage/?
 ||api.github.com/_private/browser/stats$important
@@ -78,6 +95,8 @@ webtool.cusis.net###sidebar-right
 ||appnexus.com^
 ||appsforoffice.microsoft.com/*/telemetry
 ||baresi.xyz^$3p
+||bccard.tt.omtrdc.net^
+||betmoa*.com^
 ||browser.events.data.microsoft.com^
 ||browser.sentry-cdn.com^
 ||bugherd.com^$3p
@@ -91,6 +110,7 @@ webtool.cusis.net###sidebar-right
 ||cookielaw.org^
 ||core.airbridge.io^$important
 ||crash.steampowered.com^
+||crashlyticsreports-pa.googleapis.com^
 ||crazyegg.com^$3p
 ||cxcs.microsoft.net/api/teamsgrowth/en-us/json/whatsnew/edu/student/whats-new
 ||discord.com/api/*/applications/detectable
@@ -112,9 +132,11 @@ webtool.cusis.net###sidebar-right
 ||facebook.com/common/referer_frame.php
 ||facebook.com/method/links.getstats?
 ||facebook.com/tr
+||facebook.com^$app=gsshop.mobile.v2
 ||fwmrm.net/ad
 ||geoads.ltd^
 ||geolocation-db.com^
+||ggonggane.com^
 ||google.*/client_204
 ||google.*/imgevent$ping
 ||google.*/search$removeparam=bih
@@ -145,8 +167,10 @@ webtool.cusis.net###sidebar-right
 ||linkedin.com/countserv/count/
 ||lo.v.liveperson.net^$3p
 ||logsvr.xmcsrv.net^
+||mcwlive*.com^
 ||metrics.torproject.org^
 ||monitoring.hackle.io^
+||nexusrules.officeapps.live.com^
 ||notsy.io^$3p
 ||onetrust.com^$ping
 ||openx.palitra.ge/banerebi/*
@@ -174,6 +198,7 @@ webtool.cusis.net###sidebar-right
 ||tags.tiqcdn.com^
 ||teams.events.data.microsoft.com^
 ||teams.microsoft.com/*/ping
+||theirbellstudio.co^
 ||track-eu.adformnet.akadns.net^
 ||trafficfactory.biz^
 ||trafficjunky.com^$3p
@@ -184,7 +209,10 @@ webtool.cusis.net###sidebar-right
 ||wlog.tmon.co.kr^$important
 ||wordpress.com/geo/
 ||www39.zippyshare.com/sw.js
+||yamstd.com:10000/api/ad.yam
+||yanovideos.com/banners/*.gif
 ||youtube.com^$app=com.wemakeprice
+||youtube.com^$app=world.wemakeprice.aos
 ! perforation line_3
 ###Share
 ###adTop
@@ -346,7 +374,7 @@ chan.sankakucomplex.com###header > .carousel
 chan.sankakucomplex.com##.bottom-popup
 chan.sankakucomplex.com##.content > div > .carousel
 chmodi.tistory.com##.floatdiv
-comic.naver.com#@#body,html:style(overflow:auto!important)
+comic.naver.com,place.naver.com#@#body,html:style(overflow:auto!important)
 community.samsung.com##.lia-component-common-widget-custom-content.Chrome.CustomContent.lia-panel-standard.lia-panel > .lia-decoration-border > .lia-decoration-border-content > div > .lia-panel-content-wrapper > .lia-panel-content
 dcinside.com##.spoiler-inner
 dcinside.com##section.clkhigh.grid
@@ -1414,8 +1442,8 @@ $cookie=yotpo_pixel
 /duracelltomi-google-tag-manager/*$script
 apkpure.*#%#//scriptlet('set-constant', '$$.analytics', 'emptyObj')
 apkpure.*#%#//scriptlet('set-constant', '$$.analytics.send', 'noopFunc')
-facebook.com#%#new MutationObserver(function(){var t=["?fbclid","%3Ffbclid","&fbclid","%26fbclid","&__tn__","%__26tn__","%3Futm","?utm","&fbc=","%26fbc%3D","?share=","%3Fshare%3D","%3F__twitter_impression%3D","?__twitter_impression=","?wtmc=","%3Fwtmc%3D","?originalReferrer=","%3ForiginalReferrer%3D","?wtrid=","%3Fwtrid%3D","?trbo=","%3Ftrbo%3D","?GEPC=","%3FGEPC%3D","?whatsapp=","%3Fwhatsapp%3D","?fbc=","%3Ffbc%3D","?dmcid=","%3Fdmcid%3D"];document.querySelectorAll('a[target="_blank"]').forEach(function(e){for(i=0;i
-facebook.com,facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion#%#new MutationObserver(function(){var t=["&eid=","%26eid%3D","?eid=","%3Feid%3D","?__tn__=","%3F%5F%5Ftn%5F%5F%3D","&__tn__=","%26%5F%5Ftn%5F%5F%3D","?source=","%3Fsource%3D","?__xts__","%3F%5F%5Fxts%5F%5F","&__xts__","%26%5F%5Fxts%5F%5F","&__xts__%5B","?ref=","%3Fref%3D","?fref=","%3Ffref%3D","?epa=","%3Fepa%3D","&ifg=","%26ifg%3D","?comment_tracking=","%3Fcomment_tracking%3D","?av=","%3Fav%3D","&av=","%26av%3D","?acontext=","%3Facontext%3D","&session_id=","%26session_id%3D","&session_id=","?hc_location=","%3Fhc_location%3D","&fref=","%26fref%3D","?__cft","%3f__cft"];document.querySelectorAll('a:not([target="_blank"]):not([href*="2fac/"])').forEach(function(e){for(i=0;i
+facebook.com#%#new MutationObserver(function(){var t=["?fbclid","%3Ffbclid","&fbclid","%26fbclid","&__tn__","%__26tn__","%3Futm","?utm","&fbc=","%26fbc%3D","?share=","%3Fshare%3D","%3F__twitter_impression%3D","?__twitter_impression=","?wtmc=","%3Fwtmc%3D","?originalReferrer=","%3ForiginalReferrer%3D","?wtrid=","%3Fwtrid%3D","?trbo=","%3Ftrbo%3D","?GEPC=","%3FGEPC%3D","?whatsapp=","%3Fwhatsapp%3D","?fbc=","%3Ffbc%3D","?dmcid=","%3Fdmcid%3D"];document.querySelectorAll('a[target="_blank"]').forEach(function(e){for(i=0;i<t.length;i++){var r;e.href.includes(t[i])&&(r=(r=(r=e.href.split("#!")[1])||e.href.split("%23%21")[1])||"",e.href.includes("#!")&&(r="#!"+r),e.href.includes("%23%21")&&(r="%23%21"+r),r=(r=(r=e.href.split("&feature=share&")[1])||e.href.split("%26feature%3Dshare%26")[1])||"",e.href.includes("&feature=share&")&&(r="?"+r),e.href.includes("%26feature%3Dshare%26")&&(r="%3F"+r),r=(r=(r=e.href.split("&h=")[1])||e.href.split("%26h%3D")[1])||"",e.href.includes("&h=")&&(r="&h="+r),e.href.includes("%26h%3D")&&(r="%26h%3D"+r),e.setAttribute("href",e.href.split(t[i])[0]+r))}})}).observe(document,{childList:!0,subtree:!0});
+facebook.com,facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion#%#new MutationObserver(function(){var t=["&eid=","%26eid%3D","?eid=","%3Feid%3D","?__tn__=","%3F%5F%5Ftn%5F%5F%3D","&__tn__=","%26%5F%5Ftn%5F%5F%3D","?source=","%3Fsource%3D","?__xts__","%3F%5F%5Fxts%5F%5F","&__xts__","%26%5F%5Fxts%5F%5F","&amp;__xts__%5B","?ref=","%3Fref%3D","?fref=","%3Ffref%3D","?epa=","%3Fepa%3D","&ifg=","%26ifg%3D","?comment_tracking=","%3Fcomment_tracking%3D","?av=","%3Fav%3D","&av=","%26av%3D","?acontext=","%3Facontext%3D","&session_id=","%26session_id%3D","&amp;session_id=","?hc_location=","%3Fhc_location%3D","&fref=","%26fref%3D","?__cft","%3f__cft"];document.querySelectorAll('a:not([target="_blank"]):not([href*="2fac/"])').forEach(function(e){for(i=0;i<t.length;i++)e.href.includes(t[i])&&e.setAttribute("href",e.href.split(t[i])[0])})}).observe(document,{childList:!0,subtree:!0});
 facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion#%#new MutationObserver(function(){var t=["?fbclid","%3Ffbclid","&fbclid","%26fbclid","&__tn__","%__26tn__","%3Futm","?utm","&fbc=","%26fbc%3D","?share=","%3Fshare%3D","%3F__twitter_impression%3D","?__twitter_impression=","?wtmc=","%3Fwtmc%3D","?originalReferrer=","%3ForiginalReferrer%3D","?wtrid=","%3Fwtrid%3D","?trbo=","%3Ftrbo%3D","?GEPC=","%3FGEPC%3D","?whatsapp=","%3Fwhatsapp%3D","?fbc=","%3Ffbc%3D","?dmcid=","%3Fdmcid%3D"];document.querySelectorAll('a[target="_blank"]').forEach(function(e){for(i=0;i<t.length;i++){var r;e.href.includes(t[i])&&(r=(r=(r=e.href.split("#!")[1])||e.href.split("%23%21")[1])||"",e.href.includes("#!")&&(r="#!"+r),e.href.includes("%23%21")&&(r="%23%21"+r),r=(r=(r=e.href.split("&feature=share&")[1])||e.href.split("%26feature%3Dshare%26")[1])||"",e.href.includes("&feature=share&")&&(r="?"+r),e.href.includes("%26feature%3Dshare%26")&&(r="%3F"+r),r=(r=(r=e.href.split("&h=")[1])||e.href.split("%26h%3D")[1])||"",e.href.includes("&h=")&&(r="&h="+r),e.href.includes("%26h%3D")&&(r="%26h%3D"+r),e.setAttribute("href",e.href.split(t[i])[0]+r))}})}).observe(document,{childList:!0,subtree:!0});
 fmkorea.com#%#//scriptlet("set-constant", "link_url", "")
 mlbpark.donga.com,thephoblographer.com,brandbrief.co.kr,meconomynews.com#%#//scriptlet('prevent-eval-if', 'content-loader.com')
