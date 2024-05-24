@@ -1,10 +1,13 @@
 ! Title: mylist
-! Version: 1.181
+! Version: 1.182
 ! Description: my adblock rules
 
 
 ###advertiseInPlayer
+##.alert_windows
 ##.grbLayer.grbDim
+##.sns_area
+#@#.app-banner:not(html,body,:empty)
 $removeparam=DA,domain=search.daum.net
 $removeparam=ei
 $removeparam=ie
@@ -14,6 +17,10 @@ $removeparam=oquery,domain=search.naver.com
 $removeparam=sm,domain=search.naver.com
 $removeparam=t,domain=duckduckgo.com
 $removeparam=trackingCode
+19damoa.org###SITE_HEADER
+19damoa.org###SITE_HEADER-placeholder
+4kjav.co###adde_modal-modal
+4kjav.co###adde_modal-overlay
 @@$extension="Autopass Cloudflare CAPTCHA",domain=viva100.com
 @@$extension="Embed Me!",domain=yande.re
 @@$extension="Immersive Translate - Translate Website & PDF",app=com.kiwibrowser.browser|org.mozilla.firefox
@@ -36,9 +43,13 @@ $removeparam=trackingCode
 @@||unrealengine.com^$stealth=ip
 @@||vivaldi.net^$stealth=ip
 ai.google.dev###glue-cookie-notification-bar-1
+ajunews.com##.ad_box1
 anilife.app###disqus_thread
 arca.live##.footer
 arca.live##.spoiler-alert-content
+av19.gg##.sidebar-ads
+av19.gg##div#banner
+blacktv*.com###container > div:nth-of-type(1)
 blog.naver.com##.layer_app
 bobaedream.co.kr##.id-log.main-article
 bobaedream.co.kr##.id-major.main-article
@@ -54,12 +65,19 @@ etoland.co.kr###mw_mobile > [href^="/plugin/ext_link/ext_only_extension.php"]
 etoland.co.kr###mw_mobile > section:nth-of-type(1)
 frtoon*.com##div.container.mt-1.show.fade.alert-dismissible.alert-danger.alert
 hangyo.com##[id^='banCon']
-hdhd*.net##.alert_windows
 hmall.com###mainBannerPopup
 hmall.com##.appDownload-banner
-hmall.com##body,html:style(overflow:auto!important)
+hmall.com,tvroom.org##body,html:style(overflow:auto!important)
+hogangnono.com##.dimmed-layer._dimmedLayer
+hogangnono.com##.starter
+hub.zum.com##.css-c4y80m
+imbc.com###bannerDiv
+imbc.com##.wrap-appdown
 indeed.com###passport-frontendclient-overlay
 innisfree.com##.txtBanner.docTopBanner
+japanhub.net##.text-center.col-sm-12.col-md-4
+kissjav.com###player-advertising-mobile
+kissjav.com###player-fluid_logo_image
 kktv*.com##.main_bannerbox
 kktv*.com##div.modal_wrap
 lawtalk.co.kr##.directive.plus-ad-mobile
@@ -76,16 +94,23 @@ m.cafe.naver.com##.BasicLayer
 m.cafe.naver.com##.inner_wrap
 medium.com##div > div > div > div > div:has-text(Sign up to discover human stories that deepen your understanding of the world.)
 mjoin.bobaedream.co.kr##.wrap > div:nth-of-type(1)
+mnews.jtbc.co.kr##.player_top.play_fixed.player_mobile.player_zone
+muko.kr###plusad_widget_wrap
+muko.kr##div.xe-widget-wrapper > div > div > .adsense
 naver.com##button:has-text(앱 설치)
 newtoki.help##.ba_test
 onlineconvertfree.com##.banner
 orders.pay.naver.com##[class^='SkeletonBannerWrapper_']
 pann.nate.com##.eventBnBox
 snbforums.com##.js-notices.notices--floating.notices
+sogirl.so###dclm_modal_content
+sogirl.so###dclm_modal_screen
+sporki.com##.web-to-app-banner
 startpage.com###home-below-the-fold-container
 tinyurl.com##.view-mobile
 topstarnews.net##.pay-box
 topstarnews.net##.show-prompt.sp-pos-left.sp-native-popover.sp-prompt
+uwayapply.com##.bx-viewport
 webtool.cusis.net###sidebar-right
 yagong*.com##.px-2.justify-start.items-center.flex-wrap.flex.ml-0.my-3
 ||apac.presence.teams.microsoft.com/*/reportmyactivity/
@@ -127,12 +152,14 @@ yagong*.com##.px-2.justify-start.items-center.flex-wrap.flex.ml-0.my-3
 ||dove.bet^
 ||ds88pc0kw6cvc.cloudfront.net^
 ||duckduckgo.com/t/
+||eu-swarm-springre.trexname.com^
 ||euc-word-edit.officeapps.live.com/we/RemoteTelemetry.ashx
 ||facebook.com/common/cavalry_endpoint.php?
 ||facebook.com/common/referer_frame.php
 ||facebook.com/method/links.getstats?
 ||facebook.com/tr
 ||facebook.com^$app=gsshop.mobile.v2
+||frog.wix.com^
 ||fwmrm.net/ad
 ||geoads.ltd^
 ||geolocation-db.com^
@@ -154,6 +181,7 @@ yagong*.com##.px-2.justify-start.items-center.flex-wrap.flex.ml-0.my-3
 ||google.*/search$removeparam=uact
 ||google.*/search$removeparam=ved
 ||google.com^$domain=open.spotify.com
+||hkapicwuhvc.com^
 ||hostedprebid.com^
 ||ic3.events.data.microsoft.com^
 ||instagram.com/$removeparam=x-user-agent
@@ -355,7 +383,6 @@ archive.org#%#//scriptlet('set-constant', 'archive_analytics.send_pageview_on_lo
 archive.org#%#//scriptlet('set-constant', 'archive_analytics.send_ping', 'noopFunc')
 archive.org#%#//scriptlet('set-constant', 'archive_analytics.set_up_event_tracking', 'noopFunc')
 asmhentai.com##.atop
-av19.gg##center
 avguri*.com###gm
 avguri*.com###left_bn
 avguri*.com###right_bn
