@@ -1,8 +1,16 @@
 ! Title: mylist
-! Version: 1.182
+! Version: 1.183
 ! Description: my adblock rules
 
 
+dcinside.com###light_tipbox
+comic.naver.com##[src*="/contents_banner_"]
+altoranmarket.co.kr##.js_add_favorite
+shopping.naver.com##[class^='_footer_shortcut_area_']
+shopping.naver.com##[class^='_footer_information_area_']
+naver.com##[href^="https://play.google.com/"]
+t-plays.com###marketingPopup
+donsobi.com##[id^='pum-']
 ###advertiseInPlayer
 ##.alert_windows
 ##.grbLayer.grbDim
@@ -67,7 +75,7 @@ frtoon*.com##div.container.mt-1.show.fade.alert-dismissible.alert-danger.alert
 hangyo.com##[id^='banCon']
 hmall.com###mainBannerPopup
 hmall.com##.appDownload-banner
-hmall.com,tvroom.org##body,html:style(overflow:auto!important)
+hmall.com,tvroom.org,donsobi.com##body,html:style(overflow:auto!important)
 hogangnono.com##.dimmed-layer._dimmedLayer
 hogangnono.com##.starter
 hub.zum.com##.css-c4y80m
@@ -97,7 +105,6 @@ mjoin.bobaedream.co.kr##.wrap > div:nth-of-type(1)
 mnews.jtbc.co.kr##.player_top.play_fixed.player_mobile.player_zone
 muko.kr###plusad_widget_wrap
 muko.kr##div.xe-widget-wrapper > div > div > .adsense
-naver.com##button:has-text(앱 설치)
 newtoki.help##.ba_test
 onlineconvertfree.com##.banner
 orders.pay.naver.com##[class^='SkeletonBannerWrapper_']
@@ -238,7 +245,7 @@ yagong*.com##.px-2.justify-start.items-center.flex-wrap.flex.ml-0.my-3
 ||wordpress.com/geo/
 ||www39.zippyshare.com/sw.js
 ||yamstd.com:10000/api/ad.yam
-||yanovideos.com/banners/*.gif
+||
 ||youtube.com^$app=com.wemakeprice
 ||youtube.com^$app=world.wemakeprice.aos
 ! perforation line_3
@@ -292,7 +299,7 @@ $removeparam=source_ve_path,domain=youtube.com
 29cm.co.kr##[href^="https://29cm.onelink.me/"]
 ://*.*$document,permissions=join-ad-interest-group=()\,run-ad-auction=()\,browsing-topics=()
 @@$extension="상단/하단으로 스크롤"|"Fullscreen Button",domain=comic.naver.com|lezhin.com|toomics.com|toptoon.com|webtoon.kakao.com|page.kakao.com
-@@$extension="스크롤바"|"Scroll to top"|"Savetube",app=com.sec.android.app.sbrowser|com.naver.whale
+@@$extension="스크롤바"|"Scroll to top"|"SaveTube",app=com.sec.android.app.sbrowser|com.naver.whale
 @@||*.co.kr^$extension="Immersive Translate - Translate Website & PDF"
 @@||11st.co.kr^$removeparam
 @@||abr.ge^$all
@@ -367,10 +374,7 @@ allporncomic.com##.body-top-ads.custom-code.c-ads.ad
 allporncomic.com##.na
 amoremall.com##.open.modalPopupWrap
 anilife.*##.HkbznHK
-apkmirror.com###appmanager_recentpostswidget-2 > .listWidget > div.appRow
 apkmirror.com###ezmobfooter
-apkmirror.com##.OUTBRAIN
-apkmirror.com##.appRow.showOnMobileAndTablet
 apkmirror.com#$#html > body { padding-top: 0 !important; }
 arca.live,e-himart.co.kr,11st.co.kr,blogspot.com,lottehotel.com,a-ha.io,chan.sankakucomplex.com,lawandgood.com,tokenpost.kr,ssodam.com##body,html:style(overflow:auto!important)
 archive.org#%#//scriptlet('set-constant', 'archive_analytics', 'noopFunc')
@@ -401,7 +405,7 @@ chan.sankakucomplex.com###header > .carousel
 chan.sankakucomplex.com##.bottom-popup
 chan.sankakucomplex.com##.content > div > .carousel
 chmodi.tistory.com##.floatdiv
-comic.naver.com,place.naver.com#@#body,html:style(overflow:auto!important)
+comic.naver.com,place.naver.com,brand.naver.com,smartstore.naver.com,shopping.naver.com#@#body,html:style(overflow:auto!important)
 community.samsung.com##.lia-component-common-widget-custom-content.Chrome.CustomContent.lia-panel-standard.lia-panel > .lia-decoration-border > .lia-decoration-border-content > div > .lia-panel-content-wrapper > .lia-panel-content
 dcinside.com##.spoiler-inner
 dcinside.com##section.clkhigh.grid
@@ -412,7 +416,6 @@ deokhu.com##div:has-text(detected)
 doctornow.*###modal
 doctornow.co.kr##div > div:has-text(AD)
 doctornow.co.kr##div > div:has-text(앱 다운로드)
-dogdrip.net##.margin-top-small.flex-middle.flex-left.flex.ed
 dtnews24.com##.ad-view
 dtnews24.com##table
 duckduckgo.com##[class^='mobile-homepage_footer__']
@@ -483,8 +486,7 @@ namu.wiki##aside
 namu.wiki##footer
 naver.com##.additional_area
 naver.com##.footer_banner
-naver.com##button:has-text(바로가기 추가)
-naver.com##button:has-text(앱 다운로드)
+naver.com##button:has-text(추가)
 newsmin.co.kr##.td-main-sidebar.td-pb-span4
 newsmin.co.kr##a[href^="https://simte.xyz/"]
 newsmin.co.kr##div.korea-sns
@@ -563,7 +565,6 @@ webtoon.kakao.com##.translate-y-0.translate-y-full.bg-white.fixed.z-3.inset-x-0.
 webtoon.kakao.com##[src^="https://contents.kr.kakaowebtoon.com/"]
 yes24.com###yesAppPop
 yes24.com###yesAppPopMask
-ygosu.com##.row-offcanvas-right.row-offcanvas.row > div:nth-of-type(2)
 youtube.com##.rich-section-single-column
 yozm.wishket.com###p5-total-sub-navigation-wrapper
 yozm.wishket.com##.slideInUp.normal.animated.type-popup.news-letter-guide-section
@@ -613,7 +614,6 @@ yozm.wishket.com##[href^="https://www.wishket.com/project/"]
 ||top.selulesan.co.ua^
 ||track.ssg.com^
 ||wcs.naver.net^
-||widgets.outbrain.com^$domain=apkmirror.com
 ||zoom.us^$cookie=_zm_ctaid
 ||zoom.us^$cookie=_zm_fingerprint
 ||zoom.us^$cookie=_zm_visitor_guid
@@ -694,10 +694,7 @@ anilife.*##.FlexFSCW.MainBnnWrap
 antennagom.com##.entry-header > .bx-adc
 apkmirror.com###appmanager_sppostswidget-2
 apkmirror.com###bottom-slider
-apkmirror.com#$#.accent_bg.downloadButton { pointer-events: auto !important; cursor: pointer !important; }
-apkmirror.com#$#.gooWidget.google-ad-square { display: block !important; }
 apkmirror.com#$#body .ains { display: block !important; position: absolute !important; left: -3000px !important; }
-apkmirror.com#$#body .gooWidget { display: block !important; position: absolute !important; left: -3000px !important; height: 310px !important; }
 apkpure.net###top-slide-banner
 apkpure.net##.app-list.sa-all-div.list > .res.search-telegram
 apkpure.net##.float-button-second.float-request-notification-permission-button
@@ -1469,8 +1466,8 @@ $cookie=yotpo_pixel
 /duracelltomi-google-tag-manager/*$script
 apkpure.*#%#//scriptlet('set-constant', '$$.analytics', 'emptyObj')
 apkpure.*#%#//scriptlet('set-constant', '$$.analytics.send', 'noopFunc')
-facebook.com#%#new MutationObserver(function(){var t=["?fbclid","%3Ffbclid","&fbclid","%26fbclid","&__tn__","%__26tn__","%3Futm","?utm","&fbc=","%26fbc%3D","?share=","%3Fshare%3D","%3F__twitter_impression%3D","?__twitter_impression=","?wtmc=","%3Fwtmc%3D","?originalReferrer=","%3ForiginalReferrer%3D","?wtrid=","%3Fwtrid%3D","?trbo=","%3Ftrbo%3D","?GEPC=","%3FGEPC%3D","?whatsapp=","%3Fwhatsapp%3D","?fbc=","%3Ffbc%3D","?dmcid=","%3Fdmcid%3D"];document.querySelectorAll('a[target="_blank"]').forEach(function(e){for(i=0;i<t.length;i++){var r;e.href.includes(t[i])&&(r=(r=(r=e.href.split("#!")[1])||e.href.split("%23%21")[1])||"",e.href.includes("#!")&&(r="#!"+r),e.href.includes("%23%21")&&(r="%23%21"+r),r=(r=(r=e.href.split("&feature=share&")[1])||e.href.split("%26feature%3Dshare%26")[1])||"",e.href.includes("&feature=share&")&&(r="?"+r),e.href.includes("%26feature%3Dshare%26")&&(r="%3F"+r),r=(r=(r=e.href.split("&h=")[1])||e.href.split("%26h%3D")[1])||"",e.href.includes("&h=")&&(r="&h="+r),e.href.includes("%26h%3D")&&(r="%26h%3D"+r),e.setAttribute("href",e.href.split(t[i])[0]+r))}})}).observe(document,{childList:!0,subtree:!0});
-facebook.com,facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion#%#new MutationObserver(function(){var t=["&eid=","%26eid%3D","?eid=","%3Feid%3D","?__tn__=","%3F%5F%5Ftn%5F%5F%3D","&__tn__=","%26%5F%5Ftn%5F%5F%3D","?source=","%3Fsource%3D","?__xts__","%3F%5F%5Fxts%5F%5F","&__xts__","%26%5F%5Fxts%5F%5F","&amp;__xts__%5B","?ref=","%3Fref%3D","?fref=","%3Ffref%3D","?epa=","%3Fepa%3D","&ifg=","%26ifg%3D","?comment_tracking=","%3Fcomment_tracking%3D","?av=","%3Fav%3D","&av=","%26av%3D","?acontext=","%3Facontext%3D","&session_id=","%26session_id%3D","&amp;session_id=","?hc_location=","%3Fhc_location%3D","&fref=","%26fref%3D","?__cft","%3f__cft"];document.querySelectorAll('a:not([target="_blank"]):not([href*="2fac/"])').forEach(function(e){for(i=0;i<t.length;i++)e.href.includes(t[i])&&e.setAttribute("href",e.href.split(t[i])[0])})}).observe(document,{childList:!0,subtree:!0});
+facebook.com#%#new MutationObserver(function(){var t=["?fbclid","%3Ffbclid","&fbclid","%26fbclid","&__tn__","%__26tn__","%3Futm","?utm","&fbc=","%26fbc%3D","?share=","%3Fshare%3D","%3F__twitter_impression%3D","?__twitter_impression=","?wtmc=","%3Fwtmc%3D","?originalReferrer=","%3ForiginalReferrer%3D","?wtrid=","%3Fwtrid%3D","?trbo=","%3Ftrbo%3D","?GEPC=","%3FGEPC%3D","?whatsapp=","%3Fwhatsapp%3D","?fbc=","%3Ffbc%3D","?dmcid=","%3Fdmcid%3D"];document.querySelectorAll('a[target="_blank"]').forEach(function(e){for(i=0;i
+facebook.com,facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion#%#new MutationObserver(function(){var t=["&eid=","%26eid%3D","?eid=","%3Feid%3D","?__tn__=","%3F%5F%5Ftn%5F%5F%3D","&__tn__=","%26%5F%5Ftn%5F%5F%3D","?source=","%3Fsource%3D","?__xts__","%3F%5F%5Fxts%5F%5F","&__xts__","%26%5F%5Fxts%5F%5F","&__xts__%5B","?ref=","%3Fref%3D","?fref=","%3Ffref%3D","?epa=","%3Fepa%3D","&ifg=","%26ifg%3D","?comment_tracking=","%3Fcomment_tracking%3D","?av=","%3Fav%3D","&av=","%26av%3D","?acontext=","%3Facontext%3D","&session_id=","%26session_id%3D","&session_id=","?hc_location=","%3Fhc_location%3D","&fref=","%26fref%3D","?__cft","%3f__cft"];document.querySelectorAll('a:not([target="_blank"]):not([href*="2fac/"])').forEach(function(e){for(i=0;i
 facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion#%#new MutationObserver(function(){var t=["?fbclid","%3Ffbclid","&fbclid","%26fbclid","&__tn__","%__26tn__","%3Futm","?utm","&fbc=","%26fbc%3D","?share=","%3Fshare%3D","%3F__twitter_impression%3D","?__twitter_impression=","?wtmc=","%3Fwtmc%3D","?originalReferrer=","%3ForiginalReferrer%3D","?wtrid=","%3Fwtrid%3D","?trbo=","%3Ftrbo%3D","?GEPC=","%3FGEPC%3D","?whatsapp=","%3Fwhatsapp%3D","?fbc=","%3Ffbc%3D","?dmcid=","%3Fdmcid%3D"];document.querySelectorAll('a[target="_blank"]').forEach(function(e){for(i=0;i<t.length;i++){var r;e.href.includes(t[i])&&(r=(r=(r=e.href.split("#!")[1])||e.href.split("%23%21")[1])||"",e.href.includes("#!")&&(r="#!"+r),e.href.includes("%23%21")&&(r="%23%21"+r),r=(r=(r=e.href.split("&feature=share&")[1])||e.href.split("%26feature%3Dshare%26")[1])||"",e.href.includes("&feature=share&")&&(r="?"+r),e.href.includes("%26feature%3Dshare%26")&&(r="%3F"+r),r=(r=(r=e.href.split("&h=")[1])||e.href.split("%26h%3D")[1])||"",e.href.includes("&h=")&&(r="&h="+r),e.href.includes("%26h%3D")&&(r="%26h%3D"+r),e.setAttribute("href",e.href.split(t[i])[0]+r))}})}).observe(document,{childList:!0,subtree:!0});
 fmkorea.com#%#//scriptlet("set-constant", "link_url", "")
 mlbpark.donga.com,thephoblographer.com,brandbrief.co.kr,meconomynews.com#%#//scriptlet('prevent-eval-if', 'content-loader.com')
