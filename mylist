@@ -3,6 +3,7 @@
 ! Description: my adblock rules
 
 
+@@||imgur.com^$extension="Embed Me!"
 ###advertiseInPlayer
 ##.alert_windows
 ##.grbLayer.grbDim
@@ -22,7 +23,7 @@ $removeparam=trackingCode
 4kjav.co###adde_modal-modal
 4kjav.co###adde_modal-overlay
 @@$extension="Autopass Cloudflare CAPTCHA",domain=viva100.com
-@@$extension="Embed Me!",domain=yande.re,imgur.com
+@@$extension="Embed Me!",domain=yande.re
 @@$extension="Immersive Translate (沉浸式翻译) - Translate Website & PDF",app=com.kiwibrowser.browser|org.mozilla.firefox
 @@||*.go.kr^$extension="Immersive Translate (沉浸式翻译) - Translate Website & PDF"
 @@||123123play.com^$stealth=ip
