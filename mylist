@@ -1,9 +1,8 @@
 ! Title: mylist
-! Version: 1.184
+! Version: 1.185
 ! Description: my adblock rules
 
 
-@@||imgur.com^$extension="Embed Me!"
 ###advertiseInPlayer
 ##.alert_windows
 ##.grbLayer.grbDim
@@ -18,6 +17,12 @@ $removeparam=oquery,domain=search.naver.com
 $removeparam=sm,domain=search.naver.com
 $removeparam=t,domain=duckduckgo.com
 $removeparam=trackingCode
+/?p=%2F*&h=https%3A%2F%2F*&r=&sid=*&qs=*&cid=$image,~third-party
+/\/(public|resources|static|assets)\/([a-f0-9]){28,31}$/$script,xmlhttprequest,~third-party
+/\/[a-z0-9]{12}\/[a-zA-Z0-9\/\+\-]{97,106}$/$match-case,script,~third-party
+/^https:\/\/cs\d{3}\.\w+\.com\/cscript\/\d{3}\/[\w\d]+\.js$/$script,third-party,match-case
+/^https?:\/\/(?!assets|script|static)(?:[0-9a-z]{10,13}|[0-9a-z]{6})\.[0-9A-Za-z.\-_]+\/(?=[0-9a-z+\/\-]*[A-Z])[0-9A-Za-z+\/\-]{80,106}$/$match-case,script,~third-party
+/duracelltomi-google-tag-manager/*$script
 19damoa.org###SITE_HEADER
 19damoa.org###SITE_HEADER-placeholder
 4kjav.co###adde_modal-modal
@@ -36,7 +41,8 @@ $removeparam=trackingCode
 @@||damoang.net^$stealth=ip
 @@||dasibogo.*^$stealth=ip
 @@||fortnite.com^$stealth=ip
-@@||imasdk.googleapis.com/js/sdkloader/*.js$script,domain=www.ted.com
+@@||imasdk.googleapis.com/js/sdkloader/*.js$script,domain=ted.com
+@@||imgur.com^$extension="Embed Me!"
 @@||innisfree.com^$stealth=ip
 @@||interpark.com^$removeparam
 @@||mania.kr^$stealth=ip
@@ -45,6 +51,8 @@ $removeparam=trackingCode
 @@||ssl.pstatic.net/tveta/libs/$script,domain=nid.naver.com
 @@||unrealengine.com^$stealth=ip
 @@||vivaldi.net^$stealth=ip
+adidas.*###gl-modal__root
+adidas.co.kr##[class^='_app-banner_']
 ai.google.dev###glue-cookie-notification-bar-1
 ajunews.com##.ad_box1
 altoranmarket.co.kr##.js_add_favorite
@@ -65,8 +73,10 @@ comic.naver.com##[src*="/contents_banner_"]
 dasibogo.net##[id^='movie-']
 dcinside.com##.block-disable
 dcinside.com##[id*='_tipbox']
+donsobi.com###right-sidebar
 donsobi.com##[id^='pum-']
 duckduckgo.com###features
+errornight.com###dq > div
 etoland.co.kr###mw_mobile > [href^="../../plugin/mobile/board.php"]
 etoland.co.kr###mw_mobile > [href^="/plugin/ext_link/ext_only_extension.php"]
 etoland.co.kr###mw_mobile > section:nth-of-type(1)
@@ -108,6 +118,8 @@ naver.com##[href^="https://play.google.com/"]
 onlineconvertfree.com##.banner
 orders.pay.naver.com##[class^='SkeletonBannerWrapper_']
 pann.nate.com##.eventBnBox
+ppomppu.co.kr#%#AG_onLoad(() => { if (/^https:\/\/(www\.|m\.|)ppomppu\.co\.kr\/(new\/|)hotdeal\//g.test(document.location.href) && document.querySelector(".hotDeal_goods > ul#hotdeal")) { var k = (n) => { if(/\/\/click\.linkprice\.com\/click\.php\?/.test(n)) { return new URLSearchParams(n).get("tu") } else { return n } }; new MutationObserver((o) => { Array.from(o[0].addedNodes).filter(e => /[0-9]{7,9}$/.test(e.className) && /ppomppu\.co\.kr\/(new\/|)hotdeal\/\?/.test(e.querySelector(".view > a").href)).forEach((e) => { e.querySelector(".view > a").href = e.querySelector("p > a[href]:not([class])").href = k(new URLSearchParams(e.querySelector(".view > a").href).get("url"))})}).observe(document.querySelector(".hotDeal_goods > ul#hotdeal"), { childList: true })}});
+ppomppu.co.kr#%#AG_onLoad(() => { if (/m\.ppomppu\.co\.kr\/new\/bbs_view\.php\?/.test(location.href) || /ppomppu\.co\.kr\/zboard\/view\.php\?/.test(location.href)) { Array.from(document.querySelectorAll("a[href][target='_blank']")).filter(e => /^https:\/\/s\.ppomppu\.co\.kr(\/|)\?idno=/.test(e.href)).forEach((o) => { o.href = atob(new URLSearchParams(o.href).get("target").replace("\\", ""))})}});
 shopping.naver.com##[class^='_footer_information_area_']
 shopping.naver.com##[class^='_footer_shortcut_area_']
 snbforums.com##.js-notices.notices--floating.notices
@@ -122,6 +134,7 @@ topstarnews.net##.show-prompt.sp-pos-left.sp-native-popover.sp-prompt
 uwayapply.com##.bx-viewport
 webtool.cusis.net###sidebar-right
 yagong*.com##.px-2.justify-start.items-center.flex-wrap.flex.ml-0.my-3
+||accounts.google.com/gsi/client^$third-party,script
 ||apac.presence.teams.microsoft.com/*/reportmyactivity/
 ||api-js.mixpanel.com/engage/?
 ||api.github.com/_private/browser/stats$important
@@ -134,6 +147,7 @@ yagong*.com##.px-2.justify-start.items-center.flex-wrap.flex.ml-0.my-3
 ||browser.events.data.microsoft.com^
 ||browser.sentry-cdn.com^
 ||bugherd.com^$3p
+||cc.naver.com/cc$other,ping
 ||cdn.onesignal.com^
 ||cloudflareinsights.com^$3p
 ||cohesionapps.com^$3p
@@ -250,7 +264,7 @@ yagong*.com##.px-2.justify-start.items-center.flex-wrap.flex.ml-0.my-3
 ||yanovideos.com/banners/*.gif
 ||youtube.com^$app=com.wemakeprice
 ||youtube.com^$app=world.wemakeprice.aos
-! perforation line_3
+! perforation line_2
 ###Share
 ###adTop
 ###app-down-link
@@ -282,7 +296,6 @@ yagong*.com##.px-2.justify-start.items-center.flex-wrap.flex.ml-0.my-3
 ##.top_ad
 ##cloudflare-app
 ##div.video-long-banner
-#%#//scriptlet('no-topics')
 $removeparam=embeds_referring_origin,domain=youtube.com
 $removeparam=proxyReferer,domain=naver.com
 $removeparam=source_ve_path,domain=youtube.com
@@ -311,7 +324,6 @@ $removeparam=source_ve_path,domain=youtube.com
 @@||aladin.co.kr^$removeparam
 @@||aliexpress.*^$cookie=/^_ga_/
 @@||amoremall.com^$stealth=ip
-@@||samsungcloud.com^$stealth=dpi
 @@||app.link^$removeparam
 @@||app.link^$stealth
 @@||apple.com^$removeparam
@@ -351,6 +363,7 @@ $removeparam=source_ve_path,domain=youtube.com
 @@||onelink.me^$stealth
 @@||ourhome.co.kr^$stealth=dpi
 @@||play.google.com^$removeparam
+@@||samsungcloud.com^$stealth=dpi
 @@||smartstore.naver.com^$removeparam
 @@||smartstore.naver.com^$stealth
 @@||ssg.com^$removeparam
@@ -369,7 +382,6 @@ abcmart.a-rt.com##.ui-front.ui-widget-overlay
 aclsports.com##.mfp-content
 aclsports.com##.mfp-ready.site-access-popup.popup-animation.mfp-bg
 aclsports.com,abcmart.a-rt.com,doctornow.co.kr,adidas.co.kr,amoremall.com,pornhub.com,moeni.net,soldout.co.kr,munpia.com##body,html:style(overflow:auto!important)
-adidas.co.*###gl-modal__root
 aliexpress.com###header-float-banner
 allaboutpc.co.kr##.wrap_top_bn
 allporncomic.com##.body-top-ads.custom-code.c-ads.ad
@@ -378,16 +390,6 @@ amoremall.com##.open.modalPopupWrap
 anilife.*##.HkbznHK
 apkmirror.com###ezmobfooter
 apkmirror.com#$#html > body { padding-top: 0 !important; }
-arca.live,e-himart.co.kr,11st.co.kr,blogspot.com,lottehotel.com,a-ha.io,chan.sankakucomplex.com,lawandgood.com,tokenpost.kr,ssodam.com##body,html:style(overflow:auto!important)
-archive.org#%#//scriptlet('set-constant', 'archive_analytics', 'noopFunc')
-archive.org#%#//scriptlet('set-constant', 'archive_analytics.create_tracking_image', 'noopFunc')
-archive.org#%#//scriptlet('set-constant', 'archive_analytics.get_data_packets', 'noopFunc')
-archive.org#%#//scriptlet('set-constant', 'archive_analytics.process_url_events', 'noopFunc')
-archive.org#%#//scriptlet('set-constant', 'archive_analytics.send_event', 'noopFunc')
-archive.org#%#//scriptlet('set-constant', 'archive_analytics.send_event_no_sampling', 'noopFunc')
-archive.org#%#//scriptlet('set-constant', 'archive_analytics.send_pageview_on_load', 'noopFunc')
-archive.org#%#//scriptlet('set-constant', 'archive_analytics.send_ping', 'noopFunc')
-archive.org#%#//scriptlet('set-constant', 'archive_analytics.set_up_event_tracking', 'noopFunc')
 asmhentai.com##.atop
 avguri*.com###gm
 avguri*.com###left_bn
@@ -618,7 +620,7 @@ yozm.wishket.com##[href^="https://www.wishket.com/project/"]
 ||zoom.us^$cookie=_zm_ctaid
 ||zoom.us^$cookie=_zm_fingerprint
 ||zoom.us^$cookie=_zm_visitor_guid
-! perforation line_2
+! perforation line_1
 ###ad_body
 ###adhere
 ###ads
@@ -773,7 +775,6 @@ comic.naver.com##.ppl_story_inner
 comic.naver.com##.relate_item
 comic.naver.com##.type_cut.tag_area
 comic.naver.com##[href^="https://m.comic.naver.com/webtoon/detail"] > .loaded.lazy.fx2
-comic.naver.com##li:nth-of-type(146)
 coolenjoy.net###bo_list > .d-sm-none.d-block
 coupang.com###bottom-sheet-nudge
 croket.co.kr##.detail_banner
@@ -1120,375 +1121,3 @@ zpat.info##.w3-grey.w3-center.w3-container
 ||www.baidu.com^$app=com.app.aiimglarger
 ||zijieapi.com^
 ||zui.com^
-! perforation line_1
-$cookie=/WZRK_/
-$cookie=/^AMCVS?_.*AdobeOrg/
-$cookie=/^CaosGtag_ga/
-$cookie=/^KRTBCOOKIE_/
-$cookie=/^_chartbeat/
-$cookie=/^_dc_gtm_UA-/
-$cookie=/^_ga_/,domain=~nintendo.com
-$cookie=/^_gac_/
-$cookie=/^_gat_/
-$cookie=/^_gat_tracker\d+/
-$cookie=/^_hjSessionUser_/
-$cookie=/^_hjSession_/
-$cookie=/^_v__chartbeat/
-$cookie=/^_ym_visorc/
-$cookie=/^adptset_\d+/
-$cookie=/^amplitude_id_/
-$cookie=/^evid_\d+/
-$cookie=/^evid_set_\d+/
-$cookie=/^ezoadgid_/
-$cookie=/^ezopvc_/
-$cookie=/^ezoref_/
-$cookie=/^ezovuuid_/
-$cookie=/^ezovuuidtime_/
-$cookie=/^ezux_et_/
-$cookie=/^ezux_ifep/
-$cookie=/^ezux_lpl_/
-$cookie=/^ezux_tos_/
-$cookie=/^mprtcl-prodv4_/
-$cookie=/^mprtcl-v4_/
-$cookie=/^uid-bp-\d+/
-$cookie=/^wisepops/
-$cookie=/dwac_/,domain=~nintendo.com
-$cookie=/dwanonymous_/,domain=~nintendo.com
-$cookie=/mp_.*_mixpanel/
-$cookie=AMP_TOKEN
-$cookie=AnalyticsSyncHistory
-$cookie=BrowserId_sec
-$cookie=CN_ad_block
-$cookie=CN_xid
-$cookie=CN_xid_refresh
-$cookie=DSID
-$cookie=EH_0
-$cookie=ELOQUA
-$cookie=Exitbee_nrPagesVisited
-$cookie=Exitbee_source
-$cookie=Exitbee_vid
-$cookie=Exitbee_visit_id
-$cookie=Exitbee_visitsCount
-$cookie=FCNEC
-$cookie=Gdyn
-$cookie=Gtest
-$cookie=IDE
-$cookie=MUIDB
-$cookie=MgidStorage
-$cookie=MicrosoftApplicationsTelemetryDeviceId
-$cookie=PUBMDCID
-$cookie=SC_ANALYTICS_GLOBAL_COOKIE
-$cookie=TAPID
-$cookie=TMog
-$cookie=TRADEDOUBLER
-$cookie=TestIfCookieP
-$cookie=TicimaxReferer
-$cookie=TradeDoublerGUID
-$cookie=UserMatchHistory
-$cookie=VtexFingerPrint
-$cookie=Wysistat
-$cookie=_ALGOLIA
-$cookie=___nrbi
-$cookie=___nrbic
-$cookie=__ae_uid_sess_id
-$cookie=__auc
-$cookie=__gads
-$cookie=__gfp_64b
-$cookie=__gpi
-$cookie=__igaw__adid
-$cookie=__kla_id
-$cookie=__pulseEnvironmentId
-$cookie=__pvi
-$cookie=__qca
-$cookie=__stid
-$cookie=__stidv
-$cookie=__tbc
-$cookie=__tmbid
-$cookie=__tr_sid
-$cookie=__tr_ufp
-$cookie=__tr_vg
-$cookie=__utma
-$cookie=__utmb
-$cookie=__utmc
-$cookie=__utmt
-$cookie=__utmt_sfga
-$cookie=__utmv
-$cookie=__utmz
-$cookie=_cb
-$cookie=_cb_svref
-$cookie=_cc_id
-$cookie=_cs_cvars
-$cookie=_cs_id
-$cookie=_dd_s
-$cookie=_fbp
-$cookie=_ga
-$cookie=_ga_devsite
-$cookie=_gaexp
-$cookie=_gaexp_rc
-$cookie=_gat
-$cookie=_gcl_au,domain=~nintendo.com
-$cookie=_gcl_aw
-$cookie=_gid
-$cookie=_guid
-$cookie=_hjAbsoluteSessionInProgress
-$cookie=_hjFirstSeen
-$cookie=_hjIncludedInPageviewSample
-$cookie=_hjIncludedInSessionSample
-$cookie=_hjTLDTest
-$cookie=_hjid
-$cookie=_lc2_fpi
-$cookie=_lc2_fpi_meta
-$cookie=_lcc
-$cookie=_li_dcdm_c
-$cookie=_mkto_trk
-$cookie=_ncg_id_
-$cookie=_ntes_nnid
-$cookie=_ntes_nuid
-$cookie=_ntv_uid
-$cookie=_ntv_uid
-$cookie=_opt_awcid
-$cookie=_opt_awgid
-$cookie=_opt_awkid
-$cookie=_opt_awmid
-$cookie=_opt_expid
-$cookie=_opt_utmc
-$cookie=_parrable_id
-$cookie=_parsely_session
-$cookie=_parsely_visitor
-$cookie=_pcid
-$cookie=_pctx
-$cookie=_pcus
-$cookie=_pubcid
-$cookie=_pulse2data
-$cookie=_pulsesession
-$cookie=_rdt_uuid
-$cookie=_tb_sess_r
-$cookie=_tb_t_ppg
-$cookie=_tdbu
-$cookie=_tdid
-$cookie=_tfpvi
-$cookie=_tmae
-$cookie=_uetsid
-$cookie=_uetvid
-$cookie=_vfa
-$cookie=_vfb
-$cookie=_vfz
-$cookie=_vid_t
-$cookie=_vwo_uuid_v2
-$cookie=_wctrck
-$cookie=_yTrackUser
-$cookie=_yTrackVisit
-$cookie=_ym_d
-$cookie=_ym_isad
-$cookie=_ym_uid
-$cookie=aam_uuid
-$cookie=abLdr
-$cookie=abMbl
-$cookie=actppresence
-$cookie=ad-id
-$cookie=adEdition
-$cookie=adcloud
-$cookie=adrcid
-$cookie=adrdel
-$cookie=advcake_click_id
-$cookie=advcake_session_id
-$cookie=advcake_track_url
-$cookie=advcake_trackid
-$cookie=advcake_utm_partner
-$cookie=advcake_utm_webmaster
-$cookie=ajs_anonymous_id
-$cookie=algolia-visitor-id
-$cookie=anj
-$cookie=anonDeviceId
-$cookie=atidvisitor
-$cookie=atuserid
-$cookie=audit
-$cookie=bf_lead
-$cookie=bf_visit
-$cookie=bitmovin_analytics_uuid
-$cookie=blaize_tracking_id
-$cookie=cX_G
-$cookie=cX_LSS
-$cookie=cX_P
-$cookie=cX_S
-$cookie=clRequestId
-$cookie=clVisitorId
-$cookie=compass_uid
-$cookie=cqcid,domain=~nintendo.com
-$cookie=cto_bidid
-$cookie=cto_bundle
-$cookie=demdex
-$cookie=device_uuid
-$cookie=dextp
-$cookie=disqus_unique
-$cookie=dmvk
-$cookie=dst
-$cookie=dtCookie,domain=~gov.pl
-$cookie=dtPC
-$cookie=etuix
-$cookie=everest_g_v2
-$cookie=external_referer
-$cookie=ezds
-$cookie=ezohw
-$cookie=findify
-$cookie=flocktory-uuid
-$cookie=gaClientId
-$cookie=gam_ppid
-$cookie=gckp
-$cookie=globalTI_SID
-$cookie=gptrackCookie
-$cookie=gptrackPVID
-$cookie=granify.uuid
-$cookie=h_zdbb
-$cookie=ibbid
-$cookie=initialTrafficSource
-$cookie=kampyleSessionPageCounter
-$cookie=kampyleUserPercentile
-$cookie=kampyleUserSession
-$cookie=kampyleUserSessionsCount
-$cookie=kampyle_userid
-$cookie=khaos
-$cookie=ki_r
-$cookie=ki_t
-$cookie=kn_cs_visitor_id
-$cookie=li_sugr
-$cookie=lms_ads
-$cookie=lms_analytics
-$cookie=logglytrackingsession
-$cookie=muidn
-$cookie=nQ_cookieId
-$cookie=nQ_userVisitId
-$cookie=nxt_last_visit
-$cookie=obuid
-$cookie=omni_visit_id
-$cookie=optimizelyEndUserId,domain=~nintendo.com
-$cookie=outbrain_cid_fetch
-$cookie=pbjs-unifiedid
-$cookie=permutive-id
-$cookie=permutive-session
-$cookie=pixlee_analytics_cookie
-$cookie=pixlee_analytics_cookie_legacy
-$cookie=pnespsdk_ssn
-$cookie=pnespsdk_visitor
-$cookie=pubmaticuid
-$cookie=pvc_visits[0]
-$cookie=rbzsessionid
-$cookie=remixgp
-$cookie=remixrefkey
-$cookie=remixscreen_depth
-$cookie=remixscreen_dpr
-$cookie=remixscreen_height
-$cookie=remixscreen_orient
-$cookie=remixscreen_width
-$cookie=remixscreen_winzoom
-$cookie=remixseenads
-$cookie=rsci_vid
-$cookie=rxVisitor
-$cookie=s_cc
-$cookie=s_ecid
-$cookie=s_fid
-$cookie=s_invisit
-$cookie=s_lastvisit
-$cookie=s_lastvisit_s
-$cookie=s_lv
-$cookie=s_lv_s
-$cookie=s_nr
-$cookie=s_pltp
-$cookie=s_ppn
-$cookie=s_ppv
-$cookie=s_sq
-$cookie=s_tp
-$cookie=s_vi
-$cookie=s_vnum
-$cookie=sailthru_content
-$cookie=sailthru_visitor
-$cookie=sbjs_current
-$cookie=sbjs_current_add
-$cookie=sbjs_first
-$cookie=sbjs_first_add
-$cookie=sbjs_migrations
-$cookie=sbjs_session
-$cookie=sbjs_udata
-$cookie=sfmc_activityid
-$cookie=sfmc_id
-$cookie=sharedId
-$cookie=sharedid
-$cookie=shopify_recently_viewed
-$cookie=siteMetrics
-$cookie=sophiTrackerid.a05e
-$cookie=sophiTrackerses.a05e
-$cookie=sp_tgamid.a05e
-$cookie=spectroscopyId
-$cookie=spotim-device-v2
-$cookie=spotim_visitId
-$cookie=ss_cid
-$cookie=ss_cpvisit
-$cookie=ss_cvisit
-$cookie=ss_cvr
-$cookie=ss_cvt
-$cookie=t_gid
-$cookie=taboola_fp_td_user_id
-$cookie=tb_click_param
-$cookie=tmr_lvid
-$cookie=tmr_lvidTS
-$cookie=tqsdk_ssn
-$cookie=tqsdk_visitor
-$cookie=trackThisPage
-$cookie=trc_cookie_storage
-$cookie=tuuid
-$cookie=tuuid_lu
-$cookie=utag_main
-$cookie=v1st
-$cookie=v1st_dm
-$cookie=waldo_continent
-$cookie=waldo_country
-$cookie=waldo_region
-$cookie=wt3_eid
-$cookie=wt3_sid
-$cookie=wt_eid
-$cookie=wt_nbg_Q3
-$cookie=wt_sid
-$cookie=wtstp_sid
-$cookie=xf_sam_ad_views
-$cookie=xtant
-$cookie=xtat
-$cookie=xtvrn
-$cookie=yTrackUser
-$cookie=yTrackVisit
-$cookie=yotpo_pixel
-/?p=%2F*&h=https%3A%2F%2F*&r=&sid=*&qs=*&cid=$image,~third-party
-/\/(public|resources|static|assets)\/([a-f0-9]){28,31}$/$script,xmlhttprequest,~third-party
-/\/[a-z0-9]{12}\/[a-zA-Z0-9\/\+\-]{97,106}$/$match-case,script,~third-party
-/^https:\/\/cs\d{3}\.\w+\.com\/cscript\/\d{3}\/[\w\d]+\.js$/$script,third-party,match-case
-/^https?:\/\/(?!assets|script|static)(?:[0-9a-z]{10,13}|[0-9a-z]{6})\.[0-9A-Za-z.\-_]+\/(?=[0-9a-z+\/\-]*[A-Z])[0-9A-Za-z+\/\-]{80,106}$/$match-case,script,~third-party
-/duracelltomi-google-tag-manager/*$script
-apkpure.*#%#//scriptlet('set-constant', '$$.analytics', 'emptyObj')
-apkpure.*#%#//scriptlet('set-constant', '$$.analytics.send', 'noopFunc')
-facebook.com#%#new MutationObserver(function(){var t=["?fbclid","%3Ffbclid","&fbclid","%26fbclid","&__tn__","%__26tn__","%3Futm","?utm","&fbc=","%26fbc%3D","?share=","%3Fshare%3D","%3F__twitter_impression%3D","?__twitter_impression=","?wtmc=","%3Fwtmc%3D","?originalReferrer=","%3ForiginalReferrer%3D","?wtrid=","%3Fwtrid%3D","?trbo=","%3Ftrbo%3D","?GEPC=","%3FGEPC%3D","?whatsapp=","%3Fwhatsapp%3D","?fbc=","%3Ffbc%3D","?dmcid=","%3Fdmcid%3D"];document.querySelectorAll('a[target="_blank"]').forEach(function(e){for(i=0;i<t.length;i++){var r;e.href.includes(t[i])&&(r=(r=(r=e.href.split("#!")[1])||e.href.split("%23%21")[1])||"",e.href.includes("#!")&&(r="#!"+r),e.href.includes("%23%21")&&(r="%23%21"+r),r=(r=(r=e.href.split("&feature=share&")[1])||e.href.split("%26feature%3Dshare%26")[1])||"",e.href.includes("&feature=share&")&&(r="?"+r),e.href.includes("%26feature%3Dshare%26")&&(r="%3F"+r),r=(r=(r=e.href.split("&h=")[1])||e.href.split("%26h%3D")[1])||"",e.href.includes("&h=")&&(r="&h="+r),e.href.includes("%26h%3D")&&(r="%26h%3D"+r),e.setAttribute("href",e.href.split(t[i])[0]+r))}})}).observe(document,{childList:!0,subtree:!0});
-facebook.com,facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion#%#new MutationObserver(function(){var t=["&eid=","%26eid%3D","?eid=","%3Feid%3D","?__tn__=","%3F%5F%5Ftn%5F%5F%3D","&__tn__=","%26%5F%5Ftn%5F%5F%3D","?source=","%3Fsource%3D","?__xts__","%3F%5F%5Fxts%5F%5F","&__xts__","%26%5F%5Fxts%5F%5F","&amp;__xts__%5B","?ref=","%3Fref%3D","?fref=","%3Ffref%3D","?epa=","%3Fepa%3D","&ifg=","%26ifg%3D","?comment_tracking=","%3Fcomment_tracking%3D","?av=","%3Fav%3D","&av=","%26av%3D","?acontext=","%3Facontext%3D","&session_id=","%26session_id%3D","&amp;session_id=","?hc_location=","%3Fhc_location%3D","&fref=","%26fref%3D","?__cft","%3f__cft"];document.querySelectorAll('a:not([target="_blank"]):not([href*="2fac/"])').forEach(function(e){for(i=0;i<t.length;i++)e.href.includes(t[i])&&e.setAttribute("href",e.href.split(t[i])[0])})}).observe(document,{childList:!0,subtree:!0});
-facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion#%#new MutationObserver(function(){var t=["?fbclid","%3Ffbclid","&fbclid","%26fbclid","&__tn__","%__26tn__","%3Futm","?utm","&fbc=","%26fbc%3D","?share=","%3Fshare%3D","%3F__twitter_impression%3D","?__twitter_impression=","?wtmc=","%3Fwtmc%3D","?originalReferrer=","%3ForiginalReferrer%3D","?wtrid=","%3Fwtrid%3D","?trbo=","%3Ftrbo%3D","?GEPC=","%3FGEPC%3D","?whatsapp=","%3Fwhatsapp%3D","?fbc=","%3Ffbc%3D","?dmcid=","%3Fdmcid%3D"];document.querySelectorAll('a[target="_blank"]').forEach(function(e){for(i=0;i<t.length;i++){var r;e.href.includes(t[i])&&(r=(r=(r=e.href.split("#!")[1])||e.href.split("%23%21")[1])||"",e.href.includes("#!")&&(r="#!"+r),e.href.includes("%23%21")&&(r="%23%21"+r),r=(r=(r=e.href.split("&feature=share&")[1])||e.href.split("%26feature%3Dshare%26")[1])||"",e.href.includes("&feature=share&")&&(r="?"+r),e.href.includes("%26feature%3Dshare%26")&&(r="%3F"+r),r=(r=(r=e.href.split("&h=")[1])||e.href.split("%26h%3D")[1])||"",e.href.includes("&h=")&&(r="&h="+r),e.href.includes("%26h%3D")&&(r="%26h%3D"+r),e.setAttribute("href",e.href.split(t[i])[0]+r))}})}).observe(document,{childList:!0,subtree:!0});
-fmkorea.com#%#//scriptlet("set-constant", "link_url", "")
-mlbpark.donga.com,thephoblographer.com,brandbrief.co.kr,meconomynews.com#%#//scriptlet('prevent-eval-if', 'content-loader.com')
-motorgraph.com,brandbrief.co.kr,meconomynews.com,apkmirror.com#%#//scriptlet('prevent-eval-if', 'https://07c225f3.online/loader.min.js')
-ppomppu.co.kr#%#AG_onLoad(() => { if (/^https:\/\/(www\.|m\.|)ppomppu\.co\.kr\/(new\/|)hotdeal\//g.test(document.location.href) && document.querySelector(".hotDeal_goods > ul#hotdeal")) { var k = (n) => { if(/\/\/click\.linkprice\.com\/click\.php\?/.test(n)) { return new URLSearchParams(n).get("tu") } else { return n } }; new MutationObserver((o) => { Array.from(o[0].addedNodes).filter(e => /[0-9]{7,9}$/.test(e.className) && /ppomppu\.co\.kr\/(new\/|)hotdeal\/\?/.test(e.querySelector(".view > a").href)).forEach((e) => { e.querySelector(".view > a").href = e.querySelector("p > a[href]:not([class])").href = k(new URLSearchParams(e.querySelector(".view > a").href).get("url"))})}).observe(document.querySelector(".hotDeal_goods > ul#hotdeal"), { childList: true })}});
-ppomppu.co.kr#%#AG_onLoad(() => { if (/m\.ppomppu\.co\.kr\/new\/bbs_view\.php\?/.test(location.href) || /ppomppu\.co\.kr\/zboard\/view\.php\?/.test(location.href)) { Array.from(document.querySelectorAll("a[href][target='_blank']")).filter(e => /^https:\/\/s\.ppomppu\.co\.kr(\/|)\?idno=/.test(e.href)).forEach((o) => { o.href = atob(new URLSearchParams(o.href).get("target").replace("\\", ""))})}});
-reddit.com#%#//scriptlet('set-constant', 'navigator.sendBeacon', 'noopFunc')
-thesaurus.net,alle-tests.nl,maketecheasier.com,gamingdeputy.com,hardreset.info#%#//scriptlet('prevent-eval-if', 'html-load.com')
-thesaurus.net,alle-tests.nl,maketecheasier.com,gamingdeputy.com,motorgraph.com,mlbpark.donga.com,thephoblographer.com,brandbrief.co.kr,meconomynews.com,apkmirror.com#%#//scriptlet('abort-current-inline-script', 'atob', 'eval(decodeURIComponent(escape(window.atob("KCgpPT5')
-thesaurus.net,topstarnews.net,interfootball.heraldcorp.com,alle-tests.nl,issuya.com,maketecheasier.com,gamingdeputy.com,thesaurus.net,motorgraph.com,thestockmarketwatch.com,mlbpark.donga.com,honkailab.com,warcraftrumbledeck.com,dogdrip.net,thephoblographer.com,brandbrief.co.kr,meconomynews.com,loawa.com,ygosu.com,sportalkorea.com,enetnews.co.kr,edaily.co.kr,economist.co.kr,etoday.co.kr,hankyung.com,isplus.com,hometownstation.com,inven.co.kr,viva100.com,joongdo.co.kr,jjang0u.com,cboard.net,a-ha.io,interfootball.co.kr,fourfourtwo.co.kr,apkmirror.com#%#//scriptlet('set-local-storage-item', '/_fa_Y2FjaGVfaXNfYmxvY2tpbmdfYWNjZXB0YWJsZV9hZHM=$/', '$remove$')
-thesaurus.net,topstarnews.net,interfootball.heraldcorp.com,alle-tests.nl,issuya.com,maketecheasier.com,gamingdeputy.com,thesaurus.net,motorgraph.com,thestockmarketwatch.com,mlbpark.donga.com,honkailab.com,warcraftrumbledeck.com,dogdrip.net,thephoblographer.com,brandbrief.co.kr,meconomynews.com,loawa.com,ygosu.com,sportalkorea.com,enetnews.co.kr,edaily.co.kr,economist.co.kr,etoday.co.kr,hankyung.com,isplus.com,hometownstation.com,inven.co.kr,viva100.com,joongdo.co.kr,jjang0u.com,cboard.net,a-ha.io,interfootball.co.kr,fourfourtwo.co.kr,apkmirror.com#%#//scriptlet('set-local-storage-item', '/_fa_Y2FjaGVfaXNfYmxvY2tpbmdfYWRz$/', '$remove$')
-thesaurus.net,topstarnews.net,interfootball.heraldcorp.com,alle-tests.nl,issuya.com,maketecheasier.com,gamingdeputy.com,thesaurus.net,motorgraph.com,thestockmarketwatch.com,mlbpark.donga.com,honkailab.com,warcraftrumbledeck.com,dogdrip.net,thephoblographer.com,brandbrief.co.kr,meconomynews.com,loawa.com,ygosu.com,sportalkorea.com,enetnews.co.kr,edaily.co.kr,economist.co.kr,etoday.co.kr,hankyung.com,isplus.com,hometownstation.com,inven.co.kr,viva100.com,joongdo.co.kr,jjang0u.com,cboard.net,a-ha.io,interfootball.co.kr,fourfourtwo.co.kr,apkmirror.com#%#//scriptlet('set-local-storage-item', '/_fa_dXVpZA==$/', '$remove$')
-thesaurus.net,topstarnews.net,interfootball.heraldcorp.com,alle-tests.nl,issuya.com,maketecheasier.com,gamingdeputy.com,thesaurus.net,motorgraph.com,thestockmarketwatch.com,mlbpark.donga.com,honkailab.com,warcraftrumbledeck.com,dogdrip.net,thephoblographer.com,brandbrief.co.kr,meconomynews.com,loawa.com,ygosu.com,sportalkorea.com,enetnews.co.kr,edaily.co.kr,economist.co.kr,etoday.co.kr,hankyung.com,isplus.com,hometownstation.com,inven.co.kr,viva100.com,joongdo.co.kr,jjang0u.com,cboard.net,a-ha.io,interfootball.co.kr,fourfourtwo.co.kr,apkmirror.com#%#//scriptlet('set-local-storage-item', 'adshield-analytics-uuid', '$remove$')
-www.google.*#%#//scriptlet('remove-attr', 'onmousedown|data-mousedown|ping|data-click', 'a[href][onmousedown], a[href][ping]')
-www.google.*#%#//scriptlet('remove-attr', 'ping', 'div[id="search"] a[data-ved][ping]')
-||accounts.google.com/gsi/client^$third-party,script
-||cc.naver.com/cc$other,ping
-||investing.com^$cookie=smd
-||investing.com^$cookie=udid
-||pixiv.net^$cookie=first_visit_datetime
-||pixiv.net^$cookie=first_visit_datetime_pc
-||similarweb.com^$cookie=.DEVICETOKEN.SIMILARWEB.COM
-||similarweb.com^$cookie=cb_anonymous_id
-||similarweb.com^$cookie=sgID
-||t.co^$cookie=muc_ads
-~ads.google.com#%#navigator.getBattery = undefined;
