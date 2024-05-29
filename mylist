@@ -1,8 +1,11 @@
 ! Title: mylist
-! Version: 1.187
+! Version: 1.188
 ! Description: my adblock rules
 
 
+@@$extension="Disable WebGL API",domain=vidkidz.tistory.com
+gamegogo.co.kr##div.mb-sm-4.mb-3
+##[class^='juicyads']
 @@||moeni.net/$stealth=webrtc
 mbn.co.kr##section.sec_ban
 mbn.co.kr###mbn_app_dwn
@@ -33,10 +36,6 @@ $removeparam=trackingCode
 @@$extension="Immersive Translate - Translate Web & PDF",app=com.kiwibrowser.browser|org.mozilla.firefox
 @@||*.go.kr^$extension="Immersive Translate - Translate Web & PDF"
 @@||123123play.com^$stealth=ip
-@@||api-ao-list.adison.co^
-@@||api-ao-list.adison.co^$app=com.nhn.android.nbooks,important
-@@||api-ao-list.adison.co^$app=com.nhn.android.webtoon,important
-@@||api-ao-list.adison.co^$app=kvp.jjy.MispAndroid320,important
 @@||arca.live^$extension="심야식당 도우미"
 @@||cfl.dropboxstatic.com
 @@||challenges.cloudflare.com^$extension=~"Autopass Cloudflare CAPTCHA"
@@ -115,7 +114,6 @@ lge.co.kr##.btn-chatbot-wrap
 lge.co.kr##.hello-app.hello-bar-wrap
 lover*.net###a45998g
 lover*.net##.div-over
-lover*.net##[class^='juicyads']
 lover*.net##[src$=".gif"]
 m.cafe.naver.com##.BasicLayer
 m.cafe.naver.com##.inner_wrap
