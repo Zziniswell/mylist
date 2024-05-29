@@ -1,13 +1,11 @@
 ! Title: mylist
-! Version: 1.186
+! Version: 1.187
 ! Description: my adblock rules
 
 
-@@||arca.live^$extension="심야식당 도우미"
-dlsite.com##.cp_bn_list
-aistudio.google.com##.ng-star-inserted.gmat-label-large.banner-container
-aistudio.google.com###glue-cookie-notification-bar-1
-@@||yande.re^$extension="Embed Me!"
+@@||moeni.net/$stealth=webrtc
+mbn.co.kr##section.sec_ban
+mbn.co.kr###mbn_app_dwn
 ###advertiseInPlayer
 ##.alert_windows
 ##.grbLayer.grbDim
@@ -39,9 +37,12 @@ $removeparam=trackingCode
 @@||api-ao-list.adison.co^$app=com.nhn.android.nbooks,important
 @@||api-ao-list.adison.co^$app=com.nhn.android.webtoon,important
 @@||api-ao-list.adison.co^$app=kvp.jjy.MispAndroid320,important
+@@||arca.live^$extension="심야식당 도우미"
+@@||cfl.dropboxstatic.com
 @@||challenges.cloudflare.com^$extension=~"Autopass Cloudflare CAPTCHA"
 @@||com.alibaba.aliexpresshd^$stealth=dpi
 @@||damoang.net^$stealth=ip
+@@||dash.cloudflare.com/*
 @@||dasibogo.*^$stealth=ip
 @@||fortnite.com^$stealth=ip
 @@||imasdk.googleapis.com/js/sdkloader/*.js$script,domain=ted.com
@@ -50,13 +51,18 @@ $removeparam=trackingCode
 @@||interpark.com^$removeparam
 @@||mania.kr^$stealth=ip
 @@||open.scdn.co/*/tracklist-placeholder.
+@@||open.scdn.co/*/tracklist-placeholder.
+@@||proton*/api/*
 @@||spotify.com/track-playback/*
 @@||ssl.pstatic.net/tveta/libs/$script,domain=nid.naver.com
 @@||unrealengine.com^$stealth=ip
 @@||vivaldi.net^$stealth=ip
+@@||yande.re^$extension="Embed Me!"
 adidas.*###gl-modal__root
 adidas.co.kr##[class^='_app-banner_']
 ai.google.dev###glue-cookie-notification-bar-1
+aistudio.google.com###glue-cookie-notification-bar-1
+aistudio.google.com##.ng-star-inserted.gmat-label-large.banner-container
 ajunews.com##.ad_box1
 altoranmarket.co.kr##.js_add_favorite
 anilife.app###disqus_thread
@@ -76,6 +82,7 @@ comic.naver.com##[src*="/contents_banner_"]
 dasibogo.net##[id^='movie-']
 dcinside.com##.block-disable
 dcinside.com##[id*='_tipbox']
+dlsite.com##.cp_bn_list
 donsobi.com###right-sidebar
 donsobi.com##[id^='pum-']
 duckduckgo.com###features
@@ -138,6 +145,8 @@ uwayapply.com##.bx-viewport
 webtool.cusis.net###sidebar-right
 yagong*.com##.px-2.justify-start.items-center.flex-wrap.flex.ml-0.my-3
 ||accounts.google.com/gsi/client^$third-party,script
+||addthis.com^$3p
+||ads.snapchat.com
 ||apac.presence.teams.microsoft.com/*/reportmyactivity/
 ||api-js.mixpanel.com/engage/?
 ||api.github.com/_private/browser/stats$important
@@ -158,12 +167,16 @@ yagong*.com##.px-2.justify-start.items-center.flex-wrap.flex.ml-0.my-3
 ||connect.facebook.net/*/signals/config
 ||connect.facebook.net^$3p,domain=~facebook.com|~fb.com
 ||consensu.org^$3p
+||consent.google.*^$3p
+||consent.youtube.com^$3p
 ||cookielaw.org^
 ||core.airbridge.io^$important
 ||crash.steampowered.com^
 ||crashlyticsreports-pa.googleapis.com^
 ||crazyegg.com^$3p
+||csp-central.appspot.com/report_csp
 ||cxcs.microsoft.net/api/teamsgrowth/en-us/json/whatsnew/edu/student/whats-new
+||da.ge^
 ||discord.com/api/*/applications/detectable
 ||discord.com/api/*/experiments
 ||discord.com/api/*/location-metadata
@@ -190,8 +203,11 @@ yagong*.com##.px-2.justify-start.items-center.flex-wrap.flex.ml-0.my-3
 ||geoads.ltd^
 ||geolocation-db.com^
 ||ggonggane.com^
+||google.*/_/VisualFrontendUi/browserinfo
+||google.*/_/VisualFrontendUi/jserror
 ||google.*/client_204
 ||google.*/imgevent$ping
+||google.*/log
 ||google.*/search$removeparam=bih
 ||google.*/search$removeparam=biw
 ||google.*/search$removeparam=client
@@ -207,8 +223,13 @@ yagong*.com##.px-2.justify-start.items-center.flex-wrap.flex.ml-0.my-3
 ||google.*/search$removeparam=uact
 ||google.*/search$removeparam=ved
 ||google.com^$domain=open.spotify.com
+||googleapis.*/identitytoolkit/*
+||googlesyndication.com^
+||googletagservices.com^$3p
 ||hkapicwuhvc.com^
+||horizonme.net^
 ||hostedprebid.com^
+||hotjar.com^$3p
 ||ic3.events.data.microsoft.com^
 ||instagram.com/$removeparam=x-user-agent
 ||instagram.com/ajax/bz
@@ -221,9 +242,11 @@ yagong*.com##.px-2.justify-start.items-center.flex-wrap.flex.ml-0.my-3
 ||linkedin.com/countserv/count/
 ||lo.v.liveperson.net^$3p
 ||logsvr.xmcsrv.net^
+||mail-ads.google.*^
 ||mcwlive*.com^
 ||metrics.torproject.org^
 ||monitoring.hackle.io^
+||myauto.ge/templates/assets/js/build/ads/*
 ||nexusrules.officeapps.live.com^
 ||notsy.io^$3p
 ||onetrust.com^$ping
@@ -239,16 +262,22 @@ yagong*.com##.px-2.justify-start.items-center.flex-wrap.flex.ml-0.my-3
 ||reports.protonmail.ch^
 ||rtcstats-server-pilot.jitsi.net
 ||rubiconproject.com^
+||rubiconproject.com^
+||sc-static.net^$3p
 ||scdn.co/*/js/gtm
 ||scdn.co/static/js/baba.js$script,domain=spotify.com
+||scorecardresearch.com^
 ||sentry.io^
 ||settings.kiwibrowser.com^
+||snapchat.com/*/user_location
 ||speedcurve.com^$3p
 ||spotify.com/*/event/track
 ||spotify.com/*/event/track-action
 ||spotify.com/*/events
 ||spotify.com/*/metric
 ||statcounter.com^$3p
+||static-cdn.xyz
+||static.my.ge/*/js/banners.js
 ||tags.tiqcdn.com^
 ||teams.events.data.microsoft.com^
 ||teams.microsoft.com/*/ping
@@ -259,14 +288,20 @@ yagong*.com##.px-2.justify-start.items-center.flex-wrap.flex.ml-0.my-3
 ||twitter.com/i/jot
 ||webpushr.com^$3p
 ||whoisvisiting.com^$3p
+||widget.siteheart.com^$3p
 ||wisepops.com^
 ||wlog.tmon.co.kr^$important
 ||wordpress.com/geo/
 ||www39.zippyshare.com/sw.js
 ||yamstd.com:10000/api/ad.yam
 ||yanovideos.com/banners/*.gif
+||youtube.com/api/stats
+||youtube.com/sw.js_data
 ||youtube.com^$app=com.wemakeprice
 ||youtube.com^$app=world.wemakeprice.aos
+||ytimg.com$removeparam=sigh
+||ytimg.com$removeparam=sqp
+||ytimg.com$removeparam=v
 ! perforation line_2
 ###Share
 ###adTop
