@@ -1,18 +1,13 @@
 ! Title: mylist
-! Version: 1.188
+! Version: 1.189
 ! Description: my adblock rules
 
 
-@@$extension="Disable WebGL API",domain=vidkidz.tistory.com
-gamegogo.co.kr##div.mb-sm-4.mb-3
-##[class^='juicyads']
-@@||moeni.net/$stealth=webrtc
-mbn.co.kr##section.sec_ban
-mbn.co.kr###mbn_app_dwn
 ###advertiseInPlayer
 ##.alert_windows
 ##.grbLayer.grbDim
 ##.sns_area
+##[class^='juicyads']
 $removeparam=DA,domain=search.daum.net
 $removeparam=ei
 $removeparam=ie
@@ -33,30 +28,29 @@ $removeparam=trackingCode
 4kjav.co###adde_modal-modal
 4kjav.co###adde_modal-overlay
 @@$extension="Autopass Cloudflare CAPTCHA",domain=viva100.com
+@@$extension="Disable WebGL API",domain=vidkidz.tistory.com
+@@$extension="Embed Me!",domain=yande.re|imgur.com
 @@$extension="Immersive Translate - Translate Web & PDF",app=com.kiwibrowser.browser|org.mozilla.firefox
-@@||*.go.kr^$extension="Immersive Translate - Translate Web & PDF"
-@@||123123play.com^$stealth=ip
+@@$extension="Immersive Translate - Translate Web & PDF",domain=co.kr|go.kr
+@@$stealth,domain=onelink.me|app.link|ofw.adison.co
+@@$stealth=dpi,app=com.alibaba.aliexpresshd|com.samsung.android.scloud
+@@$stealth=dpi,domain=mkt.wemakeprice.link|ourhome.co.kr|startpage.com|imgur.com|kurly.com|samsungcloud.com
+@@$stealth=ip,domain=123123play.com|damoang.net|fortnite.com|innisfree.com|mania.kr|claude.ai|arca.live|bitwarden.com|amoremall.com|unrealengine.com
+@@$stealth=ip,domain=getunicorn.app|hasha.in|dcinside.com|epicgames.com|missav.com|suto.co.kr|novelpia.com|kbcard.com|ssg.com|com.tmon
+@@$stealth=useragent,domain=ssg.com|smartstore.naver.com|brand.naver.com
+@@$stealth=useragent,domain=video.fc2.com|galaxystore.samsung.com|homeplus.co.kr|lotteimall.com|kbcard.com|wemakeprice.com|lotteon.com|gmarket.co.kr|auction.co.kr|11st.co.kr
+@@$stealth=webrtc,domain=moeni.net
 @@||arca.live^$extension="심야식당 도우미"
 @@||cfl.dropboxstatic.com
 @@||challenges.cloudflare.com^$extension=~"Autopass Cloudflare CAPTCHA"
-@@||com.alibaba.aliexpresshd^$stealth=dpi
-@@||damoang.net^$stealth=ip
 @@||dash.cloudflare.com/*
 @@||dasibogo.*^$stealth=ip
-@@||fortnite.com^$stealth=ip
 @@||imasdk.googleapis.com/js/sdkloader/*.js$script,domain=ted.com
-@@||imgur.com^$extension="Embed Me!"
-@@||innisfree.com^$stealth=ip
 @@||interpark.com^$removeparam
-@@||mania.kr^$stealth=ip
-@@||open.scdn.co/*/tracklist-placeholder.
 @@||open.scdn.co/*/tracklist-placeholder.
 @@||proton*/api/*
 @@||spotify.com/track-playback/*
 @@||ssl.pstatic.net/tveta/libs/$script,domain=nid.naver.com
-@@||unrealengine.com^$stealth=ip
-@@||vivaldi.net^$stealth=ip
-@@||yande.re^$extension="Embed Me!"
 adidas.*###gl-modal__root
 adidas.co.kr##[class^='_app-banner_']
 ai.google.dev###glue-cookie-notification-bar-1
@@ -90,6 +84,7 @@ etoland.co.kr###mw_mobile > [href^="../../plugin/mobile/board.php"]
 etoland.co.kr###mw_mobile > [href^="/plugin/ext_link/ext_only_extension.php"]
 etoland.co.kr###mw_mobile > section:nth-of-type(1)
 frtoon*.com##div.container.mt-1.show.fade.alert-dismissible.alert-danger.alert
+gamegogo.co.kr##div.mb-sm-4.mb-3
 hangyo.com##[id^='banCon']
 hmall.com###mainBannerPopup
 hmall.com##.appDownload-banner
@@ -117,6 +112,8 @@ lover*.net##.div-over
 lover*.net##[src$=".gif"]
 m.cafe.naver.com##.BasicLayer
 m.cafe.naver.com##.inner_wrap
+mbn.co.kr###mbn_app_dwn
+mbn.co.kr##section.sec_ban
 medium.com##div > div > div > div > div:has-text(Sign up to discover human stories that deepen your understanding of the world.)
 mjoin.bobaedream.co.kr##.wrap > div:nth-of-type(1)
 mnews.jtbc.co.kr##.player_top.play_fixed.player_mobile.player_zone
@@ -351,7 +348,6 @@ $removeparam=source_ve_path,domain=youtube.com
 ://*.*$document,permissions=join-ad-interest-group=()\,run-ad-auction=()\,browsing-topics=()
 @@$extension="상단/하단으로 스크롤"|"Fullscreen Button",domain=comic.naver.com|lezhin.com|toomics.com|toptoon.com|webtoon.kakao.com|page.kakao.com
 @@$extension="스크롤바"|"Scroll to top"|"SaveTube",app=com.sec.android.app.sbrowser|com.naver.whale
-@@||*.co.kr^$extension="Immersive Translate - Translate Web & PDF"
 @@||11st.co.kr^$removeparam
 @@||abr.ge^$all
 @@||agoda.com^$removeparam
@@ -359,53 +355,27 @@ $removeparam=source_ve_path,domain=youtube.com
 @@||akmall.com^$removeparam
 @@||aladin.co.kr^$removeparam
 @@||aliexpress.*^$cookie=/^_ga_/
-@@||amoremall.com^$stealth=ip
 @@||app.link^$removeparam
-@@||app.link^$stealth
 @@||apple.com^$removeparam
 @@||appsflyer.com^$removeparam
-@@||arca.live^$stealth=ip
 @@||auction.co.kr^$removeparam
-@@||bitwarden.com^$stealth=ip
 @@||brand.naver.com^$removeparam
 @@||cjthemarket.com^$removeparam
-@@||claude.ai^$stealth=ip
 @@||click.linkprice.com^$removeparam
-@@||com.tmon^$stealth=ip
 @@||coupang.com^$removeparam
 @@||dcinside.com^$cookie=_ga
-@@||dcinside.com^$stealth=ip
 @@||e-himart.co.kr^$removeparam
-@@||e-himart.co.kr^$stealth=useragent
-@@||epicgames.com^$stealth=ip
-@@||galaxystore.samsung.com^$stealth=useragent|ip
-@@||getunicorn.app^$stealth=ip
 @@||gmarket.co.kr^$removeparam
 @@||googleoptimize.com^$script,domain=puma.com
 @@||graph.facebook.com^$domain=fmkorea.com
 @@||gsshop.com^$removeparam
-@@||hasha.in^$stealth=ip
-@@||homeplus.co.kr/$stealth=useragent
 @@||homeplus.co.kr^$removeparam
-@@||imgur.com^$stealth=dpi
-@@||kbcard.com^$stealth=useragent|ip
-@@||kurly.com^$stealth=dpi
 @@||kyobobook.co.kr^$removeparam
-@@||lotteimall.com/$stealth=useragent
-@@||missav.com^$stealth=ip
-@@||mkt.wemakeprice.link^$stealth=dpi
 @@||namu.wiki^$extension=~"NamuLink"|~"Namu Hot Now"|~"F11 for FullScreen"|~"Toggle Fullscreen Button For Mobile Browsers"|~"Fullscreen Button"|~"Disable WebGL API"|~"QuickSearch"
-@@||novelpia.com^$stealth=ip
-@@||onelink.me^$stealth
-@@||ourhome.co.kr^$stealth=dpi
 @@||play.google.com^$removeparam
-@@||samsungcloud.com^$stealth=dpi
 @@||smartstore.naver.com^$removeparam
-@@||smartstore.naver.com^$stealth
 @@||ssg.com^$removeparam
-@@||suto.co.kr^$stealth=ip
 @@||tpc.googlesyndication.com^$script,~third-party
-@@||video.fc2.com^$stealth=useragent
 @@||wemakeprice.com^$removeparam
 @@||yes24.co.kr^$removeparam
 a-bly.com##.app-persuade-drawer.drawer
@@ -692,17 +662,8 @@ yozm.wishket.com##[href^="https://www.wishket.com/project/"]
 11st.co.kr##.t_banner
 29cm.co.kr##.ng-star-inserted.app-install-layer-wrapper
 4kwallpapers.com##.scrollToTopBtn
-@@||11st.co.kr^$stealth=useragent
-@@||ofw.adison.co/$stealth
-@@||auction.co.kr^$stealth=useragent
-@@||brand.naver.com/$stealth
-@@||gmarket.co.kr/$stealth=useragent
-@@||lotteon.com^$stealth=useragent
 @@||oauth.telegram.org^
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=apkmirror.com
-@@||ssg.com/$stealth=useragent|ip
-@@||startpage.com^$stealth=dpi
-@@||wemakeprice.com^$stealth=useragent
 a-ha.io##.expert-section-wrapper
 a-ha.io##.md\:tw-pr-4.md\:tw-w-3\/4 > div > div:nth-of-type(3)
 a-ha.io##[class='a-modal modalAppInstallSMS -is-mobile']
