@@ -3,8 +3,9 @@
 ! Description: my adblock rules
 
 
-onlineconvertfree.com,video.fc2.com,pressian.com##.banner
 ###advertiseInPlayer
+###cookieBanner
+##.ad-box
 ##.alert_windows
 ##.grbLayer.grbDim
 ##.sns_area
@@ -35,7 +36,7 @@ $removeparam=trackingCode
 @@$extension="Immersive Translate - Translate Web & PDF",domain=co.kr|go.kr
 @@$stealth,domain=onelink.me|app.link|ofw.adison.co
 @@$stealth=dpi,app=com.alibaba.aliexpresshd|com.samsung.android.scloud
-@@$stealth=dpi,domain=mkt.wemakeprice.link|ourhome.co.kr|startpage.com|imgur.com|kurly.com|samsungcloud.com
+@@$stealth=dpi,domain=mkt.wemakeprice.link|ourhome.co.kr|startpage.com|imgur.com|kurly.com|samsung.com
 @@$stealth=ip,domain=123123play.com|damoang.net|fortnite.com|innisfree.com|mania.kr|claude.ai|arca.live|bitwarden.com|amoremall.com|unrealengine.com
 @@$stealth=ip,domain=getunicorn.app|hasha.in|dcinside.com|epicgames.com|missav.com|suto.co.kr|novelpia.com|kbcard.com|ssg.com
 @@$stealth=useragent,domain=ssg.com|smartstore.naver.com|brand.naver.com
@@ -59,6 +60,9 @@ aistudio.google.com##.ng-star-inserted.gmat-label-large.banner-container
 ajunews.com##.ad_box1
 altoranmarket.co.kr##.js_add_favorite
 anilife.app###disqus_thread
+apkpure.com##.aegon-down-item
+apkpure.com##.google-anno-skip.available-box
+apkpure.com##div.right
 arca.live##.footer
 arca.live##.spoiler-alert-content
 av19.gg##.sidebar-ads
@@ -91,7 +95,6 @@ hmall.com##.appDownload-banner
 hmall.com,tvroom.org,donsobi.com,arca.live##body,html:style(overflow:auto!important)
 hogangnono.com##.dimmed-layer._dimmedLayer
 hogangnono.com##.starter
-hub.zum.com##.css-c4y80m
 imbc.com###bannerDiv
 imbc.com##.wrap-appdown
 indeed.com###passport-frontendclient-overlay
@@ -120,6 +123,10 @@ mnews.jtbc.co.kr##.player_top.play_fixed.player_mobile.player_zone
 muko.kr###plusad_widget_wrap
 muko.kr##div.xe-widget-wrapper > div > div > .adsense
 naver.com##[href^="https://play.google.com/"]
+newspim.com##.helper
+newspim.com##.txtlink
+nocutnews.co.kr##.slick-dotted.slick-slider.slick-initialized.nc_swipe
+onlineconvertfree.com,video.fc2.com,pressian.com##.banner
 orders.pay.naver.com##[class^='SkeletonBannerWrapper_']
 pann.nate.com##.eventBnBox
 shopping.naver.com##[class^='_footer_information_area_']
@@ -295,21 +302,15 @@ yagong*.com##.px-2.justify-start.items-center.flex-wrap.flex.ml-0.my-3
 ||ytimg.com$removeparam=sqp
 ||ytimg.com$removeparam=v
 ! perforation line_2
-###Share
 ###adTop
-###app-down-link
-###appDownPopup
 ###bottom_ad_box
 ###cb-gdpr
 ###cookie-exitlag
 ###coupangCmm
 ###groobeeWrap
-###id_mbv
-###leftFloat
 ###news-ticker
 ###omptlivqdrkjefghnsuxw
 ###onetrust-consent-sdk
-###prd_appbanner
 ###topad_1
 ##._gdpr-notify-header
 ##.bblocktop
@@ -317,11 +318,8 @@ yagong*.com##.px-2.justify-start.items-center.flex-wrap.flex.ml-0.my-3
 ##.cookieprompt
 ##.custom_banner_wrap
 ##.floating_banner
-##.footer-floating-ad.mobile-ad.ad
 ##.google_m_read_ad
-##.layer.popup
 ##.login_banner
-##.popup_warp
 ##.topBanner
 ##.top_ad
 ##cloudflare-app
@@ -401,7 +399,6 @@ blog.fc2.com###wrapper > div:nth-of-type(4)
 blog.fc2.com#@#.ad_footer
 blog.wishket.com##[href^="https://wishket.com/"]
 bosstv.org##[src^="https://bosstv.org/data/banner/"]
-brand.naver.com###MODAL_ROOT_ID > div
 bunjang.co.kr##div > div:has-text(타이밍!)
 cafe.daum.net##.today_bubble
 car.encar.com##[class*="FirstBanner_dimmed_layer__"]
@@ -415,8 +412,6 @@ comic.naver.com,place.naver.com,brand.naver.com,smartstore.naver.com,shopping.na
 community.samsung.com##.lia-component-common-widget-custom-content.Chrome.CustomContent.lia-panel-standard.lia-panel > .lia-decoration-border > .lia-decoration-border-content > div > .lia-panel-content-wrapper > .lia-panel-content
 dcinside.com##.spoiler-inner
 dcinside.com##section.clkhigh.grid
-deepl.com##.dark\:bg-dark.dark\:ring-light\/2.sm\:left-auto.text-balance.max-w-md.left-16.right-4.bottom-4.pr-8.p-4.shadow-1xs.ring-dark\/2.ring-1.straight-corners\:rounded-none.rounded.bg-white.z-10.fixed
-deepl.com##.forced-colors-mode-border.AppBanner-module--banner--2Ezkw
 deokhu.com##div:has-text(detected)
 doctornow.*###modal
 doctornow.co.kr##div > div:has-text(AD)
@@ -514,7 +509,7 @@ reddit.*##xpromo-nsfw-blocking-modal,slot+.prompt
 reddit.com##.\@container
 reddit.com##[style*="blur"]:style(filter:none!important;)
 reddit.com##shreddit-experience-tree.theme-beta
-samsung.com##.cod05-app-banner
+samsung.com##[class$='app-banner']
 section.blog.naver.com##.hot_topic
 section.blog.naver.com##.wrap_my_information > div:nth-of-type(4)
 section.blog.naver.com##.wrap_my_information > div:nth-of-type(5)
@@ -525,14 +520,12 @@ shopping.naver.com##[class*="_todayBenefit_today_benefit_"]
 shopping.naver.com##[class*="popupBanner"]
 shopping.naver.com##[id$="DynamicAd"]
 skstoa.com##.on.tooltip_area
-smartstore.naver.com###MODAL_ROOT_ID
 soldout.co.kr##div > div:has-text(오늘 하루 보지 않기)
 ssg.com###m_header_appdown
 ssg.com##div > div > div:has-text(앱다운받기)
 ssg.com##div > div > div:has-text(지금 시작하기)
 ssodam.com###ageModal
 ssodam.com##.col-lg-10.col-lg-offset-1 > div.desktop-hide
-stackoverflow.com###onetrust-banner-sdk
 suto.co.kr##.app-bottom
 t.hi098123.com##.fad
 talk.op.gg##.Beacon
@@ -603,7 +596,6 @@ yozm.wishket.com##[href^="https://www.wishket.com/project/"]
 ! perforation line_1
 ###ad_body
 ###adhere
-###ads
 ###appInstallPopupContainer
 ###bnr_float
 ###fixed_ad
@@ -614,22 +606,13 @@ yozm.wishket.com##[href^="https://www.wishket.com/project/"]
 ###mdnw-appInstallPopup-container
 ###newsview_promotion_banner
 ###powerLink
-###publish_link_widget_iframe_main
 ###rollingAdDiv
 ###top-banner
-###wrap_banner_billboard
 ##.AppInstallBanner
-##.ad-box-auto
-##.ad-entry
-##.ad_corner
-##.ad_right_top
-##.ad_top
 ##.app-banner-layer
 ##.app-install-wrapper
 ##.box__banner--ad-top
 ##.dmm-games
-##.g-sides-gaps.b-cookies-informer
-##.header-ad
 ##.id_tour.grid_m
 ##.mobile_ad
 ##.power_link
@@ -638,10 +621,9 @@ yozm.wishket.com##[href^="https://www.wishket.com/project/"]
 ##.story_banner
 ##.subscription_fee
 ##.top-ads
-##[src^="/bannerpop/"]
-##[src^="/img1a.coupangcdn.com/"]
+##[src*="/bannerpop/"]
+##[src*="coupangcdn.com/"]
 ##div.ad-adsense.js-ad-slot
-##div.gf-bottom-panel-left
 100ssd.co.kr##div.auto-marbtm-5.auto-martop-5
 11st.co.kr###brandingAdImg
 11st.co.kr###dtl01 > div.l-grid
@@ -684,10 +666,6 @@ arca.live##.mt-2.recaptcha-privacy
 arca.live##.mt-4.user-activites
 arca.live##.show.modal
 arca.live##.show.modal-backdrop
-arm.c.appier.net
-asiatime.co.kr###swiper-wrapper-html > .swiper-slide-active.swiper-slide
-asiatime.co.kr##.cover_story.col-lg-3
-asiatime.co.kr##[class*="_ad"]
 asmr-labo.com###content-bottom
 asmr-labo.com###content-top
 auction.co.kr###cpcAdHybridTopBanner
@@ -771,9 +749,6 @@ dcinside.com##.view-btm-con
 dcinside.com##[href^="https://event.dcinside.com/"]
 ddengle.com##.clear.rd_ft_nav
 ddengle.com##.rd_ft
-donga.com##[id^="adbox_main"]
-donga.com##.bann_wrap
-donga.com##div[class*="view_m_ad"]
 e-himart.co.kr###goodsBanner
 en.seoul.co.kr##table
 ero-anime.website###content-bottom
@@ -798,8 +773,6 @@ gmarket.co.kr##.box__couponswiper-wrap
 gmarket.co.kr##.box_dot_main
 gmarket.co.kr##.plcc_banner
 goobne.co.kr##.pc_login_btn.red_back_btn.l-btn
-google.co.jp,google.co.kr,google.co.uk,google.com##div#bottomads
-google.co.jp,google.co.kr,google.co.uk,google.com##div#tads
 google.com###lb
 google.com##[id^="eob_"]
 google.com##div[data-ow]:has(a[href*="cleanpng.com"])
@@ -822,12 +795,11 @@ google.com##div[data-ow]:has(a[href*="pngwing.com"])
 google.com##div[data-ow]:has(a[href*="similarpng.com"])
 google.com##div[data-ow]:has(a[href*="subpng.com"])
 google.com##div[data-ow]:has(a[href*="toppng.com"])
-gparts.co.kr##[src^="/images/mobile/favor_nologin.png"]
+gparts.co.kr##[src*="/images/mobile/favor_nologin.png"]
 gsshop.com##.banner-area
 gsshop.com##.bnr-item_appdown
 gsshop.com##section.box-shade.box-wrap
 hani.co.kr##[class*="ArticleDetail_supportBannerWrap__"]
-hani.co.kr##[class^="Ad_"]
 hasha.in##.bg-hasha-1-l.rounded.text.p-5 > div:nth-of-type(3)
 hasha.in##.gpdcNM
 hasha.in##div.max-w-full.flex-col.flex.mb-6.mx-auto.w-fit
@@ -849,7 +821,6 @@ joongang.co.kr##.login_proposal.plotting_banner
 joongang.co.kr##.md_hidden.lg_hidden.house_banner.aside.index_random.jaswiper_controller.jswiper
 journalist.or.kr###container > div:nth-of-type(6)
 khan.co.kr###bnNewsletter
-khan.co.kr###layerB
 khan.co.kr##.wrap_bnr_shortcut
 kioskfo.asungcorp.com###rolling_main
 kmib.co.kr##.tp_cnt > div.nwbx02
@@ -865,14 +836,11 @@ lottehotel.com##.landing-tab
 lotteon.com##.bannerUnit
 lotteon.com##.banner_expandable.moduleWrap
 lotteon.com##.goBack
-lotteon.com##.module-lineType1.moduleContainer.detailContents.insrAdvertisement
-lotteon.com##.module-lineType1.moduleContainer.recommendAnchor.productListInfo.advertisementProductList
-lotteon.com##.module-lineType2.moduleContainer.recommendAnchor.productListInfo.advertisementProductList
-lotteon.com##.moduleContainer.pd-middle-ad-product
-lotteon.com##.moduleContainer.productAdvertisementWrap.advertisementProduct
-lotteon.com##.moduleContainer.productBanner
-lotteon.com##.moduleContainer.productBanner
-lotteon.com##.moveTop
+lotteon.com##.insrAdvertisement
+lotteon.com##.advertisementProductList
+lotteon.com##.pd-middle-ad-product
+lotteon.com##.advertisementProduct
+lotteon.com##.productBanner
 lotteon.com##.productTopAdvertisement
 lotteon.com##.v--modal-background-click
 lotteon.com##.v--modal-overlay
@@ -914,35 +882,15 @@ musinsa.com###footerCommonLayout
 naver.com###MM_SEARCH_SHOP_LIVE
 naver.com###MM_search_container
 naver.com###_LEVERAGE_PROMOTION
-naver.com##.id_comp_napp_banner.grid1
-naver.com##.id_comp_shortform_new.grid1
-naver.com##.widget_wrap
-naver.com##div.info_relative
 pay.naver.com##[class*="SmartChannel_article__"]
 news.nate.com###module_ssul
-news.naver.com###_COMMENT_NOTICE
-news.naver.com###channelBanner
-news.naver.com##._PERSIST_META._OFFICE_HEADLINE._FLICKING_WRAP.optional_hidden.as_type_border.rankingnews
-news.naver.com##.copyright
-news.naver.com##.media_end_categorize
-news.naver.com##.media_end_linked
-news.naver.com##.more_news2.box1
-news.naver.com##.pc_hidden._MY_CHANNEL_OFFICE_WRAP
-news.naver.com##.promotion
 newspim.com##.banbox
 newspim.com##.banbox_top
 newspim.com##div.w_mar15
-newspim.com##p > div
 newstong.co.kr##[id^="ContentPlaceHolder1_"]
 newstong.co.kr###app_newstong
-nocutnews.co.kr###app
 nocutnews.co.kr###naver_banner
-nocutnews.co.kr###pnlContent > div
-nocutnews.co.kr##.app.con_b
-nocutnews.co.kr##.banner.pchang_b
-nocutnews.co.kr##.headline.inews_b
 nocutnews.co.kr##.swiper-container-android.swiper-container-horizontal.ban_swiper
-nocutnews.co.kr##[src^="https://file2.nocutnews.co.kr/nocut/news/main/"]
 pay.naver.com##[class*="ADRewardGladBanner_article_"]
 pay.naver.com##[class*="Footer-module_inner__"]
 pay.naver.com##div[class*="AdBanner_common-box__"]
@@ -951,9 +899,7 @@ pay.naver.com##div[class*="BottomAds_article__"]
 pay.naver.com##div[class*="PayLifeAdBanner_article__"]
 pcc.siren24.com##.bn
 pixiv.net##.bg-c-gray-00.pb-24.ph-16.description-signup-header
-polinews.co.kr##div.clearfix > div.marbtm-10.banner_box
 ppomppu.co.kr###tabs-container
-ppomppu.co.kr###wrap > .community-board
 ppomppu.co.kr##.bbsList_new2
 ppomppu.co.kr##.biz.results_board
 ppomppu.co.kr##.btn-wrapper
@@ -976,7 +922,6 @@ search.danawa.com###adSmartArea2
 search.danawa.com###shoppingPlanArea
 search.naver.com##._channel_root._project_site_channel_root.api_channel_wrap
 search.naver.com##[class*="trend_keyword"]
-segye.com###wps_layout1_box22
 seoul.co.kr###Article > div.Line_gray
 seoul.co.kr##.C_wrap > div:nth-of-type(3)
 shooshtime.com##.sponsor
@@ -1009,7 +954,6 @@ suto.co.kr##.focus_event_title
 suto.co.kr##.prime_banner
 suto.co.kr##.share_subs
 suto.co.kr##ul > [href^="https://www.suto.co.kr/bbs/link.php"]
-tcafe2a.com##div.blank-btm15.first-widget.sction-first-widget
 terabox.com##.ad-eggplant
 tiermaker.com###ta-logos-div
 tistory.com###article > center
@@ -1038,7 +982,6 @@ wishbucket.io##[class*="ComparePriceList_banner__"]
 wishbucket.io##[class*="DownloadModal_container__"]
 work.go.kr##.ban-content
 yahoo.co.jp###stream > div
-yande.re##[src^="https://delivery.2d.net.co/"]
 yeongnam.com##.m-yntv-wrap
 yna.co.kr##.aside-box01
 yna.co.kr##.bg11.aside-box02
