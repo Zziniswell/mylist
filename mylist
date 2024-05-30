@@ -1,8 +1,9 @@
 ! Title: mylist
-! Version: 1.189
+! Version: 1.190
 ! Description: my adblock rules
 
 
+onlineconvertfree.com,video.fc2.com,pressian.com##.banner
 ###advertiseInPlayer
 ##.alert_windows
 ##.grbLayer.grbDim
@@ -36,7 +37,7 @@ $removeparam=trackingCode
 @@$stealth=dpi,app=com.alibaba.aliexpresshd|com.samsung.android.scloud
 @@$stealth=dpi,domain=mkt.wemakeprice.link|ourhome.co.kr|startpage.com|imgur.com|kurly.com|samsungcloud.com
 @@$stealth=ip,domain=123123play.com|damoang.net|fortnite.com|innisfree.com|mania.kr|claude.ai|arca.live|bitwarden.com|amoremall.com|unrealengine.com
-@@$stealth=ip,domain=getunicorn.app|hasha.in|dcinside.com|epicgames.com|missav.com|suto.co.kr|novelpia.com|kbcard.com|ssg.com|com.tmon
+@@$stealth=ip,domain=getunicorn.app|hasha.in|dcinside.com|epicgames.com|missav.com|suto.co.kr|novelpia.com|kbcard.com|ssg.com
 @@$stealth=useragent,domain=ssg.com|smartstore.naver.com|brand.naver.com
 @@$stealth=useragent,domain=video.fc2.com|galaxystore.samsung.com|homeplus.co.kr|lotteimall.com|kbcard.com|wemakeprice.com|lotteon.com|gmarket.co.kr|auction.co.kr|11st.co.kr
 @@$stealth=webrtc,domain=moeni.net
@@ -47,7 +48,6 @@ $removeparam=trackingCode
 @@||dasibogo.*^$stealth=ip
 @@||imasdk.googleapis.com/js/sdkloader/*.js$script,domain=ted.com
 @@||interpark.com^$removeparam
-@@||open.scdn.co/*/tracklist-placeholder.
 @@||proton*/api/*
 @@||spotify.com/track-playback/*
 @@||ssl.pstatic.net/tveta/libs/$script,domain=nid.naver.com
@@ -120,11 +120,8 @@ mnews.jtbc.co.kr##.player_top.play_fixed.player_mobile.player_zone
 muko.kr###plusad_widget_wrap
 muko.kr##div.xe-widget-wrapper > div > div > .adsense
 naver.com##[href^="https://play.google.com/"]
-onlineconvertfree.com##.banner
 orders.pay.naver.com##[class^='SkeletonBannerWrapper_']
 pann.nate.com##.eventBnBox
-ppomppu.co.kr#%#AG_onLoad(() => { if (/^https:\/\/(www\.|m\.|)ppomppu\.co\.kr\/(new\/|)hotdeal\//g.test(document.location.href) && document.querySelector(".hotDeal_goods > ul#hotdeal")) { var k = (n) => { if(/\/\/click\.linkprice\.com\/click\.php\?/.test(n)) { return new URLSearchParams(n).get("tu") } else { return n } }; new MutationObserver((o) => { Array.from(o[0].addedNodes).filter(e => /[0-9]{7,9}$/.test(e.className) && /ppomppu\.co\.kr\/(new\/|)hotdeal\/\?/.test(e.querySelector(".view > a").href)).forEach((e) => { e.querySelector(".view > a").href = e.querySelector("p > a[href]:not([class])").href = k(new URLSearchParams(e.querySelector(".view > a").href).get("url"))})}).observe(document.querySelector(".hotDeal_goods > ul#hotdeal"), { childList: true })}});
-ppomppu.co.kr#%#AG_onLoad(() => { if (/m\.ppomppu\.co\.kr\/new\/bbs_view\.php\?/.test(location.href) || /ppomppu\.co\.kr\/zboard\/view\.php\?/.test(location.href)) { Array.from(document.querySelectorAll("a[href][target='_blank']")).filter(e => /^https:\/\/s\.ppomppu\.co\.kr(\/|)\?idno=/.test(e.href)).forEach((o) => { o.href = atob(new URLSearchParams(o.href).get("target").replace("\\", ""))})}});
 shopping.naver.com##[class^='_footer_information_area_']
 shopping.naver.com##[class^='_footer_shortcut_area_']
 snbforums.com##.js-notices.notices--floating.notices
@@ -289,7 +286,7 @@ yagong*.com##.px-2.justify-start.items-center.flex-wrap.flex.ml-0.my-3
 ||wordpress.com/geo/
 ||www39.zippyshare.com/sw.js
 ||yamstd.com:10000/api/ad.yam
-||yanovideos.com/banners/*.gif
+||
 ||youtube.com/api/stats
 ||youtube.com/sw.js_data
 ||youtube.com^$app=com.wemakeprice
@@ -418,7 +415,6 @@ comic.naver.com,place.naver.com,brand.naver.com,smartstore.naver.com,shopping.na
 community.samsung.com##.lia-component-common-widget-custom-content.Chrome.CustomContent.lia-panel-standard.lia-panel > .lia-decoration-border > .lia-decoration-border-content > div > .lia-panel-content-wrapper > .lia-panel-content
 dcinside.com##.spoiler-inner
 dcinside.com##section.clkhigh.grid
-dcinside.com#%#//let('set-cookie', '_ga', '1')
 deepl.com##.dark\:bg-dark.dark\:ring-light\/2.sm\:left-auto.text-balance.max-w-md.left-16.right-4.bottom-4.pr-8.p-4.shadow-1xs.ring-dark\/2.ring-1.straight-corners\:rounded-none.rounded.bg-white.z-10.fixed
 deepl.com##.forced-colors-mode-border.AppBanner-module--banner--2Ezkw
 deokhu.com##div:has-text(detected)
@@ -432,7 +428,6 @@ fanbox.cc##[class*="PrivacyPolicyAgreementIsRequiredAlert__Wrapper-"]
 fmkorea.com##li:has-text(LoL)
 fnnews.com###mlist_add
 fnnews.com##.view > div:nth-of-type(4)
-foxnews.com#%#//scriptlet('set-local-storage-item', 'anon_fpid', '$remove$')
 g-enews.com##div[class^='clsgenews_tdn_moadd']
 gigafile.nu###upload_panel > div:nth-of-type(4)
 gigafile.nu##.pr_area_sp
@@ -468,8 +463,6 @@ lotteimall.com##.pay_banner
 lotteon.com##.dimBanner
 m-sooriya.tistory.com###scrollDiv_m
 m-sooriya.tistory.com##div#scrollDiv_m2
-m.card-gorilla.com,pindirectshop.com,dongbanmall.com#%#//scriptlet("set-constant", "kakaoPixel", "
-m.dcinside.com,upload.dcinside.com#%#//scriptlet('set-cookie-reload', '_ga', 'OK')
 m.youtube.com##button-view-model.yt-spec-button-view-model.slim_video_action_bar_renderer_button
 megabox.co.kr###banner_content
 megabox.co.kr###banner_layer
@@ -498,8 +491,6 @@ naver.com##button:has-text(추가)
 newsmin.co.kr##.td-main-sidebar.td-pb-span4
 newsmin.co.kr##a[href^="https://simte.xyz/"]
 newsmin.co.kr##div.korea-sns
-nicovideo.jp#%#//scriptlet('prevent-fetch', 'stella.nicovideo.jp')
-nicovideo.jp#%#//scriptlet('prevent-xhr', 'stella.nicovideo.jp')
 nordvpn.com##.ConsentWidget__container
 novelpia.com###modal
 ohli365.vip###dkcpavnglqthjfoburseim
@@ -563,7 +554,6 @@ torrentqq*.com##.at-main.at-col.col-md-9 > .header.at-banner.at-row.row
 tvzone.sbs##[src*="/banner/"]
 video.fc2.com##.MemberPush_freeArea
 video.fc2.com##.ad_area_top
-video.fc2.com##.banner
 video.fc2.com##.c-app-sp2
 video.fc2.com##.c-modal-age-verification
 video.fc2.com##.login-footer
@@ -973,7 +963,6 @@ ppomppu.co.kr##[class='none-border bbs_list_thumbnail new_sk']
 ppomppu.co.kr##[id='bbs_inform']
 ppomppu.co.kr##[id='bbs_notice']
 ppss.kr##[src^="https://was.livere.me/enlipleAD"]
-pressian.com##div.banner
 reddit.com##body:style(overflow: auto !important; position: static !important;)
 reddit.com##body:style(pointer-events:auto!important;)
 resizepixel.com##.align-items-center.justify-content-center.flex-column.d-sm-none.d-flex
