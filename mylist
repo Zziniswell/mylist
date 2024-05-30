@@ -1,5 +1,5 @@
 ! Title: mylist
-! Version: 1.1901
+! Version: 1.191
 ! Description: my adblock rules
 
 
@@ -983,14 +983,9 @@ wishbucket.io##[class*="DownloadModal_container__"]
 work.go.kr##.ban-content
 yahoo.co.jp###stream > div
 yeongnam.com##.m-yntv-wrap
-yna.co.kr##.aside-box01
-yna.co.kr##.bg11.aside-box02
 yonhapnewstv.co.kr##div.sticky.section
 yozm.wishket.com##.news-statistics
 yuhanshop.co.kr###dtr_bn
-zdnet.co.kr###__a1FloatCon
-zdnet.co.kr##.top_line
-zdnet.co.kr##[class^="A1_"]
 zpat.info##.w3-grey.w3-center.w3-container
 ||ad-img.gmarket.com^
 ||ads.bullionyield.com^
