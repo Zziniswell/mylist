@@ -1,5 +1,5 @@
 ! Title: mylist
-! Version: 1.190
+! Version: 1.1901
 ! Description: my adblock rules
 
 
@@ -286,7 +286,7 @@ yagong*.com##.px-2.justify-start.items-center.flex-wrap.flex.ml-0.my-3
 ||wordpress.com/geo/
 ||www39.zippyshare.com/sw.js
 ||yamstd.com:10000/api/ad.yam
-||
+||yanovideos.com/banners/*.gif
 ||youtube.com/api/stats
 ||youtube.com/sw.js_data
 ||youtube.com^$app=com.wemakeprice
