@@ -1,8 +1,33 @@
 ! Title: mylist
-! Version: 1.191
+! Version: 1.192
 ! Description: my adblock rules
 
 
+###cookie-notice
+bareunnutri.com##.mb_ver.ss_ad_center
+chosun.com##.slick-track
+edaily.co.kr##.newsletter_area
+etnews.com###trans_div
+forexlive.com##[class*='__outer-wrapper']
+healthcaren.com##[src^="/images/banner_appdown.gif"]
+healthpang.com##.egg-listcontainer
+hkmedi.co.kr##.content_top_code
+hkmedi.co.kr##.footer_text
+isplus.com##.layer[class^='popup']
+lawtimes.co.kr##[href*="tally.so"]
+lawtimes.co.kr##[href*="vo.la"]
+lawtimes.co.kr##[href^="https://smartstore.naver.com/lawtimes/products/"]
+lawtimes.co.kr##div > div > div > div > div > div:has-text(리걸 에듀)
+mydaily.co.kr##[id^='ad_popup']
+news.zum.com###bottom_shopping_box
+rebrush.co.kr##[src^="https://rebrush.co.kr/wp-content/plugins/"]
+rebrush.co.kr##div.wp-block-spacer
+yozm.wishket.com###p5-total-sub-navigation-wrapper
+yozm.wishket.com##.main-page.slackbot-guide-section
+yozm.wishket.com##.samsung.slideInUp.normal.animated.extension-program
+yozm.wishket.com##.type-b.news-letter-guide-section
+zum.com###banner_app_view
+! perforation line_3
 ###advertiseInPlayer
 ###cookieBanner
 ##.ad-box
@@ -92,7 +117,7 @@ gamegogo.co.kr##div.mb-sm-4.mb-3
 hangyo.com##[id^='banCon']
 hmall.com###mainBannerPopup
 hmall.com##.appDownload-banner
-hmall.com,tvroom.org,donsobi.com,arca.live##body,html:style(overflow:auto!important)
+hmall.com,tvroom.org,donsobi.com,arca.live,wishket.com##body,html:style(overflow:auto!important)
 hogangnono.com##.dimmed-layer._dimmedLayer
 hogangnono.com##.starter
 imbc.com###bannerDiv
@@ -448,7 +473,6 @@ kyobobook.co.kr###customPopAdv
 lamire.jp##.ad-rect.content-bottom.ad-unit
 lamire.jp##.padding.xz-section
 lawandgood.com###modal > div
-lawtimes.co.kr##.eqcril20.css-10yb2if
 lego.com##[class*="AgeGatestyles__Wrapper"]
 livesport.com##.otPlaceholder
 login.coupang.com#%#//scriptlet('prevent-element-src-loading', 'script', 'app-common/js/fingerprint/fingerprint.js')
@@ -557,9 +581,6 @@ webtoon.kakao.com##[src^="https://contents.kr.kakaowebtoon.com/"]
 yes24.com###yesAppPop
 yes24.com###yesAppPopMask
 youtube.com##.rich-section-single-column
-yozm.wishket.com###p5-total-sub-navigation-wrapper
-yozm.wishket.com##.slideInUp.normal.animated.type-popup.news-letter-guide-section
-yozm.wishket.com##[href^="https://www.wishket.com/project/"]
 ||action.adoffice.11st.co.kr^
 ||adconsent.samsungrs.com^
 ||adsensecustomsearchads.com^
@@ -686,44 +707,20 @@ blog.naver.com##div[class*="today_video__"]
 blog.naver.com##div[class*="video_carousel__"]
 board.namu.wiki###newsRank
 brunch.co.kr##[src^="https://t1.daumcdn.net/brunch/static/banner/"]
-buondua.com##.article-fulltext > div:nth-of-type(1)
-buondua.com##.article-fulltext > div:nth-of-type(2)
-buondua.com##.bottom-articles > div:nth-of-type(2)
-buondua.com##.bottom-articles > div:nth-of-type(3)
-buondua.com##.content.article > div:nth-of-type(5)
-buondua.com##.content.article > div:nth-of-type(6)
-buondua.com##.content.article > div:nth-of-type(7)
-buondua.com##.view-item.container.main-body > div:nth-of-type(3)
-buondua.com##.view-item.container.main-body > div:nth-of-type(4)
 cafe.daum.net###bizBoardAd
 cafe.daum.net###mAside
 cafe.naver.com##.CafeAppBanner
 cafe.naver.com##.article_content_se > div:nth-of-type(3)
-cafe.naver.com##.bottom.banner_add
 cafe.naver.com##[class='home_section recommend']
 cafe.naver.com##[class='home_section visit_cafe']
 cafe.naver.com##[class='home_section_promotion']
 cafe.naver.com##button[style='position:relative;padding:0 13px 0 53px;height:42px;background:#fff;border:1px solid #dcdcdc;white-space:nowrap;']
 car.encar.com##div[class*="DaBanner_wrap__"]
-chan.sankakucomplex.com###news-ticker
 chat.openai.com##.text-token-text-primary.p-3.bg-blue-950.justify-between.items-center.w-full.flex.dark
-chemicalnews.co.kr##.font-size17.view-page.article-veiw-body > div.clearfix
-chemicalnews.co.kr##.user-aside
-chosun.com###adbay_floatingid
-chosun.com##.box--hidden-md.box--hidden-lg.box--bg-grey-10.box--pad-bottom-sm.box--pad-top-sm.width--100.box--margin-none.\|.sm.flex-chain-wrapper
-chosun.com##.box--hidden-md.box--hidden-lg.box--bg-grey-20.box--pad-bottom-md.box--pad-top-md.width--100.box--margin-top-md.\|.sm.flex-chain-wrapper
-chosun.com##.box--hidden-md.box--hidden-lg.box--bg-undefined.box--pad-bottom-xl.box--pad-top-xl.width--100.\|.sm.flex-chain-wrapper
-chosun.com##.grid__col--sm-12.grid__col--md-12.grid__col--lg-4.\|.layout__article-right-rail.layout__article-col > .box--hidden-md.box--hidden-lg.box--bg-grey-20.box--pad-bottom-md.box--pad-top-md.width--100.box--margin-top-xxl-3.\|.sm.flex-chain-wrapper
-chosun.com##.grid__col--sm-12.grid__col--md-12.grid__col--lg-4.\|.layout__article-right-rail.layout__article-col > div.raw-html
-chosun.com##.grid__col--sm-12.grid__col--md-12.grid__col--lg-8.\|.layout__article-main.layout__article-col > div.box--hidden-md.box--hidden-lg.box--bg-grey-20.box--pad-bottom-md.box--pad-top-md.width--100.\|.sm.flex-chain-wrapper
-chosun.com##.layout--footer.layout--container.box--margin-top-xxl-4.grid__container
 comic.naver.com###ct > .item_area
-comic.naver.com###flex_ad_story
 comic.naver.com##.desc_bottom
-comic.naver.com##.ppl_story_inner
 comic.naver.com##.relate_item
 comic.naver.com##.type_cut.tag_area
-comic.naver.com##[href^="https://m.comic.naver.com/webtoon/detail"] > .loaded.lazy.fx2
 coolenjoy.net###bo_list > .d-sm-none.d-block
 coupang.com###bottom-sheet-nudge
 croket.co.kr##.detail_banner
@@ -732,10 +729,7 @@ daedamo.com###ad_banner_bbs_view_bottom
 danawa.com###mdnw-main-bottomSheet-container
 danawa.com###mdnw-main-contents-container
 danawa.com###mdnw-main-dimm
-danawa.com##.box__contents
-danawa.com##.box__header
 danawa.com##.main-top-banner
-danawa.com##.main_banner_mysp
 danawa.com##.main_shoppingmall
 dcinside.com##.adv-inner
 dcinside.com##.app-info-ban
@@ -754,7 +748,6 @@ en.seoul.co.kr##table
 ero-anime.website###content-bottom
 ero-anime.website###content-top
 etnews.com##[id^="dcamp_ad_"]
-etnews.com##p > .mythiell-mid
 favicon.ico$domain=adcr.naver.com,important
 fmkorea.com##.li_best2_hotdeal1.li_best2_pop1.li
 fmkorea.com##.m_navi_maxlines.fmkorea_m_navi
@@ -829,7 +822,6 @@ kwnews.co.kr##[src^="/upload/"]
 lawtalk.co.kr##.opened.bottom-sheet-wrap > .with-mobile-bottom-tab.bottom-sheet
 lawtalk.co.kr##mobile-bottom-tab
 lawtalk.co.kr##qna-article-banner
-lawtimes.co.kr##[src^="https://image.lawtimes.co.kr/"]
 lcnews.co.kr##.relation
 lottehotel.com##.is-active.o-dimed--transition.o-dimed
 lottehotel.com##.landing-tab
