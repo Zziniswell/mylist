@@ -1,8 +1,22 @@
 ! Title: mylist
-! Version: 1.193
+! Version: 1.194
 ! Description: my adblock rules
 
 
+yande.re##[src^="https://delivery.2d.net.co/"]
+@@||advimg.ad-mapps.com/$domain=maxmovie.com
+@@||connect.facebook.net/$script,domain=mt.co.kr
+@@||mtag.mman.kr^
+@@||ssp.meba.kr/$domain=maxmovie.com
+avpink*.com###dclm_modal_content
+avpink*.com###dclm_modal_screen
+maxmovie.com##.adMobile
+maxmovie.com##[class^='mainNewsPage__TopCenterAdBox']
+mt.co.kr##.atc_hotnews
+mt.co.kr##[class^='channel_']
+plus.wish.com###div_download_app_layer
+||amzcaqarwosr.com^
+||mtag.mman.kr^$domain=~maxmovie.com,important
 ! perforation line_3
 ###advertiseInPlayer
 ###cookieBanner
@@ -44,7 +58,7 @@ $removeparam=trackingCode
 @@$stealth=webrtc,domain=moeni.net
 @@||arca.live^$extension="심야식당 도우미"
 @@||challenges.cloudflare.com^$extension=~"Autopass Cloudflare CAPTCHA"
-@@||dasibogo.*^$stealth=ip
+@@$stealth=ip,domain=dasibogo.*,mrjav.net,kissjav.com
 @@||imasdk.googleapis.com/js/sdkloader/*.js$script,domain=ted.com
 @@||interpark.com^$removeparam
 @@||ssl.pstatic.net/tveta/libs/$script,domain=nid.naver.com
@@ -287,7 +301,7 @@ yagong*.com##.px-2.justify-start.items-center.flex-wrap.flex.ml-0.my-3
 ||wordpress.com/geo/
 ||www39.zippyshare.com/sw.js
 ||yamstd.com:10000/api/ad.yam
-||yanovideos.com/banners/*.gif
+||
 ||youtube.com/api/stats
 ||youtube.com/sw.js_data
 ||youtube.com^$app=com.wemakeprice
@@ -862,8 +876,6 @@ msearch.shopping.naver.com##div[class*="brandAdList_brand_ad__"]
 msearch.shopping.naver.com##div[class*="brandRecommend_brand_recommend__"]
 msearch.shopping.naver.com##div[class*="recommendTrend_aitems_recommend__"]
 msearch.shopping.naver.com##div[class*="shoppingLiveShortClip_shopping_live_short_clip__"]
-mt.co.kr###cont > div:nth-of-type(4)
-mt.co.kr###cont > div:nth-of-type(5)
 musinsa.com###footerCommonLayout
 naver.com###MM_SEARCH_SHOP_LIVE
 naver.com###MM_search_container
@@ -1004,7 +1016,6 @@ zpat.info##.w3-grey.w3-center.w3-container
 ||s.iaudienc.com^
 ||sessions.bugsnag.com^
 ||sf3-fe-tos.pglstatp-toutiao.com^
-||smart.mobvista.com^$app=com.dcinside.app
 ||syndication.twitter.com^
 ||track.lacunads.com^
 ||tuvfsy-cdn-settings.appsflyersdk.com^
