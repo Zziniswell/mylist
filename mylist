@@ -1,8 +1,11 @@
 ! Title: mylist
-! Version: 1.194
+! Version: 1.195
 ! Description: my adblock rules
 
 
+@@||arca.live/u/$extension="Fullscreen Button"
+m.yes24.com##.loginHp
+@@$extension,domain=hanacard.co.kr
 yande.re##[src^="https://delivery.2d.net.co/"]
 @@||advimg.ad-mapps.com/$domain=maxmovie.com
 @@||connect.facebook.net/$script,domain=mt.co.kr
@@ -56,9 +59,9 @@ $removeparam=trackingCode
 @@$stealth=useragent,domain=ssg.com|smartstore.naver.com|brand.naver.com
 @@$stealth=useragent,domain=video.fc2.com|galaxystore.samsung.com|homeplus.co.kr|lotteimall.com|kbcard.com|wemakeprice.com|lotteon.com|gmarket.co.kr|auction.co.kr|11st.co.kr
 @@$stealth=webrtc,domain=moeni.net
-@@||arca.live^$extension="심야식당 도우미"
+@@||arca.live^$extension="심야식당 도우미"|"Auto Simya"
 @@||challenges.cloudflare.com^$extension=~"Autopass Cloudflare CAPTCHA"
-@@$stealth=ip,domain=dasibogo.*,mrjav.net,kissjav.com
+@@$stealth=ip,domain=dasibogo.*|mrjav.net|kissjav.com|dprime.kr
 @@||imasdk.googleapis.com/js/sdkloader/*.js$script,domain=ted.com
 @@||interpark.com^$removeparam
 @@||ssl.pstatic.net/tveta/libs/$script,domain=nid.naver.com
@@ -301,7 +304,7 @@ yagong*.com##.px-2.justify-start.items-center.flex-wrap.flex.ml-0.my-3
 ||wordpress.com/geo/
 ||www39.zippyshare.com/sw.js
 ||yamstd.com:10000/api/ad.yam
-||
+||yanovideos.com/banners/*.gif
 ||youtube.com/api/stats
 ||youtube.com/sw.js_data
 ||youtube.com^$app=com.wemakeprice
@@ -351,7 +354,7 @@ $removeparam=source_ve_path,domain=youtube.com
 29cm.co.kr##[href^="https://29cm.onelink.me/"]
 ://*.*$document,permissions=join-ad-interest-group=()\,run-ad-auction=()\,browsing-topics=()
 @@$extension="상단/하단으로 스크롤"|"Fullscreen Button",domain=comic.naver.com|lezhin.com|toomics.com|toptoon.com|webtoon.kakao.com|page.kakao.com
-@@$extension="스크롤바"|"Scroll to top"|"SaveTube",app=com.sec.android.app.sbrowser|com.naver.whale
+@@$extension="스크롤바"|"Scroll to top"|"SaveTube"|"Video Background Play Fix",app=com.sec.android.app.sbrowser|com.naver.whale|com.mycompany.app.soulbrowser|com.opera.browser
 @@||11st.co.kr^$removeparam
 @@||abr.ge^$all
 @@||agoda.com^$removeparam
