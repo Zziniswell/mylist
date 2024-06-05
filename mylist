@@ -1,25 +1,42 @@
 ! Title: mylist
-! Version: 1.195
+! Version: 1.196
 ! Description: my adblock rules
 
 
-@@||arca.live/u/$extension="Fullscreen Button"
-m.yes24.com##.loginHp
+###dclm_modal_content
+###dclm_modal_screen
+##.active.item
+##.px-2.justify-start.items-center.flex-wrap.flex.ml-0.my-3
 @@$extension,domain=hanacard.co.kr
-yande.re##[src^="https://delivery.2d.net.co/"]
 @@||advimg.ad-mapps.com/$domain=maxmovie.com
+@@||arca.live/u/$extension="Fullscreen Button"
 @@||connect.facebook.net/$script,domain=mt.co.kr
 @@||mtag.mman.kr^
+@@||reddit.com^$removeparam=rdt
 @@||ssp.meba.kr/$domain=maxmovie.com
 avpink*.com###dclm_modal_content
 avpink*.com###dclm_modal_screen
+contents.premium.naver.com###_MP_LAYER > .bottom_layer_wrap
+humoruniv.com###naver_adpost_wrap_fix
+lover932.net##.div-over
+lover932.net##[src$=".gif"]
+lover932.net##div > div:has-text(애드브록)
+m.compuzone.co.kr##.main_area7
 maxmovie.com##.adMobile
 maxmovie.com##[class^='mainNewsPage__TopCenterAdBox']
 mt.co.kr##.atc_hotnews
 mt.co.kr##[class^='channel_']
+place.naver.com##.place_load_area_wrapper
+place.naver.com##[id$='_ad']
 plus.wish.com###div_download_app_layer
+sexking*.site##.active.item
+text-compare.com##.publiftDiv
+yande.re##[src^="https://delivery.2d.net.co/"]
+yes24.com##.loginHp
 ||amzcaqarwosr.com^
 ||mtag.mman.kr^$domain=~maxmovie.com,important
+||osharvrziafx.com^
+||tutqafvhyr.com^
 ! perforation line_3
 ###advertiseInPlayer
 ###cookieBanner
@@ -52,8 +69,7 @@ $removeparam=trackingCode
 @@$extension="Immersive Translate - Translate Web & PDF",app=com.kiwibrowser.browser|org.mozilla.firefox
 @@$extension="Immersive Translate - Translate Web & PDF",domain=co.kr|go.kr
 @@$stealth,domain=onelink.me|app.link|ofw.adison.co
-@@$stealth=dpi,app=com.alibaba.aliexpresshd|com.samsung.android.scloud
-@@$stealth=dpi,domain=mkt.wemakeprice.link|ourhome.co.kr|startpage.com|imgur.com|kurly.com|samsung.com
+@@$stealth=dpi,domain=mkt.wemakeprice.link|ourhome.co.kr|startpage.com|imgur.com|kurly.com|samsung.com|update.kiwibrowser.com
 @@$stealth=ip,domain=123123play.com|damoang.net|fortnite.com|innisfree.com|mania.kr|claude.ai|arca.live|bitwarden.com|amoremall.com|unrealengine.com
 @@$stealth=ip,domain=getunicorn.app|hasha.in|dcinside.com|epicgames.com|missav.com|suto.co.kr|novelpia.com|kbcard.com|ssg.com
 @@$stealth=useragent,domain=ssg.com|smartstore.naver.com|brand.naver.com
@@ -354,7 +370,7 @@ $removeparam=source_ve_path,domain=youtube.com
 29cm.co.kr##[href^="https://29cm.onelink.me/"]
 ://*.*$document,permissions=join-ad-interest-group=()\,run-ad-auction=()\,browsing-topics=()
 @@$extension="상단/하단으로 스크롤"|"Fullscreen Button",domain=comic.naver.com|lezhin.com|toomics.com|toptoon.com|webtoon.kakao.com|page.kakao.com
-@@$extension="스크롤바"|"Scroll to top"|"SaveTube"|"Video Background Play Fix",app=com.sec.android.app.sbrowser|com.naver.whale|com.mycompany.app.soulbrowser|com.opera.browser
+@@$extension="스크롤바"|"Scroll to top"|"SaveTube",app=com.sec.android.app.sbrowser|com.naver.whale|com.mycompany.app.soulbrowser|com.opera.browser
 @@||11st.co.kr^$removeparam
 @@||abr.ge^$all
 @@||agoda.com^$removeparam
@@ -394,12 +410,7 @@ abcmart.a-rt.com##.ui-front.ui-widget-overlay
 aclsports.com##.mfp-content
 aclsports.com##.mfp-ready.site-access-popup.popup-animation.mfp-bg
 aclsports.com,abcmart.a-rt.com,doctornow.co.kr,adidas.co.kr,amoremall.com,pornhub.com,moeni.net,soldout.co.kr,munpia.com##body,html:style(overflow:auto!important)
-ajunews.com###articleBody > div > div:nth-of-type(4)
-ajunews.com###articleBody > div:nth-of-type(4)
-ajunews.com###articleBody > div:nth-of-type(5)
-ajunews.com###articleBody > div:nth-of-type(6)
 ajunews.com##.ad_box1
-ajunews.com##.banner_wrap
 aliexpress.com###header-float-banner
 allaboutpc.co.kr##.wrap_top_bn
 allporncomic.com##.body-top-ads.custom-code.c-ads.ad
@@ -505,8 +516,8 @@ mydaily.co.kr##[id^='ad_popup']
 namu.news##.grecaptcha-badge
 namu.news##[id^="article-"]
 namu.news##[id^="sidebar-"]
-namu.wiki###app > div > div:nth-of-type(2) > div > div:has-text(나무뉴스)
-namu.wiki###app > div > div:nth-of-type(2) > div > div:has-text(최근 변경)
+namu.wiki###app > div > div:nth-of-type(2) > div > div > div:has(g)
+namu.wiki###app > div > div:nth-of-type(2) > div > div > div:has-text(최근 변경)
 namu.wiki##.qfd0\+S
 namu.wiki##aside
 namu.wiki##footer
