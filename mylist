@@ -1,41 +1,58 @@
 ! Title: mylist
-! Version: 1.196
+! Version: 1.197
 ! Description: my adblock rules
 
 
 ###dclm_modal_content
 ###dclm_modal_screen
+###glue-cookie-notification-bar-1
 ##.active.item
 ##.px-2.justify-start.items-center.flex-wrap.flex.ml-0.my-3
-@@$extension,domain=hanacard.co.kr
+@@$extension,domain=hanacard.co.kr|nicepay.co.kr
 @@||advimg.ad-mapps.com/$domain=maxmovie.com
 @@||arca.live/u/$extension="Fullscreen Button"
 @@||connect.facebook.net/$script,domain=mt.co.kr
 @@||mtag.mman.kr^
 @@||reddit.com^$removeparam=rdt
 @@||ssp.meba.kr/$domain=maxmovie.com
-avpink*.com###dclm_modal_content
-avpink*.com###dclm_modal_screen
+aladin.co.kr###divGoodsEventBottomLayerWrap
+apost.dev##.gh-adsense-top
 contents.premium.naver.com###_MP_LAYER > .bottom_layer_wrap
+crwlnoti.shop,fallcent.com#@#[src*="coupangcdn.com/"]
+en.namu.wiki###HoYBJcC2I
+fallcent.com##.floating-button
+gmarket.co.kr##.js-visiblity.js-impressionable.box__bottom-banner
 humoruniv.com###naver_adpost_wrap_fix
 lover932.net##.div-over
 lover932.net##[src$=".gif"]
 lover932.net##div > div:has-text(애드브록)
 m.compuzone.co.kr##.main_area7
-maxmovie.com##.adMobile
 maxmovie.com##[class^='mainNewsPage__TopCenterAdBox']
+maxmovie.com,terabox.com,ajunews.com,video.fc2.com,dcinside.com##[class^='ad']
 mt.co.kr##.atc_hotnews
 mt.co.kr##[class^='channel_']
+namu.wiki##.lkqEeodLpN
+! namu.wiki##div > div > div > div > div:nth-of-type(12):has(svg)
+namu.wiki##div > div > div > div > div:nth-of-type(5) > div:has(svg > path)
+pastebin.com##.content > div:nth-of-type(1)
+pastebin.com##.content > div:nth-of-type(4)
+pastebin.com##.popup-container
 place.naver.com##.place_load_area_wrapper
 place.naver.com##[id$='_ad']
 plus.wish.com###div_download_app_layer
 sexking*.site##.active.item
+shopping.interpark.com###categoryBanner
 text-compare.com##.publiftDiv
+unlimited.waifu2x.net###ads
+waifu2x.pro##.cc-type-info.cc-floating.cc-window
 yande.re##[src^="https://delivery.2d.net.co/"]
+yes24.com##.loginBnTop
 yes24.com##.loginHp
 ||amzcaqarwosr.com^
 ||mtag.mman.kr^$domain=~maxmovie.com,important
 ||osharvrziafx.com^
+||settings.cashwalk.io/cashwalk/*/notice/notice2_main
+||t1.daumcdn.net/cafe_cj/app/js/*/nativead.js
 ||tutqafvhyr.com^
 ! perforation line_3
 ###advertiseInPlayer
@@ -67,7 +84,7 @@ $removeparam=trackingCode
 @@$extension="Disable WebGL API",domain=vidkidz.tistory.com
 @@$extension="Embed Me!",domain=yande.re|imgur.com
 @@$extension="Immersive Translate - Translate Web & PDF",app=com.kiwibrowser.browser|org.mozilla.firefox
-@@$extension="Immersive Translate - Translate Web & PDF",domain=co.kr|go.kr
+@@$extension="Immersive Translate - Translate Web & PDF",domain=11st.co.kr|go.kr
 @@$stealth,domain=onelink.me|app.link|ofw.adison.co
 @@$stealth=dpi,domain=mkt.wemakeprice.link|ourhome.co.kr|startpage.com|imgur.com|kurly.com|samsung.com|update.kiwibrowser.com
 @@$stealth=ip,domain=123123play.com|damoang.net|fortnite.com|innisfree.com|mania.kr|claude.ai|arca.live|bitwarden.com|amoremall.com|unrealengine.com
@@ -83,8 +100,6 @@ $removeparam=trackingCode
 @@||ssl.pstatic.net/tveta/libs/$script,domain=nid.naver.com
 adidas.*###gl-modal__root
 adidas.co.kr##[class^='_app-banner_']
-ai.google.dev###glue-cookie-notification-bar-1
-aistudio.google.com###glue-cookie-notification-bar-1
 aistudio.google.com##.ng-star-inserted.gmat-label-large.banner-container
 altoranmarket.co.kr##.js_add_favorite
 anilife.app###disqus_thread
@@ -141,8 +156,8 @@ lge.co.kr##.hello-app.hello-bar-wrap
 lover*.net###a45998g
 lover*.net##.div-over
 lover*.net##[src$=".gif"]
-m.cafe.naver.com##.BasicLayer
-m.cafe.naver.com##.inner_wrap
+cafe.naver.com##.BasicLayer
+cafe.naver.com##.inner_wrap
 mbn.co.kr###mbn_app_dwn
 mbn.co.kr##section.sec_ban
 medium.com##div > div > div > div > div:has-text(Sign up to discover human stories that deepen your understanding of the world.)
@@ -160,8 +175,6 @@ pann.nate.com##.eventBnBox
 shopping.naver.com##[class^='_footer_information_area_']
 shopping.naver.com##[class^='_footer_shortcut_area_']
 snbforums.com##.js-notices.notices--floating.notices
-sogirl.so###dclm_modal_content
-sogirl.so###dclm_modal_screen
 sporki.com##.web-to-app-banner
 startpage.com###home-below-the-fold-container
 t-plays.com###marketingPopup
@@ -171,7 +184,7 @@ topstarnews.net##.show-prompt.sp-pos-left.sp-native-popover.sp-prompt
 uwayapply.com##.bx-viewport
 webtool.cusis.net###sidebar-right
 yagong*.com##.px-2.justify-start.items-center.flex-wrap.flex.ml-0.my-3
-||accounts.google.com/gsi/client^$third-party,script
+||accounts.google.com/gsi/
 ||addthis.com^$3p
 ||ads.snapchat.com
 ||apac.presence.teams.microsoft.com/*/reportmyactivity/
@@ -394,7 +407,7 @@ $removeparam=source_ve_path,domain=youtube.com
 @@||gsshop.com^$removeparam
 @@||homeplus.co.kr^$removeparam
 @@||kyobobook.co.kr^$removeparam
-@@||namu.wiki^$extension=~"NamuLink"|~"Namu Hot Now"|~"F11 for FullScreen"|~"Toggle Fullscreen Button For Mobile Browsers"|~"Fullscreen Button"|~"Disable WebGL API"|~"QuickSearch"
+@@||namu.wiki^$extension=~"NamuLink"|~"Namu Hot Now"|~"F11 for FullScreen"|~"Toggle Fullscreen Button For Mobile Browsers"|~"Fullscreen Button"|~"Disable WebGL API"|~"QuickSearch"|~"NamuSide"|~"Copy & Ignore textTransform property"
 @@||play.google.com^$removeparam
 @@||smartstore.naver.com^$removeparam
 @@||ssg.com^$removeparam
@@ -410,7 +423,6 @@ abcmart.a-rt.com##.ui-front.ui-widget-overlay
 aclsports.com##.mfp-content
 aclsports.com##.mfp-ready.site-access-popup.popup-animation.mfp-bg
 aclsports.com,abcmart.a-rt.com,doctornow.co.kr,adidas.co.kr,amoremall.com,pornhub.com,moeni.net,soldout.co.kr,munpia.com##body,html:style(overflow:auto!important)
-ajunews.com##.ad_box1
 aliexpress.com###header-float-banner
 allaboutpc.co.kr##.wrap_top_bn
 allporncomic.com##.body-top-ads.custom-code.c-ads.ad
@@ -516,9 +528,6 @@ mydaily.co.kr##[id^='ad_popup']
 namu.news##.grecaptcha-badge
 namu.news##[id^="article-"]
 namu.news##[id^="sidebar-"]
-namu.wiki###app > div > div:nth-of-type(2) > div > div > div:has(g)
-namu.wiki###app > div > div:nth-of-type(2) > div > div > div:has-text(최근 변경)
-namu.wiki##.qfd0\+S
 namu.wiki##aside
 namu.wiki##footer
 naver.com##.additional_area
@@ -578,7 +587,7 @@ tiermaker.com##div:has-text(blocker)
 tinyurl.com##.bg-green-30.text-sm.text-center.p-4.position-relative.flex-center-center.font-weight-bold
 tinyurl.com##.scrollable.vm--container
 tinyurl.com##.shadow-sm.px-4.py-3.mb-0.cookie_consent_positioning.bg-white.alert
-tistory.com###loading
+jimnong.tistory.com###loading
 tokenpost.kr###indexModalWrap
 tokenpost.kr##.blockchain_item
 tokenpost.kr##.coin_event
@@ -590,7 +599,6 @@ tokenpost.kr##.swiper_employment.ticket_employment
 torrentqq*.com##.at-main.at-col.col-md-9 > .header.at-banner.at-row.row
 tvzone.sbs##[src*="/banner/"]
 video.fc2.com##.MemberPush_freeArea
-video.fc2.com##.ad_area_top
 video.fc2.com##.c-app-sp2
 video.fc2.com##.c-modal-age-verification
 video.fc2.com##.login-footer
@@ -754,7 +762,6 @@ danawa.com###mdnw-main-contents-container
 danawa.com###mdnw-main-dimm
 danawa.com##.main-top-banner
 danawa.com##.main_shoppingmall
-dcinside.com##.adv-inner
 dcinside.com##.app-info-ban
 dcinside.com##.detail-top-lst > li:nth-of-type(1)
 dcinside.com##.detail-top-lst > li:nth-of-type(2)
@@ -866,7 +873,7 @@ luckyquiz3.blogspot.com###main_popup2
 luckyquiz3.blogspot.com###sidebar
 m.brand.naver.com##[id^="mobile-customBannerWidget"]
 m.bunjang.co.kr##[class*="LoginModal__AppDownload-"]
-m.shop.interpark.com##.on.bottom.popupWrap
+shop.interpark.com##.on.bottom.popupWrap
 m.youtube.com##.rich-section-content-wrapper
 m.youtube.com##ytm-pivot-bar-item-renderer:nth-of-type(2)
 mbook.interpark.com###intro_popup
@@ -966,11 +973,7 @@ suto.co.kr##.focus_event_title
 suto.co.kr##.prime_banner
 suto.co.kr##.share_subs
 suto.co.kr##ul > [href^="https://www.suto.co.kr/bbs/link.php"]
-terabox.com##.ad-eggplant
 tiermaker.com###ta-logos-div
-tistory.com###article > center
-tistory.com###recommended-content-container
-tistory.com##article > center
 tmon.co.kr##.banner_offer
 tmon.co.kr##.deallist_scroll_wrap
 tmon.co.kr##.space_bottom
@@ -982,8 +985,6 @@ vop.co.kr###cheer
 vop.co.kr##.editor_arcad_right
 waifu2x.net##.all-page > div:nth-of-type(3)
 waifu2x.net##.all-page > div:nth-of-type(5)
-waifu2x.udp.jp##.all-page > div:nth-of-type(2)
-waifu2x.udp.jp##.all-page > div:nth-of-type(4)
 wallpaperflare.com##.cc-color-override-2132809765.cc-bottom.cc-theme-edgeless.cc-type-info.cc-floating.cc-window
 wemakeprice.com###div_download_app_layer
 wemakeprice.com##.aiplus_wrap
@@ -1004,7 +1005,6 @@ zpat.info##.w3-grey.w3-center.w3-container
 ||afpvuznhenuc.com^
 ||api.ezadsystem.com^
 ||api.gov-img.site^
-||app.dcinside.com/api/_ad_search_link*.php
 ||atrack.yeahdsp.com^
 ||bi-sensors.duxiaoman.com^
 ||byteoversea.com^
