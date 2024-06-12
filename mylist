@@ -1,14 +1,16 @@
 ! Title: mylist
-! Version: 1.198
+! Version: 1.199
 ! Description: my adblock rules
 
 
+@@$extension="microShield",domain=ygosu.com|dogdrip.net
+namu.wiki##div > div > div > div > div:nth-of-type(5) > div:has(svg > path)
 ###dclm_modal_content
 ###dclm_modal_screen
 ###glue-cookie-notification-bar-1
 ##.active.item
 ##.px-2.justify-start.items-center.flex-wrap.flex.ml-0.my-3
-@@$extension,domain=hanacard.co.kr|nicepay.co.kr
+@@$extension,domain=hanacard.co.kr|nicepay.co.kr|kbcard.com
 @@||advimg.ad-mapps.com/$domain=maxmovie.com
 @@||arca.live/u/$extension="Fullscreen Button"
 @@||connect.facebook.net/$script,domain=mt.co.kr
@@ -56,8 +58,8 @@ msearch.shopping.naver.com##[class^='brandStore_brand_store__']
 mt.co.kr##.atc_hotnews
 mt.co.kr##[class^='channel_']
 mu08.tistory.com##.kmong_btn
-namu.wiki###RygTmTCF3
-namu.wiki##div > div > div > div > div:nth-of-type(5) > div:has(svg > path)
+namu.wiki###w0LGgyM7z
+namu.wiki##div > div > div > div > div:nth-of-type(7) > div:has(svg > path)
 novel.naver.com##.aside_comments
 novel.naver.com##.banner_main_wrap
 ohou.se##div > div:has-text(모바일 웹으로)
@@ -118,7 +120,7 @@ $removeparam=trackingCode
 @@$extension="Autopass Cloudflare CAPTCHA",domain=viva100.com
 @@$extension="Disable WebGL API",domain=vidkidz.tistory.com
 @@$extension="Embed Me!",domain=yande.re|imgur.com|youtube.com
-@@$extension="Immersive Translate - Translate Web & PDF",app=com.kiwibrowser.browser|org.mozilla.firefox
+@@$extension="Immersive Translate - Translate Web & PDF",app=com.kiwibrowser.browser|org.mozilla.firefox|com.lemurbrowser.exts
 @@$extension="Immersive Translate - Translate Web & PDF",domain=11st.co.kr|go.kr
 @@$stealth,domain=onelink.me|app.link|ofw.adison.co|abr.ge|airbridge.io
 @@$stealth=dpi,domain=*.link|ourhome.co.kr|startpage.com|imgur.com|kurly.com|samsung.com|update.kiwibrowser.com
@@ -368,7 +370,6 @@ yagong*.com##.px-2.justify-start.items-center.flex-wrap.flex.ml-0.my-3
 ||wordpress.com/geo/
 ||www39.zippyshare.com/sw.js
 ||yamstd.com:10000/api/ad.yam
-||yanovideos.com/banners/*.gif
 ||youtube.com/api/stats
 ||youtube.com/sw.js_data
 ||youtube.com^$app=com.wemakeprice
