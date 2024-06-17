@@ -1,10 +1,8 @@
 ! Title: mylist
-! Version: 1.202
+! Version: 1.203
 ! Description: my adblock rules
 
 
-search.danawa.com###powerShoppingAreaTop
-gall.dcinside.com##.btn_nftbox
 ###dclm_modal_content
 ###dclm_modal_screen
 ###glue-cookie-notification-bar-1
@@ -56,6 +54,7 @@ elandmall.co.kr##[id^='kidiCheck_']
 en.namu.wiki###HoYBJcC2I
 enjoyplan.tistory.com###banner-container
 fallcent.com##.floating-button
+gall.dcinside.com##.btn_nftbox
 gall.dcinside.com##.dc_all
 gmarket.co.kr##.js-visiblity.js-impressionable.box__bottom-banner
 haeiltech.tistory.com,calvain.tistory.com##.entry-content > div:nth-of-type(1)
@@ -70,20 +69,25 @@ kinolights.com##.modal-layer
 lawtimes.co.kr##[href^="https://lawrex.co.kr/shop/product/24"]
 lawtimes.co.kr##[src^="https://image.lawtimes.co.kr/"]
 lenovo.com##.cookie-remind-warpper
+lge.co.kr###ins-frameless-overlay
+lge.co.kr##.ins-pos-bottom-center.ins-preview-wrapper-4324.ins-preview-wrapper
 lover932.net##.div-over
 lover932.net##[src$=".gif"]
 lover932.net##div > div:has-text(애드브록)
 m.compuzone.co.kr##.main_area7
+m.skstoa.com##div:nth-of-type(18)
 maxmovie.com##[class^='mainNewsPage__TopCenterAdBox']
 maxmovie.com,terabox.com,ajunews.com,video.fc2.com,dcinside.com,trendjournal.co.kr,daedamo.com,lamire.jp,lst914.tistory.com##[class^='ad']
 modulabs.co.kr##.common-banner__container
 msearch.shopping.naver.com##[class^='active.android.reactiveForyouScroll_foryou_reaction__']
-msearch.shopping.naver.com##[class^='brandStore_brand_store__']
+msearch.shopping.naver.com##[class^='adProduct_layer_info__']
+msearch.shopping.naver.com##[class^='plans_content_plan__']
 mt.co.kr##.atc_hotnews
 mt.co.kr##[class^='channel_']
 mu08.tistory.com##.kmong_btn
 namu.wiki##.\39 nXX7Hq
 namu.wiki##div > div > div > div > div:nth-of-type(7) > div:has(svg > path)
+namu.wiki##section
 news.nate.com##[id^='viewAppPop_']
 newsmin.co.kr##.td-fix-index > p
 newsmin.co.kr##[src^="https://www.newsmin.co.kr/news/wp-content/uploads/2023/"]
@@ -104,10 +108,14 @@ prdm.daisomall.co.kr##.topbaner
 prdm.daisomall.co.kr##.v-modal
 ruliweb.com###fixed_ad
 samsungsvc.co.kr##.app-floating-btn
+search.danawa.com###powerShoppingAreaTop
 search.dcinside.com##article:nth-of-type(1)
 sexking*.site##.active.item
 shopping.interpark.com###categoryBanner
 shopping.naver.com##[class^='promotionResponsive_promotion_responsive__']
+skstoa.com###top_ad_area
+skstoa.com##.ga-event.type2.stoaLogin__etc-link
+skstoa.com##.stoaLogin__etc
 store.naver.com#@#button:has-text(추가)
 text-compare.com##.publiftDiv
 tistory.com###recommended-content-container
@@ -407,11 +415,9 @@ yagong*.com##.px-2.justify-start.items-center.flex-wrap.flex.ml-0.my-3
 ||wordpress.com/geo/
 ||www39.zippyshare.com/sw.js
 ||yamstd.com:10000/api/ad.yam
-||yanovideos.com/banners/*.gif
 ||youtube.com/api/stats
 ||youtube.com/sw.js_data
-||youtube.com^$app=com.wemakeprice
-||youtube.com^$app=world.wemakeprice.aos
+||youtube.com^$app=com.wemakeprice|world.wemakeprice.aos
 ||ytimg.com$removeparam=sigh
 ||ytimg.com$removeparam=sqp
 ||ytimg.com$removeparam=v
