@@ -1,5 +1,5 @@
 ! Title: mylist
-! Version: 1.203
+! Version: 1.204
 ! Description: my adblock rules
 
 
@@ -86,8 +86,7 @@ mt.co.kr##.atc_hotnews
 mt.co.kr##[class^='channel_']
 mu08.tistory.com##.kmong_btn
 namu.wiki##.\39 nXX7Hq
-namu.wiki##div > div > div > div > div:nth-of-type(7) > div:has(svg > path)
-namu.wiki##section
+namu.wiki##section:has(svg > path)
 news.nate.com##[id^='viewAppPop_']
 newsmin.co.kr##.td-fix-index > p
 newsmin.co.kr##[src^="https://www.newsmin.co.kr/news/wp-content/uploads/2023/"]
@@ -415,6 +414,7 @@ yagong*.com##.px-2.justify-start.items-center.flex-wrap.flex.ml-0.my-3
 ||wordpress.com/geo/
 ||www39.zippyshare.com/sw.js
 ||yamstd.com:10000/api/ad.yam
+||yanovideos.com/banners/*.gif
 ||youtube.com/api/stats
 ||youtube.com/sw.js_data
 ||youtube.com^$app=com.wemakeprice|world.wemakeprice.aos
@@ -487,7 +487,7 @@ $removeparam=source_ve_path,domain=youtube.com
 @@||gsshop.com^$removeparam
 @@||homeplus.co.kr^$removeparam
 @@||kyobobook.co.kr^$removeparam
-@@||namu.wiki^$extension=~"NamuLink"|~"Namu Hot Now"|~"F11 for FullScreen"|~"Toggle Fullscreen Button For Mobile Browsers"|~"Fullscreen Button"|~"Disable WebGL API"|~"QuickSearch"|~"NamuSide"|~"Copy & Ignore textTransform property"|~"스크롤바"
+@@||namu.wiki^$extension=~"NamuLink"|~"Namu Hot Now"|~"F11 for FullScreen"|~"Toggle Fullscreen Button For Mobile Browsers"|~"Fullscreen Button"|~"Disable WebGL API"|~"QuickSearch"|~"NamuSide"|~"Copy & Ignore textTransform property"
 @@||play.google.com^$removeparam
 @@||smartstore.naver.com^$removeparam
 @@||ssg.com^$removeparam
