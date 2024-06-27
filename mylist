@@ -1,5 +1,5 @@
 ! Title: mylist
-! Version: 1.210
+! Version: 1.211
 ! Description: my adblock rules
 
 
@@ -23,10 +23,12 @@
 @@$stealth=ip,domain=dasibogo.*|mrjav.net|kissjav.com|dprime.kr|halfclub.com|twinmotion.com|liivmate.com|whooing.com|vivaldi.net|bloomberg.org
 @@$stealth=ip,domain=kbs.co.kr|sbs.co.kr
 @@||ad.pping.kr^$domain=pping.kr
+@@||adtouch.adbrix.io^$app=com.kakao.talk
 @@||advimg.ad-mapps.com/$domain=maxmovie.com
 @@||adxv.zum.com/view/$domain=hub.zum.com
 @@||arca.live/u/$extension="Fullscreen Button"
 @@||connect.facebook.net/$script,domain=mt.co.kr
+@@||fonts.googleapis.com^$app=com.shinhan.o2o
 @@||mtag.mman.kr^
 @@||reddit.com^$removeparam=rdt
 @@||securepubads.g.doubleclick.net^$domain=namu.wiki
@@ -74,6 +76,7 @@ dcinside.com###dna_content
 dcinside.com##.r_dcmedia.content_box
 dcinside.com##.r_timebest.content_box
 dcinside.com##[id^='tip_']
+dhlottery.co.kr###main_banner
 easeus.co.kr###float_box
 easeus.co.kr##.mobile_pop_box
 easeus.co.kr##div[class^='pop_']
@@ -93,6 +96,7 @@ fallcent.com##.floating-button
 fanbox.cc##[class*='__Wrapper']
 gall.dcinside.com##.btn_nftbox
 gall.dcinside.com##.dc_all
+gezip.net##div:nth-of-type(5)
 ggulmo.com##.css-r2e5nu
 gmarket.co.kr##.js-visiblity.js-impressionable.box__bottom-banner
 grip.show##[src^="https://api.grip.show/"] > [class]:has-text(앱 열기)
@@ -128,6 +132,7 @@ lover933.net,ohli365.vip##[src$=".gif"]
 lst914.tistory.com##.ad-container
 lst914.tistory.com##ul:not(ul:has(li> [href]))
 m.compuzone.co.kr##.main_area7
+m.gamemeca.com###container > div:nth-of-type(4)
 m.hub.zum.com##.css-1gaoacg
 m.hub.zum.com##.css-c4y80m
 m.hub.zum.com##[class]:has([id^='m_article_'])
@@ -146,9 +151,10 @@ msearch.shopping.naver.com##[class^='plans_content_plan__']
 mt.co.kr##.atc_hotnews
 mt.co.kr##[class^='channel_']
 mu08.tistory.com##.kmong_btn
-namu*.wiki##section:has(svg > path):not([class]:has(> path))
+namu.wiki##div > [class]:has(> tr > td)
 namu.wiki##div > [id]:has([id^='google_ads_iframe_'])
-namu.wiki##div > tr > td
+namu.wiki##div > div > [class]:has-text(S.R.L)
+namu.wiki##section:has(svg > path):not([class]:has(> path))
 news.nate.com##[id^='viewAppPop_']
 newsmin.co.kr##.td-fix-index > p
 newsmin.co.kr##[src^="https://www.newsmin.co.kr/news/wp-content/uploads/"]
@@ -160,6 +166,9 @@ ohli365.vip##div.exo2.col-sm-3.col-xs-6
 ohou.se##div > div:has-text(모바일 웹으로)
 okmall.com##.on.overlay
 okmall.com##[class^='app_banner']
+oliveyoung.co.kr###banner
+oliveyoung.co.kr###curation_wrap
+oliveyoung.co.kr##section[class^='Home_band-banner__']
 pastebin.com##.content > div:nth-of-type(1)
 pastebin.com##.content > div:nth-of-type(4)
 pastebin.com##.popup-container
@@ -186,6 +195,7 @@ product.kyobobook.co.kr###scrollSpyProdEvent
 product.kyobobook.co.kr##.banner_free.product_detail_area
 product.kyobobook.co.kr##.product_related.product_detail_area
 product.kyobobook.co.kr##.product_related_02.product_detail_area
+r1.community.samsung.com##.js_smartbanner.smartbanner--android.smartbanner
 reddit.com#%#//scriptlet('set-cookie-reload', 'reddit_session', '0')
 ruliweb.com###fixed_ad
 ruliweb.com##.flex.depth3_wrapper
@@ -211,6 +221,8 @@ ssg.com##.swiper-wrapper
 starrykss.tistory.com#@#.adsbygoogle
 store.kakao.com##.inner_slide
 store.naver.com#@#button:has-text(추가)
+tdgall.com##[id^='cauly_div']
+teamblind.com##.hire-ad.article
 terabox.com,video.fc2.com,dcinside.com,trendjournal.co.kr,daedamo.com,lamire.jp##[class^='ad']
 text-compare.com##.publiftDiv
 tistory.com###recommended-content-container
@@ -225,6 +237,7 @@ watchfreejavonline.co##.mg-menu-full > div
 weverse.io###wevConsentManagerLayer
 weverse.io##[class^='AppInstallPanelView_panel__']
 yande.re##[src^="https://delivery.2d.net.co/"]
+yatv.red##a.img
 yes24.com###detailEveBn
 yes24.com##.gd_detailEvent
 yes24.com##.loginBnTop
@@ -277,6 +290,7 @@ ypbooks.co.kr##.display_block.modal_box
 ||log.mmstat.com^
 ||log.sports.naver.com^
 ||log1.toup.net^
+||mmtcld.net^
 ||mobile.events.data.microsoft.com^
 ||moyo-mall.com^
 ||mtag.mman.kr^$domain=~maxmovie.com,important
@@ -300,6 +314,7 @@ ypbooks.co.kr##.display_block.modal_box
 ||sentry-apollo.naver.com.nheos.com^
 ||sentry-apollo.naver.com^
 ||settings.cashwalk.io/cashwalk/*/notice/notice2_main
+||sflex.us^
 ||ssio*.nchat.naver.com^
 ||stats.wp.com/*.js$script,domain=moneytoring.co.kr
 ||t1.daumcdn.net/cafe_cj/app/js/*/nativead.js
@@ -416,14 +431,14 @@ $removeparam=trackingCode
 4kjav.co###adde_modal-overlay
 4kwallpapers.com##.scrollToTopBtn
 ://*.*$document,permissions=join-ad-interest-group=()\,run-ad-auction=()\,browsing-topics=()
-@@$extension="Autopass Cloudflare CAPTCHA",domain=viva100.com
+@@$extension="Autopass Cloudflare CAPTCHA",domain=viva100.com|*.co.kr
 @@$extension="Disable WebGL API",domain=vidkidz.tistory.com
 @@$extension="Embed Me!",domain=yande.re|imgur.com|youtube.com
 @@$extension="Immersive Translate - Translate Web & PDF",app=com.kiwibrowser.browser|org.mozilla.firefox|com.lemurbrowser.exts
 @@$extension="Immersive Translate - Translate Web & PDF",domain=11st.co.kr|go.kr
 @@$extension="상단/하단으로 스크롤"|"Fullscreen Button",domain=m.comic.naver.com|lezhin.com|toomics.com|toptoon.com|webtoon.kakao.com|page.kakao.com
 @@$extension="스크롤바"|"Scroll to top",app=com.sec.android.app.sbrowser|com.naver.whale|com.mycompany.app.soulbrowser|com.opera.browser
-@@$stealth,domain=onelink.me|app.link|ofw.adison.co|abr.ge|airbridge.io
+@@$stealth,domain=onelink.me|ofw.adison.co|abr.ge|airbridge.io
 @@$stealth=dpi,domain=*.link|ourhome.co.kr|startpage.com|imgur.com|kurly.com|samsung.com|update.kiwibrowser.com
 @@$stealth=ip,domain=123123play.com|damoang.net|fortnite.com|innisfree.com|mania.kr|claude.ai|arca.live|bitwarden.com|amoremall.com|unrealengine.com
 @@$stealth=ip,domain=getunicorn.app|hasha.in|dcinside.com|epicgames.com|missav.com|suto.co.kr|novelpia.com|kbcard.com|ssg.com
@@ -1012,7 +1027,7 @@ youtube.com##.rich-section-single-column
 yozm.wishket.com###p5-total-sub-navigation-wrapper
 yozm.wishket.com##.main-page.slackbot-guide-section
 yozm.wishket.com##.news-statistics
-yozm.wishket.com##.samsung.slideInUp.normal.animated.extension-program
+yozm.wishket.com##.slideInUp.normal.animated.extension-program
 yozm.wishket.com##.type-b.news-letter-guide-section
 yuhanshop.co.kr###dtr_bn
 zpat.info##.w3-grey.w3-center.w3-container
