@@ -1,5 +1,5 @@
 ! Title: mylist
-! Version: 1.212
+! Version: 1.213
 ! Description: my adblock rules
 
 
@@ -25,7 +25,7 @@
 #?#button:has(:contains(맨위로))
 11toon*.com##.hide-m
 11toon*.com##.mobile > .btn-lg.btn-primary.btn
-11toon*.com##[href^="http://"]:not([href*='bbs']) > .homelist-thumb
+11toon*.com##[href^="']) > .homelist-thumb
 1300k.com##.dimmed_mid_bnr
 @@$extension,domain=hanacard.co.kr|nicepay.co.kr|kbcard.com
 @@$extension="custom DLSite linker",domain=arca.live
@@ -39,6 +39,8 @@
 @@||arca.live/u/$extension="Fullscreen Button"
 @@||connect.facebook.net/$script,domain=mt.co.kr
 @@||fonts.googleapis.com^$app=com.shinhan.o2o
+@@||firebaselogging.googleapis.com^
+@@||firebaselogging-pa.googleapis.com^
 @@||mtag.mman.kr^
 @@||reddit.com^$removeparam=rdt
 @@||securepubads.g.doubleclick.net^$domain=namu.wiki
@@ -277,7 +279,6 @@ ypbooks.co.kr##.display_block.modal_box
 ||id.google.com^
 ||kissjav.com/misc/fluidplayer/fluidplayer.min.js
 ||kissjav.com/misc/js-cookie/js.cookie.min.js
-||log-upload-os.hoyolab.com^
 ||log.ajunews.com^
 ||log.eufylife.com^
 ||mmtcld.net^
