@@ -1,5 +1,5 @@
 ! Title: mylist
-! Version: 1.211
+! Version: 1.212
 ! Description: my adblock rules
 
 
@@ -10,9 +10,19 @@
 ##.m-advert-wrap.wrap
 ##.px-2.justify-start.items-center.flex-wrap.flex.ml-0.my-3
 ##.sns
+##[class$="btn_top"]
+##[class$="goTop"]
+##[class$="icon-top"]
+##[class$="icon_top"]
+##[class^="btn_top"]
+##[class^="goTop"]
+##[class^="icon-top"]
+##[class^="icon_top"]
 ##[href^="//ipns.kr/"]
 ##[src*='yanovideos.com/banners/']
 ##[src^="https://was.livere.me/"]
+#?#a:contains(맨위로)
+#?#button:has(:contains(맨위로))
 11toon*.com##.hide-m
 11toon*.com##.mobile > .btn-lg.btn-primary.btn
 11toon*.com##[href^="http://"]:not([href*='bbs']) > .homelist-thumb
@@ -96,6 +106,7 @@ fallcent.com##.floating-button
 fanbox.cc##[class*='__Wrapper']
 gall.dcinside.com##.btn_nftbox
 gall.dcinside.com##.dc_all
+gall.dcinside.com##.stickyunit
 gezip.net##div:nth-of-type(5)
 ggulmo.com##.css-r2e5nu
 gmarket.co.kr##.js-visiblity.js-impressionable.box__bottom-banner
@@ -137,8 +148,9 @@ m.hub.zum.com##.css-1gaoacg
 m.hub.zum.com##.css-c4y80m
 m.hub.zum.com##[class]:has([id^='m_article_'])
 m.hub.zum.com##[id^='m_banner_slot_']
+m.naver.com##.btn_voice
 m.skstoa.com##div:nth-of-type(18)
-m.ssg.com##[id^='m_header_']
+ssg.com##[id^='m_header_']
 maxmovie.com##.adBase.adMobile
 maxmovie.com##[class^='mainNewsPage__TopCenterAdBox']
 mbiz.heraldcorp.com##center
@@ -242,89 +254,48 @@ yes24.com###detailEveBn
 yes24.com##.gd_detailEvent
 yes24.com##.loginBnTop
 yes24.com##.loginHp
+youtube.*###voice-search-button
 youtube.com##div.ytdl-notification.opened
+youtube.com#$#.ytd-watch-next-secondary-results-renderer{ margin-top: -3px !important }
 ypbooks.co.kr##.display_block.modal_box
-||11h11m.net^
-||3gl.net^
 ||ad.pping.kr^
-||ad2.jinhak.com^
-||ad2.jinhakapply.com^
 ||adgirl.yes24.com^
-||admob-app-id-*.firebaseio.com^
-||adnamepr.com^
-||ads-dmp-collect.kr.karrotmarket.com^
+||adtouch.adbrix.io^
 ||advertads.*.com^
-||affiliazioniads.snai.it^
-||analytics-alv.google.com^
-||analytics.nexon.com^
-||analytics.routinehub.co^
 ||api.appnotice.naver.com^$domain=com.nhn.android.naverdic
-||api.loganalytics.io^
 ||arca.live/api/bywiki.json
 ||arca.live/api/v1/pagead
 ||arca.live/static/assets/js/adult.min.js
 ||bc.ad.daum.net^$important,app=mok.android
-||bugly.qcloud.com^
 ||buondua.com/templates/duachua/js/script.js
-||buzzni.com^
-||cdn.signalfx.com^
 ||clarity.ms^$important,app=mok.android
-||client-sdk.hackle.io^
-||collect-perf.51.la^
-||collect-v*.51.la^
-||collector.sports.naver.com^
-||cologger.shopping.naver.com^
-||crashlytics2.l.google.com^
-||cubot.eigene.io^
 ||eigene.io^$important,app=mok.android
-||emforce.co.kr^
-||events.backtrace.io^
+||g.doubleclick.net^
 ||g.doubleclick.net^$important,app=mok.android
 ||gcltracker.com^
+||googletagmanager.com/gtag/
 ||id.google.com^
 ||kissjav.com/misc/fluidplayer/fluidplayer.min.js
 ||kissjav.com/misc/js-cookie/js.cookie.min.js
 ||log-upload-os.hoyolab.com^
 ||log.ajunews.com^
 ||log.eufylife.com^
-||log.mmstat.com^
-||log.sports.naver.com^
-||log1.toup.net^
 ||mmtcld.net^
-||mobile.events.data.microsoft.com^
 ||moyo-mall.com^
 ||mtag.mman.kr^$domain=~maxmovie.com,important
-||nelo2-col.navercorp.com^
-||neoid-sentry.naver.com^
 ||nlog.shinhan.com^
-||notify.bugsnag.com^
 ||novelpia.com/js/jdetects.min.js
 ||novelpia.com/page/block^$all
-||opentelemetry.io^
 ||prd-analytics.lotteon.com^
-||raygun.io^
 ||sakuraherb-*.com^
-||sbs-log.cloud.sbs.co.kr^
-||sdk.51.la^
-||sdk.airbridge.io^
-||sdk.bigin.io^
-||sdk.iad-*.braze.com^
-||securepubads.g.doubleclick.net^
-||securiti.ai^
-||sentry-apollo.naver.com.nheos.com^
-||sentry-apollo.naver.com^
 ||settings.cashwalk.io/cashwalk/*/notice/notice2_main
 ||sflex.us^
 ||ssio*.nchat.naver.com^
 ||stats.wp.com/*.js$script,domain=moneytoring.co.kr
 ||t1.daumcdn.net/cafe_cj/app/js/*/nativead.js
-||tend-table.com^
 ||tk.mediacategory.com^$important,app=mok.android
 ||tracking.adshub.kr^
-||trk.alba.co.kr^
-||trk.tand.kr^
 ||unpkg.com/*/vue-cookies.js
-||weblog.hankookilbo.com^
 ||wwwimageup.*.com^
 ||yagro*.farm/$script
 ||yanovideos.com/api/click?type=b&banner_id=2&site_id=2
@@ -1049,7 +1020,7 @@ zum.com###banner_app_view
 ||api.mixpanel.com^
 ||api2.branch.io^
 ||app-tracking-gfa-collector.naver.com^
-||app.adjust.com^$important,app=com.microsoft.copilot
+||app.adjust.com^$important,app=com.microsoft.copilot|com.voyagerx.scanner
 ||appnexus.com^
 ||appsforoffice.microsoft.com/*/telemetry
 ||atrack.yeahdsp.com^
