@@ -1,9 +1,8 @@
 ! Title: mylist
-! Version: 1.209
+! Version: 1.210
 ! Description: my adblock rules
 
 
-en.namu.wiki##div > [id]:has(> [id^='google_ads_iframe_'])
 ###dclm_modal_content
 ###dclm_modal_screen
 ###glue-cookie-notification-bar-1
@@ -48,6 +47,7 @@ bing.com###scroll_cont
 bing.com###vs_cont
 bns2.plaync.com##.is-show.nc-banner
 booktoki*.com###content_wrapper > div:nth-of-type(2)
+brunch.co.kr##.worth_story
 buondua.com##div > div[class^=b]:not([class*=blog])
 buondua.com##div > div[class^=i]:has-text(Sponsored ads)
 comic.naver.com##[class^='Aside__aside_wrap']
@@ -84,6 +84,8 @@ elandmall.co.kr##.ins-preview-wrapper
 elandmall.co.kr##.insider-slide-down-visible.insider-opt-in-notification
 elandmall.co.kr##[id^='INSIDER_WRAP']
 elandmall.co.kr##[id^='kidiCheck_']
+en.namu.wiki##div > [id]:has(> [id^='google_ads_iframe_'])
+en.namu.wiki#@#div > [id]:has([id^='google_ads_iframe_'])
 enjoyplan.tistory.com###banner-container
 erdcloud.com###sgdpr-box
 etoland.co.kr###store_all
@@ -145,7 +147,8 @@ mt.co.kr##.atc_hotnews
 mt.co.kr##[class^='channel_']
 mu08.tistory.com##.kmong_btn
 namu*.wiki##section:has(svg > path):not([class]:has(> path))
-www.namu.wiki##div > [id]:has([id^='google_ads_iframe_'])
+namu.wiki##div > [id]:has([id^='google_ads_iframe_'])
+namu.wiki##div > tr > td
 news.nate.com##[id^='viewAppPop_']
 newsmin.co.kr##.td-fix-index > p
 newsmin.co.kr##[src^="https://www.newsmin.co.kr/news/wp-content/uploads/"]
@@ -187,6 +190,7 @@ reddit.com#%#//scriptlet('set-cookie-reload', 'reddit_session', '0')
 ruliweb.com###fixed_ad
 ruliweb.com##.flex.depth3_wrapper
 samsungsvc.co.kr##.app-floating-btn
+saramin.co.kr##.ad_footer
 sbs.co.kr###container > div.contentsBlock_w
 search.danawa.com###powerShoppingAreaTop
 search.dcinside.com##article:nth-of-type(1)
@@ -226,6 +230,7 @@ yes24.com##.gd_detailEvent
 yes24.com##.loginBnTop
 yes24.com##.loginHp
 youtube.com##div.ytdl-notification.opened
+ypbooks.co.kr##.display_block.modal_box
 ||11h11m.net^
 ||3gl.net^
 ||ad.pping.kr^
