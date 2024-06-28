@@ -1,19 +1,25 @@
 ! Title: mylist
-! Version: 1.214
+! Version: 1.214x
 ! Description: my adblock rules
 
 
 biz.newdaily.co.kr##.banner
-biz.newdaily.co.kr##.can_ad
+biz.newdaily.co.kr##[class$='_ad']
 en.namu.wiki##div > [id]:has(> [id])
 en.seoul.co.kr##.show.joinPopup
 en.seoul.co.kr##[href^="https://media.naver.com/channel/promotion.nhn"]
 en.seoul.co.kr##section.adArea.articleBottomNews
 en.seoul.co.kr##section.adSection.articleBottomNews > .layoutBorder
+hub.zum.com##.css-1gaoacg
 hub.zum.com##div > div:has([id])
 lawtalk.co.kr##.qna-article-banner
 lawtalk.co.kr##mobile-bottom-tab
+m.zum.com###layer
+news.zum.com###banner_app_view
 talk.op.gg##[class]:has(> [href^="https://talk.op.gg/app-download"])
+zum.com##.adxv_container
+zum.com##.area-bottom
+zum.com##.show.btn-app-go
 ||delivery.pryzmads.com^
 ||log.cizion.com/livere
 ! perforation line_temp
@@ -34,7 +40,7 @@ talk.op.gg##[class]:has(> [href^="https://talk.op.gg/app-download"])
 #?#button:has(:contains(맨 위로))
 11toon*.com##.hide-m
 11toon*.com##.mobile > .btn-lg.btn-primary.btn
-11toon*.com##[href^="http://"]:not([href*='bbs']) > .homelist-thumb
+11toon*.com##[href^="']) > .homelist-thumb
 1300k.com##.dimmed_mid_bnr
 @@$extension,domain=hanacard.co.kr|nicepay.co.kr|kbcard.com
 @@$extension="custom DLSite linker",domain=arca.live
@@ -129,7 +135,6 @@ humors.zigcou.com###btnRewarded
 humors.zigcou.com###modal
 humors.zigcou.com##.object-cover.inline-block
 humors.zigcou.com##[src^="https://img.coucounews.com/"]
-humoruniv.com###naver_adpost_wrap_fix
 ifhead.tistory.com##div.revenue_unit_wrap
 imgur.*##.SeeImgurOIA-container-visible.SeeImgurOIA-container
 imgur.*##.SeeImgurOIA-overlay-visible.SeeImgurOIA-overlay
@@ -193,7 +198,7 @@ pastebin.com##.popup-container
 pixiv.net###js-privacy-policy-banner
 pixiv.net,grip.show##[class$='-header']
 place.naver.com##.place_load_area_wrapper
-place.naver.com##[id$='_ad']
+place.naver.com,ruliweb.com##[id$='_ad']
 plus.wemakeprice.com,worldshop.interpark.com##.ly_cm_fullfix
 plus.wish.com###div_download_app_layer
 pntmall.com##.bgLayer
@@ -215,7 +220,6 @@ product.kyobobook.co.kr##.product_related.product_detail_area
 product.kyobobook.co.kr##.product_related_02.product_detail_area
 r1.community.samsung.com##.js_smartbanner.smartbanner--android.smartbanner
 reddit.com#%#//scriptlet('set-cookie-reload', 'reddit_session', '0')
-ruliweb.com###fixed_ad
 ruliweb.com##.flex.depth3_wrapper
 samsungsvc.co.kr##.app-floating-btn
 saramin.co.kr##.ad_footer
@@ -227,7 +231,6 @@ sexking*.site##.active.item
 shop.interpark.com###prd_appbanner
 shopping.interpark.com###categoryBanner
 shopping.naver.com##[class^='promotionResponsive_promotion_responsive__']
-shopping.pping.kr###dam003_ad
 skstoa.com###top_ad_area
 skstoa.com##.ga-event.type2.stoaLogin__etc-link
 skstoa.com##.stoaLogin__etc
@@ -307,8 +310,6 @@ ypbooks.co.kr##.display_block.modal_box
 ||yanovideos.com/api/click?type=b&banner_id=2&site_id=2
 ! @@$removeparam,domain=ssg.com|kyobobook.co.kr|brand.naver.com|gsshop.com|apple.com|aladin.co.kr|akmall.com|11st.co.kr|agoda.com|click.linkprice.com
 ! @@$removeparam,domain=yes24.com|smartstore.naver.com|wemakeprice.com|gmarket.co.kr|auction.co.kr|e-himart.co.kr|homeplus.co.kr|coupang.com|cjthemarket.com|interpark.com
-! namu.wiki##section > div:has(svg > path):not([class]:has(> path))
-! namu.wiki##section:has(svg > path):not([class]:has(> path))
 ! perforation line_1
 ###adTop
 ###ad_body
@@ -967,7 +968,6 @@ yozm.wishket.com##.slideInUp.normal.animated.extension-program
 yozm.wishket.com##.type-b.news-letter-guide-section
 yuhanshop.co.kr###dtr_bn
 zpat.info##.w3-grey.w3-center.w3-container
-zum.com###banner_app_view
 ||accounts.google.com/gsi/
 ||action.adoffice.11st.co.kr^
 ||ad-img.gmarket.com^
