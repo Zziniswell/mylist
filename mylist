@@ -1,20 +1,23 @@
 ! Title: mylist
-! Version: 1.217
+! Version: 1.218
 ! Description: my adblock rules
 
 
-###id_mbv
+##.btn-top
+##[href^='https://media.naver.com/channel/promotion']
+##[id$='to-top']
 @@$extension="Auto Simya",domain=arca.live
 @@$extension=~"Autopass Cloudflare CAPTCHA",domain=challenges.cloudflare.com
 @@$extension=~"NamuLink"|~"Namu Hot Now"|~"F11 for FullScreen"|~"Toggle Fullscreen Button For Mobile Browsers"|~"Fullscreen Button"|~"Disable WebGL API"|~"QuickSearch"|~"Copy & Ignore textTransform property"|~"Console for mobile browsers - eruda"|"Text To link",domain=namu.wiki
-@@$stealth=useragent,domain=chromewebstore.google.com|microsoftedge.microsoft.com|addons.opera.com|addons.mozilla.org|store.whale.naver.com|galaxystore.samsung.com
+@@$stealth=useragent,domain=chromewebstore.google.com|microsoftedge.microsoft.com|addons.mozilla.org|store.whale.naver.com|galaxystore.samsung.com
 @@||cdn1.innorame.com/pub/f/realtalk/dist/realtalk.min.js$script,domain=tvdaily.co.kr
 @@||github.com/*/blob/*/$extension="Text To link"
 bbongtv.com##[src^="/img/"]
 chosun.com##.btn_top_area2
+en.namu.wiki,board.namu.wiki#@#div > [id]
 en.namu.wiki##[class]:has([id]):not([class]:has([class])):not(h2)
 en.namu.wiki##div > div > div > [id]:not([id]:has(ul))
-en.namu.wiki#@#section > div:has(svg):not([class]:has([href*=Go]))
+en.namu.wiki#@#section > div:has(svg > path):not([class]:has([href*=Go]))
 fntimes.com##.tslt_allwrap01
 hentaicity.com##[class$='plus']
 hentaihaven.xxx##.show.hhztz
@@ -30,11 +33,16 @@ laftel.*##.root_modal
 lec.co.kr##.user-snb-wrapper > div.clearfix
 m-sooriya.tistory.com##[class$='-div']
 member.ssg.com##.notranslate.cmem_nomemarea
+namu.wiki##div > [class]:has-text(파워링크):not([class]:has([id]))
+namu.wiki##div > div[class]:not([class]:has(dt)):not([class]:has(p)):not([class]:has(strong)):not([class]:has(svg)):not([class]:has(tbody)):not([class]:has([id])):has([src$='.png'])
 naver.com##[class*='appShortcut']
 place.naver.com##.place_section.lazyload-wrapper
 ppomppu.co.kr###main_bbs_list_ad
 ppomppu.co.kr##.bottom > div:has([src*='/banner/'])
 sciencetimes.co.kr##.type_02.tit_wrap
+seoul.co.kr##.show.joinPopup
+seoul.co.kr##section.adArea.articleBottomNews
+seoul.co.kr##section.banner
 spankbang.com##.ptgncdn_holder
 spankbang.com##span.video-inline-ads
 xhamster.com###player-sponsor-link
@@ -54,11 +62,17 @@ xvideos.com##.thumb-inside:has-text(AD)
 ||a.nel.cloudflare.com/report/
 ||adapi.inlcorp.com^
 ||adddn.adotsolution.com^
+||adtouch.adbrix.io^
 ||analytics.google.com^$important,app=com.tmon
 ||api.chzzk.naver.com/polling/v1/watch-event/live$xhr,domain=chzzk.naver.com
 ||api.chzzk.naver.com/service/v1.1/channels/*/my-info$xhr,domain=chzzk.naver.com
 ||api.ootoo.co.kr^
-||connect.facebook.net^$important,app=com.tmon|mok.android
+||api2.amplitude.com^$important,app=kr.co.burgerkinghybrid
+||appboy-images.com^$important,app=kr.co.burgerkinghybrid
+||appsflyersdk.com^$important,app=kr.co.burgerkinghybrid
+||cdn.megadata.co.kr^$important,app=mok.android
+||clients*.google.com^
+||cloudon1.com^
 ||doubleclick.net^$app=com.tmon|mok.android,important
 ||mp.imgur.com/track/
 ||popin.cc/log^
@@ -198,7 +212,7 @@ $removeparam=t,domain=duckduckgo.com
 @@||googleoptimize.com^$script,domain=puma.com
 @@||graph.facebook.com^$domain=fmkorea.com
 @@||imasdk.googleapis.com/js/sdkloader/*.js$script,domain=ted.com
-@@||mtag.mman.kr^
+@@||mtag.mman.kr^$domain=maxmovie.com,important
 @@||oauth.telegram.org^
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=apkmirror.com
 @@||reddit.com^$removeparam=rdt,app=com.mycompany.app.soulbrowser
@@ -400,11 +414,6 @@ elandmall.co.kr##.ins-preview-wrapper
 elandmall.co.kr##.insider-slide-down-visible.insider-opt-in-notification
 elandmall.co.kr##[id^='INSIDER_WRAP']
 elandmall.co.kr##[id^='kidiCheck_']
-en.namu.wiki#@#div > [id]
-en.seoul.co.kr##.show.joinPopup
-en.seoul.co.kr##[href^="https://media.naver.com/channel/promotion.nhn"]
-en.seoul.co.kr##section.adArea.articleBottomNews
-en.seoul.co.kr##section.adSection.articleBottomNews > .layoutBorder
 enjoyplan.tistory.com###banner-container
 erdcloud.com###sgdpr-box
 ero-anime.website###content-bottom
@@ -670,7 +679,7 @@ namu.news##[id^="sidebar-"]
 namu.wiki##div > [id]
 namu.wiki##div > div > [class]:has-text(Operado)
 namu.wiki##div > footer
-namu.wiki##section > div:has(svg):not([class]:has([href*=Go]))
+namu.wiki##section > div:has(svg > path):not([class]:has([href*=Go]))
 naver.com###MM_SEARCH_SHOP_LIVE
 naver.com###MM_search_container
 naver.com###_LEVERAGE_PROMOTION
@@ -723,7 +732,6 @@ pay.naver.com##div[class*="AdBanner_common-box__"]
 pay.naver.com##div[class*="BottomAdBanner_"]
 pay.naver.com##div[class*="BottomAds_article__"]
 pay.naver.com##div[class*="PayLifeAdBanner_article__"]
-pay.naver.com##div[class^="BottomModalNoticeWrapper-module_article__"]
 pcc.siren24.com##.bn
 picrew.me##.is_open.st-Terms_Wrapper
 pixiv.net###js-privacy-policy-banner
@@ -792,8 +800,6 @@ section.blog.naver.com##.hot_topic
 section.blog.naver.com##.wrap_my_information > div:nth-of-type(4)
 section.blog.naver.com##.wrap_my_information > div:nth-of-type(5)
 semoi.kr###jssor_1
-seoul.co.kr###Article > div.Line_gray
-seoul.co.kr##.C_wrap > div:nth-of-type(3)
 series.naver.com###cookiePriceGuidePopup
 series.naver.com##.lego_banner_main
 sexking*.site##.active.item
@@ -861,7 +867,7 @@ talk.op.gg##.Beacon
 talk.op.gg##[class]:has(> [href^="https://talk.op.gg/app-download"])
 tdgall.com##[id^='cauly_div']
 teamblind.com##.hire-ad.article
-terabox.com,video.fc2.com,dcinside.com,trendjournal.co.kr,daedamo.com,lamire.jp,en.seoul.co.kr##[class^='ad']
+terabox.com,video.fc2.com,dcinside.com,trendjournal.co.kr,daedamo.com,lamire.jp,seoul.co.kr##[class^='ad']
 text-compare.com##.publiftDiv
 tftps.gg###vm-av
 tiermaker.com###ta-logos-div
@@ -976,10 +982,10 @@ zum.com##.show.btn-app-go
 ||arca.live/static/assets/js/adult.min.js
 ||atrack.yeahdsp.com^
 ||baresi.xyz^$3p
-||bc.ad.daum.net^$important,app=mok.android
+||ad.daum.net^$important,app=mok.android
 ||bccard.tt.omtrdc.net^
 ||bi-sensors.duxiaoman.com^
-||braze-images.com^
+||braze-images.com^$important
 ||browser.events.data.microsoft.com^
 ||browser.sentry-cdn.com^
 ||bugherd.com^$3p
@@ -988,7 +994,7 @@ zum.com##.show.btn-app-go
 ||cache.z.qingting.fm^
 ||cc.naver.com/cc$other,ping
 ||cdn.onesignal.com^
-||clarity.ms^$important,app=mok.android
+||clarity.*^$important,app=mok.android
 ||cleanhaircut.com^
 ||cloudflareinsights.com^$3p
 ||cohesionapps.com^$3p
@@ -1036,7 +1042,7 @@ zum.com##.show.btn-app-go
 ||facebook.com/common/referer_frame.php
 ||facebook.com/method/links.getstats?
 ||facebook.com/tr
-||facebook.com^$app=com.tmon|mok.android|gsshop.mobile.v2|com.dcinside.app|com.yes24.commerce,important
+||facebook.*^$app=com.tmon|mok.android|gsshop.mobile.v2|com.dcinside.app|com.yes24.commerce|kr.co.burgerkinghybrid,important
 ||file.okky.kr/banner/
 ||firebase-settings.crashlytics.com^$important
 ||frog.wix.com^
@@ -1046,7 +1052,7 @@ zum.com##.show.btn-app-go
 ||geoads.ltd^
 ||geolocation-db.com^
 ||ggonggane.com^
-||gmarket.co.kr^$app=com.towneers.www
+||gmarket.*^$app=com.towneers.www
 ||google-analytics.com^$important,app=com.tmon
 ||google.*/_/VisualFrontendUi/browserinfo
 ||google.*/_/VisualFrontendUi/jserror
@@ -1094,7 +1100,7 @@ zum.com##.show.btn-app-go
 ||monitoring.hackle.io^
 ||montmena.top^
 ||moyo-mall.com^
-||mtag.mman.kr^$domain=~maxmovie.com,important
+||mtag.mman.kr^
 ||myauto.ge/templates/assets/js/build/ads/*
 ||newspic.kr^$removeparam=cp
 ||nexusrules.officeapps.live.com^
@@ -1152,7 +1158,7 @@ zum.com##.show.btn-app-go
 ||teams.events.data.microsoft.com^
 ||teams.microsoft.com/*/ping
 ||theirbellstudio.co^
-||tk.mediacategory.com^$important,app=mok.android
+||mediacategory.com^$important,app=mok.android
 ||top.selulesan.co.ua^
 ||track-eu.adformnet.akadns.net^
 ||track.lacunads.com^
@@ -1166,8 +1172,7 @@ zum.com##.show.btn-app-go
 ||twitter.com/i/jot
 ||unpkg.com/*/vue-cookies.js
 ||vod2.myqcloud.com^$app=com.coupang.mobile
-||wcs.naver.com^$important
-||wcs.naver.net^$important
+||wcs.naver.*^$important
 ||webpushr.com^$3p
 ||whoisvisiting.com^$3p
 ||widget.siteheart.com^$3p
