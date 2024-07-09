@@ -1,13 +1,18 @@
 ! Title: mylist
-! Version: 1.219
+! Version: 1.220
 ! Description: my adblock rules
 
 
 ##.ad_footer
+##[class$='back-top']
 ##[class$='btn-top']
 ##[class$='btn_top']
-##[class]:has([href*='/media.naver.com/channel/promotion'])
+##[class$='go_top']
+##[class$='to-top']
+##[class$='to_top']
+##[href^="https://media.naver.com/channel/promotion"]
 ##[id$='to-top']
+##[id$='to_top']
 @@$extension="Auto Simya",domain=arca.live
 @@$extension=~"Autopass Cloudflare CAPTCHA",domain=challenges.cloudflare.com
 @@$extension=~"NamuLink"|~"Namu Hot Now"|~"F11 for FullScreen"|~"Toggle Fullscreen Button For Mobile Browsers"|~"Fullscreen Button"|~"Disable WebGL API"|~"QuickSearch"|~"Copy & Ignore textTransform property"|~"Console for mobile browsers - eruda"|"Text To link",domain=namu.wiki
@@ -31,9 +36,8 @@ hentaihaven.xxx##[src*="/widgets/"]
 hentaihaven.xxx,androidsis.com,postincome.co.kr,gamingdeputy.com##.code-block
 hentaipaw.com##[class$='ad']
 imgur.com##.fast-grid-ad.novote.Post-item
-kormedi.com##.subscr-btn-box
-kormedi.com##[class^='item-box']
-kormedi.com##picture
+kmib.co.kr##.mtxt02
+kormedi.com##div[class=subscr-btn-box]
 kpanews.co.kr##.admbt_close.view-m.botm.ad_mobile
 laftel.*##.root_modal
 lec.co.kr##.user-snb-wrapper > div.clearfix
@@ -44,12 +48,17 @@ namu.wiki##div > [class]:has-text(파워링크):not([class]:has([id]))
 namu.wiki##div > div[class]:not([class]:has(dt)):not([class]:has(p)):not([class]:has(strong)):not([class]:has(svg)):not([class]:has(tbody)):not([class]:has([id])):has([src$='.png'])
 nate.com##.shopBox
 naver.com##[class*='appShortcut']
+news.naver.com###_MODAL_LAYER_FOR_UNSUBSCRIBER_PROMOTION_SERIES
+news.naver.com##._PERSIST_META._OFFICE_HEADLINE._FLICKING_WRAP.optional_hidden.as_type_border.rankingnews
+news.naver.com##.more_news2.box1
+news.naver.com##.promotion
 newspic.kr###bottom-bar
 newspic.kr##.visible.main_popup_wrap
 onefootball.com##div[class*='googleAdsPlaceholder']
 place.naver.com##.place_section.lazyload-wrapper
 ppomppu.co.kr###main_bbs_list_ad
 ppomppu.co.kr##.bottom > div:has([src*='/banner/'])
+pressian.com##.article_body > div.adv_p.txtc
 reuters.com##[class^='leaderboard__container__']
 reuters.com##div[class^='ad-slot__container__']
 salgoonews.com##[id^='recommend_btn']
