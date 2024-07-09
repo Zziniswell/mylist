@@ -1,5 +1,5 @@
 ! Title: mylist
-! Version: 1.220x
+! Version: 1.221
 ! Description: my adblock rules
 
 
@@ -22,11 +22,14 @@ en.namu.wiki,board.namu.wiki#@#div > [id]
 en.namu.wiki,board.namu.wiki#@#section > div:has(svg > path):not([class]:has([href*=Go]))
 fntimes.com##.tslt_allwrap01
 france24.com##.m-block-ad
+funnyissue.com###adsads
 hentaicity.com##[class$='plus']
 hentaihaven.xxx##.show.hhztz
 hentaihaven.xxx##[src*="/widgets/"]
 hentaihaven.xxx,androidsis.com,postincome.co.kr,gamingdeputy.com##.code-block
 hentaipaw.com##[class$='ad']
+humors.zigcou.com##.justify-center.flex > .w-full
+humors.zigcou.com##button.rounded-full
 imgur.com##.fast-grid-ad.novote.Post-item
 kmib.co.kr##.mtxt02
 kormedi.com##div[class=subscr-btn-box]
@@ -36,6 +39,7 @@ lec.co.kr##.user-snb-wrapper > div.clearfix
 m-sooriya.tistory.com##[class$='-div']
 m.skstoa.com##[id^='popup']
 member.ssg.com##.notranslate.cmem_nomemarea
+mrjav.net###player-advertising
 namu.wiki##div > [class]:has-text(파워링크):not([class]:has([id]))
 namu.wiki##div > div[class]:not([class]:has(dt)):not([class]:has(p)):not([class]:has(strong)):not([class]:has(svg)):not([class]:has(tbody)):not([class]:has([id])):has([src$='.png'])
 nate.com##.shopBox
@@ -53,6 +57,7 @@ ppomppu.co.kr##.bottom > div:has([src*='/banner/'])
 pressian.com##.article_body > div.adv_p.txtc
 reuters.com##[class^='leaderboard__container__']
 reuters.com##div[class^='ad-slot__container__']
+ruliweb.com###fixed_ad
 salgoonews.com##[id^='recommend_btn']
 sciencetimes.co.kr##.type_02.tit_wrap
 sedaily.com##.col-right > hr
@@ -68,19 +73,31 @@ washingtonpost.com###slug_fixedBottom
 washingtonpost.com##[class*='removeAllStyles-true'] > div:last-child
 washingtonpost.com##[id^='osn-']
 washingtonpost.com##[id^='paywall-']
+xhamster*.com###player-sponsor-link
+xhamster*.com##.clipstore-results
+xhamster*.com##.fixed-height
+xhamster*.com##.no-update.underplayer
+xhamster*.com##.thumb-list-mobile-item--widget.thumb-list-mobile-item
+xhamster*.com##.video-type-video > aside
+xhamster*.com##.video-view-ads--full-page.video-view-ads
+xhamster*.com##[class*='no-ts-init']
+xhamster*.com##[href*='utm_source']
+xhamster*.com##aside:nth-of-type(2)
+xhamster*.com##div[class]:has-text(use of cookies)
 xhamster.com###player-sponsor-link
-xhamster.com##.QD-zvno-ts-init.QD-zv
-xhamster.com##.QD-zvpremium-n-overlay
-xhamster.com##.QD-zvunder-player-banner-wrapper
+xhamster.com##.clipstore-results
+xhamster.com##.fixed-height
+xhamster.com##.no-update.underplayer
 xhamster.com##.thumb-list-mobile-item--widget.thumb-list-mobile-item
-xhamster.com##.video-thumb.QD-zvcam-thumb__look-like-item.QD-zvcam-thumb--lv-red.QD-zvcam-thumb
 xhamster.com##.video-type-video > aside
 xhamster.com##.video-view-ads--full-page.video-view-ads
+xhamster.com##[class*='no-ts-init']
 xhamster.com##[href*='utm_source']
 xhamster.com##aside:nth-of-type(2)
-xhamster.com##div[class^="cookiesAnnounce-"]
+xhamster.com##div[class]:has-text(use of cookies)
 xvideos.com##.remove-ads
 xvideos.com##.thumb-inside:has-text(AD)
+yachuk.com##.not_cookie
 yna.co.kr,dailymail.co.uk,namu.wiki##aside
 ||*.bid^
 ||a.nel.cloudflare.com/report/
@@ -93,9 +110,12 @@ yna.co.kr,dailymail.co.uk,namu.wiki##aside
 ||api.chzzk.naver.com/service/v1.1/channels/*/my-info$xhr,domain=chzzk.naver.com
 ||appboy-images.com^$important,app=kr.co.burgerkinghybrid
 ||appsflyersdk.com^$important,app=kr.co.burgerkinghybrid
+||assets-widget-ah.flixcdn.com/assets/
+||blackbox.xhamster*.com^
 ||cdn.megadata.co.kr^$important,app=mok.android
 ||clients*.google.com^$app=com.ochiri.cskim.weatherdust
 ||cloudon1.com^
+||collector.xhamster*.com^
 ||doubleclick.net^$app=com.tmon|mok.android,important
 ||mp.imgur.com/track/
 ||myaccount.nytimes.com/unified_lire/js/standalone-client.bundle.js$script
