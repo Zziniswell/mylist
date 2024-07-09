@@ -1,18 +1,10 @@
 ! Title: mylist
-! Version: 1.220
+! Version: 1.220x
 ! Description: my adblock rules
 
 
 ##.ad_footer
-##[class$='back-top']
-##[class$='btn-top']
-##[class$='btn_top']
-##[class$='go_top']
-##[class$='to-top']
-##[class$='to_top']
 ##[href^="https://media.naver.com/channel/promotion"]
-##[id$='to-top']
-##[id$='to_top']
 @@$extension="Auto Simya",domain=arca.live
 @@$extension=~"Autopass Cloudflare CAPTCHA",domain=challenges.cloudflare.com
 @@$extension=~"NamuLink"|~"Namu Hot Now"|~"F11 for FullScreen"|~"Toggle Fullscreen Button For Mobile Browsers"|~"Fullscreen Button"|~"Disable WebGL API"|~"QuickSearch"|~"Copy & Ignore textTransform property"|~"Console for mobile browsers - eruda"|"Text To link",domain=namu.wiki
@@ -810,7 +802,6 @@ search.naver.com##[class*="trend_keyword"]
 section.blog.naver.com##.hot_topic
 section.blog.naver.com##.wrap_my_information > div:nth-of-type(4)
 section.blog.naver.com##.wrap_my_information > div:nth-of-type(5)
-semoi.kr###jssor_1
 series.naver.com###cookiePriceGuidePopup
 series.naver.com##.lego_banner_main
 sexking*.site##.active.item
