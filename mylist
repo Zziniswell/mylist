@@ -1,17 +1,20 @@
 ! Title: mylist
-! Version: 1.222
+! Version: 1.223
 ! Description: my adblock rules
 
 
 ##.ad_footer
 ##.btn_top
+##.img-wrap:not([class]:has([src*='data/editor']))
 ##[href^="https://media.naver.com/channel/promotion"]
+#@#style ~ .basic-post-gallery
 @@$extension="Auto Simya",domain=arca.live
 @@$extension=~"Autopass Cloudflare CAPTCHA",domain=challenges.cloudflare.com
 @@$extension=~"NamuLink"|~"Namu Hot Now"|~"F11 for FullScreen"|~"Toggle Fullscreen Button For Mobile Browsers"|~"Fullscreen Button"|~"Disable WebGL API"|~"QuickSearch"|~"Copy & Ignore textTransform property"|~"Console for mobile browsers - eruda",domain=namu.wiki
 @@$stealth=useragent,domain=chromewebstore.google.com|microsoftedge.microsoft.com|addons.mozilla.org|store.whale.naver.com|galaxystore.samsung.com
 @@||cdn1.innorame.com/pub/f/realtalk/dist/realtalk.min.js$script,domain=tvdaily.co.kr
 @@||github.com/*/blob/*/$extension="Text To link"
+@@||scr.nsmartad.com/admixer/$script,domain=yna.co.kr
 @@||sdk.privacy-center.org^$domain=france24.com
 bbongtv.com##[src^="/img/"]
 blog.naver.com###blog_fe_feed > div:has-text(다른 글)
@@ -26,8 +29,10 @@ dailymail.co.uk##.swipe-tutorial
 en.namu.wiki##[class]:has([id]):not([class]:has([class])):not(h2):not([class]:has-text([))
 en.namu.wiki##div > div > div > [id]:not([id]:has(ul))
 en.namu.wiki,board.namu.wiki#@#div > [id]
-en.namu.wiki,board.namu.wiki#@#section > div:has(svg > path):not([class]:has([href*=Go]))
+en.namu.wiki,board.namu.wiki#@#div[class]:has(svg > path):has(ul):not([class]:has([href*=Go])):not([class]:has(tbody)):not([class]:has([id]))
 fntimes.com##.tslt_allwrap01
+forbes.com##.no-close.zephr-generic-modal.zephr-article-modal-modal
+forbes.com##.zephr-backdrop.zephr-article-modal-backdrop
 france24.com##.m-block-ad
 funnyissue.com###adsads
 gall.dcinside.com#@?#table.gall_list tr:not([data-type][data-no]):has(td:contains(AD))
@@ -42,6 +47,7 @@ hentaipaw.com##[class$='ad']
 humors.zigcou.com##.justify-center.flex > .w-full
 humors.zigcou.com##button.rounded-full
 imgur.com##.fast-grid-ad.novote.Post-item
+jmagazine.joins.com##.side_banner
 kmib.co.kr##.mtxt02
 kormedi.com##div[class=subscr-btn-box]
 kpanews.co.kr##.admbt_close.view-m.botm.ad_mobile
@@ -51,9 +57,11 @@ lec.co.kr##.user-snb-wrapper > div.clearfix
 m-sooriya.tistory.com##[class$='-div']
 m.skstoa.com##[id^='popup']
 member.ssg.com##.notranslate.cmem_nomemarea
+moeni.net##div > div > div:has([src$='gif'])
 mrjav.net###player-advertising
 namu.wiki##div > [class]:has-text(파워링크):not([class]:has([id]))
 namu.wiki##div > div[class]:not([class]:has(dt)):not([class]:has(p)):not([class]:has(strong)):not([class]:has(svg)):not([class]:has(tbody)):not([class]:has([id])):has([src$='.png'])
+namu.wiki##div[class]:has(svg > path):has(ul):not([class]:has([href*=Go])):not([class]:has(tbody)):not([class]:has([id]))
 nate.com##.shopBox
 naver.com##[class*='appShortcut']
 news.naver.com###_MODAL_LAYER_FOR_UNSUBSCRIBER_PROMOTION_SERIES
@@ -82,6 +90,7 @@ spankbang.com##span.video-inline-ads
 sportbible.com##[class^='article-observer_bottomAd__']
 sportbible.com##[class^='floating-video-player_container__']
 sportbible.com##div[class^='advert-placeholder_advertPlaceholder____']
+torrentpi*.com##.img-wrap:not([class]:has([src*='data/editor']))
 washingtonpost.com###slug_fixedBottom
 washingtonpost.com##[class*='removeAllStyles-true'] > div:last-child
 washingtonpost.com##[id^='osn-']
@@ -111,7 +120,7 @@ xhamster.com##div[class]:has-text(use of cookies)
 xvideos.com##.remove-ads
 xvideos.com##.thumb-inside:has-text(AD)
 yachuk.com##.not_cookie
-yna.co.kr,dailymail.co.uk,namu.wiki##aside
+yna.co.kr,dailymail.co.uk##aside
 ||*.bid^
 ||a.nel.cloudflare.com/report/
 ||adapi.inlcorp.com^
@@ -136,13 +145,14 @@ yna.co.kr,dailymail.co.uk,namu.wiki##aside
 ||ootoo.co.kr^
 ||popin.cc/log^
 ||samizdat-graphql.nytimes.com/graphql/v2$xhr
+||scr.nsmartad.com^$domain=~yna.co.kr
 ||sga.planad.net^
 ||singular.net^$important
 ||stash.tmon.co.kr/api/log/app/impression$xhr
 ||static01.nyt.com/ads/tpc-check.html$document
 ||trend-log.aifrwk.com
 ||w3-reporting.reddit.com^$important
-||wiselog.*
+||wiselog.*^
 ||wlg.shinhancard.com^$important
 ! for affiliate links
 ! @@$removeparam,domain=ssg.com|kyobobook.co.kr|gsshop.com|apple.com|aladin.co.kr|akmall.com|agoda.com|cjthemarket.com|interpark.com|e-himart.co.kr|homeplus.co.kr
@@ -711,7 +721,6 @@ namu.news##[id^="sidebar-"]
 namu.wiki##div > [id]
 namu.wiki##div > div > [class]:has-text(Operado)
 namu.wiki##div > footer
-namu.wiki##section > div:has(svg > path):not([class]:has([href*=Go]))
 naver.com###MM_SEARCH_SHOP_LIVE
 naver.com###MM_search_container
 naver.com###_LEVERAGE_PROMOTION
@@ -793,7 +802,7 @@ premium.sbs.co.kr##.popupOpen.popupBanner_w
 premium.sbs.co.kr##.topBanner_w
 premium.sbs.co.kr##[href*="/appinstall"]
 pricegod.co.kr##.popUp
-pricegod.co.kr,academy.prompie.com,a-ha.io,kream.co.kr laftel.net,nytimes.com##body,html:style(overflow:auto!important)
+pricegod.co.kr,academy.prompie.com,a-ha.io,kream.co.kr laftel.net,nytimes.com,forbes.com##body,html:style(overflow:auto!important)
 product.kyobobook.co.kr###scrollSpyProdEvent
 product.kyobobook.co.kr##.banner_free.product_detail_area
 product.kyobobook.co.kr##.product_related.product_detail_area
@@ -895,7 +904,6 @@ t-plays.com###marketingPopup
 t.hi098123.com##.fad
 talk.op.gg##.Beacon
 talk.op.gg##[class]:has(> [href^="https://talk.op.gg/app-download"])
-tdgall.com##[id^='cauly_div']
 teamblind.com##.hire-ad.article
 terabox.com,video.fc2.com,dcinside.com,trendjournal.co.kr,daedamo.com,lamire.jp,seoul.co.kr,itssa.co.kr,edaily.co.kr,nytimes.com##[class^='ad']
 text-compare.com##.publiftDiv
