@@ -5,7 +5,6 @@
 
 ##.ad_footer
 ##.btn_top
-##.img-wrap:not([class]:has([src*='data/editor']))
 ##[href^="https://media.naver.com/channel/promotion"]
 #@#style ~ .basic-post-gallery
 @@$extension="Auto Simya",domain=arca.live
