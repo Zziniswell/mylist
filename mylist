@@ -1,27 +1,28 @@
 ! Title: mylist
-! Version: 1.224
+! Version: 1.225
 ! Description: my adblock rules
 
 
-
+happymoney.co.kr##.recommendAppWrap
 ###back-to-top
-##.ads
 ##.ad_footer
+##.ads
 ##.btn_top
 ##.scroll-to-top
 ##[href^="https://media.naver.com/channel/promotion"]
 #@#style ~ .basic-post-gallery
 @@$extension="Auto Simya",domain=arca.live
+@@$extension="microShield",domain=ygosu.com|dogdrip.net|loawa.com|isplus.com
 @@$extension=~"Autopass Cloudflare CAPTCHA",domain=challenges.cloudflare.com
 @@$extension=~"NamuLink"|~"Namu Hot Now"|~"F11 for FullScreen"|~"Toggle Fullscreen Button For Mobile Browsers"|~"Fullscreen Button"|~"Disable WebGL API"|~"QuickSearch"|~"Console for mobile browsers - eruda",domain=namu.wiki|~board.namu.wiki|~en.namu.wiki
-@@$stealth=1p-cookie,domain=naver.com|arca.live
 @@$stealth=useragent,domain=chromewebstore.google.com|microsoftedge.microsoft.com|addons.mozilla.org|store.whale.naver.com|galaxystore.samsung.com
-@@||cdn1.innorame.com/pub/f/realtalk/dist/realtalk.min.js$script,domain=tvdaily.co.kr
+@@||api.realtalk.co.kr^
 @@||github.com/*/blob/$extension="Text To link"
 @@||github.com/*/tree/$extension="Embed Me!"
 @@||scr.nsmartad.com/admixer/$script,domain=yna.co.kr
 @@||sdk.privacy-center.org^$domain=france24.com
 @@||static.airbridge.io/sdk/$domain=lotteonapp.airbridge.io|kbank.airbridge.io
+@@||steamcommunity.com/openid/
 bbongtv.com##[src^="/img/"]
 blog.naver.com###blog_fe_feed > div:has-text(다른 글)
 blog.naver.com###blog_fe_feed > div:has-text(디깅하기)
@@ -33,9 +34,11 @@ byline.network##.wp-block-kadence-column
 cafe.naver.com##.popular_toast_popup
 chosun.com#@##fusion-app footer
 dailymail.co.uk##.swipe-tutorial
+dcinside.com##.adv-inner
 en.namu.wiki##[class] > [id]:only-child
 en.namu.wiki##div > div > div > [id]:not([id]:has(ul))
 eomisae.co.kr##.clear.bd_wrt_main
+fnnews.com.view > div:not(div:has([class]))
 fntimes.com##.tslt_allwrap01
 forbes.com##.no-close.zephr-generic-modal.zephr-article-modal-modal
 forbes.com##.zephr-backdrop.zephr-article-modal-backdrop
@@ -57,26 +60,33 @@ humors.zigcou.com##button.rounded-full
 imgur.com##.fast-grid-ad.novote.Post-item
 instiz.net##.list_foot
 instiz.net##.view_top
+isplus.com##.ed_title
+isplus.com##.line_bottom.title_box:has-text(행사& 비즈니스)
+isplus.com##.swiper-backface-hidden.swiper-android.swiper-horizontal.swiper-initialized.sw_banner.swiper
 jmagazine.joins.com##.side_banner
 joongang.co.kr##.goto-app-notice.bg_yellow.letter_wrap
 journalist.or.kr##div.p_space
 kmib.co.kr##.mtxt02
-kormedi.com##div[class=subscr-btn-box]
+kormedi.com##div[class='subscr-btn-box']
 kpanews.co.kr##.admbt_close.view-m.botm.ad_mobile
 kyeongin.com##[src^="images/mobile_banner.jpg"]
 laftel.*##.root_modal
 lec.co.kr##.user-snb-wrapper > div.clearfix
+lotteon.com##.is-active.recommend-toast-box
+lotteon.com##.is-active.recommend-toast-mini
 lst914.tistory.com##.float-button-container
 lst914.tistory.com##figure.alignCenter.imageblock
 m-sooriya.tistory.com##[class$='-div']
 m.shop.interpark.com#@$#.topBannerWrapper * { height: 1px !important; }
 m.skstoa.com##[id^='popup']
+mdm.alps.llogis.com##.NO-CACHE
 member.ssg.com##.notranslate.cmem_nomemarea
 moeni.net##div > div > div:has([src$='gif'])
+mpharm.edaily.co.kr##dl
 mrjav.net###player-advertising
 namu.wiki,~en.namu.wiki,~board.namu.wiki##div > [class]:has-text(파워링크):not([class]:has([id]))
-namu.wiki,~en.namu.wiki,~board.namu.wiki##div > div[class]:not([class]:has(dt)):not([class]:has(p)):not([class]:has(strong)):not([class]:has(svg)):not([class]:has(tbody)):not([class]:has([id])):has([src$='.png'])
-namu.wiki,~en.namu.wiki,~board.namu.wiki##div[class]:has(svg > path):has(ul):not([class]:has([href*=Go])):not([class]:has(tbody)):not([class]:has([id]))
+namu.wiki,~en.namu.wiki,~board.namu.wiki##div > div[class]:not([class]:has(p)):not([class]:has(svg)):not([class]:has(tbody)):not([class]:has([id])):has([src$='.png']):has(tr > td):has-text(.)
+namu.wiki,~en.namu.wiki,~board.namu.wiki##div[class]:has(svg > path):has(ul):not([class]:has([href*=Go])):not([class]:has(tbody)):not([class]:has([id])):not([class]:has(.trigger))
 nate.com##.shopBox
 nationalgeographic.com##[class$='__AdWrap']
 nationalgeographic.com##div.natgeo-ad
@@ -93,8 +103,10 @@ news1.kr,edition.cnn.com,lotteon.com##[class^='ad']
 newspic.kr###bottom-bar
 newspic.kr##.visible.main_popup_wrap
 onefootball.com##div[class*='googleAdsPlaceholder']
-pay.ssg.com###campBanrUrl_1
+pay.ssg.com##[id^='campBanrUrl_']
 place.naver.com##.place_section.lazyload-wrapper
+plus.wish.com###div_control_plusitem_lst
+plus.wish.com###div_smart_ad_item
 ppomppu.co.kr###main_bbs_list_ad
 ppomppu.co.kr##.float-box
 ppomppu.co.kr##.outside_hot
@@ -110,12 +122,20 @@ sedaily.com##.col-right > hr
 seoul.co.kr##.show.joinPopup
 seoul.co.kr##section.adArea.articleBottomNews
 seoul.co.kr##section.banner
+shopping.naver.com##[class^='RecommendSection_recommend_section__']
+shopping.naver.com##[class^='ResearchEmergencyNoticeSection_']
+smile.hanjin.co.kr##div:nth-of-type(3)
 spankbang.com##.ptgncdn_holder
 spankbang.com##span.video-inline-ads
 sportbible.com##[class^='article-observer_bottomAd__']
 sportbible.com##[class^='floating-video-player_container__']
 sportbible.com##div[class^='advert-placeholder_advertPlaceholder____']
+text-compare.com###navigation > span:nth-of-type(3)
+text-compare.com##.mainContent > span:nth-of-type(2)
 torrentpi*.com##.img-wrap:not([class]:has([src*='data/editor']))
+tvdaily.co.kr##div#news_content:not(div:has([class]))
+tvmon*.org##.banner_wrap2
+tvmon*.org##.mobile-padding
 washingtonpost.com###slug_fixedBottom
 washingtonpost.com##[class*='removeAllStyles-true'] > div:last-child
 washingtonpost.com##[id^='osn-']
@@ -131,6 +151,7 @@ xhamster*.com##[class*='no-ts-init']
 xhamster*.com##[href*='utm_source']
 xhamster*.com##aside:nth-of-type(2)
 xhamster*.com##div[class]:has-text(use of cookies)
+xhamster*.com##div[class]:has-text(쿠키 사용)
 xhamster.com###player-sponsor-link
 xhamster.com##.clipstore-results
 xhamster.com##.fixed-height
@@ -142,6 +163,7 @@ xhamster.com##[class*='no-ts-init']
 xhamster.com##[href*='utm_source']
 xhamster.com##aside:nth-of-type(2)
 xhamster.com##div[class]:has-text(use of cookies)
+xhamster.com##div[class]:has-text(쿠키 사용)
 xvideos.com##.remove-ads
 xvideos.com##.thumb-inside:has-text(AD)
 yachuk.com##.not_cookie
@@ -150,23 +172,24 @@ yna.co.kr,dailymail.co.uk##aside
 ||a.nel.cloudflare.com/report/
 ||adapi.inlcorp.com^
 ||adddn.adotsolution.com^
+||adpopcorn.com^$important,app=com.hpapp
 ||adtouch.adbrix.io^
 ||aedi.ai^
 ||amplitude.com^$important
 ||analytics.google.com^$important,app=com.tmon
-||api.chzzk.naver.com/polling/v1/watch-event/live$xhr,domain=chzzk.naver.com
-||api.chzzk.naver.com/service/v1.1/channels/*/my-info$xhr,domain=chzzk.naver.com
 ||appboy-images.com^$important,app=kr.co.burgerkinghybrid
 ||appsflyersdk.com^$important,app=kr.co.burgerkinghybrid
 ||assets-widget-ah.flixcdn.com/assets/
-||atr.buzzvil.com^$important,app=com.hpapp
 ||blackbox.xhamster*.com^
+||blacktv*.com/data/file/setting/*.gif
+||buzzvil.com^$important,app=com.hpapp
 ||clients*.google.com^$app=com.ochiri.cskim.weatherdust
 ||cloudon1.com^
 ||collect.ureca-lab.com^
 ||collector.xhamster*.com^
 ||d3aulf22blzf9p.cloudfront.net^$important,app=com.hpapp
 ||doubleclick.net^$app=com.tmon|mok.android,important
+||favicon.ico$domain=adcr.naver.com,important
 ||graph.facebook.com^$important,app=com.hpapp
 ||megadata.co.kr^$important,app=mok.android
 ||mp.imgur.com/track/
@@ -178,20 +201,22 @@ yna.co.kr,dailymail.co.uk##aside
 ||popin.cc/log^
 ||samizdat-graphql.nytimes.com/graphql/v2$xhr
 ||scr.nsmartad.com^$domain=~yna.co.kr
+||sektoon*.org/imgs/*.gif
 ||sga.planad.net^
 ||singular.net^$important
-||sspi.adpopcorn.com^$important,app=com.hpapp
 ||stash.tmon.co.kr/api/log/app/impression$xhr
 ||static01.nyt.com/ads/tpc-check.html$document
 ||t.naverads.com^
-||trend-log.aifrwk.com
+||trend-log.aifrwk.com^
+||tt.omtrdc.net^
 ||w3-reporting.reddit.com^$important
 ||wiselog.*^
 ||wlg.shinhancard.com^$important
 ! for affiliate links
+! @@$removeparam,domain=aliexpress.com|lotteon.com|yes24.com|gmarket.co.kr|auction.co.kr|coupang.com|11st.co.kr
 ! @@$removeparam,domain=ssg.com|kyobobook.co.kr|gsshop.com|apple.com|aladin.co.kr|akmall.com|agoda.com|cjthemarket.com|interpark.com|e-himart.co.kr|homeplus.co.kr
-@@$removeparam,domain=play.google.com|appsflyer.com|app.link|airbridge.io|abr.ge
-@@$removeparam,domain=yes24.com|wemakeprice.com|gmarket.co.kr|auction.co.kr|coupang.com|11st.co.kr|click.linkprice.com|smartstore.naver.com|brand.naver.com|aliexpress.com|lotteon.com
+@@$removeparam,domain=play.google.com|appsflyer.com|app.link|airbridge.io|abr.ge|click.linkprice.com
+@@$removeparam,domain=smartstore.naver.com|brand.naver.com
 ! @@$stealth=useragent,domain=lotteon.com|11st.co.kr|homeplus.co.kr|lotteimall.com|smartstore.naver.com|brand.naver.com
 ! perforation line_1
 ###ad_body
@@ -286,16 +311,15 @@ $removeparam=t,domain=duckduckgo.com
 @@$extension="Immersive Translate - Translate Web & PDF",app=com.kiwibrowser.browser|org.mozilla.firefox|com.lemurbrowser.exts
 @@$extension="Immersive Translate - Translate Web & PDF",domain=11st.co.kr
 @@$extension="custom DLSite linker",domain=arca.live
-@@$extension="microShield",domain=ygosu.com|dogdrip.net|loawa.com
 @@$extension="상단/하단으로 스크롤"|"Fullscreen Button",domain=m.comic.naver.com|lezhin.com|toomics.com|toptoon.com|webtoon.kakao.com|page.kakao.com|novelpia.com|munpia.com
 @@$extension="스크롤바"|"Scroll to top",app=com.sec.android.app.sbrowser|com.naver.whale|com.mycompany.app.soulbrowser|com.opera.browser
 @@$stealth,domain=onelink.me|ofw.adison.co|abr.ge|airbridge.io
-@@$stealth=dpi,domain=*.link|ourhome.co.kr|startpage.com|kurly.com|samsung.com|update.kiwibrowser.com
+@@$stealth=dpi,domain=app.link|ourhome.co.kr|startpage.com|kurly.com|samsung.com|update.kiwibrowser.com
 ! @@$stealth=ip,domain=123123play.com|damoang.net|fortnite.com|innisfree.com|mania.kr|claude.ai|arca.live|bitwarden.com|amoremall.com|unrealengine.com
 ! @@$stealth=ip,domain=dasibogo.*|mrjav.net|kissjav.com|dprime.kr|halfclub.com|twinmotion.com|liivmate.com|whooing.com|vivaldi.net|bloomberg.org
 ! @@$stealth=ip,domain=getunicorn.app|hasha.in|dcinside.com|epicgames.com|missav.com|suto.co.kr|novelpia.com|kbcard.com|ssg.com
 ! @@$stealth=ip,domain=kbs.co.kr|sbs.co.kr
-@@$stealth=useragent,domain=video.fc2.com|kbcard.com|gmarket.co.kr|auction.co.kr|ssg.com|link.*|kbanknow.com
+@@$stealth=useragent,domain=video.fc2.com|kbcard.com|gmarket.co.kr|auction.co.kr|ssg.com|app.link|kbanknow.com
 @@$stealth=webrtc,domain=moeni.net
 @@||ad.pping.kr^$domain=pping.kr
 @@||adtouch.adbrix.io^$app=com.kakao.talk
@@ -316,7 +340,7 @@ $removeparam=t,domain=duckduckgo.com
 @@||oauth.telegram.org^
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=apkmirror.com
 @@||reddit.com^$removeparam=rdt,app=com.mycompany.app.soulbrowser
-@@||ssl.pstatic.net/tveta/libs/$script,domain=nid.naver.com|weather.naver.com
+@@||ssl.pstatic.net/tveta/libs/$script,domain=nid.naver.com
 @@||ssp.meba.kr/$domain=maxmovie.com
 a-bly.com##.app-persuade-drawer.drawer
 a-bly.com##.navigation-bar__banner.navigation-bar__row
@@ -388,13 +412,11 @@ auction.co.kr##.plcc_banner
 auction.co.kr##.vip_detail_wrap > .vip-togetheritems
 av19.gg##.sidebar-ads
 av19.gg##div#banner
-avguri*.com##[id$='_bn']
 bareunnutri.com##.mb_ver.ss_ad_center
 bigkinds.or.kr##.ft-banner
 bing.com###scroll_cont
 bing.com###vs_cont
 biz.newdaily.co.kr##[class$='_ad']
-blacktv*.com###container > div:nth-of-type(1)
 blog.fc2.com###wrapper > div:nth-of-type(4)
 blog.fc2.com#@#.ad_footer
 blog.naver.com##.layer_app
@@ -521,7 +543,6 @@ etnews.com###trans_div
 etoland.co.kr###store_all
 fallcent.com##.floating-button
 fanbox.cc##[class*='__Wrapper']
-favicon.ico$domain=adcr.naver.com,important
 fmkorea.com##.li_best2_hotdeal1.li_best2_pop1.li
 fmkorea.com##.m_navi_maxlines.fmkorea_m_navi
 fmkorea.com##.notice_layerM.notice_layer
@@ -659,8 +680,6 @@ lotteon.com##.goBack
 lotteon.com##[class$='Advertisement']
 lotteon.com##.pd-middle-ad-product
 lotteon.com##.productBanner
-lotteon.com##.v--modal-background-click
-lotteon.com##.v--modal-overlay
 lotteon.com##[src^="https://contents.lotteon.com/display/fopopup/"]
 lotteon.com##div > .flag
 lotteon.com##div.banner_text_2by2.moduleWrap
@@ -777,7 +796,7 @@ ohli365.vip##div.exo2.col-sm-3.col-xs-6
 ohou.se##div > div:has-text(모바일 웹으로)
 okmall.com##.on.overlay
 okmall.com##[class^='app_banner']
-oliveyoung.co.kr,avguri*.com###banner
+oliveyoung.co.kr###banner
 oliveyoung.co.kr###curation_wrap
 oliveyoung.co.kr##section[class^='Home_band-banner__']
 onlineconvertfree.com,video.fc2.com,biz.newdaily.co.kr##.banner
@@ -945,8 +964,6 @@ topstarnews.net##.pay-box
 topstarnews.net##.show-prompt.sp-pos-left.sp-native-popover.sp-prompt
 torrentqq*.com##.at-main.at-col.col-md-9 > .header.at-banner.at-row.row
 torrentsome*.com##.px-2.gap-2.md\:grid-cols-2.grid-cols-1.grid
-tvmon*.org##.banner_wrap2
-tvmon*.org##.mobile-padding
 tvmon*.org##[class^='break-mobile']
 unlimited.waifu2x.net###ads
 uwayapply.com##.bx-viewport
@@ -1034,7 +1051,6 @@ zum.com##.show.btn-app-go
 ||atrack.yeahdsp.com^
 ||baresi.xyz^$3p
 ||ad.daum.net^$important,app=mok.android
-||bccard.tt.omtrdc.net^
 ||bi-sensors.duxiaoman.com^
 ||braze-images.com^$important
 ||browser.events.data.microsoft.com^
