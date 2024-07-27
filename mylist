@@ -1,32 +1,41 @@
 ! Title: mylist
-! Version: 1.225
+! Version: 1.226
 ! Description: my adblock rules
 
 
-happymoney.co.kr##.recommendAppWrap
 ###back-to-top
+###fixed_ad
 ##.ad_footer
 ##.ads
 ##.btn_top
 ##.scroll-to-top
 ##[href^="https://media.naver.com/channel/promotion"]
 #@#style ~ .basic-post-gallery
+/backpg/add_visit_log.cm
+/nlog.js
+/sbs_log_module.min.js
+11st.co.kr##[class^='c-floating']
+11st.co.kr#@#div[class$="-ad"]
 @@$extension="Auto Simya",domain=arca.live
 @@$extension="microShield",domain=ygosu.com|dogdrip.net|loawa.com|isplus.com
 @@$extension=~"Autopass Cloudflare CAPTCHA",domain=challenges.cloudflare.com
 @@$extension=~"NamuLink"|~"Namu Hot Now"|~"F11 for FullScreen"|~"Toggle Fullscreen Button For Mobile Browsers"|~"Fullscreen Button"|~"Disable WebGL API"|~"QuickSearch"|~"Console for mobile browsers - eruda",domain=namu.wiki|~board.namu.wiki|~en.namu.wiki
 @@$stealth=useragent,domain=chromewebstore.google.com|microsoftedge.microsoft.com|addons.mozilla.org|store.whale.naver.com|galaxystore.samsung.com
 @@||api.realtalk.co.kr^
+@@||app.appsflyer.com/$domain=ofw.adison.co
 @@||github.com/*/blob/$extension="Text To link"
 @@||github.com/*/tree/$extension="Embed Me!"
 @@||scr.nsmartad.com/admixer/$script,domain=yna.co.kr
 @@||sdk.privacy-center.org^$domain=france24.com
+@@||smartmediarep.com/$media,domain=donga.com
 @@||static.airbridge.io/sdk/$domain=lotteonapp.airbridge.io|kbank.airbridge.io
 @@||steamcommunity.com/openid/
+@@||t1.daumcdn.net/kas/static/kp.js$script,domain=h2mall.net
 bbongtv.com##[src^="/img/"]
 blog.naver.com###blog_fe_feed > div:has-text(다른 글)
 blog.naver.com###blog_fe_feed > div:has-text(디깅하기)
 blog.naver.com##[class^='end_feed_division__']
+blog.naver.com##[class^='mydrawer_banner__']
 blog.naver.com##[id^='BANNER_']
 brunch.co.kr##.img_bnr
 byline.network##.kt-row-column-wrap
@@ -35,10 +44,11 @@ cafe.naver.com##.popular_toast_popup
 chosun.com#@##fusion-app footer
 dailymail.co.uk##.swipe-tutorial
 dcinside.com##.adv-inner
+devjhs.tistory.com##.contents_style.tt_article_useless_p_margin > div:last-child
 en.namu.wiki##[class] > [id]:only-child
 en.namu.wiki##div > div > div > [id]:not([id]:has(ul))
 eomisae.co.kr##.clear.bd_wrt_main
-fnnews.com.view > div:not(div:has([class]))
+fnnews.com##.view > div:not(div:has([class]))
 fntimes.com##.tslt_allwrap01
 forbes.com##.no-close.zephr-generic-modal.zephr-article-modal-modal
 forbes.com##.zephr-backdrop.zephr-article-modal-backdrop
@@ -46,6 +56,7 @@ france24.com##.m-block-ad
 funnyissue.com###adsads
 gall.dcinside.com#@?#table.gall_list tr:not([data-type][data-no]):has(td:contains(AD))
 happymoney.co.kr##.eventBannerImg
+happymoney.co.kr##.recommendAppWrap
 hasha.in##.justify-center.flex
 healthtips.kr##.gh-portal-triggerbtn-iframe
 healthtips.kr##.top-banner
@@ -115,7 +126,6 @@ pressian.com##.article_body > div.adv_p.txtc
 quasarzone.com##.state-change-wrap
 reuters.com##[class^='leaderboard__container__']
 reuters.com##div[class^='ad-slot__container__']
-ruliweb.com###fixed_ad
 salgoonews.com##[id^='recommend_btn']
 sciencetimes.co.kr##.type_02.tit_wrap
 sedaily.com##.col-right > hr
@@ -136,6 +146,7 @@ torrentpi*.com##.img-wrap:not([class]:has([src*='data/editor']))
 tvdaily.co.kr##div#news_content:not(div:has([class]))
 tvmon*.org##.banner_wrap2
 tvmon*.org##.mobile-padding
+viewership.softc.one##[class^='Onboarding_slideUp']
 washingtonpost.com###slug_fixedBottom
 washingtonpost.com##[class*='removeAllStyles-true'] > div:last-child
 washingtonpost.com##[id^='osn-']
@@ -167,6 +178,9 @@ xhamster.com##div[class]:has-text(쿠키 사용)
 xvideos.com##.remove-ads
 xvideos.com##.thumb-inside:has-text(AD)
 yachuk.com##.not_cookie
+yanolja.com##[class^='SmartBanner_container__']
+yanolja.com##[class^='StyleComponent_smartBannerWrap__']
+yna.co.kr##div.bx_ad
 yna.co.kr,dailymail.co.uk##aside
 ||*.bid^
 ||a.nel.cloudflare.com/report/
@@ -188,6 +202,7 @@ yna.co.kr,dailymail.co.uk##aside
 ||collect.ureca-lab.com^
 ||collector.xhamster*.com^
 ||d3aulf22blzf9p.cloudfront.net^$important,app=com.hpapp
+||digitalcamp.co.kr^
 ||doubleclick.net^$app=com.tmon|mok.android,important
 ||favicon.ico$domain=adcr.naver.com,important
 ||graph.facebook.com^$important,app=com.hpapp
@@ -204,9 +219,9 @@ yna.co.kr,dailymail.co.uk##aside
 ||sektoon*.org/imgs/*.gif
 ||sga.planad.net^
 ||singular.net^$important
-||stash.tmon.co.kr/api/log/app/impression$xhr
 ||static01.nyt.com/ads/tpc-check.html$document
 ||t.naverads.com^
+||tmon.co.kr/*/log^
 ||trend-log.aifrwk.com^
 ||tt.omtrdc.net^
 ||w3-reporting.reddit.com^$important
@@ -279,7 +294,6 @@ $removeparam=/^(oquery|sm)=/,domain=search.naver.com
 $removeparam=/^(proxyReferer|noTrackingCode)=/,domain=blog.naver.com
 $removeparam=t,domain=duckduckgo.com
 100ssd.co.kr##div.auto-marbtm-5.auto-martop-5
-11st.*###web2appPopup
 11st.co.kr###hotclick-recm-container-top
 11st.co.kr##.base > .l-grid > .l-grid__row
 11st.co.kr##.c-footer__app-download
@@ -397,7 +411,6 @@ apkpure.net##.showBadge.apk-list-double-line
 apkpure.net##div.right
 apost.dev##.gh-adsense-top
 arca.live###defaultImage
-arca.live##.footer
 arca.live##.ml-lg-0.ml-auto.navbar-nav.nav > .d-sm-block.d-none.nav-item
 arca.live##.mt-2.recaptcha-privacy
 arca.live##.mt-4.user-activites
@@ -580,7 +593,7 @@ grip.show##[src^="https://api.grip.show/"] > [class]:has-text(앱 열기)
 gsshop.com##.banner-area
 gsshop.com##.bnr-item_appdown
 gsshop.com##section.box-shade.box-wrap
-haeiltech.tistory.com,calvain.tistory.com##.entry-content > div:nth-of-type(1)
+haeiltech.tistory.com,calvain.tistory.com##.entry-content > div:first-child
 hangyo.com##[id^='banCon']
 hani.co.kr##[class*="ArticleDetail_supportBannerWrap__"]
 hankyung.com##.show.promotion-floating2
@@ -868,7 +881,7 @@ search.11st.co.kr##.c-linebanner-bottom--fixed.c-linebanner-bottom
 search.danawa.com###adSmartArea2
 search.danawa.com###powerShoppingAreaTop
 search.danawa.com###shoppingPlanArea
-search.dcinside.com##article:nth-of-type(1)
+search.dcinside.com##article:first-child
 search.naver.com##._channel_root._project_site_channel_root.api_channel_wrap
 search.naver.com##[class*="trend_keyword"]
 section.blog.naver.com##.hot_topic
