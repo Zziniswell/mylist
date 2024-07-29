@@ -1,5 +1,5 @@
 ! Title: mylist
-! Version: 1.228
+! Version: 1.229
 ! Description: my adblock rules
 
 
@@ -14,7 +14,7 @@
 ##[href^="https://media.naver.com/channel/promotion"]
 #@##fusion-app footer
 #@#style ~ .basic-post-gallery
-$popup,domain=missav.com|njavtv.com|buondua.com
+$popup,domain=missav.com|njavtv.com|buondua.com|ero-anime.website|asmr-labo.com
 /backpg/add_visit_log.cm
 /nlog.js
 /sbs_log_module.min.js
@@ -55,12 +55,18 @@ brunch.co.kr##.img_bnr
 byline.network##.kt-row-column-wrap
 byline.network##.wp-block-kadence-column
 cafe.naver.com##.popular_toast_popup
+coupang.com###MWEB_PRODUCT_DETAIL_ITEM_MID_BANNER
+coupang.com###MWEB_PRODUCT_DETAIL_LEGACY_INTRO_BANNER_FULL
+coupang.com###MWEB_PRODUCT_DETAIL_PROMOTION_CAROUSEL
+coupang.com###MWEB_PRODUCT_DETAIL_SPLASH_BOTTOM_SHEET
 dailymail.co.uk##.swipe-tutorial
 dcinside.com##.adv-inner
+deviantart.com##div[class]:has-text(Log In):nth-of-type(3)
 devjhs.tistory.com##.contents_style.tt_article_useless_p_margin > div:last-child
 en.namu.wiki##[class] > [id]:only-child
 en.namu.wiki##div > div > div > [id]:not([id]:has(ul))
 eomisae.co.kr##.clear.bd_wrt_main
+ero-anime.website,asmr-labo.com##[id^='custom_html-']
 fnnews.com##.view > div:not(div:has([class]))
 fntimes.com##.tslt_allwrap01
 forbes.com##.no-close.zephr-generic-modal.zephr-article-modal-modal
@@ -75,7 +81,11 @@ gmarket.co.kr#@#.ReactVirtualized__Grid__innerScrollContainer .box__banner-wrap 
 gmarket.co.kr#@#.box__banner-single > .box__inner
 gmarket.co.kr#@#.js-impressionable
 gmarket.co.kr,auction.co.kr##.section_smileday_floating
+google.*##div > [class]:has(a):has(svg):has-text(짧은 동영상):not([class]:has-text(http))
 google.*,google.com,google.co.kr##[id^=arc-srp] > div > div[class]:has([href*='books.google.'])
+google.*,google.com,google.co.kr##div[class] > [href*='tbm=bks']
+google.*,google.com,google.co.kr##div[class] > [href*='tbm=shop']
+google.*,google.com,google.co.kr##div[class] > [href]:has-text(금융)
 google.com##omnient-visibility-control
 gsshop.com###myshop-mktBanner
 happymoney.co.kr##.eventBannerImg
@@ -126,6 +136,7 @@ mdm.alps.llogis.com##.NO-CACHE
 member.ssg.com##.notranslate.cmem_nomemarea
 mitem.auction.co.kr##.box__bestcombi-items.vip-togetheritems
 mitem.auction.co.kr##.box__recommenditems.vip-togetheritems
+mobile.gmarket.co.kr###box__slide-wrap
 moeni.net##div > div > div:has([src$='gif'])
 mpharm.edaily.co.kr##dl
 mrjav.net###player-advertising
@@ -174,6 +185,10 @@ seoul.co.kr##section.banner
 shopping.naver.com##[class^='RecommendSection_recommend_section__']
 shopping.naver.com##[class^='ResearchEmergencyNoticeSection_']
 smile.hanjin.co.kr##div:nth-of-type(3)
+soldout.co.kr##.floating-free-tooltip-wrap
+soldout.co.kr##.is-active.align-bottom.dialog-wrap.s-dialog.dialog-induce-install
+soldout.co.kr##.is-dimmed-active.use-dimmed-fade.dimmed
+soldout.co.kr##.top-banner-wrap
 spankbang.com##.ptgncdn_holder
 spankbang.com##span.video-inline-ads
 sportbible.com##[class^='article-observer_bottomAd__']
@@ -183,6 +198,8 @@ text-compare.com###navigation > span:nth-of-type(3)
 text-compare.com##.mainContent > span:nth-of-type(2)
 theguru.co.kr##.con_primary > div > hr.spc
 thehyundai.com##.product-event-banner
+tiktok.com##.matrix-smart-wrapper
+tiktok.com##.pointer-events-auto.tux-base-dialog--open.h-full.w-full.justify-center.items-center.flex.z-2000.fixed.box-border.tux-base-dialog
 torrentpi*.com##.img-wrap:not([class]:has([src*='data/editor']))
 tvdaily.co.kr##div#news_content:not(div:has([class]))
 tvmon*.org##.banner_wrap2
@@ -619,7 +636,7 @@ hkmedi.co.kr##.content_top_code
 hkmedi.co.kr##.footer_text
 hmall.com###mainBannerPopup
 hmall.com##.appDownload-banner
-hmall.com,tvroom.org,donsobi.com,arca.live,prdm.daisomall.co.kr,m.innisfree.com,junyongblog.com,enjoyplan.tistory.com##body,html:style(overflow:auto!important)
+hmall.com,tvroom.org,donsobi.com,arca.live,prdm.daisomall.co.kr,m.innisfree.com,junyongblog.com,enjoyplan.tistory.com,tiktok.com##body,html:style(overflow:auto!important)
 hogangnono.com##.dimmed-layer._dimmedLayer
 hogangnono.com##.starter
 homeplus.*##div[class*="layerDim"]
