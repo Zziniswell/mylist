@@ -1,8 +1,9 @@
 ! Title: mylist
-! Version: 1.230
+! Version: 1.231
 ! Description: my adblock rules
 
 
+! namu.wiki,~en.namu.wiki,~board.namu.wiki##div > div[class]:not([class]:has(p)):not([class]:has(svg)):not([class]:has(tbody)):not([class]:has([id])):has([src$='.png']):has(tr > td):has-text(.)
 ###back-to-top
 ###fixed_ad
 ##.ad_footer
@@ -23,17 +24,20 @@ $popup,domain=missav.com|njavtv.com|buondua.com|ero-anime.website|asmr-labo.com|
 11st.co.kr#@#div[class$="-ad"]
 @@$extension="Auto Simya",domain=arca.live
 @@$extension="microShield",domain=ygosu.com|dogdrip.net|loawa.com|isplus.com|mlbpark.donga.com|etoday.co.kr
-@@$extension=~"Autopass Cloudflare CAPTCHA",domain=challenges.cloudflare.com
 @@$extension=~"NamuLink"|~"Namu Hot Now"|~"F11 for FullScreen"|~"Toggle Fullscreen Button For Mobile Browsers"|~"Fullscreen Button"|~"Disable WebGL API"|~"QuickSearch"|~"Console for mobile browsers - eruda",domain=namu.wiki|~board.namu.wiki|~en.namu.wiki
 @@$stealth=ip,domain=kissjav.com
 @@$stealth=useragent,domain=chromewebstore.google.com|microsoftedge.microsoft.com|addons.mozilla.org|store.whale.naver.com|galaxystore.samsung.com
 @@||ad-img.gmarket.com^
 @@||api.realtalk.co.kr^
 @@||app.appsflyer.com^$domain=ofw.adison.co
-@@||fonts.googleapis.com^$domain=getunicorn.app
 @@||github.com/*/blob/$extension="Text To link"
 @@||github.com/*/tree/$extension="Embed Me!"
+@@||google.*/logos/$image
 @@||googletagmanager.com^$domain=rpp.auction.co.kr
+@@||greasyfork.org/*/code$extension="Embed Me!"
+@@||kiwibrowser.com^$stealth=dpi
+@@||ourhome.co.kr^$stealth=dpi
+@@||samsungcloud.com^$stealth=dpi
 @@||scr.nsmartad.com/admixer/$script,domain=yna.co.kr
 @@||sdk.privacy-center.org^$domain=france24.com
 @@||smartmediarep.com^$media,domain=donga.com|~mlbpark.donga.com
@@ -74,6 +78,7 @@ en.namu.wiki##[class] > [id]:only-child
 en.namu.wiki##div > div > div > [id]:not([id]:has(ul))
 eomisae.co.kr##.clear.bd_wrt_main
 ero-anime.website,asmr-labo.com##[id^='custom_html-']
+favicon.ico$domain=adcr.naver.com,important
 fnnews.com##.view > div:not(div:has([class]))
 fntimes.com##.tslt_allwrap01
 forbes.com##.no-close.zephr-generic-modal.zephr-article-modal-modal
@@ -88,7 +93,8 @@ gmarket.co.kr#@#.ReactVirtualized__Grid__innerScrollContainer .box__banner-wrap 
 gmarket.co.kr#@#.box__banner-single > .box__inner
 gmarket.co.kr#@#.js-impressionable
 gmarket.co.kr,auction.co.kr##.section_smileday_floating
-google.*##div > [class]:has(a):has(svg):has-text(짧은 동영상):not([class]:has-text(http))
+goodkyung.com###ads-partner
+google.*,google.com,google.co.kr##[href*='youtube.com/']:upward(10) > div:has-text(짧은 동영상)
 google.*,google.com,google.co.kr##[id] div[class] > [href*='/finance']:has-text(금융)
 google.*,google.com,google.co.kr##[id] div[class] > [href*='tbm=bks']:has-text(도서)
 google.*,google.com,google.co.kr##[id] div[class] > [href*='tbm=shop']:has-text(쇼핑)
@@ -129,16 +135,20 @@ kormedi.com##div[class='subscr-btn-box']
 kpanews.co.kr##.admbt_close.view-m.botm.ad_mobile
 kyeongin.com##[src^="images/mobile_banner.jpg"]
 laftel.*##.root_modal
+lawtimes.co.kr##div:has-text(리걸 에듀):not(div:has([href])):upward(2)
+lawtimes.co.kr##div:only-child > div > div:has-text(리걸 에듀) > div:has-text(리걸 에듀)
 lec.co.kr##.user-snb-wrapper > div.clearfix
 lotteon.com###modals-container:has-text(오늘 하루 보지 않기)
 lotteon.com##.appReviewBox
 lotteon.com##.is-active[class^='recommend-toast-']
 lst914.tistory.com##.float-button-container
+lst914.tistory.com##.tt_box_cheers
 lst914.tistory.com##figure.alignCenter.imageblock
 m-sooriya.tistory.com##[class$='-div']
 m.shop.interpark.com#@$#.topBannerWrapper * { height: 1px !important; }
 m.skstoa.com##[id^='popup']
 mdm.alps.llogis.com##.NO-CACHE
+medium.com##div > div > div > div > div:has-text(Be part of a better internet.)
 member.ssg.com##.notranslate.cmem_nomemarea
 mitem.auction.co.kr##.box__bestcombi-items.vip-togetheritems
 mitem.auction.co.kr##.box__recommenditems.vip-togetheritems
@@ -147,8 +157,9 @@ moeni.net##div > div > div:has([src$='gif'])
 mpharm.edaily.co.kr##dl
 mrjav.net###player-advertising
 namu.wiki,~en.namu.wiki,~board.namu.wiki##div > [class]:has-text(파워링크):not([class]:has([id]))
-namu.wiki,~en.namu.wiki,~board.namu.wiki##div > div[class]:not([class]:has(p)):not([class]:has(svg)):not([class]:has(tbody)):not([class]:has([id])):has([src$='.png']):has(tr > td):has-text(.)
-namu.wiki,~en.namu.wiki,~board.namu.wiki##div[class]:has(svg > path):has(ul):not([class]:has([href*=Go])):not([class]:has(tbody)):not([class]:has([id])):not([class]:has(.trigger))
+namu.wiki,~en.namu.wiki,~board.namu.wiki##div > [class]:not([class]:has([id])):has([src$='.png']):has-text(.):not([class]:has(p))
+namu.wiki,~en.namu.wiki,~board.namu.wiki##div[class]:has(svg > path):has(ul):has(li):not([class]:has([href*=Go])):not([class]:has(tbody)):not([class]:has(.trigger))
+namu.wiki,~en.namu.wiki,~board.namu.wiki##svg > path:upward(4):has(li):has(ul):not([class]:has([href*=Go])):not([class]:has(.trigger))
 nate.com##.shopBox
 nationalgeographic.com##[class$='__AdWrap']
 nationalgeographic.com##div.natgeo-ad
@@ -171,8 +182,6 @@ njavtv.com,missav.com##.root--ujvuu
 onefootball.com##div[class*='googleAdsPlaceholder']
 pay.ssg.com##[id^='campBanrUrl_']
 place.naver.com##.place_section.lazyload-wrapper
-plus.wish.com###div_control_plusitem_lst
-plus.wish.com###div_smart_ad_item
 ppomppu.co.kr###bbs_notice
 ppomppu.co.kr###main_bbs_list_ad
 ppomppu.co.kr##.float-box
@@ -184,8 +193,9 @@ reddit.com##.pt-\[var\(--page-y-padding\)\].v2.overflow-visible > shreddit-async
 reddit.com##alert-controller
 reuters.com##[class^='leaderboard__container__']
 reuters.com##div[class^='ad-slot__container__']
-rnrmffj.tamchart.com###adsModooFeeds
-rnrmffj.tamchart.com##[id^='adElement-']
+tamchart.com###adsModooFeeds
+tamchart.com##[id^='adElement-']
+ruliweb.com##.app_install
 salgoonews.com##[id^='recommend_btn']
 sciencetimes.co.kr##.type_02.tit_wrap
 sedaily.com##.col-right > hr
@@ -204,6 +214,7 @@ spankbang.com##span.video-inline-ads
 sportbible.com##[class^='article-observer_bottomAd__']
 sportbible.com##[class^='floating-video-player_container__']
 sportbible.com##div[class^='advert-placeholder_advertPlaceholder____']
+talk.op.gg###opgg-kit-sash-banner
 text-compare.com###navigation > span:nth-of-type(3)
 text-compare.com##.mainContent > span:nth-of-type(2)
 theguru.co.kr##.con_primary > div > hr.spc
@@ -265,7 +276,6 @@ yna.co.kr,dailymail.co.uk##aside
 ||d3aulf22blzf9p.cloudfront.net^$important,app=com.hpapp
 ||digitalcamp.co.kr^
 ||doubleclick.net^$app=mok.android,important
-||favicon.ico$domain=adcr.naver.com,important
 ||graph.facebook.com^$important,app=com.hpapp
 ||impracticalsmell.com^
 ||lover*.net^$popup
@@ -379,7 +389,6 @@ $removeparam=t,domain=duckduckgo.com
 4kwallpapers.com##.scrollToTopBtn
 ://*.*$document,permissions=join-ad-interest-group=()\,run-ad-auction=()\,browsing-topics=()
 @@$extension,domain=hanacard.co.kr|nicepay.co.kr|kbcard.com
-@@$extension="Autopass Cloudflare CAPTCHA",domain=viva100.com
 @@$extension="Disable WebGL API",domain=vidkidz.tistory.com
 @@$extension="Embed Me!",domain=yande.re|imgur.com|youtube.com
 @@$extension="Immersive Translate - Translate Web & PDF",app=com.kiwibrowser.browser|org.mozilla.firefox|com.lemurbrowser.exts
@@ -387,8 +396,8 @@ $removeparam=t,domain=duckduckgo.com
 @@$extension="custom DLSite linker",domain=arca.live
 @@$extension="상단/하단으로 스크롤"|"Fullscreen Button",domain=m.comic.naver.com|lezhin.com|toomics.com|toptoon.com|webtoon.kakao.com|page.kakao.com|novelpia.com|munpia.com
 @@$extension="스크롤바"|"Scroll to top",app=com.sec.android.app.sbrowser|com.naver.whale|com.mycompany.app.soulbrowser|com.opera.browser
-@@$stealth,domain=onelink.me|ofw.adison.co|abr.ge|airbridge.io
-@@$stealth=dpi,domain=app.link|ourhome.co.kr|startpage.com|kurly.com|samsungcloud.com|update.kiwibrowser.com|nid.naver.com|ses.signgate.com
+@@$stealth,domain=ofw.adison.co|abr.ge|airbridge.io
+@@$stealth=dpi,domain=app.link|startpage.com|kurly.com|nid.naver.com|ses.signgate.com|onelink.me
 ! @@$stealth=ip,domain=123123play.com|damoang.net|fortnite.com|innisfree.com|mania.kr|claude.ai|arca.live|bitwarden.com|amoremall.com|unrealengine.com
 ! @@$stealth=ip,domain=dasibogo.*|mrjav.net|dprime.kr|halfclub.com|twinmotion.com|liivmate.com|whooing.com|vivaldi.net|bloomberg.org
 ! @@$stealth=ip,domain=getunicorn.app|hasha.in|dcinside.com|epicgames.com|missav.com|suto.co.kr|novelpia.com|kbcard.com|ssg.com
@@ -668,7 +677,7 @@ imgur.com##.SmartAppBanner-wrapper
 imgur.com##[id^='Col-Child-OUTBRAIN']
 imweb.me##.shop-banner._shop_banner.shop_banner.text-center
 indeed.com###passport-frontendclient-overlay
-inews24.com##.inews-view > div:nth-of-type(1)
+inews24.com##.inews-view > div:first-child
 inews24.com##.news-share
 innisfree.com##.mainSlidePop.mainPopup
 innisfree.com##.txtBanner.docTopBanner
@@ -709,7 +718,6 @@ lawtalk.co.kr##.opened.bottom-sheet-wrap > .with-mobile-bottom-tab.bottom-sheet
 lawtalk.co.kr##.qna-article-banner
 lawtalk.co.kr##mobile-bottom-tab
 lawtimes.co.kr##[href^='http']:not([href*="lawtimes.co.kr"])
-lawtimes.co.kr##div > div > div > div > div > div:has-text(리걸 에듀)
 lee-master.tistory.com##blockquote
 lego.com##[class*="AgeGatestyles__Wrapper"]
 lenovo.com##.cookie-remind-warpper
@@ -765,7 +773,6 @@ mediatoday.co.kr###SupportForm_id
 mediawatch.kr##.con_primary > div > div:nth-of-type(6)
 mediawatch.kr##[src*="/banner/"]
 mediawatch.kr##hr.skin_margin
-medium.com##div > div > div > div > div:has-text(Sign up to discover human stories that deepen your understanding of the world.)
 megabox.co.kr###banner_content
 megabox.co.kr###banner_layer
 megabox.co.kr###pageBanner
@@ -865,7 +872,6 @@ picrew.me##.is_open.st-Terms_Wrapper
 pixiv.net###js-privacy-policy-banner
 pixiv.net,grip.show##[class$='-header']
 pixwox.com##.ah-box
-plus.wish.com###div_download_app_layer
 pntmall.com##.bgLayer
 pntmall.com##[id^='popLayer']
 pornhub.com###ageDisclaimerOverlay
@@ -971,7 +977,6 @@ ssodam.com###ageModal
 ssodam.com##.col-lg-10.col-lg-offset-1 > div.desktop-hide
 starrykss.tistory.com#@#.adsbygoogle
 startpage.com###home-below-the-fold-container
-startpage.com###home-top-header
 store.kakao.com##.inner_slide
 suto.co.kr##.app-bottom
 suto.co.kr##.focus_event_title
