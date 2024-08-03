@@ -1,5 +1,5 @@
 ! Title: mylist
-! Version: 1.231
+! Version: 1.231x
 ! Description: my adblock rules
 
 
@@ -158,7 +158,7 @@ mpharm.edaily.co.kr##dl
 mrjav.net###player-advertising
 namu.wiki,~en.namu.wiki,~board.namu.wiki##div > [class]:has-text(파워링크):not([class]:has([id]))
 namu.wiki,~en.namu.wiki,~board.namu.wiki##div > [class]:not([class]:has([id])):has([src$='.png']):has-text(.):not([class]:has(p))
-namu.wiki,~en.namu.wiki,~board.namu.wiki##div[class]:has(svg > path):has(ul):has(li):not([class]:has([href*=Go])):not([class]:has(tbody)):not([class]:has(.trigger))
+namu.wiki,~en.namu.wiki,~board.namu.wiki##div[class]:has(svg > path):has(ul):has(li):not([class]:has([href*=Go])):not([class]:has(tbody)):not([class]:has([id])):not([class]:has(.trigger))
 namu.wiki,~en.namu.wiki,~board.namu.wiki##svg > path:upward(4):has(li):has(ul):not([class]:has([href*=Go])):not([class]:has(.trigger))
 nate.com##.shopBox
 nationalgeographic.com##[class$='__AdWrap']
