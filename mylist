@@ -1,9 +1,9 @@
 ! Title: mylist
-! Version: 1.232x
+! Version: 1.232y
 ! Description: my adblock rules
 
 
-! namu.wiki,~en.namu.wiki,~board.namu.wiki##div > div[class]:not([class]:has(p)):not([class]:has(svg)):not([class]:has(tbody)):not([class]:has([id])):has([src$='.png']):has(tr > td):has-text(.)
+namu*.wiki,~en.namu.wiki,~board.namu.wiki,~namu.news##div > [class]:has-text(파워링크):not([class]:has([id])):not([class]:has(b)):not([class]:has(dt)):not([class]:has(p)):not([class]:has(textarea)):not([class]:has(time))
 ###back-to-top
 ###fixed_ad
 ###recommended-content-container
@@ -169,8 +169,8 @@ mobile.gmarket.co.kr###box__slide-wrap
 moeni.net##div > div > div:has([src$='gif'])
 mpharm.edaily.co.kr##dl
 mrjav.net###player-advertising
-namu.wiki,~en.namu.wiki,~board.namu.wiki##div > [class]:has-text(파워링크):not([class]:has([id])):not([class]:has(b)):not([class]:has(dt)):not([class]:has(p)):not([class]:has(textarea)):not([class]:has(time)):not([class]:has-text(#))
-namu.wiki,~en.namu.wiki,~board.namu.wiki##div > [class]:not([class]:has([id])):has([src$='.png']):has-text(.):not([class]:has(time)):not([class]:has(p)):not([class]:has(textarea))
+namu.*,~en.namu.wiki,~board.namu.wiki,~namu.news##div > [class]:has-text(파워링크):not([class]:has([id])):not([class]:has(b)):not([class]:has(dt)):not([class]:has(p)):not([class]:has(textarea)):not([class]:has(time)):not([class]:has-text(#))
+namu.wiki,~en.namu.wiki,~board.namu.wiki##div > [class]:not([class]:has([id])):has([src$='.png']):has-text(.):not([class]:has(dt)):not([class]:has(tbody)):not([class]:has(time)):not([class]:has(p)):not([class]:has(textarea)):not([class]:has([href*='acl'))
 namu.wiki,~en.namu.wiki,~board.namu.wiki##div[class]:has(svg > path):has(ul):has(li):not([class]:has([href*=Go])):not([class]:has([href*='acl'])):not([class]:has([href*='diff'])):not([class]:has([href*='thread'])):not([class]:has(p)):not([class]:has(tbody)):not([class]:has(textarea)):not([class]:has([id]))
 nate.com##.shopBox
 nationalgeographic.com##[class$='__AdWrap']
