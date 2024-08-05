@@ -1,9 +1,8 @@
 ! Title: mylist
-! Version: 1.232y
+! Version: 1.233
 ! Description: my adblock rules
 
 
-namu*.wiki,~en.namu.wiki,~board.namu.wiki,~namu.news##div > [class]:has-text(파워링크):not([class]:has([id])):not([class]:has(b)):not([class]:has(dt)):not([class]:has(p)):not([class]:has(textarea)):not([class]:has(time))
 ###back-to-top
 ###fixed_ad
 ###recommended-content-container
@@ -28,14 +27,15 @@ $popup,domain=missav.com|njavtv.com|buondua.com|ero-anime.website|asmr-labo.com|
 @@$extension=~"NamuLink"|~"Namu Hot Now"|~"F11 for FullScreen"|~"Toggle Fullscreen Button For Mobile Browsers"|~"Fullscreen Button"|~"Disable WebGL API"|~"QuickSearch"|~"Console for mobile browsers - eruda",domain=namu.wiki|~board.namu.wiki|~en.namu.wiki
 @@$stealth=ip,domain=kissjav.com
 @@$stealth=useragent,domain=chromewebstore.google.com|microsoftedge.microsoft.com|addons.mozilla.org|store.whale.naver.com|galaxystore.samsung.com
+@@/code$extension="Embed Me!"
 @@||ad-img.gmarket.com^
 @@||api.realtalk.co.kr^
 @@||app.appsflyer.com^$domain=ofw.adison.co
+@@||challenges.cloudflare.com^$stealth,badfilter
 @@||github.com/*/blob/$extension="Text To link"
 @@||github.com/*/tree/$extension="Embed Me!"
 @@||google.*/logos/$image
 @@||googletagmanager.com^$domain=rpp.auction.co.kr
-@@||greasyfork.org/*/code$extension="Embed Me!"
 @@||kiwibrowser.com^$stealth=dpi
 @@||ourhome.co.kr^$stealth=dpi
 @@||samsungcloud.com^$stealth=dpi
@@ -43,7 +43,6 @@ $popup,domain=missav.com|njavtv.com|buondua.com|ero-anime.website|asmr-labo.com|
 @@||sdk.privacy-center.org^$domain=france24.com
 @@||smartmediarep.com^$media,domain=donga.com|~mlbpark.donga.com
 @@||static.airbridge.io/sdk/$domain=lotteonapp.airbridge.io|kbank.airbridge.io|homeplus.airbridge.io
-@@||steamcommunity.com/openid/
 @@||t1.daumcdn.net/kas/static/kp.js$script,domain=h2mall.net
 alwayzweb.ilevit.com##div.ReactModalPortal
 apkpure.com##.debut-game
@@ -78,6 +77,8 @@ dailymail.co.uk##.swipe-tutorial
 dcinside.com##.adv-inner
 deviantart.com##div[class]:has-text(Join the world's largest art community and get personalized art recommendations.)
 devjhs.tistory.com##.contents_style.tt_article_useless_p_margin > div:last-child
+dogdrip.net##.ddnad-board.ddnad-top.ddnad.ed:remove()
+dogdrip.net##.ddnad-top.ddnad
 e-rs.tistory.com###gnb
 en.namu.wiki##[class] > [id]:only-child
 en.namu.wiki##div > div > div > [id]:not([id]:has(ul))
@@ -110,6 +111,7 @@ google.*,google.com,google.co.kr##[id^=arc-srp] > div > div[class]:has([href*='p
 google.*,google.com,google.co.kr##omnient-visibility-control
 gsshop.com###myshop-mktBanner
 hasha.in##.justify-center.flex
+hasha.in##[class^='gfpl-']
 healthtips.kr##.gh-portal-triggerbtn-iframe
 healthtips.kr##.top-banner
 hentaicity.com##[class$='plus']
@@ -169,8 +171,9 @@ mobile.gmarket.co.kr###box__slide-wrap
 moeni.net##div > div > div:has([src$='gif'])
 mpharm.edaily.co.kr##dl
 mrjav.net###player-advertising
-namu.*,~en.namu.wiki,~board.namu.wiki,~namu.news##div > [class]:has-text(파워링크):not([class]:has([id])):not([class]:has(b)):not([class]:has(dt)):not([class]:has(p)):not([class]:has(textarea)):not([class]:has(time)):not([class]:has-text(#))
-namu.wiki,~en.namu.wiki,~board.namu.wiki##div > [class]:not([class]:has([id])):has([src$='.png']):has-text(.):not([class]:has(dt)):not([class]:has(tbody)):not([class]:has(time)):not([class]:has(p)):not([class]:has(textarea)):not([class]:has([href*='acl'))
+namu.*,~en.namu.wiki,~board.namu.wiki,~namu.news,~namu.moe##div > [class]:has-text(파워링크):not([class]:has([id])):not([class]:has(b)):not([class]:has(dt)):not([class]:has(p)):not([class]:has(textarea)):not([class]:has(time)):not([class]:has-text(#))
+namu.wiki#@#div:not([class*=" "]) ~ div div + div[class]:has(> div[id][class])
+namu.wiki,~en.namu.wiki,~board.namu.wiki##div > [class]:not([class]:has([id])):has([src$='.png']):has-text(.):not([class]:has(dt)):not([class]:has(p)):not([class]:has(tbody)):not([class]:has(time)):not([class]:has(textarea)):not([class]:has([href*='acl']))
 namu.wiki,~en.namu.wiki,~board.namu.wiki##div[class]:has(svg > path):has(ul):has(li):not([class]:has([href*=Go])):not([class]:has([href*='acl'])):not([class]:has([href*='diff'])):not([class]:has([href*='thread'])):not([class]:has(p)):not([class]:has(tbody)):not([class]:has(textarea)):not([class]:has([id]))
 nate.com##.shopBox
 nationalgeographic.com##[class$='__AdWrap']
@@ -288,10 +291,12 @@ yna.co.kr,dailymail.co.uk##aside
 ||d3aulf22blzf9p.cloudfront.net^$important,app=com.hpapp
 ||digitalcamp.co.kr^
 ||doubleclick.net^$app=mok.android,important
+||google.*^$app=com.wooricard.smartapp
 ||graph.facebook.com^$important,app=com.hpapp
 ||impracticalsmell.com^
 ||lover*.net^$popup
 ||megadata.co.kr^$important,app=mok.android
+||mob.cashbee.co.kr^
 ||mp.imgur.com/track/
 ||myaccount.nytimes.com/unified_lire/js/standalone-client.bundle.js$script
 ||naverpa-phinf.pstatic.net^$important,app=com.hpapp
@@ -308,8 +313,15 @@ yna.co.kr,dailymail.co.uk##aside
 ||trend-log.aifrwk.com^
 ||tt.omtrdc.net^
 ||w3-reporting.reddit.com^$important
+||weblog.wooricard.com^
 ||wiselog.*^
 ||wlg.shinhancard.com^$important
+! invaild
+! namu*.wiki,~en.namu.wiki,~board.namu.wiki,~namu.news##div > [class]:has-text(파워링크):not([class]:has([id])):not([class]:has(b)):not([class]:has(dt)):not([class]:has(p)):not([class]:has(textarea)):not([class]:has(time))
+! namu*.wiki,~en.namu.wiki,~board.namu.wiki,~namu.news##div > [class]:has-text(파워링크):not([class]:has([id], b, dt, p, time, textarea))
+! namu.*,~en.namu.wiki,~board.namu.wiki,~namu.news,~namu.moe##div > [class]:not([class]:has([id])):not([class]:has(dt)):has-text(파워링크):not([class]:has(b, time, textarea)):not([class]:has-text(#))
+! namu.wiki,~en.namu.wiki,~board.namu.wiki##div > [class]:not([class]:has([id])):has([class]:has([src$='.png'])):has-text(.):not([class]:has(dt)):not([class]:has(p)):not([class]:has(table)):not([class]:has(svg, tbody, time, textarea)):not([class]:has([href*='acl'], [href*='diff'], [href*='thread']))
+! namu.wiki,~en.namu.wiki,~board.namu.wiki##div[class]:has(svg > path):has(ul, li):not([class]:has([id])):not([class]:has([href*=Go], [href*='acl'], [href*='diff'], [href*='thread'], p, tbody, textarea, [id]))
 ! for affiliate links
 ! @@$removeparam,domain=aliexpress.com|lotteon.com|yes24.com|gmarket.co.kr|auction.co.kr|coupang.com|11st.co.kr
 ! @@$removeparam,domain=ssg.com|kyobobook.co.kr|gsshop.com|apple.com|aladin.co.kr|akmall.com|agoda.com|cjthemarket.com|interpark.com|e-himart.co.kr|homeplus.co.kr
@@ -1147,7 +1159,7 @@ zum.com##.show.btn-app-go
 ||facebook.com/tr
 ||facebook.*^$app=mok.android|gsshop.mobile.v2|com.dcinside.app|com.yes24.commerce|kr.co.burgerkinghybrid|com.shcard.smartpay,important
 ||file.okky.kr/banner/
-||firebase-settings.crashlytics.com^$important
+||firebase-settings.crashlytics.com^
 ||frog.wix.com^
 ||fundingchoicesmessages.google.com^
 ||fwmrm.net/ad
