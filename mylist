@@ -1,5 +1,5 @@
 ! Title: mylist
-! Version: 1.238
+! Version: 1.238x
 ! Description: my adblock rules
 
 
@@ -14,18 +14,21 @@
 ##.mobile-padding
 ##.scroll-to-top
 ##.videoads:remove()
-##[class^='scrollTo']
-##[href^="https://media.naver.com/channel/promotion"]
-##[href^="https://media.naver.com/channel/promotion"]:upward(1)
-##[href^="https://sepay.org/"]
-##[href^="https://sepay.org/"]:upward(1)
-##[href^="https://v.daum.net/channel/"]
-##[href^="https://v.daum.net/channel/"]:upward(1)
+##[class^='app_install']
+##[class^="scrollTo"]
+##[href*="//media.naver.com/channel/promotion"]
+##[href*="//media.naver.com/channel/promotion"]:upward(1)
+##[href*="//ipns.kr/"]:upward(1)
+##[href*="//sepay.org/"]
+##[href*="//sepay.org/"]:upward(1)
+##[href*="//v.daum.net/channel/"]
+##[href*="//v.daum.net/channel/"]:upward(1)
 ##a[href^="https://www.redsun"] > font
 #@##fusion-app footer
 #@#style ~ .basic-post-gallery
 $generichide,domain=namu.wiki
-$popup,domain=missav.com|njavtv.com|buondua.com|ero-anime.website|asmr-labo.com|xhamster.com|hentaipaw.com|japanhub.net|spankbang.com
+$popup,domain=hentai-one.com|eromanga-show.com
+$popup,domain=missav.com|njavtv.com|buondua.com|ero-anime.website|asmr-labo.com|xhamster.com|hentaipaw.com|japanhub.net|spankbang.com|eromanga-samurai.xyz
 $removeparam=site_preference,domain=smartstore.naver.com|brand.naver.com,important
 /backpg/add_visit_log.cm
 /nlog.js
@@ -91,7 +94,8 @@ cafe.naver.com##.popular_toast_popup
 cbsnews.com###mobile-mpu-plus-outstream-inc1
 cbsnews.com##.newsletter_signup
 cbsnews.com##[id^='mobile-flex-inc']
-chosun.com###adalign
+chosun.com##.article_img_wrap
+chosun.com,waifu2x.net,daedamo.com,addplus.tistory.com,weekly.khan.co.kr,goodkyung.com,funnyissue.com,pixiv.net,mydaily.co.kr##[id^='ad']
 chuing.net###alertify-logs
 comic.naver.com##[class$='app_banner']
 community.samsung.com##.lia-quilt-row-footer.lia-quilt-row
@@ -101,6 +105,8 @@ coupang.com###MWEB_PRODUCT_DETAIL_ITEM_MID_BANNER
 coupang.com###MWEB_PRODUCT_DETAIL_LEGACY_INTRO_BANNER_FULL
 coupang.com###MWEB_PRODUCT_DETAIL_PROMOTION_CAROUSEL
 coupang.com###MWEB_PRODUCT_DETAIL_SPLASH_BOTTOM_SHEET
+daedamo.com##.dandy_index_link
+daedamo.com,xvideos.com##[class$='ads']
 dailymail.co.uk##.swipe-tutorial
 dbpia.co.kr###topBanner
 dcinside.com##.adv-inner
@@ -121,7 +127,6 @@ fntimes.com##.tslt_allwrap01
 forbes.com##.no-close.zephr-generic-modal.zephr-article-modal-modal
 forbes.com##.zephr-backdrop.zephr-article-modal-backdrop
 france24.com##.m-block-ad
-funnyissue.com###adsads
 g-enews.com##.adwiserInbox:upward(1)
 g-enews.com##[class*='add']
 gall.dcinside.com#@?#table.gall_list tr:not([data-type][data-no]):has(td:contains(AD))
@@ -133,7 +138,6 @@ gmarket.co.kr#@#.ReactVirtualized__Grid__innerScrollContainer .box__banner-wrap 
 gmarket.co.kr#@#.box__banner-single > .box__inner
 gmarket.co.kr#@#.js-impressionable
 gmarket.co.kr,auction.co.kr##.section_smileday_floating
-goodkyung.com###ads-partner
 google.*,google.com,google.co.kr##.g:has([href*='.pinterest'])
 google.*,google.com,google.co.kr##.g:has([href*='books.google.'])
 google.*,google.com,google.co.kr##[href*='.pinterest']:upward(4)
@@ -156,15 +160,13 @@ hasha.in##[class^='gfpl-']
 healthtips.kr##.gh-portal-triggerbtn-iframe
 healthtips.kr##.top-banner
 hentai-one.com##.external
-hentai-one.com,eromanga-samurai.xyz##[class$='-ad']
-hentai-one.com,eromanga-samurai.xyz##[id^='ts_ad_native_']
 hentaicity.com##[class$='plus']
 hentaihaven.xxx##.script_manager_video_master
 hentaihaven.xxx##.show.hhztz
 hentaihaven.xxx##.sm
 hentaihaven.xxx##[src*="/widgets/"]
 hentaihaven.xxx,androidsis.com,postincome.co.kr,gamingdeputy.com##.code-block
-hentaipaw.com##.flex.container
+hentaipaw.com,eromanga-samurai.xyz,hentai-one.com,eromanga-show.com##.flex.container
 hentaipaw.com,hentai-one.com,eromanga-samurai.xyz##[href^='https://ero-anime.website/anime']
 herotime.co.kr###mCafe24AppInstall
 hiver.co.kr##.modal-open.appDownloadModal.modal-wrap.bottom-modal
@@ -190,6 +192,7 @@ jmagazine.joins.com##.side_banner
 joongang.co.kr##.goto-app-notice.bg_yellow.letter_wrap
 journalist.or.kr##div.p_space
 khan.co.kr###bnNewsletter
+khan.co.kr##.ad_new.art_btm_text.ad_cont.view_sec_wrap
 kmib.co.kr##.mtxt02
 kormedi.com##div[class='subscr-btn-box']
 kpanews.co.kr##.admbt_close.view-m.botm.ad_mobile
@@ -252,7 +255,7 @@ news1.kr###articleBodyContent > div.mb-20
 news1.kr###articleBodyContent > div:nth-of-type(3)
 news1.kr##.gx-0.mt-10.col-lg-10 > div.mb-10
 news1.kr##.mb-20.article-related
-news1.kr,edition.cnn.com,lotteon.com##[class^='ad']
+news1.kr,edition.cnn.com,lotteon.com,zum.com##[class^='ad']
 newspic.kr###bottom-bar
 newspic.kr##.visible.main_popup_wrap
 njavtv.com,missav.com##.lg\:hidden
@@ -265,7 +268,6 @@ paxnet.co.kr##.kakao-login-top
 pay.ssg.com##[id^='campBanrUrl_']
 pixiv.net##.t_overray_combined.overlay
 pixiv.net##[href*='privacy_policy.html']:upward(3)
-pixiv.net##[id^='adsdk']
 place.naver.com##.place_section.lazyload-wrapper
 posty.kr##[class*='Tooltip']
 posty.kr##[class^='AppDownloadBanner_root__']
@@ -290,7 +292,6 @@ reddit.com,shopping.naver.com,m.abcmart.a-rt.com,m.cafe.naver.com,m.11st.co.kr##
 redsun*.me##[src*="/ad"]
 reuters.com##[class^='leaderboard__container__']
 reuters.com##div[class^='ad-slot__container__']
-ruliweb.com##.app_install
 salgoonews.com##[id^='recommend_btn']
 sciencetimes.co.kr##.type_02.tit_wrap
 search.daum.net###n0nlColl
@@ -324,8 +325,6 @@ sportbible.com##[class^='floating-video-player_container__']
 sportbible.com##div[class^='advert-placeholder_advertPlaceholder____']
 star.ohmynews.com##.arc-bottom-wrap > div:nth-of-type(4)
 talk.op.gg###opgg-kit-sash-banner
-tamchart.com###adsModooFeeds
-tamchart.com##[id^='adElement-']
 text-compare.com###navigation > span:nth-of-type(3)
 text-compare.com##.mainContent > span:nth-of-type(2)
 theguru.co.kr##.con_primary > div > hr.spc
@@ -347,7 +346,6 @@ washingtonpost.com###slug_fixedBottom
 washingtonpost.com##[class*='removeAllStyles-true'] > div:last-child
 washingtonpost.com##[id^='osn-']
 washingtonpost.com##[id^='paywall-']
-weekly.khan.co.kr###adBottom
 xhamster*.com,xhamster.com###player-sponsor-link
 xhamster*.com,xhamster.com##.clipstore-results
 xhamster*.com,xhamster.com##.fixed-height
@@ -360,7 +358,6 @@ xhamster*.com,xhamster.com##[class*='premium-n-overlay']
 xhamster*.com,xhamster.com##aside:nth-of-type(2)
 xhamster*.com,xhamster.com##div[class*='cookiesAnnounce-']
 xhamster*.com,xhamster.com,lawtimes.co.kr##[href*='utm_source']
-xvideos.com##.remove-ads
 xvideos.com##.thumb-inside:has-text(AD)
 yachuk.com##.not_cookie
 yagong*.com##a.sm\:w-1\/4.p-0\.5.w-1\/2
@@ -458,7 +455,6 @@ yna.co.kr,ytn.co.kr##div.bx_ad
 ##._gdpr-notify-header
 ##.alert_windows
 ##.app-banner-layer
-##.app-install-wrapper
 ##.bblocktop
 ##.bn_wrap
 ##.box__banner--ad-top
@@ -478,7 +474,7 @@ yna.co.kr,ytn.co.kr##div.bx_ad
 ##.top_ad
 ##[class^='ad-box']
 ##[class^='juicyads']
-##[href^="//ipns.kr/"]
+##[href*="//ipns.kr/"]
 ##[src*="/bannerpop/"]
 ##[src*="coupangcdn.com/"]
 ##[src*='yanovideos.com/banners/']
@@ -507,7 +503,6 @@ $removeparam=t,domain=duckduckgo.com
 11toon*.com##[href^="http://"]:not([href*='bbs']) > .homelist-thumb
 19damoa.org###SITE_HEADER
 19damoa.org###SITE_HEADER-placeholder
-29cm.co.kr##.app-install-layer-wrapper
 29cm.co.kr##[href^="https://29cm.onelink.me/"]
 4kjav.co###adde_modal-modal
 4kjav.co###adde_modal-overlay
@@ -559,7 +554,6 @@ academy.prompie.com##.show.fade.modal-backdrop
 aclsports.com##.mfp-content
 aclsports.com##.mfp-ready.site-access-popup.popup-animation.mfp-bg
 aclsports.com,doctornow.co.kr,adidas.co.kr,amoremall.com,pornhub.com,moeni.net,soldout.co.kr,mm.munpia.com,m.kinolights.com##body,html:style(overflow:auto!important)
-addplus.tistory.com###ads-flutter-footer
 adidas.co.kr##[class^='_app-banner_']
 adsenseforum2.co.kr##[src^="/skin/"]
 aistudio.google.com##.ng-star-inserted.gmat-label-large.banner-container
@@ -595,13 +589,11 @@ arca.live##.spoiler-alert-content
 asmhentai.com##.atop
 asmr-labo.com###content-bottom
 asmr-labo.com###content-top
-av19.gg##.sidebar-ads
 av19.gg##div#banner
 bareunnutri.com##.mb_ver.ss_ad_center
 bigkinds.or.kr##.ft-banner
 bing.com###scroll_cont
 bing.com###vs_cont
-biz.newdaily.co.kr##[class$='_ad']
 blog.fc2.com###wrapper > div:nth-of-type(4)
 blog.fc2.com#@#.ad_footer
 blog.naver.com##.layer_app
@@ -653,7 +645,6 @@ croket.co.kr##.popup-full
 crwlnoti.shop,fallcent.com,geniealert.co.kr,alltimeprice.com,coupang.com,danawa.com,shopping.naver.com#@#[src*="coupangcdn.com/"]
 cvsnet.co.kr##.dimdBg
 cvsnet.co.kr##div.mainPop
-daedamo.com###ad_banner_bbs_view_bottom
 daedamo.com###doctail
 daedamo.com##.index_blackfore_contents
 daedamo.com##.index_main_banner
@@ -798,7 +789,7 @@ joongang.co.kr##.login_proposal.plotting_banner
 journalist.or.kr###container > div:nth-of-type(6)
 junyongblog.com##div.jetpack-subscribe-modal
 kbs.co.kr##.btn-chat
-khan.co.kr##.wrap_bnr_shortcut
+khan.co.kr##[class^='wrap_bnr']
 kin.naver.com##[id$='endImprovementEvent']
 kin.naver.com##div.popup.layer_promotion_badgePromotion._layer
 kinolights.com##.modal-bg
@@ -865,7 +856,7 @@ m.youtube.com##ytm-pivot-bar-item-renderer:nth-of-type(2)
 m.zum.com###layer
 maxmovie.com##.adBase.adMobile
 maxmovie.com##[class^='mainNewsPage__TopCenterAdBox']
-mbiz.heraldcorp.com,kwonsaw.tistory.com##center
+mbiz.heraldcorp.com,kwonsaw.tistory.com,av19.gg##center
 mbn.co.kr###mbn_app_dwn
 mbn.co.kr##section.sec_ban
 mbook.interpark.com###intro_popup
@@ -909,7 +900,6 @@ muko.kr##div.xe-widget-wrapper > div > div > .adsense
 musinsa.com###footerCommonLayout
 musinsa.com##div > div > div:has-text(무신사 앱)
 musinsa.com##div > div > div:has-text(앱 열기)
-mydaily.co.kr##[id^='ad_popup']
 namu.news##.grecaptcha-badge
 namu.news##[id^="article-"]
 namu.news##[id^="sidebar-"]
@@ -1099,7 +1089,6 @@ topstarnews.net##.show-prompt.sp-pos-left.sp-native-popover.sp-prompt
 torrentqq*.com##.at-main.at-col.col-md-9 > .header.at-banner.at-row.row
 torrentsome*.com##.px-2.gap-2.md\:grid-cols-2.grid-cols-1.grid
 tvmon*.org##[class^='break-mobile']
-unlimited.waifu2x.net###ads
 uwayapply.com##.bx-viewport
 v.daum.net##ins[data-ad-unit]
 video.fc2.com##.MemberPush_freeArea
@@ -1147,7 +1136,6 @@ yozm.wishket.com##.type-b.news-letter-guide-section
 ypbooks.co.kr##.display_block.modal_box
 yuhanshop.co.kr###dtr_bn
 zpat.info##.w3-grey.w3-center.w3-container
-zum.com##.adxv_container
 zum.com##.area-bottom
 zum.com##.show.btn-app-go
 ||accounts.google.com/gsi/
