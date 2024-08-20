@@ -1,5 +1,5 @@
 ! Title: mylist
-! Version: 1.238x
+! Version: 1.238y
 ! Description: my adblock rules
 
 
@@ -232,7 +232,7 @@ mpharm.edaily.co.kr##dl
 mrjav.net###player-advertising
 n.news.naver.com##.comment_follow_tutorial_layer
 namu.wiki,~en.namu.wiki,~board.namu.wiki##*:not(p) > [href]:has-text(.):upward(5):has([src$='.png']):upward(2):has-text(파워링크):not([class]:has([id]))
-namu.wiki,~en.namu.wiki,~board.namu.wiki##[class]:empty:not(div):not([src]):not([href]):upward(3):has([href]:has-text(.))
+namu.wiki,~en.namu.wiki,~board.namu.wiki##[class]:empty:not(div):not([src]):not([href]):upward(3):has([href]:has-text(.)):not([class]:has(path))
 namu.wiki,~en.namu.wiki,~board.namu.wiki##[href]:has-text(.):not([href*='#']):not([href*='license']):upward(4):not([id]):has-text(파워링크):not([class]:has(tbody))
 namu.wiki,~en.namu.wiki,~board.namu.wiki##[href]:has-text(광고등록):upward(4)
 namu.wiki,~en.namu.wiki,~board.namu.wiki##div > [class]:not([class]:has([id])):has([src$='.png']):has-text(.):not([class]:has(dt)):not([class]:has(p)):not([class]:has(tbody)):not([class]:has(time)):not([class]:has(textarea)):not([class]:has([href*='acl']))
