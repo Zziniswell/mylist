@@ -1,17 +1,22 @@
 ! Title: mylist
-! Version: 1.240
+! Version: 1.241
 ! Description: my adblock rules
 
 
-! @@id=relay$extension="Direct ppomppu"
+@@id=relay$extension="Direct ppomppu"
 ###fixed_ad
+###go_top
 ###recommended-content-container
 ##.ad_box
 ##.ad_footer
 ##.ads
+##.btn-top
 ##.btn_top
 ##.go-top
 ##.mobile-padding
+##.move_top
+##.moveback
+##.movetop
 ##.scroll-to-top
 ##.videoads
 ##[class^='app_install']
@@ -83,6 +88,7 @@ blog.naver.com##[class^='end_feed_division__']
 blog.naver.com##[class^='mydrawer_banner__']
 blog.naver.com##[id^='BANNER_']
 bntnews.co.kr##.banner.box
+bntnews.co.kr##.logo_round
 bntnews.co.kr##div.googleBanner > div
 bosik.kr##[id^='AD']
 brunch.co.kr##.img_bnr
@@ -181,6 +187,9 @@ humors.zigcou.com##.justify-center.flex > .w-full
 humors.zigcou.com##button.rounded-full
 humoruniv.com###naver_adpost_wrap_fix
 imgur.com##.fast-grid-ad.novote.Post-item
+inews24.com##.inactive.goto
+inews24.com##.inews-subscribe
+inews24.com##.naver
 instiz.net##.list_foot
 instiz.net##.view_top
 isplus.com##.ed_title
@@ -197,6 +206,7 @@ kmib.co.kr##.mtxt02
 kormedi.com##div[class='subscr-btn-box']
 kpanews.co.kr##.admbt_close.view-m.main.ad_mobile
 kwangdongmart.com###marketingFirstAgreePopup
+kwnews.co.kr##.wcms_bestnews > ul
 kyeongin.com##[src^="images/mobile_banner.jpg"]
 laftel.*##.root_modal
 lawtalk.co.kr##.normal-answer-preview__wrap
@@ -249,6 +259,7 @@ nate.com##.shopBox
 nationalgeographic.com##[class$='__AdWrap']
 nationalgeographic.com##div.natgeo-ad
 naver.com##[class*='appShortcut']
+naver.com##button:has-text(앱 다운로드)
 naver.com,soldout.co.kr,skstoa.com,kinolights.com##[class*='tooltip']
 news.naver.com###_MODAL_LAYER_FOR_UNSUBSCRIBER_PROMOTION_SERIES
 news.naver.com##._PERSIST_META._OFFICE_HEADLINE._FLICKING_WRAP.optional_hidden.as_type_border.rankingnews
@@ -263,23 +274,30 @@ news1.kr###articleBodyContent > div:nth-of-type(3)
 news1.kr##.gx-0.mt-10.col-lg-10 > div.mb-10
 news1.kr##.mb-20.article-related
 news1.kr,edition.cnn.com,lotteon.com,zum.com,paxnet.co.kr##[class^='ad']
+newsmin.co.kr##.custom-html-widget.textwidget
+newsmin.co.kr##.td-fix-index
 newspic.kr###bottom-bar
 newspic.kr##.visible.main_popup_wrap
 newspim.com###short_mundan_banner > div
 newspim.com##.aitrade:upward(1)
 newspim.com##.banbox_top
-newspim.com##.bodyview > div:nth-of-type(4) > div
+newspim.com##.bodyview > div:nth-of-type(4)
 newspim.com##p > div
+newstong.co.kr###tomatoMobile
 njavtv.com,missav.com##.lg\:hidden
 njavtv.com,missav.com##.mb-5.space-y-5
 njavtv.com,missav.com##.root--ujvuu
+ohmynews.com##.arrow_lt_w.icon.popular.moreatc
 ohmynews.com##.banner_area
+ohmynews.com##.ch
 ohou.se##.production-selling-overview__promotion-banner
 ohou.se##div > div > div[class]:has-text(모바일 웹으로 볼래요):upward(1)
 okmall.com##[id^='notice_']
 onefootball.com##div[class*='googleAdsPlaceholder']
+orders.pay.naver.com##div[class^='PanelWrapper_area-panel_']
 ottogimall.co.kr###ch-plugin
 paxnet.co.kr##.kakao-login-top
+pay.naver.com##[class^='BottomAds_article__']
 pay.naver.com##div[class*="AdBanner"]
 pay.ssg.com##[id^='campBanrUrl_']
 pixiv.net##.t_overray_combined.overlay
@@ -418,6 +436,7 @@ yna.co.kr,ytn.co.kr##div.bx_ad
 ||fnnews.com/static/fnnews/logMo
 ||google.*^$app=com.wooricard.smartapp
 ||graph.facebook.com^$important,app=com.hpapp
+||img1a.coupangcdn.com^$app=viva.republica.toss
 ||impracticalsmell.com^
 ||jasoseol.com/etc/analytics_log.json
 ||kcl.kakao.com/log
@@ -448,6 +467,7 @@ yna.co.kr,ytn.co.kr##div.bx_ad
 ||weblog.wooricard.com^
 ||wiselog.*^
 ||wlg.shinhancard.com^$important
+||www.newsmin.co.kr/news/wp-content/uploads/*/donate.png
 ! for namu.wiki
 $generichide,removeparam=from,domain=namu.wiki
 @@$extension=~"NamuLink"|~"Namu Hot Now"|~"F11 for FullScreen"|~"Toggle Fullscreen Button For Mobile Browsers"|~"Fullscreen Button"|~"Disable WebGL API"|~"QuickSearch"|~"Console for mobile browsers - eruda",domain=namu.wiki|~board.namu.wiki|~en.namu.wiki
@@ -799,8 +819,6 @@ imgur.com##.SmartAppBanner-wrapper
 imgur.com##[id^='Col-Child-OUTBRAIN']
 imweb.me##.shop-banner._shop_banner.shop_banner.text-center
 indeed.com###passport-frontendclient-overlay
-inews24.com##.inews-view > div:first-child
-inews24.com##.news-share
 innisfree.com##.mainSlidePop.mainPopup
 innisfree.com##.txtBanner.docTopBanner
 instiz.net###out_enter
@@ -833,7 +851,6 @@ kokstock.com###kokstock-news-box
 kookje.co.kr###con_text > div
 kream.co.kr###modal-layer
 kream.co.kr,academy.prompie.com,11st.co.kr##[class*='app-down']
-kwnews.co.kr##[src^="/upload/"]
 lamire.jp##.padding.xz-section
 lawandgood.com###modal > div
 lawtalk.co.kr##.opened.bottom-sheet-wrap > .with-mobile-bottom-tab.bottom-sheet
@@ -947,12 +964,8 @@ news.nate.com##[id^='viewAppPop_']
 news.zum.com###banner_app_view
 news.zum.com###bottom_shopping_box
 newsmin.co.kr##.td-fix-index > p
-newsmin.co.kr##.td-main-sidebar.td-pb-span4
-newsmin.co.kr##[src^="https://www.newsmin.co.kr/news/wp-content/uploads/"]
 newsmin.co.kr##div.korea-sns
 newspim.com##.banbox
-newstong.co.kr###app_newstong
-newstong.co.kr##[id^="ContentPlaceHolder1_"]
 nocutnews.co.kr###naver_banner
 nocutnews.co.kr##.slick-dotted.slick-slider.slick-initialized.nc_swipe
 nocutnews.co.kr##.swiper-container-horizontal.ban_swiper
@@ -973,9 +986,7 @@ pann.nate.com##.eventBnBox
 pastebin.com##.content > div:nth-of-type(1)
 pastebin.com##.content > div:nth-of-type(4)
 pastebin.com##.popup-container
-pay.naver.com##._aitems_container._aitemsInfos_index_0._shopping_aitems.shopping_section
 pay.naver.com##[class*="ADRewardGladBanner_article_"]
-pay.naver.com##[class*="Footer-module_inner__"]
 pay.naver.com##[class*="SmartChannel_article__"]
 pcc.siren24.com##.bn
 picrew.me##.is_open.st-Terms_Wrapper
@@ -1034,8 +1045,6 @@ shooshtime.com##.sponsor
 shopping.naver.com##.mister
 shopping.naver.com##.plusdeal
 shopping.naver.com##[class*="popupBanner"]
-shopping.naver.com##[class^='_footer_information_area_']
-shopping.naver.com##[class^='_footer_shortcut_area_']
 shopping.naver.com##[id$="DynamicAd"]
 shopping.naver.com##div[class*="fashionTownResponsive_fashion_town_responsive__"]
 shopping.naver.com##div[class*="loadingBar_responsive_loading_bar__"]
