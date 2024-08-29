@@ -1,8 +1,21 @@
 ! Title: mylist
-! Version: 1.243
+! Version: 1.244
 ! Description: my adblock rules
 
 
+@@||cliimage.commutil.kr/phpwas/$image
+adguard.com##.flash-wrapper-wrap
+hasha.in#%#//scriptlet('prevent-fetch', 'js.wpadmngr.com')
+hasha.in#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
+klauncher.kr#%#//scriptlet('prevent-fetch', 'adservice.google.com')
+lawissue.co.kr##.wrap > *:not([class]):not(div:nth-of-type(4))
+maxmovie.com#%#//scriptlet('prevent-xhr', 'mtag.mman.kr')
+maxmovie.com#%#//scriptlet('prevent-xhr', 'static.dable.io')
+paxnet.co.kr##.dv-com-m02
+paxnet.co.kr##.m-tag-banner
+pping.kr##.swiper-slide-active.swiper-slide > div:first-child
+smile.hanjin.co.kr##[src^="images/promotion.png"]
+yna.co.kr#%#//scriptlet('prevent-fetch', 'scr.nsmartad.com')
 ! perforation line_1
 ! @@$removeparam,domain=aliexpress.com|lotteon.com|yes24.com|gmarket.co.kr|auction.co.kr|coupang.com|11st.co.kr
 ! @@$removeparam,domain=ssg.com|kyobobook.co.kr|gsshop.com|apple.com|aladin.co.kr|akmall.com|agoda.com|cjthemarket.com|interpark.com|e-himart.co.kr|homeplus.co.kr
@@ -10,15 +23,8 @@
 ! @@$stealth=ip,domain=dasibogo.net|mrjav.net|dprime.kr|halfclub.com|twinmotion.com|whooing.com|vivaldi.net|bloomberg.org
 ! @@$stealth=ip,domain=getunicorn.app|hasha.in|dcinside.com|epicgames.com|missav.com|suto.co.kr|kbcard.com|ssg.com
 ! @@$stealth=ip,domain=kbs.co.kr|sbs.co.kr
-! namu.wiki,~en.namu.wiki,~board.namu.wiki##[href]:has-text(.):not([href*='#']):not([target]):not([id]):upward(9):has([src$='.png']):not([class]:has(svg)):not([class]:has(tbody)):not([class]:has([src$='.svg'])):not(div:only-child):not([class]:has([id]))
-###ad_body
-###adhere
-###appInstallPopupContainer
 ###backToTop
-###bnr_float
-###bottom_ad_box
 ###cookie-exitlag
-###coupangCmm
 ###dclm_modal_content
 ###dclm_modal_screen
 ###fixed_ad
@@ -30,29 +36,22 @@
 ###main_popup
 ###mdnw-appInstallPopup-container
 ###news-ticker
-###newsview_promotion_banner
 ###onetrust-consent-sdk
 ###recommended-content-container
-###rollingAdDiv
-##.AppInstallBanner
 ##._gdpr-notify-header
 ##.ad_box
 ##.ad_footer
 ##.ads
-##.alert_windows
 ##.bblocktop
 ##.bn_wrap
 ##.box__banner--ad-top
 ##.btn-top
 ##.btn_top
 ##.custom_banner_wrap
-##.dmm-games
 ##.floating_banner
 ##.go-top
 ##.grbLayer.grbDim
 ##.id_tour.grid_m
-##.login_banner
-##.m-advert-wrap.wrap
 ##.mobile-padding
 ##.mobile_ad
 ##.move_top
@@ -63,7 +62,6 @@
 ##.sns-share
 ##.sns_area
 ##.story_banner
-##.subscription_fee
 ##.top_ad
 ##.videoads
 ##[class^='ad-box']
@@ -144,9 +142,7 @@ $removeparam=t,domain=duckduckgo.com
 @@/code$extension="Embed Me!"
 @@id=relay$extension="Direct ppomppu"
 @@||ad-img.gmarket.com^
-@@||ad.pping.kr^$domain=pping.kr
 @@||adtouch.adbrix.io^$app=com.kakao.talk
-@@||advimg.ad-mapps.com^$domain=maxmovie.com
 @@||adxv.zum.com/view/$domain=hub.zum.com
 @@||aliexpress.*^$cookie=/^_ga_/
 @@||api.buzzvil.com^
@@ -172,7 +168,6 @@ $removeparam=t,domain=duckduckgo.com
 @@||img.hellocdn*.net^$stealth=referrer
 @@||jasoseol.onelink.me^
 @@||kiwibrowser.com^$stealth=dpi
-@@||mtag.mman.kr^$domain=maxmovie.com,important
 @@||oauth.telegram.org^
 @@||ourhome.co.kr^$stealth=dpi
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=apkmirror.com|devliberty.blogspot.com
@@ -182,7 +177,6 @@ $removeparam=t,domain=duckduckgo.com
 @@||sdk.privacy-center.org^$domain=france24.com
 @@||smartmediarep.com^$media,domain=donga.com|~mlbpark.donga.com
 @@||ssl.pstatic.net/tveta/libs/$script,domain=nid.naver.com
-@@||ssp.meba.kr^$domain=maxmovie.com
 @@||static.airbridge.io/sdk^
 @@||t1.daumcdn.net/kas/static/kp.js$script,domain=h2mall.net
 a-bly.com##.app-persuade-drawer.drawer
@@ -1063,12 +1057,11 @@ zum.com##.show.btn-app-go
 ||abc-ssl.seetoc.com/logging/log
 ||accounts.google.com/gsi/
 ||ad.daum.net^$important,app=mok.android
-||ad.pping.kr^
 ||adapi.inlcorp.com^
 ||adconsent.samsungrs.com^
 ||adcr.naver.com^
 ||adddn.adotsolution.com^
-||addthis.com^$3p
+||addthis.com^
 ||adgirl.yes24.com^
 ||adpopcorn.com^$important,app=com.hpapp
 ||ads-mytheresa-new.*.amazonaws.com^
@@ -1076,7 +1069,7 @@ zum.com##.show.btn-app-go
 ||adservice.google.com^
 ||adtouch.adbrix.io^
 ||advertads.*.com^
-||advimg.ad-mapps.com^$domain=~maxmovie.com
+||advimg.ad-mapps.com^
 ||aedi.ai^
 ||aem-finance-collector.onkakao.net^$important
 ||amplitude.com^$important
@@ -1192,7 +1185,6 @@ zum.com##.show.btn-app-go
 ||ic3.events.data.microsoft.com^
 ||id.abr.ge/api/v2/third-party-cookie/
 ||id.google.com^
-||img1a.coupangcdn.com^$app=viva.republica.toss
 ||impracticalsmell.com^
 ||instagram.com/ajax/bz
 ||instagram.com/api/*/stories/reel/seen
