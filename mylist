@@ -1,16 +1,26 @@
 ! Title: mylist
-! Version: 1.244
+! Version: 1.244x
 ! Description: my adblock rules
 
 
+###id_mbv
+###main-banner-view > div:first-child
+##.alert_windows
+##.clearfix > li:has(> *:has-text(보증토토))
+##.m-advert-wrap.wrap
+##.mobile-padding
+##[src*="//a.magsrv.com/"]
+@@||client-rapi-missav.recombee.com^
 @@||cliimage.commutil.kr/phpwas/$image
 adguard.com##.flash-wrapper-wrap
 hasha.in#%#//scriptlet('prevent-fetch', 'js.wpadmngr.com')
 hasha.in#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
 klauncher.kr#%#//scriptlet('prevent-fetch', 'adservice.google.com')
 lawissue.co.kr##.wrap > *:not([class]):not(div:nth-of-type(4))
+manatoki*.net###id_mbv
 maxmovie.com#%#//scriptlet('prevent-xhr', 'mtag.mman.kr')
 maxmovie.com#%#//scriptlet('prevent-xhr', 'static.dable.io')
+newtoki*.com###main-banner-view > div:first-child
 paxnet.co.kr##.dv-com-m02
 paxnet.co.kr##.m-tag-banner
 pping.kr##.swiper-slide-active.swiper-slide > div:first-child
@@ -227,7 +237,7 @@ arca.live##.mt-4.user-activites
 arca.live##.spoiler-alert-content
 arca.live#@?#.topbar-area:has(> .badge:contains(뉴스))
 asmhentai.com##.atop
-asmhentai.com,*##[src*="//a.magsrv.com/"]
+asmhentai.com##[src*="//a.magsrv.com/"]
 asmr-labo.com###content-bottom
 asmr-labo.com###content-top
 av19.gg###bo_v_top
@@ -303,7 +313,7 @@ comic.naver.com##[src*="/contents_banner_"]
 community.samsung.com##.lia-quilt-row-footer.lia-quilt-row
 community.samsung.com##.ui-widget-content.ui-widget.ui-dialog
 contents.premium.naver.com###_MP_LAYER > .bottom_layer_wrap
-cookmana*.com,*##.m-advert-wrap.wrap
+cookmana*.com##.m-advert-wrap.wrap
 coolenjoy.net###bo_list > .d-sm-none.d-block
 coolenjoy.net##.carousel-inner
 coupang.com###MWEB_PRODUCT_DETAIL_ITEM_MID_BANNER
@@ -973,7 +983,7 @@ torrentpi*.com##.img-wrap:not([class]:has([src*='data/editor']))
 tvdaily.co.kr##div#news_content:not(*:has([class]))
 tvmon*.org##.banner_wrap2
 tvmon*.org##[class^='break-mobile']
-tvmon*.org,*##.mobile-padding
+tvmon*.org##.mobile-padding
 tvreport.co.kr##.internal-widget
 typemoon.net##.ebs-comm001-m1-in
 uwayapply.com##.bx-viewport
@@ -1268,7 +1278,7 @@ zum.com##.show.btn-app-go
 ||scdn.co/*/js/gtm
 ||scdn.co/static/js/baba.js$script,domain=spotify.com
 ||scorecardresearch.com^
-||scr.nsmartad.com^$domain=~yna.co.kr
+||scr.nsmartad.com^
 ||scv-game.io.naver.com/jackpotlog/
 ||sektoon*.org/imgs/*.gif
 ||sentry.kroffle.net^
