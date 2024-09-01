@@ -1,5 +1,5 @@
 ! Title: mylist
-! Version: 1.245x
+! Version: 1.245y
 ! Description: my adblock rules
 
 
@@ -60,10 +60,6 @@ yna.co.kr#%#//scriptlet('prevent-fetch', 'scr.nsmartad.com')
 ||sentry-apollo-fe.naver.com^
 ||setting-logncrash.cloud.toast.com^
 ! perforation line_1
-!#if (adguard_app_android)
-@@||google.*/search$stealth=useragent
-@@$stealth=useragent,domain=www.youtube.com
-!#endif
 ! @@$removeparam,domain=aliexpress.com|lotteon.com|yes24.com|gmarket.co.kr|auction.co.kr|coupang.com|11st.co.kr
 ! @@$removeparam,domain=ssg.com|kyobobook.co.kr|gsshop.com|apple.com|aladin.co.kr|akmall.com|agoda.com|cjthemarket.com|interpark.com|e-himart.co.kr|homeplus.co.kr
 ! @@$stealth=ip,domain=123123play.com|damoang.net|fortnite.com|innisfree.com|mania.kr|arca.live|bitwarden.com|amoremall.com|unrealengine.com
