@@ -1,5 +1,5 @@
 ! Title: mylist
-! Version: 1.246
+! Version: 1.247
 ! Description: my adblock rules
 
 
@@ -7,8 +7,8 @@
 ###main-banner-view > div:first-child
 ##.alert_windows
 ##.m-advert-wrap.wrap
-##.mobile-padding
 ##[src*="//a.magsrv.com/"]
+@@$extension="스크롤바(改)"|"Scroll to top (改)",app=com.sec.android.app.sbrowser|com.naver.whale|com.mycompany.app.soulbrowser|com.opera.browser
 @@$stealth=useragent,domain=hasha.in
 @@||api2.branch.io^$app=com.reddit.frontpage|com.spotify.music
 @@||app.adjust.world^$app=com.spotify.music
@@ -32,6 +32,7 @@ cokeplay.cocacola.co.kr##.dimmed
 danawa.com###mdnw-main-bottomSheet-container
 danawa.com###mdnw-main-dimm
 donga.com###app_msg
+hasha.in###root > div[class]
 hrgrapevine.com###previews-reminder
 hrgrapevine.com##.cookie
 hrgrapevine.com##div.block-legend
@@ -182,7 +183,6 @@ $removeparam=t,domain=duckduckgo.com
 @@$extension="Immersive Translate - Translate Web & PDF",app=com.kiwibrowser.browser|org.mozilla.firefox|com.lemurbrowser.exts
 @@$extension="microShield",domain=ygosu.com|dogdrip.net|loawa.com|isplus.com|mlbpark.donga.com|etoday.co.kr
 @@$extension="상단/하단으로 스크롤"|"Fullscreen Button"|"Overlay original image size on hover on all websites",domain=m.comic.naver.com|lezhin.com|toomics.com|toptoon.com|webtoon.kakao.com|page.kakao.com|novelpia.com|munpia.com
-@@$extension="스크롤바"|"Scroll to top",app=com.sec.android.app.sbrowser|com.naver.whale|com.mycompany.app.soulbrowser|com.opera.browser
 @@$extension=~"NamuLink"|~"Namu Hot Now"|~"F11 for FullScreen"|~"Toggle Fullscreen Button For Mobile Browsers"|~"Fullscreen Button"|~"Disable WebGL API"|~"QuickSearch"|~"Console for mobile browsers - eruda",domain=namu.wiki|~board.namu.wiki|~en.namu.wiki
 @@$generichide,domain=namu.wiki
 @@$removeparam,domain=play.google.com|appsflyer.com|app.link|airbridge.io|abr.ge|click.linkprice.com
@@ -196,7 +196,7 @@ $removeparam=t,domain=duckduckgo.com
 @@/cdn-cgi/challenge-platform/$extension="Console for mobile browsers - eruda"
 @@/code$extension="Embed Me!"
 @@id=relay$extension="Direct ppomppu"
-@@||ad-img.gmarket.com^
+@@||ad-img.gmarket.com^$domain=gmarket.co.kr
 @@||adtouch.adbrix.io^$app=com.kakao.talk
 @@||adxv.zum.com/view/$domain=hub.zum.com
 @@||aliexpress.*^$cookie=/^_ga_/
