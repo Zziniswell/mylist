@@ -1,5 +1,5 @@
 ! Title: mylist
-! Version: 1.247
+! Version: 1.248
 ! Description: my adblock rules
 
 
@@ -27,8 +27,6 @@
 adguard.com##.flash-wrapper-wrap
 auction.co.kr##.vip-togetheritems
 blog.naver.com,comic.naver.com##[class^='banner_area']
-cokeplay.cocacola.co.kr###modal-wrap
-cokeplay.cocacola.co.kr##.dimmed
 danawa.com###mdnw-main-bottomSheet-container
 danawa.com###mdnw-main-dimm
 donga.com###app_msg
@@ -73,9 +71,8 @@ yna.co.kr#%#//scriptlet('prevent-fetch', 'scr.nsmartad.com')
 ||scv-*.io.naver.com/jackpotlog/*/logs$xmlhttprequest,redirect=noopjson
 ||sentry-apollo-fe.naver.com^
 ||setting-logncrash.cloud.toast.com^
+||xn--$doc,frame,badfilter
 ! perforation line_1
-! @@$removeparam,domain=aliexpress.com|lotteon.com|yes24.com|gmarket.co.kr|auction.co.kr|coupang.com|11st.co.kr
-! @@$removeparam,domain=ssg.com|kyobobook.co.kr|gsshop.com|apple.com|aladin.co.kr|akmall.com|agoda.com|cjthemarket.com|interpark.com|e-himart.co.kr|homeplus.co.kr
 ! @@$stealth=ip,domain=123123play.com|damoang.net|fortnite.com|innisfree.com|mania.kr|arca.live|bitwarden.com|amoremall.com|unrealengine.com
 ! @@$stealth=ip,domain=dasibogo.net|mrjav.net|dprime.kr|halfclub.com|twinmotion.com|whooing.com|vivaldi.net|bloomberg.org
 ! @@$stealth=ip,domain=getunicorn.app|hasha.in|dcinside.com|epicgames.com|missav.com|suto.co.kr|kbcard.com|ssg.com
@@ -182,7 +179,7 @@ $removeparam=t,domain=duckduckgo.com
 @@$extension="Embed Me!",domain=yande.re|imgur.com|youtube.com|github.com
 @@$extension="Immersive Translate - Translate Web & PDF",app=com.kiwibrowser.browser|org.mozilla.firefox|com.lemurbrowser.exts
 @@$extension="microShield",domain=ygosu.com|dogdrip.net|loawa.com|isplus.com|mlbpark.donga.com|etoday.co.kr
-@@$extension="상단/하단으로 스크롤"|"Fullscreen Button"|"Overlay original image size on hover on all websites",domain=m.comic.naver.com|lezhin.com|toomics.com|toptoon.com|webtoon.kakao.com|page.kakao.com|novelpia.com|munpia.com
+@@$extension="상단/하단으로 스크롤"|"Fullscreen Button"|"Overlay original image size on hover on all websites"|"스크롤바(改)",domain=m.comic.naver.com|lezhin.com|toomics.com|toptoon.com|webtoon.kakao.com|page.kakao.com|novelpia.com|munpia.com
 @@$extension=~"NamuLink"|~"Namu Hot Now"|~"F11 for FullScreen"|~"Toggle Fullscreen Button For Mobile Browsers"|~"Fullscreen Button"|~"Disable WebGL API"|~"QuickSearch"|~"Console for mobile browsers - eruda",domain=namu.wiki|~board.namu.wiki|~en.namu.wiki
 @@$generichide,domain=namu.wiki
 @@$removeparam,domain=play.google.com|appsflyer.com|app.link|airbridge.io|abr.ge|click.linkprice.com
@@ -672,7 +669,7 @@ m-sooriya.tistory.com###scrollDiv_m
 m-sooriya.tistory.com##[class$='-div']
 m-sooriya.tistory.com##div#scrollDiv_m2
 m.11st.co.kr###web2appPopup
-m.a-bly.com,newstong.co.kr,musinsa.com,megabox.co.kr,video.fc2.com,mfront.homeplus.co.kr,m.bunjang.co.kr,m.imgur.com##body,html:style(overflow:auto!important)
+m.a-bly.com,newstong.co.kr,megabox.co.kr,video.fc2.com,mfront.homeplus.co.kr,m.bunjang.co.kr,m.imgur.com##body,html:style(overflow:auto!important)
 m.abcmart.a-rt.com##.bottomLayerPopup.docker-layer-banner-box
 m.blog.naver.com##.layer_app 
 m.blog.naver.com##.popup_da_wrap
@@ -752,8 +749,6 @@ mu08.tistory.com##.kmong_btn
 muko.kr###plusad_widget_wrap
 muko.kr##.adsense
 musinsa.com###footerCommonLayout
-musinsa.com##div > div > div:has-text(무신사 앱)
-musinsa.com##div > div > div:has-text(앱 열기)
 n.news.naver.com###_MODAL_LAYER_FOR_UNSUBSCRIBER_PROMOTION_JOURNALIST
 n.news.naver.com##.comment_follow_tutorial_layer
 namu.news##.grecaptcha-badge
