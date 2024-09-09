@@ -1,13 +1,16 @@
 ! Title: mylist
-! Version: 1.248
+! Version: 1.249
 ! Description: my adblock rules
 
 
 ###id_mbv
 ###main-banner-view > div:first-child
 ##.alert_windows
+##.clearfix > li:has(> *:has-text(보증토토))
 ##.m-advert-wrap.wrap
+##[href*="//v.daum.net/channel/21/home"]
 ##[src*="//a.magsrv.com/"]
+@@$extension="Toggle Fullscreen Button For Mobile Browsers",domain=m.dcinside.com
 @@$extension="스크롤바(改)"|"Scroll to top (改)",app=com.sec.android.app.sbrowser|com.naver.whale|com.mycompany.app.soulbrowser|com.opera.browser
 @@$stealth=useragent,domain=hasha.in
 @@||api2.branch.io^$app=com.reddit.frontpage|com.spotify.music
@@ -15,7 +18,7 @@
 @@||booktoki*.com^$stealth=useragent
 @@||buzzvil.com^$app=com.nhnent.payapp
 @@||client-rapi-missav.recombee.com^
-@@||cliimage.commutil.kr/phpwas/$image
+@@||commutil.kr/phpwas/$image
 @@||d3aulf22blzf9p.cloudfront.net^$app=com.deaguowl.fallcent
 @@||google-analytics.com/analytics.js$domain=uniqlo.com
 @@||google-analytics.com/gtm/js^$domain=uniqlo.com
@@ -23,13 +26,18 @@
 @@||metrics.us.playstation.com/b/ss/
 @@||microsoft.com^$cookie=MUIDB
 @@||newtoki*.com^$stealth=useragent
+@@||onelink.me^$popup,doc
 @@||stacksocial.com^$cookie=ajs_anonymous_id
 adguard.com##.flash-wrapper-wrap
 auction.co.kr##.vip-togetheritems
 blog.naver.com,comic.naver.com##[class^='banner_area']
 danawa.com###mdnw-main-bottomSheet-container
 danawa.com###mdnw-main-dimm
+daum.net#@#[href*="//v.daum.net/channel/21/home"]
 donga.com###app_msg
+github.com#%#//scriptlet('href-sanitizer', 'a[href^="https://adguardteam.github.io/AnonymousRedirect/redirect.html"]')
+google.*,google.com,google.co.kr###rso > div[class]:has-text(€):has-text(5.0):has(span):has(svg):not([id])
+google.*,google.com,google.co.kr##[id^=arc-srp] > div > div[class]:has-text(€):has-text(5.0)
 hasha.in###root > div[class]
 hrgrapevine.com###previews-reminder
 hrgrapevine.com##.cookie
@@ -40,14 +48,18 @@ ign.com##.tp-container-inner
 jtbc.co.kr##[id$='AD']
 kin.naver.com###eventPopupLayerNJob
 kin.naver.com##.expertRecommend
-kmib.co.kr##[id^='ad']
+kmib.co.kr,ajunews.com##[id^='ad']
 lawissue.co.kr##.wrap > *:not([class]):not(div:nth-of-type(4))
+m.inven.co.kr###invenAppSuggestion
 manatoki*.net###id_mbv
 maxmovie.com#%#//scriptlet('prevent-xhr', 'mtag.mman.kr')
+medium.com##div > div > div > div > div[class]:has-text(Sign up to discover human stories that deepen your understanding of the world.)
 mitem.gmarket.co.kr###smileFreshBtContainer
 mitem.gmarket.co.kr###smileFreshVtContainer
 mitem.gmarket.co.kr##.box__share-message
 mnews.sbs.co.kr##.bnr_list
+mobile.newsis.com##[class^='ifrm']:upward(1)
+newsis.com##.section6.cont
 newtoki*.com###main-banner-view > div:first-child
 novelpia.com##.plus-free-img-floating.plus-free-img
 ohmynews.com##.slide_bnbox:upward(3)
@@ -66,7 +78,9 @@ shopping.naver.com###userInformation
 shopping.naver.com##[class^='_footer_shortcut_area_']
 smile.hanjin.co.kr##[src^="images/promotion.png"]
 urbandictionary.com##div.ad-panel
+vivaldi.net#@#.btn-top
 yna.co.kr#%#//scriptlet('prevent-fetch', 'scr.nsmartad.com')
+||govkorea24.com^
 ||kimppan.com/api/user/CreateVisitLog
 ||scv-*.io.naver.com/jackpotlog/*/logs$xmlhttprequest,redirect=noopjson
 ||sentry-apollo-fe.naver.com^
@@ -186,7 +200,7 @@ $removeparam=t,domain=duckduckgo.com
 @@$removeparam,domain=smartstore.naver.com|brand.naver.com
 @@$stealth,domain=ofw.adison.co|abr.ge|airbridge.io
 @@$stealth=dpi,domain=app.link|startpage.com|kurly.com|nid.naver.com|ses.signgate.com|onelink.me
-@@$stealth=ip,domain=novelpia.com|kissjav.com|ppomppu.co.kr|claude.ai|img.pay.naver.net
+@@$stealth=ip,domain=novelpia.com|kissjav.com|ppomppu.co.kr|claude.ai|img.pay.naver.net|login.vivaldi.net
 @@$stealth=useragent,domain=chromewebstore.google.com|microsoftedge.microsoft.com|addons.mozilla.org|store.whale.naver.com|galaxystore.samsung.com
 @@$stealth=useragent,domain=video.fc2.com|kbcard.com|gmarket.co.kr|auction.co.kr|app.link|kbanknow.com|claude.ai|ppomppu.co.kr|smartstore.naver.com|brand.naver.com
 @@$stealth=webrtc,domain=moeni.net
@@ -217,13 +231,9 @@ $removeparam=t,domain=duckduckgo.com
 @@||graph.facebook.com^$domain=fmkorea.com
 @@||imasdk.googleapis.com/js/sdkloader/*.js$script,domain=ted.com|bloomberg.org
 @@||img.hellocdn*.net^$stealth=referrer
-@@||jasoseol.onelink.me^
-@@||kiwibrowser.com^$stealth=dpi
-@@||oauth.telegram.org^
 @@||ourhome.co.kr^$stealth=dpi
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=apkmirror.com|devliberty.blogspot.com
 @@||reddit.com^$removeparam=rdt,app=com.mycompany.app.soulbrowser
-@@||samsungcloud.com^$stealth=dpi
 @@||scr.nsmartad.com/admixer/$script,domain=yna.co.kr
 @@||sdk.privacy-center.org^$domain=france24.com
 @@||smartmediarep.com^$media,domain=donga.com|~mlbpark.donga.com
@@ -692,7 +702,6 @@ m.youtube.com##.rich-section-content-wrapper
 m.youtube.com##button-view-model.yt-spec-button-view-model.slim_video_action_bar_renderer_button
 m.youtube.com##ytm-pivot-bar-item-renderer:nth-of-type(2)
 m.zum.com###layer
-manatoki*.net,newtoki*.com,booktoki*.com##.clearfix > li:has(> *:has-text(보증토토))
 maxmovie.com##.adBase.adMobile
 maxmovie.com##[class^='mainNewsPage__TopCenterAdBox']
 mbiz.heraldcorp.com,kwonsaw.tistory.com,av19.gg##center
@@ -706,7 +715,7 @@ mediatoday.co.kr###anchorTop > .clearfix
 mediawatch.kr##.con_primary > div > div:nth-of-type(6)
 mediawatch.kr##[src*="/banner/"]
 mediawatch.kr##hr.skin_margin
-medium.com##div > div > div > div > div:has-text(Be part of a better internet.)
+medium.com##div > div > div > div > div[class]:has-text(Be part of a better internet.)
 megabox.co.kr###banner_content
 megabox.co.kr###banner_layer
 megabox.co.kr###pageBanner
@@ -829,7 +838,7 @@ okmall.com##.on.overlay
 okmall.com##[id^='notice_']
 oliveyoung.co.kr###curation_wrap
 oliveyoung.co.kr##section[class^='Home_band-banner__']
-oliveyoung.co.kr,yako.*,yako.pro###banner
+oliveyoung.co.kr,yako.*,yako.pro,community.brave.com###banner
 onefootball.com##div[class*='googleAdsPlaceholder']
 onlineconvertfree.com,video.fc2.com,biz.newdaily.co.kr,newstree.kr,seoul.co.kr,bntnews.co.kr##.banner
 orders.pay.naver.com##[class^='SkeletonBannerWrapper_']
