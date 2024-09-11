@@ -1,10 +1,10 @@
 ! Title: mylist
-! Version: 1.249x
+! Version: 1.249y
 ! Description: my adblock rules
 
 
-tilnote.io##.justify-between.items-center.flex.container-medium
-##li.treeview > .old:has-text(보증토토)
+! for android @@$stealth=useragent,domain=www.youtube.com|www.naver.com
+! for android @@||google.*/search$stealth=useragent
 ###id_mbv
 ###main-banner-view > div:first-child
 ##.alert_windows
@@ -12,8 +12,9 @@ tilnote.io##.justify-between.items-center.flex.container-medium
 ##.m-advert-wrap.wrap
 ##[href*="//v.daum.net/channel/21/home"]
 ##[src*="//a.magsrv.com/"]
+##li.treeview > .old:has-text(보증토토)
 @@$extension="Toggle Fullscreen Button For Mobile Browsers",domain=m.dcinside.com
-@@$extension="스크롤 바"|"Scroll to top",app=com.sec.android.app.sbrowser|com.naver.whale|com.mycompany.app.soulbrowser|com.opera.browser
+@@$extension="스크롤 바"|"스크롤 바 (Tablet)"|"Scroll to top",app=com.sec.android.app.sbrowser|com.naver.whale|com.mycompany.app.soulbrowser|com.opera.browser
 @@$stealth=useragent,domain=hasha.in
 @@||api2.branch.io^$app=com.reddit.frontpage|com.spotify.music
 @@||app.adjust.world^$app=com.spotify.music
@@ -35,6 +36,8 @@ auction.co.kr##.vip-togetheritems
 blog.naver.com,comic.naver.com##[class^='banner_area']
 danawa.com###mdnw-main-bottomSheet-container
 danawa.com###mdnw-main-dimm
+daum.net##.box_game.box_g
+daum.net##.box_shorts.box_g
 daum.net#@#[href*="//v.daum.net/channel/21/home"]
 donga.com###app_msg
 github.com#%#//scriptlet('href-sanitizer', 'a[href^="https://adguardteam.github.io/AnonymousRedirect/redirect.html"]')
@@ -52,6 +55,7 @@ kin.naver.com###eventPopupLayerNJob
 kin.naver.com##.expertRecommend
 kmib.co.kr,ajunews.com##[id^='ad']
 lawissue.co.kr##.wrap > *:not([class]):not(div:nth-of-type(4))
+m.cafe.daum.net##li.nativead-placeholder
 m.inven.co.kr###invenAppSuggestion
 manatoki*.net###id_mbv
 maxmovie.com#%#//scriptlet('prevent-xhr', 'mtag.mman.kr')
@@ -79,6 +83,7 @@ section.blog.naver.com##.register_layer
 shopping.naver.com###userInformation
 shopping.naver.com##[class^='_footer_shortcut_area_']
 smile.hanjin.co.kr##[src^="images/promotion.png"]
+tilnote.io##.justify-between.items-center.flex.container-medium
 urbandictionary.com##div.ad-panel
 vivaldi.net#@#.btn-top
 yna.co.kr#%#//scriptlet('prevent-fetch', 'scr.nsmartad.com')
@@ -110,7 +115,6 @@ yna.co.kr#%#//scriptlet('prevent-fetch', 'scr.nsmartad.com')
 ##._gdpr-notify-header
 ##.ad_box
 ##.ad_footer
-##.ads
 ##.bblocktop
 ##.bn_wrap
 ##.box__banner--ad-top
@@ -195,8 +199,7 @@ $removeparam=t,domain=duckduckgo.com
 @@$extension="Embed Me!",domain=yande.re|imgur.com|youtube.com|github.com
 @@$extension="Immersive Translate - Translate Web & PDF",app=com.kiwibrowser.browser|org.mozilla.firefox|com.lemurbrowser.exts
 @@$extension="microShield",domain=ygosu.com|dogdrip.net|loawa.com|isplus.com|mlbpark.donga.com|etoday.co.kr
-@@$extension="상단/하단으로 스크롤"|"Fullscreen Button"|"Overlay original image size on hover on all websites"|"스크롤바(改)",domain=m.comic.naver.com|lezhin.com|toomics.com|toptoon.com|webtoon.kakao.com|page.kakao.com|novelpia.com|munpia.com
-@@$extension=~"NamuLink"|~"Namu Hot Now"|~"F11 for FullScreen"|~"Toggle Fullscreen Button For Mobile Browsers"|~"Fullscreen Button"|~"Disable WebGL API"|~"QuickSearch"|~"Console for mobile browsers - eruda"|~"스크롤 바",domain=namu.wiki|~board.namu.wiki
+@@$extension=~"NamuLink"|~"Namu Hot Now"|~"Disable WebGL API"|~"QuickSearch"|~"Console for mobile browsers - eruda"|~"F11 for FullScreen"|~"Toggle Fullscreen Button For Mobile Browsers"|~"Fullscreen Button"|~"스크롤 바"|~"스크롤 바 (Tablet)",domain=namu.wiki|~board.namu.wiki
 @@$generichide,domain=namu.wiki
 ! @@$removeparam,domain=play.google.com|appsflyer.com|app.link|airbridge.io|abr.ge|click.linkprice.com|onelink.me
 @@$removeparam,domain=smartstore.naver.com|brand.naver.com
