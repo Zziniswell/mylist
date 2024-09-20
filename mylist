@@ -1,27 +1,32 @@
 ! Title: mylist
-! Version: 1.250
+! Version: 1.251
 ! Description: my adblock rules
 
 
+mybox.naver.com###guide_banner
 namu.wiki#@#div:not([class*=" "]) ~ div div + div[class]:has(> div[id][class]):not(:has(div[class*=" "] > span))
 arca.live##[href^="https://wall.smaad.net/wall/"]
-! for android @@$stealth=useragent,domain=www.youtube.com|www.naver.com
+! for android @@$stealth=useragent,domain=www.youtube.com|www.naver.com|kin.naver.com|post.naver.com|nate.com|www.oliveyoung.co.kr|www.gongyoungshop.kr
 ! for android @@||google.*/search$stealth=useragent
 ###id_mbv
 ###main-banner-view > div:first-child
 ##.alert_windows
 ##.clearfix > li:has(> *:has-text(보증토토))
 ##.m-advert-wrap.wrap
+##[class^='newsletter']
 ##[href*="//v.daum.net/channel/21/home"]
+##[id^='newsletter']
 ##[src*="//a.magsrv.com/"]
 ##[src*="//adshare.kr/"]
 ##li.treeview > .old:has-text(보증토토)
 101soundboards.com##.publift_in_content_1
+@@$extension="Auto Simya",domain=arca.live
 @@$extension="Scroll to top",app=com.sec.android.app.sbrowser|com.naver.whale|com.mycompany.app.soulbrowser|com.opera.browser
 @@$extension="Toggle Fullscreen Button For Mobile Browsers",domain=m.dcinside.com
 @@$popup,domain=arca.live
 @@$stealth=useragent,app=org.mozilla.firefox
 @@$stealth=useragent,domain=hasha.in
+@@||ads.mtgroup.kr/RealMedia/ads/adstream_sx.ads/zdnet_mobile/news@x05$xhr,domain=zdnet.co.kr
 @@||api2.branch.io^$app=com.reddit.frontpage|com.spotify.music
 @@||app.adjust.world^$app=com.spotify.music
 @@||booktoki*.com^$stealth=useragent
@@ -41,14 +46,24 @@ adguard.com##.flash-wrapper-wrap
 arca.live#%#//scriptlet('href-sanitizer', 'a[href*="unsafelink.com/"]')
 auction.co.kr##.vip-togetheritems
 blog.naver.com,comic.naver.com##[class^='banner_area']
+bntnews.co.kr##.align-center.youtubeWrap.image
+dailypharm.com###todayFocusSlider
+dailypharm.com##.N_sectionMenu:style(position:static!important;)
+dailypharm.com##.TopNav.top:style(position:static!important;)
+dailypharm.com##.container:style(padding-top: 0px !important;)
+dailypharm.com#@#.footer
 danawa.com###mdnw-main-bottomSheet-container
 danawa.com###mdnw-main-dimm
+danawa.com##.main__grid--bg.main__grid
+danawa.com##.main__inner.main-top100
 daum.net##.box_game.box_g
 daum.net##.box_shorts.box_g
 daum.net#@#[href*="//v.daum.net/channel/21/home"]
 donga.com###app_msg
 duckduckgo.com##.footer > div:nth-of-type(1)
+game.naver.com##[class^='naverAlarm_popupNaverAlarm__']
 github.com#%#//scriptlet('href-sanitizer', 'a[href^="https://adguardteam.github.io/AnonymousRedirect/redirect.html"]')
+gongyoungshop.kr###homeFloating
 google.*,google.com,google.co.kr###rso > div[class]:has-text(€):has-text(5.0):has(span):has(svg):not([id])
 google.*,google.com,google.co.kr##[id^=arc-srp] > div > div[class]:has-text(€):has-text(5.0)
 hasha.in###root > div[class]
@@ -61,7 +76,7 @@ joara.com##.mw-view-guide-wrap.view-guide-wrap
 joara.com##.popup-swiper.react-modal-sheet-container
 joara.com##.quiz-popup
 joara.com##.react-modal-sheet-backdrop
-jtbc.co.kr##[id$='AD']
+jtbc.co.kr,dailypharm.com##[id$='AD']
 kin.naver.com###eventPopupLayerNJob
 kin.naver.com##.expertRecommend
 klauncher.kr#%#//scriptlet('set-constant', '_0x3aa5', 'noopFunc')
@@ -88,7 +103,12 @@ msn.com##end-of-content-block
 muko.kr##.spoiler_warning
 muko.kr##[href^="/ad"]
 muko.kr##[src$="ad.jpg"]
+musinsa.com##.gtm-impression-content:has-text(닫기)
+musinsa.com##[class^='_dim']
 namu.wiki,~en.namu.wiki,~board.namu.wiki##[href]:has([src$='.png']):upward(4):not(*:has([id])):has-text(.)
+news.sky.com###leaderboard
+news.sky.com##.sdc-article-strapline__link
+news.sky.com##.sdc-site-au-wrapper
 newsis.com##.section6.cont
 newtoki*.com###main-banner-view > div:first-child
 novelpia.com##.plus-free-img-floating.plus-free-img
@@ -101,10 +121,12 @@ paxnet.co.kr##.m-tag-banner
 pping.kr##.swiper-slide-active.swiper-slide > div:first-child
 quora.com###root > .q-box > .q-box > div.q-box > div:has-text(Sign Up to learn more)
 ruliweb.com#%#//scriptlet('href-sanitizer', 'a[href*="bbs=1020"]')
-ruliweb.com,ppomppu.co.kr##[id$='_ad']
+ruliweb.com,ppomppu.co.kr,v.daum.net##[id$='_ad']
 search.danawa.com###dimLayer
 section.blog.naver.com##.register_layer
+shopping.naver.com###my-home-advertisement
 shopping.naver.com###userInformation
+shopping.naver.com##[class^='RecommendSection_recommend_section__']
 shopping.naver.com##[class^='_footer_shortcut_area_']
 si.com##.m-in-content-ad-row
 smile.hanjin.co.kr##[src^="images/promotion.png"]
@@ -119,6 +141,8 @@ uptodown.com##div.ad
 urbandictionary.com##div.ad-panel
 vivaldi.net#@#.btn-top
 yna.co.kr#%#//scriptlet('prevent-fetch', 'scr.nsmartad.com')
+zdnet.co.kr##.top_line
+zdnet.co.kr#@$#body > div[id^="A1_"][style*="height:"] ~ #wrap { margin-top: -1.5em !important; }
 ||govkorea24.com^
 ||js.monitor.azure.com^
 ||kimppan.com/api/user/CreateVisitLog
@@ -296,7 +320,6 @@ akmall.com##.top_fix.tab_group.week_event
 aladin.co.kr###divGoodsEventBottomLayerWrap
 aladin.co.kr##.bn_borntoread
 aladin.co.kr##.swiper-container-horizontal.event.swiper-container
-aliexpress.com###header-float-banner
 allaboutpc.co.kr##.wrap_top_bn
 altoranmarket.co.kr##.js_add_favorite
 alwayzweb.ilevit.com##div.ReactModalPortal
@@ -358,7 +381,7 @@ bobaedream.co.kr##.id-major.main-article
 bobaedream.co.kr##.id-rank.main-article
 bobaedream.co.kr##.id-service.main-article
 booktoki*.com###content_wrapper > div:nth-of-type(2)
-bosik.kr,newscribe.kr##[id^='AD']
+bosik.kr,newscribe.kr,ilyoseoul.co.kr##[id^='AD']
 brunch.co.kr##.img_bnr
 brunch.co.kr##.worth_story
 brunch.co.kr##[src^="https://t1.daumcdn.net/brunch/static/banner/"]
@@ -378,7 +401,6 @@ cafe.naver.com##[class='home_section recommend']
 cafe.naver.com##[class='home_section_promotion']
 car.encar.com##[class*="FirstBanner_dimmed_layer__"]
 car.encar.com##div[class*="DaBanner_wrap__"]
-cbsnews.com##.newsletter_signup
 cbsnews.com##[id^='mobile-flex-inc']
 chan.sankakucomplex.com##.carousel
 chosun.com##.article_img_wrap
@@ -462,7 +484,6 @@ e-rs.tistory.com###gnb
 easeus.co.kr###float_box
 easeus.co.kr##.mobile_pop_box
 easeus.co.kr##div[class^='pop_']
-edaily.co.kr##.newsletter_area
 elandmall.co.kr###ins-frameless-overlay
 elandmall.co.kr##.cn-promotion-banner
 elandmall.co.kr##.ins-preview-wrapper
@@ -586,13 +607,9 @@ homeplus.co.kr##div[class*='marketingLayerWrap']
 hotword.site##.at-main.at-col.col-md-9 > div.col-md-6
 hub.zum.com##a[href^="https://www.hotelscombined.co.kr/in"]
 hub.zum.com##div > div:has([id])
-humors.zigcou.com###btnRewarded
-humors.zigcou.com##.justify-center.flex > .w-full
-humors.zigcou.com##.object-cover.inline-block
-humors.zigcou.com##[src^="https://img.coucounews.com/"]
 humors.zigcou.com##button.rounded-full
 humoruniv.com###naver_adpost_wrap_fix
-ifhead.tistory.com,tistory.wonsorang.com##div.revenue_unit_wrap
+ifhead.tistory.com,tistory.wonsorang.com##.revenue_unit_wrap
 imbc.com###bannerDiv
 imgur.*##.SeeImgurOIA-container-visible.SeeImgurOIA-container
 imgur.*##.SeeImgurOIA-overlay-visible.SeeImgurOIA-overlay
@@ -624,8 +641,6 @@ isplus.com##.line_bottom.title_box:has-text(행사& 비즈니스)
 isplus.com##.swiper-backface-hidden.swiper-horizontal.swiper-initialized.sw_banner.swiper
 item.cjonstyle.com###wrap > .goto_app_layer_popup
 j9dan.com###nt_sticky_wrap > center
-japanhub.net##.col-12
-japanhub.net##.text-center.col-sm-12.col-md-4
 jimnong.tistory.com###loading
 jmagazine.joins.com##.side_banner
 joongang.co.kr##.for_login.plotting_mini.login_proposal.plotting_popup.layer_dark_popup
@@ -710,7 +725,7 @@ m-sooriya.tistory.com###scrollDiv_m
 m-sooriya.tistory.com##[class$='-div']
 m-sooriya.tistory.com##div#scrollDiv_m2
 m.11st.co.kr###web2appPopup
-m.a-bly.com,newstong.co.kr,megabox.co.kr,video.fc2.com,mfront.homeplus.co.kr,m.bunjang.co.kr,m.imgur.com##body,html:style(overflow:auto!important)
+m.a-bly.com,newstong.co.kr,megabox.co.kr,video.fc2.com,mfront.homeplus.co.kr,m.bunjang.co.kr,m.imgur.com,ssodam.com##body,html:style(overflow:auto!important)
 m.abcmart.a-rt.com##.bottomLayerPopup.docker-layer-banner-box
 m.blog.naver.com##.layer_app 
 m.blog.naver.com##.popup_da_wrap
@@ -907,7 +922,7 @@ premium.sbs.co.kr##.popupOpen.popupBanner_w
 premium.sbs.co.kr##.topBanner_w
 pressian.com##.article_body > div.adv_p.txtc
 pricegod.co.kr##.popUp
-pricegod.co.kr,academy.prompie.com,kream.co.kr,laftel.net,nytimes.com,forbes.com,m.blog.naver.com,wadiz.kr,joara.com##body,html:style(overflow:auto!important)
+pricegod.co.kr,academy.prompie.com,kream.co.kr,laftel.net,nytimes.com,forbes.com,m.blog.naver.com,wadiz.kr,joara.com,musinsa.com##body,html:style(overflow:auto!important)
 product.29cm.co.kr##div > div > div > div:has-text(첫 가입)
 product.kyobobook.co.kr###scrollSpyProdEvent
 product.kyobobook.co.kr##.banner_free.product_detail_area
@@ -915,7 +930,6 @@ product.kyobobook.co.kr##.product_keyword_pick.product_detail_area
 product.kyobobook.co.kr##.product_related.product_detail_area
 product.kyobobook.co.kr##.product_related_02.product_detail_area
 puma.com##.video_wrap
-puma.com##puma-cookie-banner
 quasarzone.com##.state-change-wrap
 quasarzone.com##[id^='venatus']
 quasarzone.com##div.flexslider.main-right-bottom-banner
@@ -1129,14 +1143,12 @@ zum.com##.show.btn-app-go
 ||a.nel.cloudflare.com/report/
 ||abc-ssl.seetoc.com/logging/log
 ||accounts.google.com/gsi/
-||ad.daum.net^$important,app=mok.android
 ||adapi.inlcorp.com^
 ||adconsent.samsungrs.com^
 ||adcr.naver.com^
 ||adddn.adotsolution.com^
 ||addthis.com^
 ||adgirl.yes24.com^
-||adpopcorn.com^$important,app=com.hpapp
 ||ads-mytheresa-new.*.amazonaws.com^
 ||adsensecustomsearchads.com^
 ||adservice.google.com^
@@ -1156,9 +1168,7 @@ zum.com##.show.btn-app-go
 ||api2.branch.io^
 ||app-tracking-gfa-collector.naver.com^
 ||app.adjust.com^$important,app=com.microsoft.copilot|com.voyagerx.scanner
-||appboy-images.com^$important,app=kr.co.burgerkinghybrid
 ||appnexus.com^
-||appsflyersdk.com^$important,app=kr.co.burgerkinghybrid
 ||appsforoffice.microsoft.com/*/telemetry
 ||arca.live/api/v1/pagead
 ||arca.live/static/assets/js/adult.min.js
@@ -1173,12 +1183,10 @@ zum.com##.show.btn-app-go
 ||browser.sentry-cdn.com^
 ||bugherd.com^
 ||buondua.com/templates/duachua/js/script.js
-||buzzvil.com^$important,app=com.hpapp
 ||byteoversea.com^
 ||cache.z.qingting.fm^
 ||cc.naver.com/cc$other,ping
 ||cdn.onesignal.com^
-||clarity.*^$important,app=mok.android
 ||cleanhaircut.com^
 ||clients*.google.com^$app=com.ochiri.cskim.weatherdust
 ||cloudflare.com/cdn-cgi/trace
@@ -1214,11 +1222,9 @@ zum.com##.show.btn-app-go
 ||discord.com/api/*/typing
 ||discord.com/api/*/users/@me?with_analytics_token=true
 ||discord.com/api/science
-||doubleclick.net^$app=mok.android,important
 ||ds88pc0kw6cvc.cloudfront.net^
 ||duckduckgo.com/t/
 ||dxmpay.com^
-||eigene.io^$important,app=mok.android
 ||errortrace.dev^
 ||eu-swarm-springre.trexname.com^
 ||euc-word-edit.officeapps.live.com/we/RemoteTelemetry.ashx
@@ -1249,7 +1255,6 @@ zum.com##.show.btn-app-go
 ||googleapis.*/identitytoolkit/*
 ||googletagservices.com^$3p
 ||graph.facebook.com^
-||graph.facebook.com^$important,app=com.hpapp
 ||horizonme.net^
 ||hostedprebid.com^
 ||hotjar.com^
@@ -1286,8 +1291,6 @@ zum.com##.show.btn-app-go
 ||lover*.net^$popup
 ||mail-ads.google.*^
 ||mcwlive*.com^
-||mediacategory.com^$important,app=mok.android
-||megadata.co.kr^$important,app=mok.android
 ||metrics.torproject.org^
 ||mmtcld.net^
 ||mob.cashbee.co.kr^
@@ -1299,7 +1302,6 @@ zum.com##.show.btn-app-go
 ||mtag.mman.kr^
 ||myaccount.nytimes.com/unified_lire/js/standalone-client.bundle.js$script
 ||myauto.ge/templates/assets/js/build/ads/*
-||naverpa-phinf.pstatic.net^$important,app=com.hpapp
 ||newspic.kr^$removeparam=cp
 ||nexusrules.officeapps.live.com^
 ||nlog.shinhan.com^
