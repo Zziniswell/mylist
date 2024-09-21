@@ -1,13 +1,8 @@
 ! Title: mylist
-! Version: 1.251
+! Version: 1.251x
 ! Description: my adblock rules
 
 
-mybox.naver.com###guide_banner
-namu.wiki#@#div:not([class*=" "]) ~ div div + div[class]:has(> div[id][class]):not(:has(div[class*=" "] > span))
-arca.live##[href^="https://wall.smaad.net/wall/"]
-! for android @@$stealth=useragent,domain=www.youtube.com|www.naver.com|kin.naver.com|post.naver.com|nate.com|www.oliveyoung.co.kr|www.gongyoungshop.kr
-! for android @@||google.*/search$stealth=useragent
 ###id_mbv
 ###main-banner-view > div:first-child
 ##.alert_windows
@@ -43,10 +38,12 @@ arca.live##[href^="https://wall.smaad.net/wall/"]
 @@||onelink.me^$popup,doc
 @@||stacksocial.com^$cookie=ajs_anonymous_id
 adguard.com##.flash-wrapper-wrap
+arca.live##[href^="https://wall.smaad.net/wall/"]
 arca.live#%#//scriptlet('href-sanitizer', 'a[href*="unsafelink.com/"]')
 auction.co.kr##.vip-togetheritems
 blog.naver.com,comic.naver.com##[class^='banner_area']
 bntnews.co.kr##.align-center.youtubeWrap.image
+coolenjoy.net#%#//scriptlet('href-sanitizer', 'a[href^="https://coolenjoy.net/bbs/link2.php?"]')
 dailypharm.com###todayFocusSlider
 dailypharm.com##.N_sectionMenu:style(position:static!important;)
 dailypharm.com##.TopNav.top:style(position:static!important;)
@@ -56,9 +53,11 @@ danawa.com###mdnw-main-bottomSheet-container
 danawa.com###mdnw-main-dimm
 danawa.com##.main__grid--bg.main__grid
 danawa.com##.main__inner.main-top100
+danawa.com##[id^='mdnw-productList-priceCompare-item-jehuImageType-coupangRocket-']:has-text(광고)
 daum.net##.box_game.box_g
 daum.net##.box_shorts.box_g
 daum.net#@#[href*="//v.daum.net/channel/21/home"]
+dcinside.com#%#//scriptlet('set-cookie', '_ga', '1')
 donga.com###app_msg
 duckduckgo.com##.footer > div:nth-of-type(1)
 game.naver.com##[class^='naverAlarm_popupNaverAlarm__']
@@ -67,6 +66,8 @@ gongyoungshop.kr###homeFloating
 google.*,google.com,google.co.kr###rso > div[class]:has-text(€):has-text(5.0):has(span):has(svg):not([id])
 google.*,google.com,google.co.kr##[id^=arc-srp] > div > div[class]:has-text(€):has-text(5.0)
 hasha.in###root > div[class]
+humors.zigcou.com###zigcou_99_Minarticletop_300_250
+humors.zigcou.com##[src^="https://img.coucounews.com/"]
 ign.com###zdcFloatingBtn
 ign.com##.pgOtsScrl.pgOutstream
 ign.com##.tp-container-inner
@@ -105,10 +106,13 @@ muko.kr##[href^="/ad"]
 muko.kr##[src$="ad.jpg"]
 musinsa.com##.gtm-impression-content:has-text(닫기)
 musinsa.com##[class^='_dim']
+mybox.naver.com###guide_banner
+namu.wiki#@#div:not([class*=" "]) ~ div div + div[class]:has(> div[id][class]):not(:has(div[class*=" "] > span))
 namu.wiki,~en.namu.wiki,~board.namu.wiki##[href]:has([src$='.png']):upward(4):not(*:has([id])):has-text(.)
 news.sky.com###leaderboard
 news.sky.com##.sdc-article-strapline__link
 news.sky.com##.sdc-site-au-wrapper
+news.sky.com#%#//scriptlet('set-cookie', 'consents', '1')
 newsis.com##.section6.cont
 newtoki*.com###main-banner-view > div:first-child
 novelpia.com##.plus-free-img-floating.plus-free-img
@@ -151,6 +155,8 @@ zdnet.co.kr#@$#body > div[id^="A1_"][style*="height:"] ~ #wrap { margin-top: -1.
 ||setting-logncrash.cloud.toast.com^
 ||xn--$doc,frame,badfilter
 ! perforation line_1
+! android @@$stealth=useragent,domain=www.youtube.com
+! android @@||google.*/search$stealth=useragent
 ! @@$stealth=ip,domain=123123play.com|damoang.net|fortnite.com|innisfree.com|mania.kr|arca.live|bitwarden.com|amoremall.com|unrealengine.com
 ! @@$stealth=ip,domain=dasibogo.net|mrjav.net|dprime.kr|halfclub.com|twinmotion.com|whooing.com|vivaldi.net|bloomberg.org
 ! @@$stealth=ip,domain=getunicorn.app|hasha.in|dcinside.com|epicgames.com|missav.com|suto.co.kr|kbcard.com|ssg.com
