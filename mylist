@@ -1,5 +1,5 @@
 ! Title: mylist
-! Version: 1.251x
+! Version: 1.251y
 ! Description: my adblock rules
 
 
@@ -9,7 +9,7 @@
 ##.clearfix > li:has(> *:has-text(보증토토))
 ##.m-advert-wrap.wrap
 ##[class^='newsletter']
-##[href*="//v.daum.net/channel/21/home"]
+##[href*="//v.daum.net/channel/"]
 ##[id^='newsletter']
 ##[src*="//a.magsrv.com/"]
 ##[src*="//adshare.kr/"]
@@ -57,6 +57,7 @@ danawa.com##[id^='mdnw-productList-priceCompare-item-jehuImageType-coupangRocket
 daum.net##.box_game.box_g
 daum.net##.box_shorts.box_g
 daum.net#@#[href*="//v.daum.net/channel/21/home"]
+dcinside.com#@%#//scriptlet('set-cookie-reload', '_ga', 'OK')
 dcinside.com#%#//scriptlet('set-cookie', '_ga', '1')
 donga.com###app_msg
 duckduckgo.com##.footer > div:nth-of-type(1)
@@ -150,12 +151,12 @@ zdnet.co.kr#@$#body > div[id^="A1_"][style*="height:"] ~ #wrap { margin-top: -1.
 ||govkorea24.com^
 ||js.monitor.azure.com^
 ||kimppan.com/api/user/CreateVisitLog
-||scv-*.io.naver.com/jackpotlog/*/logs$xmlhttprequest,redirect=noopjson
+||scv-*.io.naver.com/jackpotlog/*/logs
 ||sentry-apollo-fe.naver.com^
 ||setting-logncrash.cloud.toast.com^
 ||xn--$doc,frame,badfilter
 ! perforation line_1
-! android @@$stealth=useragent,domain=www.youtube.com
+! android @@$stealth=useragent,domain=www.youtube.com|www.dcinside.com
 ! android @@||google.*/search$stealth=useragent
 ! @@$stealth=ip,domain=123123play.com|damoang.net|fortnite.com|innisfree.com|mania.kr|arca.live|bitwarden.com|amoremall.com|unrealengine.com
 ! @@$stealth=ip,domain=dasibogo.net|mrjav.net|dprime.kr|halfclub.com|twinmotion.com|whooing.com|vivaldi.net|bloomberg.org
