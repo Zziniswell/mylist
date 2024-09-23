@@ -1,5 +1,5 @@
 ! Title: mylist
-! Version: 1.251y
+! Version: 1.252
 ! Description: my adblock rules
 
 
@@ -41,6 +41,7 @@ adguard.com##.flash-wrapper-wrap
 arca.live##[href^="https://wall.smaad.net/wall/"]
 arca.live#%#//scriptlet('href-sanitizer', 'a[href*="unsafelink.com/"]')
 auction.co.kr##.vip-togetheritems
+betanews.net###csource
 blog.naver.com,comic.naver.com##[class^='banner_area']
 bntnews.co.kr##.align-center.youtubeWrap.image
 coolenjoy.net#%#//scriptlet('href-sanitizer', 'a[href^="https://coolenjoy.net/bbs/link2.php?"]')
@@ -57,8 +58,8 @@ danawa.com##[id^='mdnw-productList-priceCompare-item-jehuImageType-coupangRocket
 daum.net##.box_game.box_g
 daum.net##.box_shorts.box_g
 daum.net#@#[href*="//v.daum.net/channel/21/home"]
-dcinside.com#@%#//scriptlet('set-cookie-reload', '_ga', 'OK')
 dcinside.com#%#//scriptlet('set-cookie', '_ga', '1')
+dcinside.com#@%#//scriptlet('set-cookie-reload', '_ga', 'OK')
 donga.com###app_msg
 duckduckgo.com##.footer > div:nth-of-type(1)
 game.naver.com##[class^='naverAlarm_popupNaverAlarm__']
@@ -84,6 +85,7 @@ kin.naver.com##.expertRecommend
 klauncher.kr#%#//scriptlet('set-constant', '_0x3aa5', 'noopFunc')
 kmib.co.kr,ajunews.com##[id^='ad']
 lawissue.co.kr##.wrap > *:not([class]):not(div:nth-of-type(4))
+m.betanews.net##div#adshow
 m.cafe.daum.net##li.nativead-placeholder
 m.dongascience.com###letter_apply
 m.dongascience.com###view_tag_news > .wrap
@@ -125,6 +127,9 @@ paxnet.co.kr##.dv-com-m02
 paxnet.co.kr##.m-tag-banner
 pping.kr##.swiper-slide-active.swiper-slide > div:first-child
 quora.com###root > .q-box > .q-box > div.q-box > div:has-text(Sign Up to learn more)
+reddit.*##[bundlename="nsfw_blocking_modal"]:remove()
+reddit.*##body:has(> shreddit-app > shreddit-async-loader[bundlename="app_selector"]):style(overflow: auto !important; pointer-events: auto !important;)
+reddit.com##shreddit-async-loader[bundlename="app_selector"]
 ruliweb.com#%#//scriptlet('href-sanitizer', 'a[href*="bbs=1020"]')
 ruliweb.com,ppomppu.co.kr,v.daum.net##[id$='_ad']
 search.danawa.com###dimLayer
@@ -156,7 +161,7 @@ zdnet.co.kr#@$#body > div[id^="A1_"][style*="height:"] ~ #wrap { margin-top: -1.
 ||setting-logncrash.cloud.toast.com^
 ||xn--$doc,frame,badfilter
 ! perforation line_1
-! android @@$stealth=useragent,domain=www.youtube.com|www.dcinside.com
+! android @@$stealth=useragent,domain=www.youtube.com
 ! android @@||google.*/search$stealth=useragent
 ! @@$stealth=ip,domain=123123play.com|damoang.net|fortnite.com|innisfree.com|mania.kr|arca.live|bitwarden.com|amoremall.com|unrealengine.com
 ! @@$stealth=ip,domain=dasibogo.net|mrjav.net|dprime.kr|halfclub.com|twinmotion.com|whooing.com|vivaldi.net|bloomberg.org
@@ -260,7 +265,7 @@ $removeparam=t,domain=duckduckgo.com
 @@$extension="Embed Me!",domain=yande.re|imgur.com|youtube.com|github.com
 @@$extension="Immersive Translate - Translate Web & PDF",app=com.kiwibrowser.browser|org.mozilla.firefox|com.lemurbrowser.exts|com.microsoft.emmx
 @@$extension="microShield",domain=ygosu.com|dogdrip.net|loawa.com|isplus.com|mlbpark.donga.com|etoday.co.kr|meeco.kr
-@@$extension=~"NamuLink"|~"Namu Hot Now"|~"Disable WebGL API"|~"QuickSearch"|~"Console for mobile browsers - eruda"|~"F11 for FullScreen"|~"Toggle Fullscreen Button For Mobile Browsers"|~"Fullscreen Button"|~"Copy & Ignore textTransform property",domain=namu.wiki|~board.namu.wiki
+@@$extension=~"NamuLink"|~"Namu Hot Now"|~"QuickSearch"|~"F11 for FullScreen"|~"Toggle Fullscreen Button For Mobile Browsers"|~"Fullscreen Button"|~"Copy & Ignore textTransform property",domain=namu.wiki|~board.namu.wiki
 @@$generichide,domain=namu.wiki
 ! @@$removeparam,domain=play.google.com|appsflyer.com|app.link|airbridge.io|abr.ge|click.linkprice.com|onelink.me
 @@$removeparam,domain=smartstore.naver.com|brand.naver.com
@@ -272,7 +277,6 @@ $removeparam=t,domain=duckduckgo.com
 @@$stealth=webrtc,domain=moeni.net
 @@/cdn-cgi/challenge-platform/$extension="Console for mobile browsers - eruda"
 @@/code$extension="Embed Me!"
-@@id=relay$extension="Direct ppomppu"
 @@||ad-img.gmarket.com^$domain=gmarket.co.kr
 @@||adtouch.adbrix.io^$app=com.kakao.talk
 @@||adxv.zum.com/view/$domain=hub.zum.com
@@ -945,7 +949,6 @@ rebrush.co.kr##[src^="https://rebrush.co.kr/wp-content/plugins/"]
 rebrush.co.kr##div.wp-block-spacer
 redaily.co.kr###flarelane-subscribe-popup
 reddit.com##.\@container
-reddit.com##.overflow-visible > shreddit-async-loader
 reddit.com##[style*="blur"]:style(filter:none!important;)
 reddit.com##alert-controller
 reddit.com#%#//scriptlet('set-cookie-reload', 'reddit_session', '0')
