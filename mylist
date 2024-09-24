@@ -1,8 +1,10 @@
 ! Title: mylist
-! Version: 1.253
+! Version: 1.253x
 ! Description: my adblock rules
 
 
+@@$extension="隱藏網頁要求通知權限",domain=dcinside.com
+@@||m.dcinside.com/ajax/*naverad
 ! #%#(function(){'use strict';const style=document.createElement('style');style.innerHTML=`@font-face {font-family: 'Pretendard-Medium';src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.woff') format('woff'); font-weight: 500;font-style: normal;}*:not([class^="fa"], [class*=" fa-"], [class^="icon"], [class*=" icon-"]) {font-family: 'Pretendard-Medium', sans-serif !important;}`;document.head.appendChild(style);})();
 ###id_mbv
 ###main-banner-view > div:first-child
@@ -78,7 +80,7 @@ ign.com##.pgOtsScrl.pgOutstream
 ign.com##.tp-container-inner
 isplus.com##div.mt_40.py_40.bg_999.center_1024
 joara.com##.book-preview-guide
-joara.com##.mw-view-guide-wrap.view-guide-w
+joara.com##.mw-view-guide-wrap.view-guide-wrap
 joara.com##.popup-swiper.react-modal-sheet-container
 joara.com##.quiz-popup
 joara.com##.react-modal-sheet-backdrop
@@ -166,10 +168,10 @@ zdnet.co.kr#@$#body > div[id^="A1_"][style*="height:"] ~ #wrap { margin-top: -1.
 ! perforation line_1
 ! android @@$stealth=useragent,domain=www.youtube.com
 ! android @@||google.*/search$stealth=useragent
-! @@$stealth=ip,domain=123123play.com|damoang.net|fortnite.com|innisfree.com|mania.kr|arca.live|bitwarden.com|amoremall.com|unrealengine.com
-! @@$stealth=ip,domain=dasibogo.net|mrjav.net|dprime.kr|halfclub.com|twinmotion.com|whooing.com|vivaldi.net|bloomberg.org
-! @@$stealth=ip,domain=getunicorn.app|hasha.in|dcinside.com|epicgames.com|missav.com|suto.co.kr|kbcard.com|ssg.com
-! @@$stealth=ip,domain=kbs.co.kr|sbs.co.kr
+! default @@$stealth=ip,domain=123123play.com|damoang.net|fortnite.com|innisfree.com|mania.kr|arca.live|bitwarden.com|amoremall.com|unrealengine.com
+! defualt @@$stealth=ip,domain=dasibogo.net|mrjav.net|dprime.kr|halfclub.com|twinmotion.com|whooing.com|vivaldi.net|bloomberg.org
+! default @@$stealth=ip,domain=getunicorn.app|hasha.in|dcinside.com|epicgames.com|missav.com|suto.co.kr|kbcard.com|ssg.com
+! default @@$stealth=ip,domain=kbs.co.kr|sbs.co.kr
 ###backToTop
 ###cookie-exitlag
 ###dclm_modal_content
@@ -261,7 +263,6 @@ $removeparam=t,domain=duckduckgo.com
 29cm.co.kr##[href^="https://29cm.onelink.me/"]
 4kjav.co###adde_modal-modal
 4kjav.co###adde_modal-overlay
-://*.*$document,permissions=join-ad-interest-group=()\,run-ad-auction=()\,browsing-topics=()
 @@$extension,domain=hanacard.co.kr|nicepay.co.kr|kbcard.com
 @@$extension="Console for mobile browsers - eruda",domain=challenges.cloudflare.com
 @@$extension="Disable WebGL API",domain=vidkidz.tistory.com
@@ -274,9 +275,9 @@ $removeparam=t,domain=duckduckgo.com
 @@$removeparam,domain=smartstore.naver.com|brand.naver.com
 @@$stealth,domain=ofw.adison.co|abr.ge|airbridge.io
 @@$stealth=dpi,domain=app.link|startpage.com|kurly.com|nid.naver.com|ses.signgate.com|onelink.me|login.coupang.com
-@@$stealth=ip,domain=novelpia.com|kissjav.com|ppomppu.co.kr|claude.ai|img.pay.naver.net|login.vivaldi.net
+@@$stealth=ip,domain=novelpia.com|kissjav.com|claude.ai|img.pay.naver.net|login.vivaldi.net
 @@$stealth=useragent,domain=chromewebstore.google.com|microsoftedge.microsoft.com|addons.mozilla.org|store.whale.naver.com|galaxystore.samsung.com
-@@$stealth=useragent,domain=video.fc2.com|kbcard.com|gmarket.co.kr|auction.co.kr|app.link|kbanknow.com|claude.ai|ppomppu.co.kr|smartstore.naver.com|brand.naver.com
+@@$stealth=useragent,domain=video.fc2.com|kbcard.com|gmarket.co.kr|auction.co.kr|app.link|kbanknow.com|claude.ai
 @@$stealth=webrtc,domain=moeni.net
 @@/cdn-cgi/challenge-platform/$extension="Console for mobile browsers - eruda"
 @@/code$extension="Embed Me!"
@@ -1292,7 +1293,7 @@ zum.com##.show.btn-app-go
 ||lenovo.com.cn^
 ||lenovomm.com^
 ||licdn.com/*li.lms-analytics/
-||link.coupang.com/re/TOSS
+||link.coupang.com/re/TOSS$all
 ||linkedin.com/countserv/count/
 ||ljc.coupang.com^
 ||lo.v.liveperson.net^
