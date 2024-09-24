@@ -1,8 +1,9 @@
 ! Title: mylist
-! Version: 1.252
+! Version: 1.253
 ! Description: my adblock rules
 
 
+! #%#(function(){'use strict';const style=document.createElement('style');style.innerHTML=`@font-face {font-family: 'Pretendard-Medium';src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.woff') format('woff'); font-weight: 500;font-style: normal;}*:not([class^="fa"], [class*=" fa-"], [class^="icon"], [class*=" icon-"]) {font-family: 'Pretendard-Medium', sans-serif !important;}`;document.head.appendChild(style);})();
 ###id_mbv
 ###main-banner-view > div:first-child
 ##.alert_windows
@@ -36,10 +37,12 @@
 @@||microsoft.com^$cookie=MUIDB
 @@||newtoki*.com^$stealth=useragent
 @@||onelink.me^$popup,doc
+@@||richtv*.com^$stealth=referrer
 @@||stacksocial.com^$cookie=ajs_anonymous_id
 adguard.com##.flash-wrapper-wrap
 arca.live##[href^="https://wall.smaad.net/wall/"]
 arca.live#%#//scriptlet('href-sanitizer', 'a[href*="unsafelink.com/"]')
+auction.co.kr##.component--sponsor_link.component
 auction.co.kr##.vip-togetheritems
 betanews.net###csource
 blog.naver.com,comic.naver.com##[class^='banner_area']
@@ -58,12 +61,12 @@ danawa.com##[id^='mdnw-productList-priceCompare-item-jehuImageType-coupangRocket
 daum.net##.box_game.box_g
 daum.net##.box_shorts.box_g
 daum.net#@#[href*="//v.daum.net/channel/21/home"]
-dcinside.com#%#//scriptlet('set-cookie', '_ga', '1')
-dcinside.com#@%#//scriptlet('set-cookie-reload', '_ga', 'OK')
 donga.com###app_msg
 duckduckgo.com##.footer > div:nth-of-type(1)
 game.naver.com##[class^='naverAlarm_popupNaverAlarm__']
 github.com#%#//scriptlet('href-sanitizer', 'a[href^="https://adguardteam.github.io/AnonymousRedirect/redirect.html"]')
+gmarket.co.kr##.box__component-sponsor-link.box__component
+gmarket.co.kr##.js-impressionable.image
 gongyoungshop.kr###homeFloating
 google.*,google.com,google.co.kr###rso > div[class]:has-text(€):has-text(5.0):has(span):has(svg):not([id])
 google.*,google.com,google.co.kr##[id^=arc-srp] > div > div[class]:has-text(€):has-text(5.0)
@@ -75,7 +78,7 @@ ign.com##.pgOtsScrl.pgOutstream
 ign.com##.tp-container-inner
 isplus.com##div.mt_40.py_40.bg_999.center_1024
 joara.com##.book-preview-guide
-joara.com##.mw-view-guide-wrap.view-guide-wrap
+joara.com##.mw-view-guide-wrap.view-guide-w
 joara.com##.popup-swiper.react-modal-sheet-container
 joara.com##.quiz-popup
 joara.com##.react-modal-sheet-backdrop
@@ -277,7 +280,7 @@ $removeparam=t,domain=duckduckgo.com
 @@$stealth=webrtc,domain=moeni.net
 @@/cdn-cgi/challenge-platform/$extension="Console for mobile browsers - eruda"
 @@/code$extension="Embed Me!"
-@@||ad-img.gmarket.com^$domain=gmarket.co.kr
+@@||ad-img.gmarket.com^$domain=gmarket.co.kr|auction.co.kr
 @@||adtouch.adbrix.io^$app=com.kakao.talk
 @@||adxv.zum.com/view/$domain=hub.zum.com
 @@||aliexpress.*^$cookie=/^_ga_/
@@ -837,7 +840,7 @@ naver.com##.footer_banner
 naver.com##[class*='appShortcut']
 naver.com##button:has-text(앱 다운로드)
 naver.com,op.gg##[href^="https://play.google.com/"]
-naver.com,soldout.co.kr,skstoa.com,kinolights.com,danawa.com##[class*='tooltip']
+naver.com,soldout.co.kr,skstoa.com,kinolights.com,danawa.com,pann.nate.com##[class*='tooltip']
 naver.com,~store.naver.com,~shopping.naver.com##button:has-text(추가)
 news.nate.com###module_ssul
 news.nate.com##[id^='viewAppPop_']
