@@ -1,5 +1,5 @@
 ! Title: mylist
-! Version: 1.254
+! Version: 1.254x
 ! Description: my adblock rules
 
 
@@ -60,7 +60,8 @@ dailypharm.com##.N_sectionMenu:style(position:static!important;)
 dailypharm.com##.TopNav.top:style(position:static!important;)
 dailypharm.com##.container:style(padding-top: 0px !important;)
 dailypharm.com#@#.footer
-damoang.net#%#//scriptlet('href-sanitizer', 'a[href^="https://damoang.net/bbs/link.php?bo_table=economy&wr_id="]')
+damoang.net#%#//scriptlet('href-sanitizer', 'a[href*="link.php?bo_table=economy"]')
+damoang.net#%#window.addEventListener('load',function(){var button=document.getElementById('economy-open-all-links');if(button){button.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();var links=document.querySelectorAll('.text-truncate a');links.forEach(function(link){if(link.href){var newTab=document.createElement('a');newTab.href=link.href;newTab.target='_blank';newTab.rel='noopener noreferrer';newTab.style.display='none';document.body.appendChild(newTab);newTab.click();document.body.removeChild(newTab)}});return false},true)}});
 danawa.com###mdnw-main-bottomSheet-container
 danawa.com###mdnw-main-dimm
 danawa.com##.main__grid--bg.main__grid
@@ -167,6 +168,7 @@ si.com##.m-in-content-ad-row
 smile.hanjin.co.kr##[src^="images/promotion.png"]
 startpage.com##.serp-toast-container:has-text(tracking)
 tilnote.io##.justify-between.items-center.flex.container-medium
+tistory.com#%#window.addEventListener('load',function(){var e=document.querySelector('.protected_form.inner_alert');e&&(document.getElementById('article-password')&&(document.getElementById('article-password').value='1111'),document.querySelector('.btn_complete.btn_alert')&&document.querySelector('.btn_complete.btn_alert').click())});
 tribuna.com##[class^='BannerAlternative_banner__']
 tribuna.com##[class^='Main_main-layout__dugout__']
 tribuna.com##[class^='Main_main-layout__fixed-banners__']
@@ -182,6 +184,7 @@ zdnet.co.kr#@$#body > div[id^="A1_"][style*="height:"] ~ #wrap { margin-top: -1.
 ||govkorea24.com^
 ||js.monitor.azure.com^
 ||kimppan.com/api/user/CreateVisitLog
+||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=googlesyndication-adsbygoogle,domain=battlecats-db.com
 ||scv-*.io.naver.com/jackpotlog/*/logs
 ||sentry-apollo-fe.naver.com^
 ||setting-logncrash.cloud.toast.com^
