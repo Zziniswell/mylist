@@ -1,5 +1,5 @@
 ! Title: mylist
-! Version: 1.255
+! Version: 1.256
 ! Description: my adblock rules
 
 
@@ -61,6 +61,7 @@ dailypharm.com##.N_sectionMenu:style(position:static!important;)
 dailypharm.com##.TopNav.top:style(position:static!important;)
 dailypharm.com##.container:style(padding-top: 0px !important;)
 dailypharm.com#@#.footer
+damoang.net#%#//scriptlet('href-sanitizer', 'a[href*="aliexpress.com"]')
 damoang.net#%#//scriptlet('href-sanitizer', 'a[href*="link.php?bo_table=economy"]')
 damoang.net#%#window.addEventListener('load',function(){var button=document.getElementById('economy-open-all-links');if(button){button.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();var links=document.querySelectorAll('.text-truncate a');links.forEach(function(link){if(link.href){var newTab=document.createElement('a');newTab.href=link.href;newTab.target='_blank';newTab.rel='noopener noreferrer';newTab.style.display='none';document.body.appendChild(newTab);newTab.click();document.body.removeChild(newTab)}});return false},true)}});
 danawa.com###mdnw-main-bottomSheet-container
@@ -80,6 +81,7 @@ github.com#%#//scriptlet('href-sanitizer', 'a[href^="https://adguardteam.github.
 gmarket.co.kr##.box__component-sponsor-link.box__component
 gmarket.co.kr##.js-impressionable.image
 gongyoungshop.kr###homeFloating
+goodnews365.net###support-box
 google.*,google.com,google.co.kr###rso > div[class]:has-text(₩):has-text(5.0):has(span):has(svg):not([id])
 google.*,google.com,google.co.kr###rso > div[class]:has-text(€):has-text(5.0):has(span):has(svg):not([id])
 google.*,google.com,google.co.kr##[id^=arc-srp] > div > div[class]:has-text(₩):has-text(5.0)
@@ -101,9 +103,11 @@ joara.com##.react-modal-sheet-backdrop
 jtbc.co.kr,dailypharm.com##[id$='AD']
 kin.naver.com###eventPopupLayerNJob
 kin.naver.com##.expertRecommend
+kiosk.ac###welcome-dialog:remove()
 klauncher.kr#%#//scriptlet('set-constant', '_0x3aa5', 'noopFunc')
-kmib.co.kr,ajunews.com##[id^='ad']
+kmib.co.kr,ajunews.com,dongascience.com,sports.chosun.com##[id^='ad']
 lawissue.co.kr##.wrap > *:not([class]):not(div:nth-of-type(4))
+lawtimes.co.kr###__next > div > div:first-child:has(svg)
 lotteon.com##.v--modal-overlay:has-text(모바일웹에서 볼래요.)
 m.betanews.net##div#adshow
 m.cafe.daum.net##li.nativead-placeholder
@@ -111,11 +115,10 @@ m.ceoscoredaily.com##[href^="https://www.ceoscore.co.kr/"]
 m.dongascience.com###letter_apply
 m.dongascience.com###view_tag_news > .wrap
 m.dongascience.com##.tag
-m.dongascience.com##[id^='ad']
 m.inven.co.kr###invenAppSuggestion
+m.newskorea21.com###tree_line_1
 m.sportalkorea.com###cot_tl_fixed1
 m.youtube.com##.YtWebScrimHostModernOverlay.YtWebScrimHost
-m.youtube.com##.ytm-bottom-sheet-overlay-container
 manatoki*.net###id_mbv
 maxmovie.com#%#//scriptlet('prevent-xhr', 'mtag.mman.kr')
 medium.com##div > div > div > div > div[class]:has-text(Sign up to discover human stories that deepen your understanding of the world.)
@@ -138,6 +141,8 @@ news.sky.com##.sdc-article-strapline__link
 news.sky.com##[class*='sdc-site-au']
 news.sky.com##[id^='sp_message_container_']:remove()
 newsis.com##.section6.cont
+newskorea21.com##.td_l_nav
+newskorea21.com##div.bn > table
 newtoki*.com###main-banner-view > div:first-child
 novelpia.com##.plus-free-img-floating.plus-free-img
 novelpia.com##.show.modal-backdrop
@@ -168,6 +173,9 @@ shopping.naver.com##[class^='RecommendSection_recommend_section__']
 shopping.naver.com##[class^='_footer_shortcut_area_']
 si.com##.m-in-content-ad-row
 smile.hanjin.co.kr##[src^="images/promotion.png"]
+sports.chosun.com###subrightall
+sports.chosun.com##.g-0.row > div:last-child
+sports.chosun.com##div[class$='-ad']
 startpage.com##.serp-toast-container:has-text(tracking)
 teamblind.com##.tag-actions
 tilnote.io##.justify-between.items-center.flex.container-medium
@@ -186,11 +194,13 @@ zdnet.co.kr#@$#body > div[id^="A1_"][style*="height:"] ~ #wrap { margin-top: -1.
 ||govkorea24.com^
 ||js.monitor.azure.com^
 ||kimppan.com/api/user/CreateVisitLog
+||naver.com/jackpotlog/*/logs$xhr
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=googlesyndication-adsbygoogle,domain=battlecats-db.com
-||scv-*.io.naver.com/jackpotlog/*/logs
 ||sentry-apollo-fe.naver.com^
 ||setting-logncrash.cloud.toast.com^
 ||xn--$doc,frame,badfilter
+! Disable anti right-click for manatoki
+#%#//scriptlet('abort-current-inline-script', 'oncontextmenu')
 ! Change Font to Pretendard-Medium
 ! font #%#(function(){'use strict';const style=document.createElement('style');style.innerHTML=`@font-face {font-family: 'Pretendard-Medium';src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.woff') format('woff'); font-weight: 500;font-style: normal;}*:not([class^="fa"], [class*=" fa-"], [class^="icon"], [class*=" icon-"]) {font-family: 'Pretendard-Medium', sans-serif !important;}`;document.head.appendChild(style);})();
 ! Scripts of Adguard Tracking Protection & Widget Filter
@@ -319,7 +329,7 @@ $removeparam=t,domain=duckduckgo.com
 @@$extension="Embed Me!",domain=yande.re|imgur.com|youtube.com|github.com|namu.wiki
 @@$extension="Immersive Translate - Translate Web & PDF",app=com.kiwibrowser.browser|org.mozilla.firefox|com.lemurbrowser.exts|com.microsoft.emmx
 @@$extension="microShield",domain=ygosu.com|dogdrip.net|loawa.com|isplus.com|mlbpark.donga.com|etoday.co.kr|meeco.kr
-@@$generichide,domain=namu.wiki
+@@$generichide,domain=namu.wiki|meeco.kr
 ! affiliate links @@$removeparam,domain=play.google.com|appsflyer.com|app.link|airbridge.io|abr.ge|click.linkprice.com|onelink.me
 @@$removeparam,domain=smartstore.naver.com|brand.naver.com
 @@$stealth,domain=ofw.adison.co|abr.ge|airbridge.io
@@ -890,7 +900,7 @@ naver.com##.footer_banner
 naver.com##[class*='appShortcut']
 naver.com##button:has-text(앱 다운로드)
 naver.com,op.gg##[href^="https://play.google.com/"]
-naver.com,soldout.co.kr,skstoa.com,kinolights.com,danawa.com,pann.nate.com##[class*='tooltip']
+naver.com,soldout.co.kr,skstoa.com,kinolights.com,danawa.com,pann.nate.com,news.stockplus.com##[class*='tooltip']
 naver.com,~store.naver.com,~shopping.naver.com##button:has-text(추가)
 news.nate.com###module_ssul
 news.nate.com##[id^='viewAppPop_']
@@ -1404,7 +1414,6 @@ zum.com##.show.btn-app-go
 ||scdn.co/static/js/baba.js$script,domain=spotify.com
 ||scorecardresearch.com^
 ||scr.nsmartad.com^
-||scv-game.io.naver.com/jackpotlog/
 ||sektoon*.org/imgs/*.gif
 ||sentry.kroffle.net^
 ||sessions.bugsnag.com^
