@@ -1,5 +1,5 @@
 ! Title: mylist
-! Version: 1.258
+! Version: 1.258x
 ! Description: my adblock rules
 
 
@@ -28,7 +28,7 @@ $removeparam=/^(ptnCd|referrer)=/,domain=nsmall.com
 @@$stealth=useragent,domain=hasha.in
 @@.kr^$extension="Immersive Translate - Translate Web & PDF"
 @@korea$extension="Immersive Translate - Translate Web & PDF"
-@@toki.*^$extension="웹 사이트에서 이미지 해상도 오버레이 표시"|"Immersive Translate - Translate Web & PDF"
+@@toki*.*/$extension="웹 사이트에서 이미지 해상도 오버레이 표시"|"Immersive Translate - Translate Web & PDF"
 @@||ads.mtgroup.kr/RealMedia/ads/adstream_sx.ads/zdnet_mobile/news@x05$xhr,domain=zdnet.co.kr
 @@||api2.branch.io^$app=com.reddit.frontpage|com.spotify.music
 @@||app.adjust.world^$app=com.spotify.music
@@ -91,11 +91,11 @@ gmarket.co.kr##.js-impressionable.image
 gongyoungshop.kr###homeFloating
 goodnews365.net###support-box
 google.*,google.com,google.co.kr###rso > div[class]:has-text(.in):has-text(.0):has(span):has(svg):not([id])
-google.*,google.com,google.co.kr###rso > div[class]:has-text(/€|₩/):has-text(.0):has(span):has(svg):not([id])
-google.*,google.com,google.co.kr###rso > div[class]:has-text(edu.pl):has(span):has(svg):not([id])
+google.*,google.com,google.co.kr###rso > div[class]:has-text(/€|₩|co.za/):has-text(.0):has(span):has(svg):not([id])
+google.*,google.com,google.co.kr###rso > div[class]:has-text(/edu.pl|pila.pl/):has(span):has(svg):not([id])
 google.*,google.com,google.co.kr##[id^='arc-srp'] > div > div[class]:has-text(.in):has-text(.0)
 google.*,google.com,google.co.kr##[id^='arc-srp'] > div > div[class]:has-text(/edu.pl|pila.pl/)
-google.*,google.com,google.co.kr##[id^='arc-srp'] > div > div[class]:has-text(/€|₩/):has-text(.0)
+google.*,google.com,google.co.kr##[id^='arc-srp'] > div > div[class]:has-text(/€|₩|co.za/):has-text(.0)
 hasha.in###root > div[class]
 humors.zigcou.com###zigcou_99_Minarticletop_300_250
 humors.zigcou.com##[src^="https://img.coucounews.com/"]
