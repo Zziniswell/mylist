@@ -1,5 +1,5 @@
 ! Title: mylist
-! Version: 1.258
+! Version: 1.257
 ! Description: my adblock rules
 
 
@@ -28,7 +28,7 @@ $removeparam=/^(ptnCd|referrer)=/,domain=nsmall.com
 @@$stealth=useragent,domain=hasha.in
 @@.kr^$extension="Immersive Translate - Translate Web & PDF"
 @@korea$extension="Immersive Translate - Translate Web & PDF"
-@@toki.*^$extension="웹 사이트에서 이미지 해상도 오버레이 표시"|"Immersive Translate - Translate Web & PDF"
+@@toki$extension="Immersive Translate - Translate Web & PDF"
 @@||ads.mtgroup.kr/RealMedia/ads/adstream_sx.ads/zdnet_mobile/news@x05$xhr,domain=zdnet.co.kr
 @@||api2.branch.io^$app=com.reddit.frontpage|com.spotify.music
 @@||app.adjust.world^$app=com.spotify.music
@@ -59,24 +59,39 @@ bntnews.co.kr##.align-center.youtubeWrap.image
 clien.net#%#//scriptlet('href-sanitizer', 'a[href*="11st.co.kr"]')
 clien.net#%#//scriptlet('href-sanitizer', 'a[href^="https://link.coupang.com/"]')
 clien.net#%#//scriptlet('href-sanitizer', 'a[href^="https://s.click.aliexpress.com/"]')
-clien.net,eomisae.co.kr#%#window.addEventListener('load',function(){for(var e=document.getElementsByTagName('a'),n=0;n .goto_app_layer_popup
+clien.net,eomisae.co.kr#%#window.addEventListener('load',function(){for(var e=document.getElementsByTagName('a'),n=0;nlinkprice.com')){var t=n.match(/tu=(.+)$/);if(t)return decodeURIComponent(t[1])}return e}(e[n].href);t!==e[n].href&&(e[n].href=t)}});
+coolenjoy.net#%#//scriptlet('href-sanitizer', 'a[href^="https://coolenjoy.net/bbs/link2.php?"]')
+dailypharm.com###todayFocusSlider
+dailypharm.com##.N_sectionMenu:style(position:static!important;)
+dailypharm.com##.TopNav.top:style(position:static!important;)
+dailypharm.com##.container:style(padding-top: 0px !important;)
+dailypharm.com#@#.footer
+damoang.net#%#//scriptlet('href-sanitizer', 'a[href*="aliexpress.com"]')
+damoang.net#%#//scriptlet('href-sanitizer', 'a[href*="link.php?bo_table=economy"]')
+damoang.net#%#window.addEventListener('load',function(){var button=document.getElementById('economy-open-all-links');if(button){button.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();var links=document.querySelectorAll('.text-truncate a');links.forEach(function(link){if(link.href){var newTab=document.createElement('a');newTab.href=link.href;newTab.target='_blank';newTab.rel='noopener noreferrer';newTab.style.display='none';document.body.appendChild(newTab);newTab.click();document.body.removeChild(newTab)}});return false},true)}});
+danawa.com###mdnw-main-bottomSheet-container
+danawa.com###mdnw-main-dimm
+danawa.com##.main__grid--bg.main__grid
+danawa.com##.main__inner.main-top100
+danawa.com##[id^='mdnw-productList-priceCompare-item-jehuImageType-coupangRocket-']:has-text(광고)
+daum.net##.box_game.box_g
+daum.net##.box_shorts.box_g
+daum.net#@#[href*="//v.daum.net/channel/"]
+display.cjonstyle.com###popup_spot
+display.cjonstyle.com###wrap > .goto_app_layer_popup
 donga.com###app_msg
 duckduckgo.com##.footer > div:nth-of-type(1)
-gall.dcinside.com##[id^='comment_cnt_']:has-text(/투표|믕|위잉위잉|북한은 정말로 가난할까?|앱테크|추천인|deco|밍밍|거.부|리자이밍|bit.ly|itss/)
 game.naver.com##[class^='naverAlarm_popupNaverAlarm__']
 ggul.zal.kr#%#window.onload=function(){(function(){"use strict";const v=document.getElementById("bo_v_atc")||document.getElementById("inner-content-body");if(v){v.classList.remove("omit_wrap","hided");v.style.maxHeight="unset";}})();};
-ggulmo.com##div.css-1ct6olp
 github.com#%#//scriptlet('href-sanitizer', 'a[href^="https://adguardteam.github.io/AnonymousRedirect/redirect.html"]')
 gmarket.co.kr##.box__component-sponsor-link.box__component
 gmarket.co.kr##.js-impressionable.image
 gongyoungshop.kr###homeFloating
 goodnews365.net###support-box
-google.*,google.com,google.co.kr###rso > div[class]:has-text(.in):has-text(.0):has(span):has(svg):not([id])
-google.*,google.com,google.co.kr###rso > div[class]:has-text(/€|₩/):has-text(.0):has(span):has(svg):not([id])
-google.*,google.com,google.co.kr###rso > div[class]:has-text(edu.pl):has(span):has(svg):not([id])
-google.*,google.com,google.co.kr##[id^='arc-srp'] > div > div[class]:has-text(.in):has-text(.0)
-google.*,google.com,google.co.kr##[id^='arc-srp'] > div > div[class]:has-text(/edu.pl|pila.pl/)
-google.*,google.com,google.co.kr##[id^='arc-srp'] > div > div[class]:has-text(/€|₩/):has-text(.0)
+google.*,google.com,google.co.kr###rso > div[class]:has-text(₩):has-text(.0):has(span):has(svg):not([id])
+google.*,google.com,google.co.kr###rso > div[class]:has-text(€):has-text(.0):has(span):has(svg):not([id])
+google.*,google.com,google.co.kr##[id^=arc-srp] > div > div[class]:has-text(₩):has-text(.0)
+google.*,google.com,google.co.kr##[id^=arc-srp] > div > div[class]:has-text(€):has-text(.0)
 hasha.in###root > div[class]
 humors.zigcou.com###zigcou_99_Minarticletop_300_250
 humors.zigcou.com##[src^="https://img.coucounews.com/"]
@@ -102,10 +117,11 @@ lawtimes.co.kr###__next > div > div:first-child:has(svg)
 lezhin.com##.cutLicense.cut
 lotteon.com##.v--modal-overlay:has-text(모바일웹에서 볼래요.)
 m.betanews.net##div#adshow
-m.blog.naver.com###blog_fe_feed > div:has-text(/다른 글|디깅하기|주제 더보기/)
+m.blog.naver.com###blog_fe_feed > div:has-text(다른 글)
+m.blog.naver.com###blog_fe_feed > div:has-text(디깅하기)
+m.blog.naver.com###blog_fe_feed > div:has-text(주제 더보기)
 m.cafe.daum.net##li.nativead-placeholder
 m.cafe.naver.com##.FloatingJoinButton.DefaultButton
-m.dcinside.com##[id^='comment_cnt_']:has-text(/투표|믕|위잉위잉|북한은 정말로 가난할까?|앱테크|추천인|deco|밍밍|거.부|리자이밍|bit.ly|itss/)
 m.dongascience.com###letter_apply
 m.dongascience.com###view_tag_news > .wrap
 m.dongascience.com##.tag
@@ -127,8 +143,7 @@ musinsa.com##.gtm-impression-content:has-text(닫기)
 musinsa.com##[class^='_dim']
 mybox.naver.com###guide_banner
 namu.wiki#@#div:not([class*=" "]) ~ div div + div[class]:has(> div[id][class]):not(:has(div[class*=" "] > span))
-namu.wiki,~en.namu.wiki,~board.namu.wiki##[data-filesize="4308"]:upward(4):remove()
-namu.wiki,~en.namu.wiki,~board.namu.wiki##[href]:has([src$='.png']):upward(4):not(*:has([id])):has-text(.):remove()
+namu.wiki,~en.namu.wiki,~board.namu.wiki##[href]:has([src$='.png']):upward(4):not(*:has([id])):has-text(.)
 news.sky.com###leaderboard
 news.sky.com##.sdc-article-strapline__link
 news.sky.com##[class*='sdc-site-au']
@@ -157,7 +172,7 @@ reddit.*##body:has(> shreddit-app > shreddit-async-loader[bundlename="app_select
 reddit.com###main-content > .absolute
 reddit.com##shreddit-async-loader[bundlename="app_selector"]
 ruliweb.com#%#//scriptlet('href-sanitizer', 'a[href*="bbs=1020"]')
-ruliweb.com,ppomppu.co.kr,daum.net,naver.com##[id$='_ad']
+ruliweb.com,ppomppu.co.kr,v.daum.net##[id$='_ad']
 search.danawa.com###dimLayer
 section.blog.naver.com##.register_layer
 shopping.naver.com###my-home-advertisement
@@ -319,7 +334,7 @@ $removeparam=t,domain=duckduckgo.com
 11st.co.kr,kyobobook.co.kr,cafe.daum.net##[id*='Ad']
 11toon*.com##.hide-m
 11toon*.com##.mobile > .btn-lg.btn-primary.btn
-11toon*.com##[href^="http://"]:not([href*='bbs']) > .homelist-thumb
+11toon*.com##[href^="']) > .homelist-thumb
 29cm.co.kr##[href^="https://29cm.onelink.me/"]
 4kjav.co###adde_modal-modal
 4kjav.co###adde_modal-overlay
@@ -524,6 +539,8 @@ dcinside.com###dna_content
 dcinside.com##.adv-inner
 dcinside.com##.app-info-ban
 dcinside.com##.block-disable
+dcinside.com##.detail-top-lst > li:nth-of-type(1)
+dcinside.com##.detail-top-lst > li:nth-of-type(2)
 dcinside.com##.layer-bottom-popup
 dcinside.com##.nft-area
 dcinside.com##.outside-search-box
@@ -579,7 +596,7 @@ fmkorea.com##.notice_layerM.notice_layer
 fmkorea.com##.politics_pop_main.pop_main
 fmkorea.com##.show_folded_notice.pop0.notice
 fmkorea.com##li.pop0.clear.notice
-fmkorea.com##li:has-text(/LoL|페이커/)
+fmkorea.com##li:has-text(LoL)
 fmkorea.com#$##bd_capture { background: none!important; }
 fnnews.com###mlist_add
 fnnews.com##.view > div:not(*:has([class]))
@@ -879,9 +896,9 @@ namu.news##[id^="sidebar-"]
 namu.wiki,~board.namu.wiki##div > div > [class]:has-text(Operado)
 namu.wiki,~en.namu.wiki,~board.namu.wiki##[class]:empty:not(div):not([src]):not([href]):upward(3):has([href]:has-text(.)):not([class]:has(path))
 namu.wiki,~en.namu.wiki,~board.namu.wiki##[href*='#']:upward(2):has(svg > path):has(ul):has(li):not([class]:has([href*='Go']))
-namu.wiki,~en.namu.wiki,~board.namu.wiki##[href]:has-text(/파워링크|광고등록/):upward(4)
+namu.wiki,~en.namu.wiki,~board.namu.wiki##[href]:has-text(광고등록):upward(4)
 namu.wiki,~en.namu.wiki,~board.namu.wiki##div > [class]:has-text(파워링크):not([class]:has([id])):not([class]:has(b)):not([class]:has(dt)):not([class]:has(p)):not([class]:has(textarea)):not([class]:has(time)):not([class]:has-text(#)):not([class]:has-text(틀)):not([class]:has([src$='.svg']))
-! namu.wiki,~en.namu.wiki,~board.namu.wiki##div > [class]:not([class]:has([id])):has([src$='.png']):has-text(.):not([class]:has(dt)):not([class]:has(p)):not([class]:has(time)):not([class]:has(textarea)):not([class]:has([href*='acl'])):remove()
+namu.wiki,~en.namu.wiki,~board.namu.wiki##div > [class]:not([class]:has([id])):has([src$='.png']):has-text(.):not([class]:has(dt)):not([class]:has(p)):not([class]:has(time)):not([class]:has(textarea)):not([class]:has([href*='acl'])):remove()
 namu.wiki,~en.namu.wiki,~board.namu.wiki##div > [id]:only-child
 namu.wiki,~en.namu.wiki,~board.namu.wiki##div[class]:has(svg > path):has(ul):has(li):not([class]:has([href*=Go])):not([class]:has([href*='acl'])):not([class]:has([href*='diff'])):not([class]:has([href*='thread'])):not([class]:has(p)):not([class]:has(tbody)):not([class]:has(textarea)):not([class]:has([id]))
 nate.com##.shopBox
@@ -1056,7 +1073,8 @@ shopping.naver.com##[id$="DynamicAd"]
 shopping.naver.com##div[class*="fashionTownResponsive_fashion_town_responsive__"]
 shopping.naver.com##div[class*="loadingBar_responsive_loading_bar__"]
 sisain.co.kr###fix-banner
-skstoa.com###tab3_1 > div:has-text(/인기상품|좋은 상품/)
+skstoa.com###tab3_1 > div:has-text(인기상품)
+skstoa.com###tab3_1 > div:has-text(좋은 상품)
 skstoa.com###top_ad_area
 skstoa.com##.ga-event.type2.stoaLogin__etc-link
 skstoa.com##.img_pop_txt02
@@ -1084,7 +1102,8 @@ ssg.com###item_advert_cpc_div
 ssg.com##.mndtl_event_img
 ssg.com##.mndtl_sec_bx
 ssg.com##[id^='m_header_']
-ssg.com##div > div > div:has-text(/앱다운받기|지금 시작하기/)
+ssg.com##div > div > div:has-text(앱다운받기)
+ssg.com##div > div > div:has-text(지금 시작하기)
 ssg.com##div.mndtl_sec_cont > div.mndtl_sec_bx > div.mndtl_bn
 ssodam.com###ageModal
 star.ohmynews.com##.arc-bottom-wrap > div:nth-of-type(4)
