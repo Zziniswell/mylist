@@ -1,5 +1,5 @@
 ! Title: mylist
-! Version: 1.258x
+! Version: 1.259
 ! Description: my adblock rules
 
 
@@ -124,7 +124,7 @@ m.betanews.net##div#adshow
 m.blog.naver.com###blog_fe_feed > div:has-text(/다른 글|디깅하기|주제 더보기/)
 m.cafe.daum.net##li.nativead-placeholder
 m.cafe.naver.com##.FloatingJoinButton.DefaultButton
-m.dcinside.com##[id^='comment_cnt_']:has-text(/투표함|믕|위잉위잉|북한은 정말로 가난할까?|앱테크|추천인|deco|밍밍|거.부|리자이밍|bit.ly|itss/)
+m.dcinside.com##[id^='comment_cnt_']:has-text(/투표함|믕|위잉위잉|북한은 정말로 가난할까?|앱테크|추천인|deco|밍밍|거.부|리자이밍|bit.ly|itss|민주당원|룬재앙|yna.co.kr|kmib.co.kr|chosun.com|hani.co.kr/)
 m.dongascience.com###letter_apply
 m.dongascience.com###view_tag_news > .wrap
 m.dongascience.com##.tag
@@ -169,6 +169,8 @@ ohmynews.com##div:not([id]):not([class]):nth-of-type(1)
 orders.pay.naver.com##div.content-recommend
 paxnet.co.kr##.dv-com-m02
 paxnet.co.kr##.m-tag-banner
+politico.eu##.ad
+politico.eu##[class^='ad_']
 pping.kr##.swiper-slide-active.swiper-slide > div:first-child
 quora.com###root > .q-box > .q-box > div.q-box > div:has-text(Sign Up to learn more)
 reddit.*##[bundlename="nsfw_blocking_modal"]:remove()
@@ -221,7 +223,13 @@ zdnet.co.kr#@$#body > div[id^="A1_"][style*="height:"] ~ #wrap { margin-top: -1.
 ! Disable anti right-click for manatoki
 #%#//scriptlet('abort-current-inline-script', 'oncontextmenu')
 ! Change Font to Pretendard-Medium
-! font #%#(function(){'use strict';const style=document.createElement('style');style.innerHTML=`@font-face {font-family: 'Pretendard-Medium';src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.woff') format('woff'); font-weight: 500;font-style: normal;}*:not([class^="fa"], [class*=" fa-"], [class^="icon"], [class*=" icon-"]) {font-family: 'Pretendard-Medium', sans-serif !important;}`;document.head.appendChild(style);})();
+! #%#(function(){'use strict';const style=document.createElement('style');style.innerHTML=`@font-face {font-family: 'Pretendard-Medium';src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.woff') format('woff'); font-weight: 500;font-style: normal;}*:not([class^="fa"], [class*=" fa-"], [class^="icon"], [class*=" icon-"]) {font-family: 'Pretendard-Medium', sans-serif !important;}`;document.head.appendChild(style);})();
+! F11 for Fullscreen
+#%#(function(){'use strict';document.addEventListener("keydown",function(e){(e.which||e.keyCode)==122&&document.fullscreenEnabled&&(document.fullscreenElement?document.exitFullscreen&&document.exitFullscreen():document.documentElement.requestFullscreen())})})();
+! Remove text formatting when copying
+#%#document.addEventListener('copy',e=>{e.preventDefault();e.clipboardData.setData('text/plain',window.getSelection().toString().replace(/<[^>]*>/g,'').replace(/[^\S\n]+/g,' ').split('\n').map(l=>l.trim()).join('\n').replace(/\n{3,}/g,'\n\n'));});
+! Toggle Fullscreen Button For Mobile Browsers
+blog.naver.com,cafe.naver.com,arca.live#%#(function(){function t(){document.fullscreenElement||document.mozFullScreenElement||document.webkitFullscreenElement?document.cancelFullScreen?document.cancelFullScreen():document.mozCancelFullScreen?document.mozCancelFullScreen():document.webkitCancelFullScreen&&document.webkitCancelFullScreen():document.documentElement.requestFullscreen?document.documentElement.requestFullscreen():document.documentElement.mozRequestFullScreen?document.documentElement.mozRequestFullScreen():document.documentElement.webkitRequestFullscreen&&document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);this.parentNode.style.display='none'}window.addEventListener('dblclick',function(e){var n=document.createElement('div'),l=document.createElement('button');n.style.cssText='position:fixed;opacity:0;z-index:999999;left:'+(e.clientX-20)+'px;top:'+(e.clientY-10)+'px',l.innerHTML='Fullscreen',l.addEventListener('click',t),n.appendChild(l),document.body.appendChild(n)})})();
 ! Scripts of Adguard Tracking Protection & Widget Filter
 #%#var AG_onLoad=function(func){if(document.readyState==="complete"||document.readyState==="interactive")func();else if(document.addEventListener)document.addEventListener("DOMContentLoaded",func);else if(document.attachEvent)document.attachEvent("DOMContentLoaded",func)};
 #%#var AG_removeElementById = function(id) { var element = document.getElementById(id); if (element && element.parentNode) { element.parentNode.removeChild(element); }};
@@ -454,7 +462,6 @@ bing.com###scroll_cont
 bing.com###vs_cont
 biz.newdaily.co.kr,search.daum.net,mnews.sbs.co.kr##[class$='_ad']
 blog.fc2.com###wrapper > div:nth-of-type(4)
-blog.fc2.com#@#.ad_footer
 blog.naver.com##[class^='end_feed_division__']
 blog.naver.com##[class^='mydrawer_banner__']
 blog.naver.com##[id^='BANNER_']
