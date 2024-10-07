@@ -1,5 +1,5 @@
 ! Title: mylist
-! Version: 1.260
+! Version: 1.260x
 ! Description: my adblock rules
 
 
@@ -81,7 +81,6 @@ display.cjonstyle.com###popup_spot
 display.cjonstyle.com###wrap > .goto_app_layer_popup
 donga.com###app_msg
 duckduckgo.com##.footer > div:nth-of-type(1)
-gall.dcinside.com##[id^='comment_cnt_']:has-text(/투표함|믕|위잉위잉|북한은 정말로 가난할까?|앱테크|추천인|deco|밍밍|거.부|리자이밍|bit.ly|itss|거부함/)
 game.naver.com##[class^='naverAlarm_popupNaverAlarm__']
 ggul.zal.kr#%#window.onload=function(){(function(){"use strict";const v=document.getElementById("bo_v_atc")||document.getElementById("inner-content-body");if(v){v.classList.remove("omit_wrap","hided");v.style.maxHeight="unset";}})();};
 ggulmo.com##div.css-1ct6olp
@@ -357,7 +356,6 @@ $removeparam=t,domain=duckduckgo.com
 4kjav.co###adde_modal-modal
 4kjav.co###adde_modal-overlay
 @@$extension,domain=hanacard.co.kr|nicepay.co.kr|kbcard.com
-@@$extension="Eruda Dynamic",domain=challenges.cloudflare.com
 @@$extension="Disable WebGL API",domain=vidkidz.tistory.com
 @@$extension="Embed Me!",domain=yande.re|imgur.com|youtube.com|github.com|namu.wiki
 @@$extension="Immersive Translate - Translate Web & PDF",app=com.kiwibrowser.browser|org.mozilla.firefox|com.lemurbrowser.exts|com.microsoft.emmx
@@ -371,7 +369,6 @@ $removeparam=t,domain=duckduckgo.com
 @@$stealth=useragent,domain=chromewebstore.google.com|microsoftedge.microsoft.com|addons.mozilla.org|store.whale.naver.com|galaxystore.samsung.com
 @@$stealth=useragent,domain=video.fc2.com|kbcard.com|gmarket.co.kr|auction.co.kr|app.link|kbanknow.com|claude.ai
 @@$stealth=webrtc,domain=moeni.net
-@@/cdn-cgi/challenge-platform/$extension="Eruda Dynamic"
 @@/code$extension="Embed Me!"
 @@||ad-img.gmarket.com^$domain=gmarket.co.kr|auction.co.kr
 @@||adtouch.adbrix.io^$app=com.kakao.talk
