@@ -1,5 +1,5 @@
 ! Title: mylist
-! Version: 1.260x
+! Version: 1.260y
 ! Description: my adblock rules
 
 
@@ -48,7 +48,6 @@ $removeparam=/^(ptnCd|referrer)=/,domain=nsmall.com
 @@||richtv*.com^$stealth=referrer
 @@||stacksocial.com^$cookie=ajs_anonymous_id
 adguard.com##.flash-wrapper-wrap
-arca.live##[href^="https://wall.smaad.net/wall/"]
 arca.live#%#window.addEventListener('load',function(){document.querySelectorAll('a.external').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();window.location.href=this.href})});var removeModal=function(){var m=document.querySelector('.microModal');m&&m.parentNode.removeChild(m)};removeModal();new MutationObserver(function(mutations){mutations.forEach(function(){removeModal()})}).observe(document.body,{childList:true,subtree:true})});
 arca.live#%#function updateExternalLinks(){document.querySelectorAll('a.external').forEach(function(a){var h=a.href;if(h.startsWith('https://unsafelink.com/')){a.href=h.replace('https://unsafelink.com/','').replace(/^http:\/\//,'https://')}})}window.addEventListener('load',updateExternalLinks);window.addEventListener('hashchange',updateExternalLinks);
 auction.co.kr##.component--sponsor_link.component
@@ -56,10 +55,8 @@ auction.co.kr##.vip-togetheritems
 betanews.net###csource
 blog.naver.com,comic.naver.com##[class^='banner_area']
 bntnews.co.kr##.align-center.youtubeWrap.image
-clien.net#%#//scriptlet('href-sanitizer', 'a[href*="11st.co.kr"]')
 clien.net#%#//scriptlet('href-sanitizer', 'a[href^="https://link.coupang.com/"]')
 clien.net#%#//scriptlet('href-sanitizer', 'a[href^="https://s.click.aliexpress.com/"]')
-clien.net,eomisae.co.kr#%#window.addEventListener('load',function(){for(var e=document.getElementsByTagName('a'),n=0;nlinkprice.com')){var t=n.match(/tu=(.+)$/);if(t)return decodeURIComponent(t[1])}return e}(e[n].href);t!==e[n].href&&(e[n].href=t)}});
 coolenjoy.net#%#//scriptlet('href-sanitizer', 'a[href^="https://coolenjoy.net/bbs/link2.php?"]')
 dailypharm.com###todayFocusSlider
 dailypharm.com##.N_sectionMenu:style(position:static!important;)
@@ -81,6 +78,7 @@ display.cjonstyle.com###popup_spot
 display.cjonstyle.com###wrap > .goto_app_layer_popup
 donga.com###app_msg
 duckduckgo.com##.footer > div:nth-of-type(1)
+eomisae.co.kr#%#//scriptlet('href-sanitizer', 'a[href*="11st.co.kr"]')
 game.naver.com##[class^='naverAlarm_popupNaverAlarm__']
 ggul.zal.kr#%#window.onload=function(){(function(){"use strict";const v=document.getElementById("bo_v_atc")||document.getElementById("inner-content-body");if(v){v.classList.remove("omit_wrap","hided");v.style.maxHeight="unset";}})();};
 ggulmo.com##div.css-1ct6olp
@@ -144,6 +142,7 @@ musinsa.com##.gtm-impression-content:has-text(닫기)
 musinsa.com##[class^='_dim']
 mybox.naver.com###guide_banner
 namu.wiki#@#div:not([class*=" "]) ~ div div + div[class]:has(> div[id][class]):not(:has(div[class*=" "] > span))
+namu.wiki,~en.namu.wiki,~board.namu.wiki##[class]:empty:only-child:not(div):not([src]):not([href]):upward(4):has([href*='/w/'])
 namu.wiki,~en.namu.wiki,~board.namu.wiki##[href]:has([src$='.png']):upward(4):not(*:has([id])):has-text(.):remove()
 news.sky.com###leaderboard
 news.sky.com##.sdc-article-strapline__link
